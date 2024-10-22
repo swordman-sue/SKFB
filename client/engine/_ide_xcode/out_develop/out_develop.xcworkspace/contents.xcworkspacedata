@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:out_develop.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../prjcommon/pbc/pbc.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../prjcommon/common/common.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../prjcommon/network/network.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../prjcommon/luascript/luascript.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../prjcommon/cocos2dx/cocos2dx.xcodeproj">
+   </FileRef>
+</Workspace>

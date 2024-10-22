@@ -1,0 +1,230 @@
+<{if !empty($ui_client)}>
+GameConfig = GameConfig or {}
+GameConfig.<{$cnf_name}>=
+{
+<{* 如果没有id,使用自增数字 *}>
+<{php}>$this->_tpl_vars['i'] = 1;<{/php}>
+<{* 获取所需工作表序号 *}>
+<{foreach from=$ui_client_num item="num" key="key_num"}>
+<{* 是否需要特殊处理 *}>
+<{php}>
+    $special_return = dispose_cnf_data($this->_tpl_vars['ui_client'][$this->_tpl_vars['num']], $this->_tpl_vars['cnf_special']);
+    $this->_tpl_vars['special_type'] = $special_return['type'];
+    $this->_tpl_vars['special_extra'] = $special_return['extra'];
+<{/php}>
+<{* 特殊处理1(处理erl联合key) *}>
+<{if $special_type == 1}>
+<{* 遍历所需工作表数据 *}>
+<{foreach from=$ui_client[$num] item="val" key="key"}>
+    [<{$key}>] = {
+<{foreach from=$val item="vv" key="kk"}>
+<{* 三维数组 *}>
+<{if $special_extra.s_count == 3}>
+<{if !is_numeric($kk)}>
+<{if $vv != ""}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['vv']);<{/php}>
+<{if $type == 1}>
+        <{$kk}> = <{$vv}>,
+<{elseif $type == 2}>
+        <{$kk}> = <{if $vv == "PHP_EMPTY"}>[[]]<{else}>[[<{$vv}>]]<{/if}>,
+<{elseif $type == 3}>
+        <{$kk}> = {<{foreach from=$vv item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{elseif $type == 4}>
+        <{$kk}> = {
+<{foreach from=$vv item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+        },
+<{elseif $type == 5}>
+        <{$kk}> = {
+<{foreach from=$vv item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+        },
+<{/if}>
+<{/if}>
+<{* 列出一维数组数据 end*}>
+<{else}>
+        [<{$kk}>] = {
+<{* 列出三维数组数据 *}>
+<{foreach from=$vv item="vvv" key="kkk"}>
+<{* 先列出重复数据 *}>
+<{if $kkk != "LIST" && $vvv != ""}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['vvv']);<{/php}>
+<{if $type == 1}>
+            <{$kkk}> = <{$vvv}>,
+<{elseif $type == 2}>
+            <{$kkk}> = <{if $vv == "PHP_EMPTY"}>[[]]<{else}>[[<{$vvv}>]]<{/if}>,
+<{elseif $type == 3}>
+            <{$kkk}> = {<{foreach from=$vvv item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{elseif $type == 4}>
+            <{$kkk}> = {
+<{foreach from=$vvv item="v2" key="k2"}>
+                {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+            },
+<{elseif $type == 5}>
+            <{$kkk}> = {
+<{foreach from=$vvv item="v2" key="k2"}>
+                {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+            },
+<{/if}>
+<{* 再列出list数据 *}>
+<{else}>
+<{if $cnf_special.extra != ""}>
+            <{$cnf_special.extra}> = {
+<{/if}>
+<{foreach from=$vvv item="l_val" key="l_key"}>
+                [<{$l_key}>] = {
+<{foreach from=$l_val item="v" key="k"}>
+<{if $v != ""}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['v']);<{/php}>
+<{if $type == 1}>
+                    <{$k}> = <{$v}>,
+<{elseif $type == 2}>
+                    <{$k}> = <{if $v == "PHP_EMPTY"}>[[]]<{else}>[[<{$v}>]]<{/if}>,
+<{elseif $type == 3}>
+                    <{$k}> = {<{foreach from=$v item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{elseif $type == 4}>
+                    <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+                        {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+                    },
+<{elseif $type == 5}>
+                    <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+                        {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+                    },
+<{/if}>
+<{/if}>
+<{/foreach}>
+                },
+<{/foreach}>
+<{if $cnf_special.extra != ""}>
+            },
+<{/if}>
+<{/if}>
+<{/foreach}>
+<{* 列出三维数组数据 end *}>
+        },
+<{/if}>
+<{* 三维数组 end *}>
+<{/if}>
+<{* 二维数组 *}>
+<{if $special_extra.s_count == 2}>
+<{* 先列出重复数据 *}>
+<{if $kk != "LIST" && $vv != ""}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['vv']);<{/php}>
+<{if $type == 1}>
+        <{$kk}> = <{$vv}>,
+<{elseif $type == 2}>
+        <{$kk}> = <{if $vv == "PHP_EMPTY"}>[[]]<{else}>[[<{$vv}>]]<{/if}>,
+<{elseif $type == 3}>
+        <{$kk}> = {<{foreach from=$vv item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{elseif $type == 4}>
+        <{$kk}> = {
+<{foreach from=$vv item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+        },
+<{elseif $type == 5}>
+        <{$kk}> = {
+<{foreach from=$vv item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+        },
+<{/if}>
+<{* 再列出list数据 *}>
+<{else}>
+<{if $cnf_special.extra != ""}>
+        <{$cnf_special.extra}> = {
+<{/if}>
+<{foreach from=$vv item="l_val" key="l_key"}>
+            [<{$l_key}>] = {
+<{foreach from=$l_val item="v" key="k"}>
+<{if $v != ""}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['v']);<{/php}>
+<{if $type == 1}>
+                <{$k}> = <{$v}>,
+<{elseif $type == 2}>
+                <{$k}> = <{if $v == "PHP_EMPTY"}>[[]]<{else}>[[<{$v}>]]<{/if}>,
+<{elseif $type == 3}>
+                <{$k}> = {<{foreach from=$v item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{elseif $type == 4}>
+                <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+                    {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+                },
+<{elseif $type == 5}>
+                <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+                    {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+                },
+<{/if}>
+<{/if}>
+<{/foreach}>
+            },
+<{/foreach}>
+<{if $cnf_special.extra != ""}>
+        },
+<{/if}>
+<{/if}>
+<{* 列出list数据 end *}>
+<{/if}>
+<{* 二维数组 end *}>
+<{/foreach}>
+<{php}>$this->_tpl_vars['i']++;<{/php}>
+    },
+<{/foreach}>
+<{* 特殊处理1(处理erl联合key) end *}>
+<{* 正常情况 *}>
+<{else}>
+<{* 遍历所需工作表数据 *}>
+<{foreach from=$ui_client[$num] item="val" key="key"}>
+<{* key,(id or 自增) *}>
+    [<{if isset($val.id)}><{$val.id}><{else}><{$i}><{/if}>] = {
+<{* 其他字段 *}>
+<{foreach from=$val item="v" key="k"}>
+<{* 判断值非空 *}>
+<{if $v != "" && (($special_type == 2 && $k != "id") || $special_type != 2)}>
+<{* 获取值类型 *}>
+<{php}>$this->_tpl_vars['type'] = dispose_cnf_type($this->_tpl_vars['v']);<{/php}>
+<{* 数字 *}>
+<{if $type == 1}>
+        <{$k}> = <{$v}>,
+<{* 字符串 *}>
+<{elseif $type == 2}>
+        <{$k}> = <{if $v == "PHP_EMPTY"}>[[]]<{else}>[[<{$v}>]]<{/if}>,
+<{* 一位数组 *}>
+<{elseif $type == 3}>
+        <{$k}> = {<{foreach from=$v item="v2" key="k2"}><{$v2}>, <{/foreach}>},
+<{* 二位数组 *}>
+<{elseif $type == 4}>
+        <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}><{$v3}>, <{/foreach}>},
+<{/foreach}>
+        },
+<{* 三位数组 *}>
+<{elseif $type == 5}>
+        <{$k}> = {
+<{foreach from=$v item="v2" key="k2"}>
+            {<{foreach from=$v2 item="v3" key="k3"}>{<{foreach from=$v3 item="v4" key="k4"}><{$v4}>, <{/foreach}>}, <{/foreach}>},
+<{/foreach}>
+        },
+<{/if}>
+<{/if}>
+<{/foreach}>
+<{* 自增索引 *}>
+<{php}>$this->_tpl_vars['i']++;<{/php}>
+    },
+<{/foreach}>
+<{/if}>
+<{/foreach}>
+};
+<{/if}>

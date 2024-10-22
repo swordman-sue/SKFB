@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>文章管理</title>
+    <meta name="keywords" content="H+后台主题,后台bootstrap框架,会员中心主题,后台HTML,响应式后台">
+    <meta name="description" content="H+是一个完全响应式，基于Bootstrap3最新版本开发的扁平化主题，她采用了主流的左右两栏式布局，使用了Html5+CSS3等现代技术">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/Admin/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <style>
+      th{
+        text-align: center;
+      }
+    </style>
+	<script>
+		function ActivationCodeDel() {
+			var msg = "您真的确定要删除吗?";
+			if (confirm(msg)==true){
+				return true;
+			}else{
+				return false;
+			}
+		}
+	</script>	
+		
+</head>
+
+<body class="gray-bg">
+
+    <div class="wrapper wrapper-content animated fadeInUp">
+        <div class="row">
+            <div class="col-sm-12">
+
+                <div class="ibox">
+					<div class="row m-b-sm m-t-sm">
+						<div class="col-md-1">
+							<button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+						</div>
+					</div>				
+					
+					<!--<p>激活码</p> -->
+					<form action="{:U('Admin/ActivationCode/index')}" method="post" align ='center'>
+						<fieldset>
+							<legend>生成激活码:</legend>
+							激活码类型:                                
+							<input type="radio" name="type" value="personal" checked>个人激活码
+							<input type="radio" name="type" value="common">公共激活码
+							<br><br>
+							激活码数量(单次上限10万):<input type="text" name="code_numb" oninput="value=value.replace(/[^\d]/g,'')"> 
+							<br><br>
+							奖励的物品ID(CP提供):<input type="text" name="reward_id" oninput="value=value.replace(/[^\d]/g,'')"> 
+							<br><br>
+							激活码有效期:<input type="date" name="expire_time" style="width:230px;height:35px">
+							<br><br>							
+							<input type="submit" value="生成">
+							
+						</fieldset>
+					</form>					
+                    <div class="ibox-content">
+                        <div class="project-list">
+                            <table class="table table-hover" style="text-align:center">
+                                <tbody>
+									<h2 align ='center'>激活码列表</h2>
+                                  <tr> 
+									  <th><i class=""></i>激活码批次</th>
+									  <th><i class=""></i>激活码类型</th>
+                                      <th><i class=""></i>奖励物品ID</th>
+                                      <th><i class=""></i>使用情况(剩余/上限)</th>
+									  <th><i class=""></i>有效期</th>
+									  <th><i class=""></i>生成时间</th>
+									  <th><i class=""></i>操作</th>
+                                  </tr>
+								  
+                                  <volist name="result" id="vo">
+                                    <tr>
+										<td >{$vo.batch}</td>
+										<td >{$vo.type}</td>
+										<td >{$vo.reward_id}</td>
+										<td >{$vo.remain_num}/{$vo.total_num}</td>
+										<td >{$vo.expire_time}</td>
+										<td >{$vo.create_time}</td>
+										<td >
+										 <a href="{:U('Admin/ActivationCode/export','batch='.$vo['batch'])}" class="btn btn-white btn-sm" style="background-color: #2a62bc;color: #FFF;" >导出 </a>
+										 <a href="{:U('Admin/ActivationCode/edit','batch='.$vo['batch'])}" class="btn btn-white btn-sm" style="background-color: #2a62bc;color: #FFF;"> 修改 </a>
+										 <a href="{:U('Admin/ActivationCode/del','batch='.$vo['batch'])}" class="btn btn-white btn-sm" style="background-color: #2a62bc;color: #FFF;" onclick="javascript:return ActivationCodeDel();" > 删除 </a>									  
+										</td>
+                                    </tr>
+                                  </volist>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <style>
+                        .current{
+                            background: greenyellow;
+                        }
+                    </style>
+                        <div  class="dataTables_paginate paging_simple_numbers">
+                            <b>{$page}</b>
+                            <style>
+                                .dataTables_paginate b a ,
+                                .dataTables_paginate b span
+                                {
+                                    border: 1px solid #ddd;
+                                    padding: 6px 12px;
+                                    font-weight: normal;
+                                }
+                            </style>
+                        </div>
+                </div>
+            </div>
+        </div>
+    <script src="__PUBLIC__/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/Admin/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/Admin/js/plugins/sweetalert/sweetalert.min.js"></script>
+    <script>
+        $(".del").click(function() {
+              swal({
+                 // title: "您确定要删除吗",
+                  //text: "删除后将无法恢复，请谨慎操作！",
+                  type: "warning",
+                  showCancelButton: true,
+                  //confirmButtonColor: "#1647a1",
+                  confirmButtonText: "确定",
+                  cancelButtonText: "取消",
+                  closeOnConfirm: false,
+                  closeOnCancel: false
+              }, function(isConfirm) {
+                  if (isConfirm) {
+                      swal("删除成功！", "您已经永久删除了这条信息。", "success")
+                  } else {
+                      swal("已取消", "您取消了删除操作！", "error")
+                  }
+              })
+		});
+
+       $(document).ready(function(){$("#loading-example-btn").click(function(){btn=$(this);simpleLoad(btn,true);simpleLoad(btn,false)})});function simpleLoad(btn,state){if(state){btn.children().addClass("fa-spin");btn.contents().last().replaceWith(" Loading")}else{setTimeout(function(){btn.children().removeClass("fa-spin");btn.contents().last().replaceWith(" Refresh")},2000)}};
+          $('#loading-example-btn').click(function(){
+              location.reload();
+          })
+    </script>
+    </body>
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/projects.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:44 GMT -->
+</html>

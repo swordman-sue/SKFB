@@ -1,0 +1,8 @@
+由于google对于obb的规则如下：
+1、多个apk可共用一个obb
+2、可单独上传新的apk
+3、不可单独上传新的obb，必须和新的apk一起上传
+
+所以分两种情况
+1、同时上传新的apk和obb，将AndroidManifest.xml中的OBB_VERSION字段移除
+2、只上传新的apk，在AndroidManifest.xml中添加OBB_VERSION字段，并设置为匹配的OBB版本(可以咨询运营哥们，获取google后台上最新的OBB版本)

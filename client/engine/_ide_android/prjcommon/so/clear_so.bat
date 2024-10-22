@@ -1,0 +1,4 @@
+
+xcopy backup\*.* ..\jni
+
+pause

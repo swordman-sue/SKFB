@@ -1,0 +1,1778 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>Administrator</LastAuthor>
+  <Created>2014-06-04T06:21:39Z</Created>
+  <LastSaved>2019-03-29T20:57:19Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-11.1.0.8573</KSOProductBuildVer>
+  <KSOReadingLayout dt:dt="boolean">1</KSOReadingLayout>
+ </CustomDocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12465</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s26" ss:Name="好">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s66" ss:Parent="s26">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#008000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#FF0000"
+    ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#FF0000"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#FF0000" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior ss:Color="#808080" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <NumberFormat ss:Format="@"/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="配置">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="142.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="111"/>
+   <Column ss:AutoFitWidth="0" ss:Width="187.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="114.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="162.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="231"/>
+   <Column ss:AutoFitWidth="0" ss:Width="147"/>
+   <Column ss:AutoFitWidth="0" ss:Width="165.75"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">服务端文件名</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">服务端对应工作表号</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端文件名</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端对应工作表号</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl头部</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl内容格式</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl尾部</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端特殊处理</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="108">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">config_common.txt</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">config_common.cnf|Common</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">get(id) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s62"/>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">2=&gt;id</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="通用配置">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="315" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s64" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="51.75"/>
+   <Column ss:StyleID="s64" ss:Width="96.75"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="125.25"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="195"/>
+   <Column ss:StyleID="s64" ss:AutoFitWidth="0" ss:Width="342"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">id|id</Data></Cell>
+    <Cell><Data ss:Type="String">int_value|int_value</Data></Cell>
+    <Cell><Data ss:Type="String">string_value|string_value</Data></Cell>
+    <Cell><Data ss:Type="String">value_list|value_list</Data></Cell>
+    <Cell><Data ss:Type="String">|</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不可空</Data></Cell>
+    <Cell><Data ss:Type="String">可空#需字段</Data></Cell>
+    <Cell><Data ss:Type="String">可空#需字段</Data></Cell>
+    <Cell><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell><Data ss:Type="String">可空#不需字段</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+    <Cell><Data ss:Type="String">字符串</Data></Cell>
+    <Cell><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell><Data ss:Type="String">字符串</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="4"><Data ss:Type="String">不定长</Data></Cell>
+   </Row>
+   <Row ss:Index="6" ss:AutoFitHeight="0" ss:StyleID="s66">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">配置ID</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">数字值</Data><Comment
+      ss:Author="Administrator"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">Administrator:&#10;对应头像在ui_common_16.csprite中的名字</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">字符串值</Data><Comment
+      ss:Author="电脑城"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">电脑城:&#10;第一个为默认</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">字符串值</Data><Comment
+      ss:Author="电脑城"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">电脑城:&#10;第一个为默认</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">描述</Data><Comment ss:Author="电脑城"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><Font html:Size="9">电脑城:&#10;第一个为默认</Font></ss:Data></Comment></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">每天可进行普通免费召唤的次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">普通召唤CD（单位:分）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">1440</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级召唤CD（单位:分）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">10018</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">普通召唤消耗的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10019</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级召唤消耗的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级召唤消耗的元宝</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">2700</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级批量召唤消耗的元宝</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级批量召唤的次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">普通批量召唤的次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级召唤必出指定英雄需要的次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">100|300</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">每N怒气一个点|公共怒气上限值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s68"><Data ss:Type="String">近战技能起手范围（像素）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">2000</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s68"><Data ss:Type="String">远程技能公共CD（毫秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s68"><Data ss:Type="String">近战技能碰撞范围（像素）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Index="5" ss:StyleID="s68"><Data ss:Type="String">碰撞后被击退距离（像素）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">近战碰撞特效ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">10011|10012|10013|10014</Data></Cell>
+    <Cell><Data ss:Type="String">装备精练消耗物品列表</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">每次可获得的精力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">每次可赠送的精力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗中首个出生点与边界的间隔</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗中同职业队友出生点间隔</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗中不同职业队友出生点间隔加成</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell><Data ss:Type="String">夺宝免战物品列表</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="Number">1</Data><Comment
+      ss:Author="Administrator"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">可用小数</Font></ss:Data></Comment></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">近战技能攻击前移速度系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">叛军随机出现几率（万分比）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">0|50|100|200|400|800|1600</Data></Cell>
+    <Cell><Data ss:Type="String">重置爬塔消耗钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">31</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">30|40|50|60|70|80|90|100</Data></Cell>
+    <Cell><Data ss:Type="String">购买爬塔挑战次数消耗</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">爬塔精英关卡每日免费挑战次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">领地暴动镇压次数上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">10016</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">免战牌（小）在商城中的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">10017</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">免战牌（大）在商城中的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">36</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1200|1400</Data></Cell>
+    <Cell><Data ss:Type="String">全力一击消耗减半时间[开始时间|结束时间]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1800|2200</Data></Cell>
+    <Cell><Data ss:Type="String">攻打叛军功勋翻倍时间[开始时间|结束时间]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">38</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">叛军普通攻击消耗（征讨令）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">39</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">叛军全力一击攻击消耗（征讨令）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+    <Cell><Data ss:Type="Number">25000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">叛军全力一击攻击倍数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">夺宝攻打玩家的关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">42</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">工会解散时成员数量上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">43</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1.15|1.3|1.6</Data></Cell>
+    <Cell><Data ss:Type="String">战斗加速表</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">44</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">竞技场关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">720</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">0000|1200|1800</Data></Cell>
+    <Cell><Data ss:Type="String">公会限时商店刷新时间段</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">46</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄商店免费刷新恢复间隔时间（分钟）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">47</Data></Cell>
+    <Cell><Data ss:Type="Number">10021</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">刷新令物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">48</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄商店刷新消耗的雄魂值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">49</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄商店每日免费刷新次数上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">主线副本扫荡的星数条件</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">主线副本扫荡的队伍等级条件</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15">
+    <Cell><Data ss:Type="Number">52</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">主线副本默认扫荡次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">53</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS默认可挑战次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">54</Data></Cell>
+    <Cell><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS复活时间（秒）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">55</Data></Cell>
+    <Cell><Data ss:Type="Number">5000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS阵营伤害加成（万分比）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">56</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS阵营伤害减少（万分比）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">57</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS固定功勋奖励</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">100|1000</Data></Cell>
+    <Cell><Data ss:Type="String">世界BOSS结算幸运暴击奖励（值|几率）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">200|500</Data></Cell>
+    <Cell><Data ss:Type="String">世界BOSS结算大暴击奖励（值|几率）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">60</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">刷觉醒商店需要的神魂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">20|30</Data></Cell>
+    <Cell><Data ss:Type="String">主线副本重置消耗</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">62</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">摇钱树累积奖励次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">63</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">迎财神领取奖励的间隔时间(分)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">64</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">迎财神每日领取奖励的次数上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">65</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">铜雀台领取的体力值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">66</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">觉醒商店每日免费刷新次数上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">67</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">觉醒商店刷新消耗的将魂值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">68</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">觉醒商店免费刷新恢复间隔时间（分钟）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">5|5|10|10|15|15|20|20|25|25|30|30|35|35|40|40</Data></Cell>
+    <Cell><Data ss:Type="String">购买军团副本挑战次数消耗元宝</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">5|5|10|10|15|15|20|20|25|25|30|30|35|35|40|40</Data></Cell>
+    <Cell><Data ss:Type="String">购买世界BOSS挑战次数消耗元宝</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">71</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">挑战竞技场消耗的体力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17.25">
+    <Cell><Data ss:Type="Number">72</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">73</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">74</Data></Cell>
+    <Cell><Data ss:Type="Number">900</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">击退初速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">75</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">76</Data></Cell>
+    <Cell><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">合击镜头放大倍数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">77</Data></Cell>
+    <Cell><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">合击镜头拉近时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">78</Data></Cell>
+    <Cell><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">合击镜头恢复时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">79</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗胜利后的速度系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">过场的速度系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">81</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">仙灵副本每次免费刷新次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">82</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">体力药剂ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">83</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">精力药剂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">84</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗结束的慢镜时长</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">85</Data></Cell>
+    <Cell><Data ss:Type="Number">0.1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗结束的慢镜初始速度系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">86</Data></Cell>
+    <Cell><Data ss:Type="Number">10004</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">天命石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">87</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">跑步脚底烟尘特效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">88</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">击退脚底烟尘特效</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">89</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">培养石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">90</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">爬塔扫荡需要角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">91</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">夺宝挑战玩家消耗精力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">92</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">夺宝5次消耗精力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">93</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛每日免费刷新次数(目前已不使用)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">94</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛刷新消耗钻石(目前已不使用)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">95</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛每日挑战次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">96</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">10|20|30|40|50</Data></Cell>
+    <Cell><Data ss:Type="String">积分赛购买次数消耗钻石列表(目前已不使用)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">97</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">20|30</Data></Cell>
+    <Cell><Data ss:Type="String">精英副本重置消耗</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">98</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">4|40</Data></Cell>
+    <Cell><Data ss:Type="String">培养5次需要的vip等级或者战队等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">5|55</Data></Cell>
+    <Cell><Data ss:Type="String">培养10次需要的vip等级或者战队等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="Number">3000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">领地暴乱几率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">101</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">10|20|30|40|50|60|70</Data></Cell>
+    <Cell><Data ss:Type="String">购买争霸赛挑战次数消耗元宝</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">102</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄培养所需最低等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">103</Data></Cell>
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">宝物熔炼消耗钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">104</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">进阶石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">105</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">主城没有指引的情况下添加前往主线副本指引的限制等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">106</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">购买开服基金消耗的钻石（旧）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">107</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">13|3|31</Data><Comment
+      ss:Author="Administrator"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">Administrator:&#10;预告等级|VIP开放等级|实际开启等级</Font></ss:Data></Comment></Cell>
+    <Cell><Data ss:Type="String">夺宝抢夺5次功能</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">108</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">3倍战斗加速开启的角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">109</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">36|45|54|63|72|81|90|99|108|117|126|135|144|153|162|171|180|189|198</Data></Cell>
+    <Cell><Data ss:Type="String">系统公告广播爬塔层数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">110</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">月卡周期天数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">111</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">装备精练开始公告等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">112</Data></Cell>
+    <Cell><Data ss:Type="Number">0.4</Data><Comment ss:Author="Administrator"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><Font html:Size="9">Administrator:&#10;0~1.0</Font></ss:Data></Comment></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">副本背景音乐音量大小</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">跳过战斗加速</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">114</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">创建军团需要钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">115</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">创建军团需要的VIP等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">116</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">装备一键强化需要的VIP等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">117</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">装备一键强化需要的角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">118</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">公会可接受同时多少人申请</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">119</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">工会同时申请加入工会数量上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell><Data ss:Type="Number">168</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">弹劾会长需要的离线时间(小时)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">121</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">退出公会后X小时内不可申请加入新的公会(小时)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">122</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">好友每日可助战次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">123</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">求助好友获得的友情点上限(每日)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">124</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">0600|1200|1800</Data></Cell>
+    <Cell><Data ss:Type="String">外敌刷新时间列表[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">125</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">好友助战获得的友情点</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">126</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">当前活动公告的ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">127</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">七天活动，宝箱进度上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">128</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">开游戏弹出公告等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">129</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">200|2000</Data></Cell>
+    <Cell><Data ss:Type="String">初级召唤需要的友情点</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">130</Data></Cell>
+    <Cell><Data ss:Type="Number">360</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">邮件有效时间(小时)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">131</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">助战好友获得的友情点(每日)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">132</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1000|2330</Data></Cell>
+    <Cell><Data ss:Type="String">工会副本活动时间[开始时间|结束时间]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">133</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">工会副本每日默认挑战次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">134</Data></Cell>
+    <Cell ss:Formula="=2*60"><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">挑战次数回复时间(分钟)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">135</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">100000|200000|500000|1000000|2000000|5000000|10000000|20000000|50000000</Data></Cell>
+    <Cell><Data ss:Type="String">系统公告广播战力</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">136</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">游戏帮助公告(分钟)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">137</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">至少多少等级才可助战</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">138</Data></Cell>
+    <Cell><Data ss:Type="Number">3600</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">关卡评论CD(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">139</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">突破等级广播</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">140</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗至少使用的时间(毫秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">141</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1|3</Data></Cell>
+    <Cell><Data ss:Type="String">可以使用精灵的副本类型队列</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">142</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">可以使用助战的副本类型队列</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">143</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">心跳间隔时间下限(秒)(程序哥哥来配置)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">144</Data></Cell>
+    <Cell><Data ss:Type="Number">16247</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">短信提示模板ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">145</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">助战目标等级下限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">146</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">助战目标等级上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">147</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">助战好友数量</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">148</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">助战陌生人数量</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">149</Data></Cell>
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">关卡留言字符串长度(汉字)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell><Data ss:Type="Number">10002</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">实时PVP活动关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">151</Data></Cell>
+    <Cell><Data ss:Type="Number">1800</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界BOSS挑战次数恢复CD(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">152</Data></Cell>
+    <Cell><Data ss:Type="Number">1.45</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">1V1副本加速系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">153</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">pvp获得奖励的挑战次数上限(超过此次数则没有奖励)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">154</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">PVP等待挑战时间上限(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">155</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">PVP一场战斗的总时间(分)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">156</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">购买基金需要的vip等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">157</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">购买基金需要消耗的钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">158</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">166|366|50|200</Data></Cell>
+    <Cell><Data ss:Type="String">进入怪物攻城及复活点的区域（相对于可移动区域左下角）[左,右,下,上]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">159</Data></Cell>
+    <Cell><Data ss:Type="Number">0.8</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城模型缩放系数（英雄表系数乘以这个）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">160</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">0.1|0.3|0.5|0.8|1|1.1</Data></Cell>
+    <Cell><Data ss:Type="String">攻城场景分层移动速度系数（天空|远景|城堡|雕像|地面|近景）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">161</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">34|1670|100|350</Data></Cell>
+    <Cell><Data ss:Type="String">攻城场景可移动区域[左,右,下,上]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">162</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">怪物攻城场景移动速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">163</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1000|100</Data></Cell>
+    <Cell><Data ss:Type="String">攻城boss刷出点（相对于可移动区域左下角）[x,y]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">164</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">800|1200|50|150</Data></Cell>
+    <Cell><Data ss:Type="String">攻城boss爆出宝箱随机点（相对于可移动区域左下角）[左,右,下,上]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">165</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">300|1636|50|200</Data></Cell>
+    <Cell><Data ss:Type="String">怪物出生随机点</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">166</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">拾取宝箱读条时间(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">167</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城死亡复活时间(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">168</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城死亡复活消耗钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">169</Data></Cell>
+    <Cell><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城刷宝箱CD(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">170</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城刷怪CD(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">171</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">攻城BOSS死亡后刷怪时间(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">172</Data></Cell>
+    <Cell><Data ss:Type="Number">500</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">pvp属性浮动上下限比例(万分比)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">173</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">点击的时候字幕滚动加速的倍率</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">174</Data></Cell>
+    <Cell><Data ss:Type="Number">10023</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无尽之地门票ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">175</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">怪物攻城刷宝箱数量上限(同时存在)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">176</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无尽之地每天碰撞奖励次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">177</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无尽之地免费次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">179</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-边界</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell><Data ss:Type="Number">1.3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-初始缩放系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">181</Data></Cell>
+    <Cell><Data ss:Type="Number">1.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-最大缩放系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">182</Data></Cell>
+    <Cell><Data ss:Type="Number">0.3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-拉远速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">183</Data></Cell>
+    <Cell><Data ss:Type="Number">0.1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-拉近速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">184</Data></Cell>
+    <Cell><Data ss:Type="Number">320</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗镜头相关-移动速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">185</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">10|0|15|5</Data></Cell>
+    <Cell><Data ss:Type="String">战斗镜头缩放信息</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">186</Data></Cell>
+    <Cell><Data ss:Type="Number">10007</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无尽之地关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">187</Data></Cell>
+    <Cell><Data ss:Type="Number">1.3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">地形层与人物层之间的比例</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">188</Data></Cell>
+    <Cell><Data ss:Type="Number">13311</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">次日奖励礼包ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">189</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">PVP发称号奖励日期(星期几)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">190</Data></Cell>
+    <Cell><Data ss:Type="Number">2135</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">PVP发称号奖励时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">191</Data></Cell>
+    <Cell><Data ss:Type="Number">2130</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">PVP每天发排行奖励时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">192</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">怪物攻城活动结束后延迟多久发奖励(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">193</Data></Cell>
+    <Cell><Data ss:Type="Number">2200</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">竞技场发奖励时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">194</Data></Cell>
+    <Cell><Data ss:Type="Number">2230</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无心之地发奖励时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">195</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">公会任命人数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">196</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">一键升级需要英雄等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">197</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">我要变强软指引等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">198</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">周几发放无尽之地称号奖励(0=表示星期天)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">199</Data></Cell>
+    <Cell><Data ss:Type="Number">2230</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">无尽之地发放称号奖励时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄等级上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">201</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="String">直购商品刷新时间列表[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">202</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">是否上报充值数据(1=上报,0=不上报)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">203</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">心跳过快限制次数(程序哥哥来配置)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">204</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">爬塔精英开启等级限制</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">205</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">17年10月27日0时~17年10月30日0时</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">201710270000|201710300000</Data></Cell>
+    <Cell><Data ss:Type="String">直购商店时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">206</Data></Cell>
+    <Cell ss:Index="3"><Data ss:Type="String">17年10月27日0时~17年10月30日0时</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">201710270000|201710300000</Data></Cell>
+    <Cell><Data ss:Type="String">精准推送商店时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">207</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">pvp添加英雄血量比例(万分比)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">208</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界聊天频道需要的角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">209</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">怪物攻城普通战场有效时间(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">210</Data></Cell>
+    <Cell><Data ss:Type="Number">32341</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">普通招募首次招募必出指定英雄</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">211</Data></Cell>
+    <Cell><Data ss:Type="Number">10101</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队抽奖消耗的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">212</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">弹劾所需消耗</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">213</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">多少级之前副本的弱指引</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">214</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队答题时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">215</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">最多答题数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">216</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">答题通过最少需要正确人数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">217</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">发放封测充值返利等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">218</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">聊天CD</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">219</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">显示精准推送的区</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">220</Data></Cell>
+    <Cell><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">5|50000</Data></Cell>
+    <Cell><Data ss:Type="String">程序的专用配置,策划别动!</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">221</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">天梯赛王者段位胜利后的积分增加值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">222</Data></Cell>
+    <Cell><Data ss:Type="Number">10008</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">天梯赛关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">223</Data></Cell>
+    <Cell><Data ss:Type="Number">1000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">王者赛每日开始时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">224</Data></Cell>
+    <Cell><Data ss:Type="Number">2300</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">王者赛每日结束时间[小时分钟]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">225</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">开服几天后能进王者</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">226</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">装备开启一键精炼的角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">227</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">圣器开启一键强化的角色等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">228</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队副本推荐玩家数量上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">229</Data></Cell>
+    <Cell><Data ss:Type="Number">1.1000000000000001</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">宝石缩放系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">230</Data></Cell>
+    <Cell><Data ss:Type="Number">180</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队副本BOSS挑战限时时间(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">231</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">王者赛出战英雄血量加成</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">232</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队世界地图模型缩放系数（英雄表系数乘以这个）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">233</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队世界地图移动速度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">234</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">组队副本答题答错机会次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">235</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">45|6</Data></Cell>
+    <Cell><Data ss:Type="String">一键夺宝开放条件（角色等级|VIP等级）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">236</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">精灵一键培养培养开放等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">237</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">潜能自动提升开放等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">238</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">300000|1000000</Data></Cell>
+    <Cell><Data ss:Type="String">王者赛预先加载的玩家战斗区间[下限|上限]</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">239</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">低级卡组刷新次数恢复时间（单位:分）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">240</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">低级卡组刷新次数恢复上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">241</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">20|20|20|20|20|50|50|50|50|50|100|100|100|100|100|100|100|100|100|100|200|200|200|200|200|200|200|200|200|200|300</Data></Cell>
+    <Cell><Data ss:Type="String">低级卡组刷新消耗的钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">242</Data></Cell>
+    <Cell><Data ss:Type="Number">1440</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级卡组刷新CD（单位:分）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">243</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">50|50|50|50|50|100|100|100|100|100|200|200|200|200|200|200|200|200|200|200|300|300|300|300|300|300|300|300|300|300|500</Data></Cell>
+    <Cell><Data ss:Type="String">高级卡组刷新消耗的钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">244</Data></Cell>
+    <Cell><Data ss:Type="Number">480</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">星魂商店自动刷新时间间隔(分钟)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">245</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">星魂商店每天刷新上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">246</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">星魂商店刷新消耗的星魂</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">247</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">低级卡组每日免费翻卡次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">248</Data></Cell>
+    <Cell><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">低级卡组翻卡消耗的金币</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">249</Data></Cell>
+    <Cell><Data ss:Type="Number">10096</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">高级卡组翻卡消耗的物品ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">250</Data></Cell>
+    <Cell><Data ss:Type="Number">10009</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">卡牌进阶石id</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">251</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1|1</Data></Cell>
+    <Cell><Data ss:Type="String">低级卡组翻卡获得的命运币随机范围(下限|上限)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">252</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">20|50</Data></Cell>
+    <Cell><Data ss:Type="String">高级卡组翻卡获得的命运币随机范围(下限|上限)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">253</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">精灵技能入场CD(秒)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">254</Data></Cell>
+    <Cell><Data ss:Type="Number">70324</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">默认卡牌获取对象</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">255</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">收不到补偿奖励的限定离线时间(天)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">256</Data></Cell>
+    <Cell><Data ss:Type="Number">10087</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">圣诞帽</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">257</Data></Cell>
+    <Cell><Data ss:Type="Number">33300</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">紫色传承核心</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">258</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">回收红点装备条件</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">259</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">日常任务显示等级差值</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">260</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">回收红点英雄条件</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">261</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">服务器开启多少天后开放英雄对决</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">262</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">英雄页签显示红点所需培养丹数量</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">263</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">改名消耗的道具数量</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">264</Data></Cell>
+    <Cell><Data ss:Type="Number">10091</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">改名消耗的道具</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">265</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">是否显示活动公告</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">266</Data></Cell>
+    <Cell><Data ss:Type="Number">120</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">至尊卡购买CD</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">267</Data></Cell>
+    <Cell><Data ss:Type="Number">1002</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">至尊卡id</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">268</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">配置一个队伍等级，在强制指引结束后，处于这个等级的玩家第一次打开选章界面时，把英雄奖励的界面弹出来一次。</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">269</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">30300|30310|30320|30330|30340|31300|31310|31320|31330|31340|31301|31341|32300|32310|32320|32330|32340|32311|32341</Data></Cell>
+    <Cell><Data ss:Type="String">审核版本创建角色随机英雄列表</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">270</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">阵容推荐界面如果等待时长超过该值，则在返回按钮加手指</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">271</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">VIP走马灯公告的最低等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">272</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">每日助战次数上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">273</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">弹幕开启等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">274</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界频道发言需要VIP等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">275</Data></Cell>
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">剩余总血量/存活英雄的总血量的百分比，则这时候自动战斗绝对不会使用治疗类怒气技能</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">276</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">unlockFB评分界面出现时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">277</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">unlockFB评分界面出现等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">278</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">水晶商店刷新次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">279</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界等级任务系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">280</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">精灵技能拖动减速为</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">281</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">竞技场血量修正系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">282</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">日常任务统计购买体力ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">283</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">日常任务统计购买精力ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">284</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">扭蛋一次消耗钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">285</Data></Cell>
+    <Cell><Data ss:Type="Number">1900</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">扭蛋十次消耗钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">286</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">礼包单次可开上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">287</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1500|4000|6000</Data></Cell>
+    <Cell><Data ss:Type="String">积分赛查找目标战力比例上限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">288</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">1500|4000|6000</Data></Cell>
+    <Cell><Data ss:Type="String">积分赛查找目标战力比例下限</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">289</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛关卡ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">290</Data></Cell>
+    <Cell><Data ss:Type="Number">3354</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛收益系数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">291</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">资源栏钻石跳转</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">292</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">屏蔽联系GM</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">293</Data></Cell>
+    <Cell><Data ss:Type="Number">10004</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">资源战</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">294</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">资源战军团占领人数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">295</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">战斗中的英雄间出生点Y坐标偏移</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">296</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">新建角色发送邮件ID（目前越南版用到）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">297</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">累充倍数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+    <Cell><Data ss:Type="Number">0.2</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">一钻等于多少越南币</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">301</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">越南充值是使用网页还是协议（0是网页1是协议）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">302</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">vip召唤所需vip等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">303</Data></Cell>
+    <Cell><Data ss:Type="Number">3000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">vip召唤所需钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">304</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">一键抽奖的次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">305</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">2000</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">充值榜上榜需要的充值额度</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">306</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="Number">2700</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">消费榜上榜需要的消耗的钻石</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">307</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">资源战血量修正</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">308</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">积分赛血量修正</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">309</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">20190126|0000</Data></Cell>
+    <Cell><Data ss:Type="String">充值榜发奖励时间</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">310</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">创建军团需要的充值额度(元)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">311</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">镜头拉近时长</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">312</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">QTE后特效时长</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">313</Data></Cell>
+    <Cell><Data ss:Type="Number">0.5</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">镜头恢复时长</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">314</Data></Cell>
+    <Cell ss:Index="4"><Data ss:Type="String">4|1.5|10|30</Data></Cell>
+    <Cell><Data ss:Type="String">QTE判断（初始大小|缩放时间|完美范围百分比|一般范围百分比）</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">315</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">世界聊天频道需要的GM等级</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">316</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:Index="5"><Data ss:Type="String">挂机收获的最大时间间隔(小时)</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <TopRowVisible>291</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>314</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

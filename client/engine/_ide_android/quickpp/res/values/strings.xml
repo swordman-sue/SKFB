@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">时空风暴</string><!-- Android App Name -->
+    <string name="zl_bad_network">无法连接网络，请设置</string>
+    <string name="zl_setting">设置</string>
+    <string name="zl_cancel">取消</string>
+    <string name="zl_exit_info">信息</string>
+    <string name="zl_exit_ok">确定</string>
+    <string name="zl_exit_cancel">取消</string>
+</resources>

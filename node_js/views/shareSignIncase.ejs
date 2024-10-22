@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>我的7天成就，欢迎点赞围观
+    </title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            font-size: 14px;
+            background: url(http://<%=domain%>:<%=port%>/img/background_share.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        p {
+            line-height: 25px;
+            margin: 0;
+        }
+
+        .main {
+            z-index: 4;
+            width: 100%;
+            color: #FFF;
+            font-size: 16PX;
+        }
+
+        .text {
+            padding: 10px;
+            line-height: 25px;
+            font-weight: bold;
+            font-size: 14px;
+            border-bottom: 2px solid #DC69EB;
+            margin-bottom: 10px;
+        }
+
+        .text2 {
+            padding: 10px;
+            line-height: 25px;
+            font-size: 13px;
+            border-top: 2px solid #DC69EB;
+            margin-top: 10px;
+        }
+
+        .kongl {
+            position: relative;
+            min-height: 300px;
+        }
+
+        .bb {
+            position: absolute;
+            bottom: 0;
+            width: 260px;
+            left: 50%;
+            margin-left: -130px;
+        }
+
+        .kong {
+            position: absolute;
+            bottom: 25%;
+            width: 200px;
+            left: 50%;
+            margin-left: -100px;
+        }
+
+        .date-m {
+            float: left;
+            width: 100%;
+        }
+
+        .datelist {
+            float: left;
+            margin: 0;
+            padding: 0;
+        }
+
+        .datelist li {
+            list-style: none;
+            background: url(http://<%=domain%>:<%=port%>/img/ball_dark.png) center center no-repeat;
+            background-size: 60px;
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-right: -10px;
+        }
+
+        .datelist .on {
+            background: url(http://<%=domain%>:<%=port%>/img/ball_bright.png) center center no-repeat;
+            background-size: 60px;
+        }
+
+        .date-p {
+            float: left;
+            width: 100%;
+        }
+
+        .datelist .on-p {
+            background: url(http://<%=domain%>:<%=port%>/img/ball_bright.png) center center no-repeat;
+            background-size: 60px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .d7 {
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+
+        wx.config({
+            debug: false,
+            appId: '<%=appId%>',
+            timestamp: '<%= timestamp%>',
+            nonceStr: '<%=nonceStr%>',
+            signature: '<%=signature%>',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'hideOptionMenu',
+                'showOptionMenu',
+                'openLocation'
+            ]
+        });
+        wx.ready(function () {
+            var shareData = {
+                title: '我的7天成就，欢迎点赞围观',
+                desc: '我承诺连续7天“坚持<%=content%>”，现在已坚持了<%=totalSignNum%>天，欢迎大家围观监督',
+                link: '<%=url%>',
+                imgUrl: '<%=imgUrl%>'
+            };
+            wx.showOptionMenu();
+            wx.onMenuShareAppMessage(shareData);
+            wx.onMenuShareTimeline(shareData);
+            wx.onMenuShareQQ(shareData);
+        });
+        wx.error(function (res) {
+            //alert(res.errMsg);
+        });
+    </script>
+</head>
+<body>
+<img src="http://<%= domain %>:<%= port %>/img/nwlogo.png" width="100px" class="logo">
+</div>
+<div class="main" style="padding-top:40px;">
+    <div style="padding:0 10px">
+        <div style="text-align:center; font-size:20px;">我的7天成就，欢迎点赞围观</div>
+        <div class="text">
+            我在南方电网公司“落实社会主义核心价值观 培养员工好习惯”应用中，许下了坚持7天<%= content %>的承诺，现在已经坚持了<%= totalSignNum %>天，欢迎大家点赞围观。
+        </div>
+        <p style="font-size:12px; line-height:20px;">就要快了，我很快乐，我可以变得更好……<br/>
+            说做就做，坚持到底，看见明天的自己在向我招手！</p>
+
+        <p style=" text-align:center;font-size:14px; font-weight:bold; line-height:35px;">因为你的坚持，可爱的梦娃正在茁壮成长</p>
+
+        <div class="d7"><img src="http://<%= domain %>:<%= port %>/img/mw.png" width="30%"></div>
+        <div style="text-align:center; margin-bottom:10px;  line-height:28px;">
+            本任务签到天数：<%= totalSignNum %>
+            <br/>本任务签到积分：<%= integral %></div>
+        <div style="overflow:hidden;">
+            <div style="font-weight:bold;">7日签到日历：</div>
+            <div class="date-m">
+                <ul class="datelist">
+
+                    <% if(sign_in_num == 0){ %>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 1){ %>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 2){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 3){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 4){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 5){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 6){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num == 7){ %>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <li class="on"></li>
+                    <% } %>
+                </ul>
+            </div>
+            <div class="date-p">
+                <ul class="datelist">
+
+                    <% if(sign_in_num2 == 0){ %>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 1){ %>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 2){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 3){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 4){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 5){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 6){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li></li>
+                    <% } %>
+
+                    <% if(sign_in_num2 == 7){ %>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <li class="on-p"></li>
+                    <% } %>
+                </ul>
+            </div>
+        </div>
+        <div class="text2">
+            <div style="font-size: 20px;">如何开始好习惯养成之路：</div>
+            （注：本游戏仅限绑定了幸福南网微信号的南网员工使用）</br>
+            <span style="font-family: bold;color: red;">步骤一：进入。</span>打开“幸福南网”微信号，点击“幸福家园”-“好习惯”。</br>
+            <span style="font-family: bold;color: red;">步骤二：建立习惯。</span>选择1个习惯小组，描述自己的具体目标（如：每天坚持陪爸妈聊天20分钟、每天早上班10分钟进行工作计划等），点击“确定”。</br>
+            <span style="font-family: bold;color: red;">步骤三：邀请好友参与。</span>点击右上角“…”,将邀请函发送给已实名绑定“幸福南网”微信号的微信好友,邀其一起参与活动，实现目标。</br>
+            <span style="font-family: bold;color: red;">步骤四：好友接受邀请。</span>被邀请人收到邀请，长按邀请码并选择复制，然后打开“幸福南网”微信号，进入“好习惯”，选择“接受邀请”，输入邀请码并确认，成为你的好习惯搭档。</br>
+            <span style="font-family: bold;color: red;">步骤五：一起养成好习惯。</span>每天与搭档互相监督提醒，一起完成设定的目标，并坚持签到。
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

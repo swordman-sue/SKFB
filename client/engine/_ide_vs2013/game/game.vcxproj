@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4259B02F-6671-45D7-B0F2-0AB6E3AAD4F8}</ProjectGuid>
+    <RootNamespace>game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0'">v140</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '14.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v140_xp</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2dx.props" />
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IntDir>$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\..\sdz;$(ProjectDir)..\..\sdz\luaengine;$(ProjectDir)..\..\sdz\cocos2dxext;$(ProjectDir)..\..\sdz\fribidi;$(ProjectDir)..\..\cocos2dxlib\cocos;$(ProjectDir)..\..\cocos2dxlib\cocos\editor-support;$(ProjectDir)..\..\cocos2dxlib\cocos\audio\include;$(ProjectDir)..\..\cocos2dxlib\cocos\network;$(ProjectDir)..\..\cocos2dxlib\extensions;$(ProjectDir)..\..\cocos2dxlib\external;$(ProjectDir)..\..\cocos2dxlib\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\cocos2dxlib\external\curl\include\win32;$(ProjectDir)..\..\cocos2dxlib\external\win32-specific\zlib\include;$(ProjectDir)..\..\cocos2dxlib\external\win32-specific\zlib;$(ProjectDir)..\..\libs\include;$(ProjectDir)..\..\libs\include\luascript;$(ProjectDir)..\..\libs\include\luascript\lua;$(ProjectDir)..\..\libs\include\network;$(ProjectDir)..\..\libs\include\pbc;$(ProjectDir)..\..\libs\include\common;$(ProjectDir)..\..\libs\win\vdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1;FRIBIDI_STATIC;HAVE_STRINGIZE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);../../libs/win/vld/lib/Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;glew32.lib;IPHlpApi.lib;libcurl_imp.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>msvcrt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)..\..\sdz;$(ProjectDir)..\..\sdz\luaengine;$(ProjectDir)..\..\sdz\cocos2dxext;$(ProjectDir)..\..\sdz\fribidi;$(ProjectDir)..\..\cocos2dxlib\cocos;$(ProjectDir)..\..\cocos2dxlib\cocos\editor-support;$(ProjectDir)..\..\cocos2dxlib\cocos\audio\include;$(ProjectDir)..\..\cocos2dxlib\cocos\network;$(ProjectDir)..\..\cocos2dxlib\external;$(ProjectDir)..\..\cocos2dxlib\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\cocos2dxlib\extensions;$(ProjectDir)..\..\cocos2dxlib\external\curl\include\win32;$(ProjectDir)..\..\cocos2dxlib\external\win32-specific\zlib\include;$(ProjectDir)..\..\cocos2dxlib\external\win32-specific\zlib;$(ProjectDir)..\..\libs\include;$(ProjectDir)..\..\libs\include\include;$(ProjectDir)..\..\libs\include\luascript;$(ProjectDir)..\..\libs\include\luascript\lua;$(ProjectDir)..\..\libs\include\network;$(ProjectDir)..\..\libs\include\pbc;$(ProjectDir)..\..\libs\include\common;$(ProjectDir)..\..\libs\win\vdl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USE_MATH_DEFINES;GL_GLEXT_PROTOTYPES;CC_ENABLE_CHIPMUNK_INTEGRATION=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1;FRIBIDI_STATIC;HAVE_STRINGIZE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4267;4251;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>winmm.lib;opengl32.lib;glew32.lib;IPHlpApi.lib;libcurl_imp.lib;libcommon.lib;libluascript.lib;libnetwork.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>$(OutDir);../../libs/win/vld/lib/Win32;../../libs/win/vs2013/release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\sdz\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\..\sdz\cocos2dxext\texturecahceex.cpp" />
+    <ClCompile Include="..\..\sdz\cocos2dxext\ziputilsex.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\fileasync.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\fileasynchelper.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\filehelper.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\filesystemex.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\fileversion.cpp" />
+    <ClCompile Include="..\..\sdz\filesystem\setting.cpp" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-arabic.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-bidi-types.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-bidi.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-brackets.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cap-rtl.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cp1255.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cp1256.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-6.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-8.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-utf8.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-deprecated.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-joining-types.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-joining.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-mirroring.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-run.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-shape.c" />
+    <ClCompile Include="..\..\sdz\fribidi\fribidi.c" />
+    <ClCompile Include="..\..\sdz\gameengine\gameengine.cpp" />
+    <ClCompile Include="..\..\sdz\httpclient\httpclient.cpp" />
+    <ClCompile Include="..\..\sdz\httpmanager\httpconnection.cpp" />
+    <ClCompile Include="..\..\sdz\httpmanager\httpmanager.cpp" />
+    <ClCompile Include="..\..\sdz\httpmanager\httpstruct.cpp" />
+    <ClCompile Include="..\..\sdz\json\src\json_reader.cpp" />
+    <ClCompile Include="..\..\sdz\json\src\json_value.cpp" />
+    <ClCompile Include="..\..\sdz\json\src\json_writer.cpp" />
+    <ClCompile Include="..\..\sdz\location\location.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luacall.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luaengine.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luaerrorreport.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luamessageadapter.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luaprofile.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luaregister.cpp" />
+    <ClCompile Include="..\..\sdz\luaengine\luatinker\lua_tinker.cpp" />
+    <ClCompile Include="..\..\sdz\msgpush\msgpush.cpp" />
+    <ClCompile Include="..\..\sdz\netadapter\netadapter.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\locationtools.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\pushtools.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\sdktools.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\systemtools.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\view\webview.cpp" />
+    <ClCompile Include="..\..\sdz\platform\win32\voice.cpp" />
+    <ClCompile Include="..\..\sdz\resmanager\installer.cpp" />
+    <ClCompile Include="..\..\sdz\resmanager\resmanager.cpp" />
+    <ClCompile Include="..\..\sdz\sdkhandle\sdkhandle.cpp" />
+    <ClCompile Include="..\..\sdz\sound\soundmanager.cpp" />
+    <ClCompile Include="..\..\sdz\sound\voicehelper.cpp" />
+    <ClCompile Include="..\..\sdz\sound\voicemanager.cpp" />
+    <ClCompile Include="..\..\sdz\sqlite\dbhelper.cpp" />
+    <ClCompile Include="..\..\sdz\sqlite\resultset.cpp" />
+    <ClCompile Include="..\..\sdz\sqlite\sqlite3.c" />
+    <ClCompile Include="..\..\sdz\statemachine\gamestate.cpp" />
+    <ClCompile Include="..\..\sdz\statemachine\gamestatemachine.cpp" />
+    <ClCompile Include="..\..\sdz\timer\timerquest.cpp" />
+    <ClCompile Include="..\..\sdz\view\action\actionmanager.cpp" />
+    <ClCompile Include="..\..\sdz\view\action\actiontimelineex.cpp" />
+    <ClCompile Include="..\..\sdz\view\font\font.cpp" />
+    <ClCompile Include="..\..\sdz\view\font\fontmanager.cpp" />
+    <ClCompile Include="..\..\sdz\view\font\richitem.cpp" />
+    <ClCompile Include="..\..\sdz\view\font\richitemparser.cpp" />
+    <ClCompile Include="..\..\sdz\view\font\stringconv.cpp" />
+    <ClCompile Include="..\..\sdz\view\gamelayer.cpp" />
+    <ClCompile Include="..\..\sdz\view\gamescene.cpp" />
+    <ClCompile Include="..\..\sdz\view\nodeunity.cpp" />
+    <ClCompile Include="..\..\sdz\view\render\batchrenderer.cpp" />
+    <ClCompile Include="..\..\sdz\view\render\colortype.cpp" />
+    <ClCompile Include="..\..\sdz\view\render\textureutil.cpp" />
+    <ClCompile Include="..\..\sdz\view\scenemanager.cpp" />
+    <ClCompile Include="..\..\sdz\view\skeletondatacache.cpp" />
+    <ClCompile Include="..\..\sdz\view\skeletondatacache_ssdz.cpp" />
+    <ClCompile Include="..\..\sdz\view\startup\selectlanguagelayer.cpp" />
+    <ClCompile Include="..\..\sdz\view\startup\startlogic.cpp" />
+    <ClCompile Include="..\..\sdz\view\startup\startup.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uibuttonex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uicheckboxex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiimageviewex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiscrollviewex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextatlasex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uilayoutex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uilistviewex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiloadingbarex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uipageviewex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uisliderex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextfieldex.cpp" />
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitouchgroupex.cpp" />
+    <ClCompile Include="..\..\sdz\view\viewhelper.cpp" />
+    <ClCompile Include="..\..\sdz\view\widgetunity.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\edittext.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\edittextex.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\labelex.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\graphiclabel.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\graphicrender.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\scale9spriteex.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\imagebutton.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\spriteex.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\imagesprite.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\particlesprite.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\progress9control.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\progresscontrol.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\progresstimer.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\richtext.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\skeletonanimation.cpp" />
+    <ClCompile Include="..\..\sdz\view\widget\clippingnodeex.cpp" />
+    <ClCompile Include="..\..\sdz\zip\zip.cpp" />
+    <ClCompile Include="..\..\sdz\zqcommon\logutil.cpp" />
+    <ClCompile Include="..\..\sdz\zqcommon\strutil.cpp" />
+    <ClCompile Include="win32\exceptdump.cpp" />
+    <ClCompile Include="win32\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\sdz\Classes\AppDelegate.h" />
+    <ClInclude Include="..\..\sdz\Classes\AppMacros.h" />
+    <ClInclude Include="..\..\sdz\cocos2dxext\texturecahceex.h" />
+    <ClInclude Include="..\..\sdz\cocos2dxext\ziputilsex.h" />
+    <ClInclude Include="..\..\sdz\filesystem\fileasync.h" />
+    <ClInclude Include="..\..\sdz\filesystem\filehelper.h" />
+    <ClInclude Include="..\..\sdz\filesystem\filesystemex.h" />
+    <ClInclude Include="..\..\sdz\filesystem\fileversion.h" />
+    <ClInclude Include="..\..\sdz\filesystem\setting.h" />
+    <ClInclude Include="..\..\sdz\fribidi\bidi-types.h" />
+    <ClInclude Include="..\..\sdz\fribidi\common.h" />
+    <ClInclude Include="..\..\sdz\fribidi\debug.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-arabic.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-begindecls.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi-types-list.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi-types.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-brackets.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cap-rtl.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cp1255.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cp1256.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-6.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-8.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-list.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-utf8.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-common.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-config.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-deprecated.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-enddecls.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-flags.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining-types-list.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining-types.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-mirroring.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-shape.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-types.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-unicode-version.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-unicode.h" />
+    <ClInclude Include="..\..\sdz\fribidi\fribidi.h" />
+    <ClInclude Include="..\..\sdz\fribidi\joining-types.h" />
+    <ClInclude Include="..\..\sdz\fribidi\run.h" />
+    <ClInclude Include="..\..\sdz\gameengine\gameengine.h" />
+    <ClInclude Include="..\..\sdz\httpclient\httpclient.h" />
+    <ClInclude Include="..\..\sdz\httpmanager\httpconnection.h" />
+    <ClInclude Include="..\..\sdz\httpmanager\httplistener.h" />
+    <ClInclude Include="..\..\sdz\httpmanager\httpmanager.h" />
+    <ClInclude Include="..\..\sdz\httpmanager\httpstruct.h" />
+    <ClInclude Include="..\..\sdz\json\autolink.h" />
+    <ClInclude Include="..\..\sdz\json\config.h" />
+    <ClInclude Include="..\..\sdz\json\features.h" />
+    <ClInclude Include="..\..\sdz\json\forwards.h" />
+    <ClInclude Include="..\..\sdz\json\json.h" />
+    <ClInclude Include="..\..\sdz\json\reader.h" />
+    <ClInclude Include="..\..\sdz\json\src\json_batchallocator.h" />
+    <ClInclude Include="..\..\sdz\json\value.h" />
+    <ClInclude Include="..\..\sdz\json\writer.h" />
+    <ClInclude Include="..\..\sdz\location\location.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luaengine.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luaerrorreport.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luamessageadapter.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luaprofile.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luaregister.h" />
+    <ClInclude Include="..\..\sdz\luaengine\luatinker\lua_tinker.h" />
+    <ClInclude Include="..\..\sdz\msgpush\msgpush.h" />
+    <ClInclude Include="..\..\sdz\netadapter\netadapter.h" />
+    <ClInclude Include="..\..\sdz\platform\locationtools.h" />
+    <ClInclude Include="..\..\sdz\platform\logutilex.h" />
+    <ClInclude Include="..\..\sdz\platform\pushtools.h" />
+    <ClInclude Include="..\..\sdz\platform\sdktools.h" />
+    <ClInclude Include="..\..\sdz\platform\systemtools.h" />
+    <ClInclude Include="..\..\sdz\platform\voice.h" />
+    <ClInclude Include="..\..\sdz\platform\webview.h" />
+    <ClInclude Include="..\..\sdz\resmanager\installer.h" />
+    <ClInclude Include="..\..\sdz\resmanager\resmanager.h" />
+    <ClInclude Include="..\..\sdz\sdkhandle\sdkhandle.h" />
+    <ClInclude Include="..\..\sdz\sound\soundmanager.h" />
+    <ClInclude Include="..\..\sdz\sound\voicehelper.h" />
+    <ClInclude Include="..\..\sdz\sound\voicemanager.h" />
+    <ClInclude Include="..\..\sdz\sqlite\dbhelper.h" />
+    <ClInclude Include="..\..\sdz\sqlite\resultset.h" />
+    <ClInclude Include="..\..\sdz\sqlite\sqlite3.h" />
+    <ClInclude Include="..\..\sdz\statemachine\gamestate.h" />
+    <ClInclude Include="..\..\sdz\statemachine\gamestatemachine.h" />
+    <ClInclude Include="..\..\sdz\statemachine\gamestatepredependency.h" />
+    <ClInclude Include="..\..\sdz\timer\timerquest.h" />
+    <ClInclude Include="..\..\sdz\view\action\actionmanager.h" />
+    <ClInclude Include="..\..\sdz\view\action\actiontimelineex.h" />
+    <ClInclude Include="..\..\sdz\view\font\font.h" />
+    <ClInclude Include="..\..\sdz\view\font\fontmanager.h" />
+    <ClInclude Include="..\..\sdz\view\font\richitem.h" />
+    <ClInclude Include="..\..\sdz\view\font\richitemparser.h" />
+    <ClInclude Include="..\..\sdz\view\font\stringconv.h" />
+    <ClInclude Include="..\..\sdz\view\gamelayer.h" />
+    <ClInclude Include="..\..\sdz\view\gamescene.h" />
+    <ClInclude Include="..\..\sdz\view\nodeunity.h" />
+    <ClInclude Include="..\..\sdz\view\render\batchrenderer.h" />
+    <ClInclude Include="..\..\sdz\view\render\colortype.h" />
+    <ClInclude Include="..\..\sdz\view\render\textureutil.h" />
+    <ClInclude Include="..\..\sdz\view\scenemanager.h" />
+    <ClInclude Include="..\..\sdz\view\skeletondatacache.h" />
+    <ClInclude Include="..\..\sdz\view\startup\selectlanguagelayer.h" />
+    <ClInclude Include="..\..\sdz\view\startup\startlogic.h" />
+    <ClInclude Include="..\..\sdz\view\startup\startup.h" />
+    <ClInclude Include="..\..\sdz\view\struct.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uibuttonex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uicheckboxex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiimageviewex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiscrollviewex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextatlasex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uilayoutex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uilistviewex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiloadingbarex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uipageviewex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uisliderex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextfieldex.h" />
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitouchgroupex.h" />
+    <ClInclude Include="..\..\sdz\view\viewhelper.h" />
+    <ClInclude Include="..\..\sdz\view\widgetunity.h" />
+    <ClInclude Include="..\..\sdz\view\widget\edittext.h" />
+    <ClInclude Include="..\..\sdz\view\widget\edittextex.h" />
+    <ClInclude Include="..\..\sdz\view\widget\labelex.h" />
+    <ClInclude Include="..\..\sdz\view\widget\graphiclabel.h" />
+    <ClInclude Include="..\..\sdz\view\widget\graphicrender.h" />
+    <ClInclude Include="..\..\sdz\view\widget\scale9spriteex.h" />
+    <ClInclude Include="..\..\sdz\view\widget\imagebutton.h" />
+    <ClInclude Include="..\..\sdz\view\widget\spriteex.h" />
+    <ClInclude Include="..\..\sdz\view\widget\imagesprite.h" />
+    <ClInclude Include="..\..\sdz\view\widget\particlesprite.h" />
+    <ClInclude Include="..\..\sdz\view\widget\progress9control.h" />
+    <ClInclude Include="..\..\sdz\view\widget\progresscontrol.h" />
+    <ClInclude Include="..\..\sdz\view\widget\progresstimer.h" />
+    <ClInclude Include="..\..\sdz\view\widget\richtext.h" />
+    <ClInclude Include="..\..\sdz\view\widget\skeletonanimation.h" />
+    <ClInclude Include="..\..\sdz\view\widget\clippingnodeex.h" />
+    <ClInclude Include="..\..\sdz\zip\zip.h" />
+    <ClInclude Include="..\..\sdz\zqcommon\gamedef.h" />
+    <ClInclude Include="..\..\sdz\zqcommon\logutil.h" />
+    <ClInclude Include="..\..\sdz\zqcommon\strutil.h" />
+    <ClInclude Include="..\..\sdz\zqcommon\typedef.h" />
+    <ClInclude Include="..\..\sdz\zqcommon\xmlhelper.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="win32\exceptdump.h" />
+    <ClInclude Include="win32\main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\sdz\json\src\json_internalarray.inl" />
+    <None Include="..\..\sdz\json\src\json_internalmap.inl" />
+    <None Include="..\..\sdz\json\src\json_valueiterator.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\cocos2dx\libcocos2d.vcxproj">
+      <Project>{98a51ba8-fc3a-415b-ac8f-8c7bd464e93e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\common\libcommon.vcxproj">
+      <Project>{0ff9d2fc-c0be-485d-befe-67bd364fbebb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\luascript\libluascript.vcxproj">
+      <Project>{df8aac5b-a06b-428d-b1bc-64822aaf3f95}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\network\libnetwork.vcxproj">
+      <Project>{39b95d12-9c6c-4022-89b8-3921aa4d9af3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\pbc\libpbc.vcxproj">
+      <Project>{e1c4ed46-87ce-4492-9305-7a3e8efabb17}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

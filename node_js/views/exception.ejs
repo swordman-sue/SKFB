@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width"/>
+    <title>提示</title>
+    <style>
+        body {
+            font-size: 20px;
+            line-height: 28px;
+            margin: 6px;
+            padding: 0;
+            background: url(/img/beijing3.jpg) no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        textarea {
+            border: 1px solid #CCCCCC;
+            font-size: 16px;
+            padding: 3px;
+            width: 200px;
+        }
+
+        .main {
+            margin: 0 auto;
+            width: 50em;
+        }
+
+        .bt {
+            font-size: 24px;
+            font-weight: bold;
+            color: #6495ed;
+            line-height: 40px;
+        }
+
+        .hh {
+            border-bottom: 1px solid #5aabff;
+            padding: 10px;
+        }
+
+        .pa {
+            padding: 10px;
+        }
+
+        .neir {
+            border: 1px solid #CCC;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            background-color: #FFF;
+            color: #434343;
+            box-shadow: 0px 2px 2px #CCC;
+        }
+
+        .neir p {
+            margin: 0;
+        }
+
+        .neir p label {
+            color: #fff;
+            line-height: 30px;
+            background-color: #5aabff;
+        }
+
+        .neir p input {
+            border: 1px solid #CCC;
+            padding: 3px;
+            margin: 0;
+            font-size: 16px;
+            -webkit-appearance: none;
+        }
+
+        .alink a {
+            color: #F00;
+            text-decoration: underline;
+            font-size: 16px;
+        }
+
+        .fstyle {
+            border: 1px solid #CCC;
+            margin-top: 10px;
+        }
+
+        .fstyle input {
+            border: 1px solid #CCC;
+            padding: 3px;
+            margin: 0;
+            font-size: 16px;
+            -webkit-appearance: none;
+        }
+
+        .fstyle legend {
+            background-color: #5aabff;
+            color: #FFF;
+        }
+
+        .cred {
+            color: #F00;
+            font-size: 16px;
+            text-indent: 25px;
+            line-height: 22px;
+        }
+
+        .cbd input {
+            border: 1px solid #CCC;
+            padding: 3px;
+            font-size: 16px;
+            margin: 0;
+        }
+
+        .alink {
+            float: right;
+        }
+
+        .cbd {
+            text-align: right
+        }
+
+        .fx {
+            font-size: 16px;
+            color: #999;
+            display: block;
+        }
+
+        .lab_s {
+            padding-left: 20px;
+        }
+
+        .gu {
+            position: absolute;
+            left: 0px;
+        }
+
+        .inwidth {
+            width: 150px;
+        }
+
+        .inwidth2 {
+            width: 100px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .main {
+                width: 100%;
+            }
+        }
+    </style>
+
+<body>
+<div class="main">
+    <div class="neir">
+        <fieldset class="fstyle">
+            <legend>温馨提示：</legend>
+             <%=msg%>
+        </fieldset>
+        <br/>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<{$erl_head}>
+<{php}>$all_arr = array();<{/php}>
+<{foreach from=$erl_server_num item="num" key="key_num"}>
+<{foreach from=$erl_server[$num] item="val" key="key"}>
+<{php}>
+    $get_arr = array();
+    foreach($this->_tpl_vars['erl_format']['get'] as $v)
+    {
+        $get_arr[] = $this->_tpl_vars['val'][$v];
+    }
+    
+    $all_arr[] = (count($get_arr) == 1) ? $get_arr[0] : $get_arr;
+    
+    $this->_tpl_vars['get_str'] = implode(",", $get_arr);
+<{/php}>
+get(<{$get_str}>) -> #<{$erl_format.fun}>{
+<{php}>$this->_tpl_vars['i'] = 1;<{/php}>
+<{foreach from=$val item="v" key="k"}>
+<{if $i > 1}>
+<{if is_numeric($v) || $v == "true" || $v == "false" || $v == '[]'}>
+    ,<{$k}> = <{$v}>
+<{elseif is_array($v)}>
+    ,<{$k}> = <{php}>echo dispose_erl_array($this->_tpl_vars['v'], 1);echo "\n";<{/php}>
+<{else}>
+    ,<{$k}> = <{if $v == "PHP_EMPTY"}><{else}><{$v}><{/if}>
+
+<{/if}>
+<{else}>
+<{if is_numeric($v) || $v == "true" || $v == "false" || $v == '[]'}>
+    <{$k}> = <{$v}>
+<{elseif is_array($v)}>
+    <{$k}> = <{php}>echo dispose_erl_array($this->_tpl_vars['v'], 1);<{/php}>
+<{else}>
+    ,<{$k}> = <{if $v == "PHP_EMPTY"}><{else}><{$v}><{/if}>
+
+<{/if}>
+<{/if}>
+<{php}>$this->_tpl_vars['i']++;<{/php}>
+<{/foreach}>
+};
+<{/foreach}>
+<{/foreach}>
+
+<{$erl_end}>
+
+all() -> <{php}>echo dispose_erl_array($all_arr, 1);<{/php}>.
+

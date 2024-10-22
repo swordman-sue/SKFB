@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>Administrator</LastAuthor>
+  <Created>2014-06-04T06:21:39Z</Created>
+  <LastSaved>2019-02-26T02:57:58Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-10.1.0.7469</KSOProductBuildVer>
+  <KSOReadingLayout dt:dt="boolean">1</KSOReadingLayout>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12090</WindowHeight>
+  <WindowWidth>25095</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>225</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="配置">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Width="156.75"/>
+   <Column ss:Width="115.5"/>
+   <Column ss:Width="229.5"/>
+   <Column ss:Width="115.5"/>
+   <Column ss:Width="49.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="174.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="77.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="136.5"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">服务端文件名</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">服务端对应工作表号</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端文件名</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端对应工作表号</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl头部</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl内容格式</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">erl尾部</Data></Cell>
+    <Cell ss:StyleID="s62"><Data ss:Type="String">客户端特殊处理</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="54" ss:StyleID="s62">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">config_vip_gm.txt</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">config_vip_gm.cnf|VipGM</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">get(gm_level) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s65"/>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">2=&gt;gm_level</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>1</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="VIP配置">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s66" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:StyleID="s66" ss:Width="95.25"/>
+   <Column ss:StyleID="s66" ss:Width="246"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">gm_level|gm_level</Data></Cell>
+    <Cell><Data ss:Type="String">need_recharge_amount|need_recharge_amount</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">不可空</Data></Cell>
+    <Cell><Data ss:Type="String">不可空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+   </Row>
+   <Row ss:Index="6" ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String">gm等级</Data></Cell>
+    <Cell><Data ss:Type="String">升级需要的充值额度(升到下一级,0表示满级)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">150</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">300</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">800</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1500</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">2000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">3000</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">0</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>6</SplitHorizontal>
+   <TopRowBottomPane>6</TopRowBottomPane>
+   <SplitVertical>1</SplitVertical>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
+   <ActivePane>0</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>1</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+    </Pane>
+    <Pane>
+     <Number>0</Number>
+     <ActiveRow>0</ActiveRow>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

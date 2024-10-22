@@ -1,0 +1,5 @@
+#include "VoiceConvertInterface.h"
+
+#if defined(__APPLE__) && !defined(__NO_VOICE_CONVERT__)#import "VoiceConverter.h"
+//编码转换wav to amrint VoiceConvertInterface::WavToAmr(const char* source_file_name,const char* distince_file_name){    if(source_file_name == 0 || distince_file_name == 0 )    {        return 0;    }    NSString *strsourcefilename = [NSString stringWithUTF8String:source_file_name];    NSString *strdistincefilename = [NSString stringWithUTF8String:distince_file_name];    int change_ret = [VoiceConverter wavToAmr:strsourcefilename :strdistincefilename];    return change_ret;}//编码转换amr to wavint VoiceConvertInterface::AmrToWav(const char* source_file_name,const char* distince_file_name){    if(source_file_name == 0 || distince_file_name == 0 )    {        return 0;    }    NSString *strsourcefilename = [NSString stringWithUTF8String:source_file_name];    NSString *strdistincefilename = [NSString stringWithUTF8String:distince_file_name];    int change_ret = [VoiceConverter amrToWav:strsourcefilename :strdistincefilename];    return change_ret;}
+#endif

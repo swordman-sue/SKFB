@@ -1,0 +1,17 @@
+-ifdef(MACRO_<{$erl_format.fun}>).
+-else.
+-define(MACRO_<{$erl_format.fun}>, 1).
+-record(<{$erl_format.fun}>, {
+<{php}>$this->_tpl_vars['i'] = 1;<{/php}>
+<{foreach from=$erl_server_num item="num" key="key_num"}>
+<{foreach from=$hrl_server[$num] item="val" key="key"}>
+<{if $i == 1}>
+    <{$val}>
+<{else}>
+    ,<{$val}>
+<{/if}>
+<{php}>$this->_tpl_vars['i']++;<{/php}>
+<{/foreach}>
+<{/foreach}>
+}).
+-endif.

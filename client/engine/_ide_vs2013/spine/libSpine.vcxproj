@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Animation.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\AnimationState.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\AnimationStateData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Atlas.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\AtlasAttachmentLoader.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Attachment.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\AttachmentLoader.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Bone.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\BoneData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\BoundingBoxAttachment.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Event.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\EventData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\extension.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\IkConstraint.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\IkConstraintData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\MeshAttachment.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\PolygonBatch.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\RegionAttachment.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Skeleton.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonAnimation.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonBounds.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonJson.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonRenderer.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Skin.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkinnedMeshAttachment.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\Slot.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\SlotData.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\spine-cocos2dx.h" />
+    <ClInclude Include="..\..\cocos2dxlib\cocos\editor-support\spine\spine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Animation.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\AnimationState.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\AnimationStateData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Atlas.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\AtlasAttachmentLoader.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Attachment.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\AttachmentLoader.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Bone.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\BoneData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\BoundingBoxAttachment.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Event.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\EventData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\extension.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\IkConstraint.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\IkConstraintData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Json.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\MeshAttachment.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\PolygonBatch.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\RegionAttachment.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Skeleton.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonAnimation.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonBounds.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonJson.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkeletonRenderer.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Skin.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SkinnedMeshAttachment.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\Slot.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\SlotData.cpp" />
+    <ClCompile Include="..\..\cocos2dxlib\cocos\editor-support\spine\spine-cocos2dx.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7C2A162-DEC9-4418-972E-240AB3CBFCAE}</ProjectGuid>
+    <RootNamespace>libSpine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '10.0'">v100</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0'">v110</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '11.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v110_xp</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0'">v120</PlatformToolset>
+    <PlatformToolset Condition="'$(VisualStudioVersion)' == '12.0' and exists('$(MSBuildProgramFiles32)\Microsoft SDKs\Windows\v7.1A')">v120_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\cocos2dxlib\cocos\2d\cocos2d_headers.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)..\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)..\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>
+      </SDLCheck>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos\editor-support;$(EngineRoot)extensions;$(EngineRoot)cocos\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_LIB;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;COCOS2D_DEBUG=1;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <DisableSpecificWarnings>4267;4251;4244;4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>true</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MinSpace</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>
+      </SDLCheck>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_LIB;COCOS2DXWIN32_EXPORTS;GL_GLEXT_PROTOTYPES;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(EngineRoot);$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos\editor-support;$(EngineRoot)extensions;$(EngineRoot)cocos\base;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <DisableSpecificWarnings>4819;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <MinimalRebuild>true</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

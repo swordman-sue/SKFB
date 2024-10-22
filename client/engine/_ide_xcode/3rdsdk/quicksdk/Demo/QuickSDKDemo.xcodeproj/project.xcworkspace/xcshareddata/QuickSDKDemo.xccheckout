@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>27AC8C16-F6FF-4CD3-99B7-9579E85B96A8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>QuickSDKDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>56bf1adc-873c-e949-8d27-904eb796d2e6</key>
+		<string>https://10.10.20.250/svn/QuickSDK</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>06_发布版本/iOS/QuickSDK/QuickSDK_iOS_V1.1.2/Demo/QuickSDKDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>56bf1adc-873c-e949-8d27-904eb796d2e6</key>
+		<string>../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>56bf1adc-873c-e949-8d27-904eb796d2e6</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>56bf1adc-873c-e949-8d27-904eb796d2e6</string>
+			<key>IDESourceControlWCCName</key>
+			<string>QuickSDK</string>
+		</dict>
+	</array>
+</dict>
+</plist>

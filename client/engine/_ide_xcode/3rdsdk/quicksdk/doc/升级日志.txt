@@ -1,0 +1,49 @@
+2.3.2->2.3.3
+接口无变化
+解决由于使用xcode9打包基础库，旧版xcode打包是提示链接FileProvider错误
+
+2.3.1->2.3.2
+接口无变化，增加禁用登录和充值的提示
+
+2.3.0->2.3.1
+接口无变化
+停用充值参数中的单价price、量词quantifier、商品描述productDesc
+
+2.2.4->2.3.0
+  - (void)updateRoleInfoWith:(SMPCQuickSDKGameRoleInfo *)info;替换为- (void)updateRoleInfoWith:(SMPCQuickSDKGameRoleInfo *)info isCreate:(BOOL)isCreate;
+  新增系统回调
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray *  restorableObjects))restorationHandler;
+调用示例：
+- (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void(^)(NSArray * restorableObjects))restorationHandler{
+    [[SMPCQuickSDK defaultInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
+    return YES;
+}
+  SDK内部优化
+2.2.3->2.2.4
+优化参数传递和母包demo
+
+2.0.5->2.2.1
+ 1.新增插件
+ 2.替换基础库
+2.0.4->2.0.5
+1. 渠道支持优化
+2. 母包支持模拟器。
+注意：使用U3D或cocos2d-x开发工具，可以不用在系统回调中调用QuickSDK对应的方法，打包工具将在对应系统回调函数中添加代码。OC版需要自行添加。
+2.0.3->2.0.4
+1. 新增系统推送回调需要调用的接口- (int)application: didReceiveRemoteNotification:
+   - (void)application:(UIApplication *)application didReceiveRemoteNotification:(nonnull NSDictionary *)userInfo{
+    [[SMPCQuickSDK defaultInstance] application:application didReceiveRemoteNotification:userInfo];
+}
+2. 使用U3D或cocos2d-x开发工具，可以不用在系统回调中调用QuickSDK对应的方法，打包工具将在对应系统回调函数中添加代码
+
+2.0.2->2.0.3
+1.角色信息新增服务器ID(serverId)，需要传递数字字符串
+2.0.1->2.0.2
+1.去掉渠道版本，渠道名称接口，如果游戏中使用了这2个接口，需要去掉
+2.更新openUrl接口的回调
+	- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{    [[SMPCQuickSDK defaultInstance] openURL:url application:application];    return YES;}    - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{    [[SMPCQuickSDK defaultInstance] openURL:url sourceApplication:sourceApplication application:application annotation:annotation];    return YES;}   - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString*, id> *)options{    [[SMPCQuickSDK defaultInstance] openURL:url application:app options:options];    return YES;}
+
+2.0.0->2.0.1
+优化数据接口流程
+1.接口无变更，替换SMPCQuickSDK.framework、quickChannel.cfg
+2.xcode中可以不用添加IOKit.framework

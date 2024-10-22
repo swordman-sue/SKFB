@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A97436C61AC2A5D200EA3140 /* libSMPCQuickChannel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A97436C51AC2A5D200EA3140 /* libSMPCQuickChannel.a */; };
+		A9923C5E1A6E2FD200449FAA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9923C551A6E2FD200449FAA /* AppDelegate.m */; };
+		A9923C5F1A6E2FD200449FAA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9923C561A6E2FD200449FAA /* Images.xcassets */; };
+		A9923C601A6E2FD200449FAA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9923C571A6E2FD200449FAA /* Info.plist */; };
+		A9923C611A6E2FD200449FAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9923C591A6E2FD200449FAA /* main.m */; };
+		A9923C621A6E2FD200449FAA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9923C5B1A6E2FD200449FAA /* ViewController.m */; };
+		A9923C631A6E2FD200449FAA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9923C5C1A6E2FD200449FAA /* ViewController_iPad.xib */; };
+		A9923C641A6E2FD200449FAA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9923C5D1A6E2FD200449FAA /* ViewController_iPhone.xib */; };
+		A9923C721A6E300F00449FAA /* SMPCQuickSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9923C6F1A6E300F00449FAA /* SMPCQuickSDK.framework */; };
+		B13B95BE1D6DA5BD0011A2F3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B13B95BD1D6DA5BC0011A2F3 /* Launch Screen.storyboard */; };
+		B16C91351F319EB30010C138 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B16C91341F319EB30010C138 /* CoreTelephony.framework */; };
+		B1ED07701B00962C00D0F3A2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ED076F1B00962C00D0F3A2 /* SystemConfiguration.framework */; };
+		B1ED078C1B0096D500D0F3A2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ED078B1B0096D400D0F3A2 /* Foundation.framework */; };
+		B1ED07901B0096E700D0F3A2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1ED078F1B0096E700D0F3A2 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A97436C51AC2A5D200EA3140 /* libSMPCQuickChannel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libSMPCQuickChannel.a; sourceTree = "<group>"; };
+		A9923C541A6E2FD200449FAA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A9923C551A6E2FD200449FAA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A9923C561A6E2FD200449FAA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9923C571A6E2FD200449FAA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9923C581A6E2FD200449FAA /* MacroHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacroHelper.h; sourceTree = "<group>"; };
+		A9923C591A6E2FD200449FAA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9923C5A1A6E2FD200449FAA /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A9923C5B1A6E2FD200449FAA /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A9923C5C1A6E2FD200449FAA /* ViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPad.xib; sourceTree = "<group>"; };
+		A9923C5D1A6E2FD200449FAA /* ViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController_iPhone.xib; sourceTree = "<group>"; };
+		A9923C6F1A6E300F00449FAA /* SMPCQuickSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SMPCQuickSDK.framework; sourceTree = "<group>"; };
+		A9F83F6B1A44241A004B173A /* QuickSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13B95BD1D6DA5BC0011A2F3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		B16C91341F319EB30010C138 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		B1ED076F1B00962C00D0F3A2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1ED078B1B0096D400D0F3A2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1ED078F1B0096E700D0F3A2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9F83F681A44241A004B173A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B16C91351F319EB30010C138 /* CoreTelephony.framework in Frameworks */,
+				A97436C61AC2A5D200EA3140 /* libSMPCQuickChannel.a in Frameworks */,
+				A9923C721A6E300F00449FAA /* SMPCQuickSDK.framework in Frameworks */,
+				B1ED07901B0096E700D0F3A2 /* UIKit.framework in Frameworks */,
+				B1ED078C1B0096D500D0F3A2 /* Foundation.framework in Frameworks */,
+				B1ED07701B00962C00D0F3A2 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B9027811A43C9B200F039DB = {
+			isa = PBXGroup;
+			children = (
+				A9923C531A6E2FD200449FAA /* QuickSDKDemo */,
+				8B90278C1A43C9B200F039DB /* Products */,
+				B16C91331F319EB20010C138 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8B90278C1A43C9B200F039DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F83F6B1A44241A004B173A /* QuickSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9923C531A6E2FD200449FAA /* QuickSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				A9923C6C1A6E300F00449FAA /* QuickSDK */,
+				A9923C541A6E2FD200449FAA /* AppDelegate.h */,
+				A9923C551A6E2FD200449FAA /* AppDelegate.m */,
+				B13B95BD1D6DA5BC0011A2F3 /* Launch Screen.storyboard */,
+				A9923C561A6E2FD200449FAA /* Images.xcassets */,
+				A9923C571A6E2FD200449FAA /* Info.plist */,
+				A9923C581A6E2FD200449FAA /* MacroHelper.h */,
+				A9923C591A6E2FD200449FAA /* main.m */,
+				A9923C5A1A6E2FD200449FAA /* ViewController.h */,
+				A9923C5B1A6E2FD200449FAA /* ViewController.m */,
+				A9923C5C1A6E2FD200449FAA /* ViewController_iPad.xib */,
+				A9923C5D1A6E2FD200449FAA /* ViewController_iPhone.xib */,
+			);
+			path = QuickSDKDemo;
+			sourceTree = "<group>";
+		};
+		A9923C6C1A6E300F00449FAA /* QuickSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A97436C51AC2A5D200EA3140 /* libSMPCQuickChannel.a */,
+				A9923C6F1A6E300F00449FAA /* SMPCQuickSDK.framework */,
+			);
+			name = QuickSDK;
+			path = ../../QuickSDK;
+			sourceTree = "<group>";
+		};
+		B16C91331F319EB20010C138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1ED078F1B0096E700D0F3A2 /* UIKit.framework */,
+				B1ED078B1B0096D400D0F3A2 /* Foundation.framework */,
+				B1ED076F1B00962C00D0F3A2 /* SystemConfiguration.framework */,
+				B16C91341F319EB30010C138 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9F83F6A1A44241A004B173A /* QuickSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F83F8B1A44241B004B173A /* Build configuration list for PBXNativeTarget "QuickSDKDemo" */;
+			buildPhases = (
+				A9F83F671A44241A004B173A /* Sources */,
+				A9F83F681A44241A004B173A /* Frameworks */,
+				A9F83F691A44241A004B173A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuickSDKDemo;
+			productName = QuickChannelSourceDemo;
+			productReference = A9F83F6B1A44241A004B173A /* QuickSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B9027821A43C9B200F039DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					A9F83F6A1A44241A004B173A = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 4B3T6439A7;
+					};
+				};
+			};
+			buildConfigurationList = 8B9027851A43C9B200F039DB /* Build configuration list for PBXProject "QuickSDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B9027811A43C9B200F039DB;
+			productRefGroup = 8B90278C1A43C9B200F039DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F83F6A1A44241A004B173A /* QuickSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9F83F691A44241A004B173A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9923C631A6E2FD200449FAA /* ViewController_iPad.xib in Resources */,
+				A9923C601A6E2FD200449FAA /* Info.plist in Resources */,
+				A9923C5F1A6E2FD200449FAA /* Images.xcassets in Resources */,
+				B13B95BE1D6DA5BD0011A2F3 /* Launch Screen.storyboard in Resources */,
+				A9923C641A6E2FD200449FAA /* ViewController_iPhone.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9F83F671A44241A004B173A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9923C621A6E2FD200449FAA /* ViewController.m in Sources */,
+				A9923C611A6E2FD200449FAA /* main.m in Sources */,
+				A9923C5E1A6E2FD200449FAA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8B90279F1A43C9B200F039DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B9027A01A43C9B200F039DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s i386 x86_64";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A9F83F8C1A44241B004B173A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: kesheng zhan (W9C4EG8ZAR)";
+				DEVELOPMENT_TEAM = 4B3T6439A7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../QuickSDK/**";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/QuickSDKDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../QuickSDK";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-licucore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.game.quick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = DevAny;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+			};
+			name = Debug;
+		};
+		A9F83F8D1A44241B004B173A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_MODULES_AUTOLINK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Xia Zhang (Q3ZRQ5K23B)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Xia Zhang (Q3ZRQ5K23B)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../QuickSDK/**";
+				INFOPLIST_FILE = "$(SRCROOT)/QuickSDKDemo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../QuickSDK";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-licucore",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.company.game.quick;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 x86_64 i386";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B9027851A43C9B200F039DB /* Build configuration list for PBXProject "QuickSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B90279F1A43C9B200F039DB /* Debug */,
+				8B9027A01A43C9B200F039DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F83F8B1A44241B004B173A /* Build configuration list for PBXNativeTarget "QuickSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F83F8C1A44241B004B173A /* Debug */,
+				A9F83F8D1A44241B004B173A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B9027821A43C9B200F039DB /* Project object */;
+}

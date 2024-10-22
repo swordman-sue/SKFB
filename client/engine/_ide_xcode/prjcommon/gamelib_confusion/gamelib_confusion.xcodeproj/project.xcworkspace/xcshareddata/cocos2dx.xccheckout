@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE3264B4-A68A-45CE-94C9-5C0731380DC2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>cocos2dx</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0e886e58-e9c0-384a-9a24-50747ff74f99++6261</key>
+		<string>https://192.168.1.111:8443/svn/zhanglang/client</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>engine/_ide_xcode/prjcommon/cocos2dx/cocos2dx.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0e886e58-e9c0-384a-9a24-50747ff74f99++6261</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>0e886e58-e9c0-384a-9a24-50747ff74f99++6261</key>
+		<string>https://192.168.1.111:8443/svn/zhanglang</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://192.168.1.111:8443/svn/zhanglang/client/engine/_ide_xcode/prjcommon/cocos2dx/cocos2dx.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0e886e58-e9c0-384a-9a24-50747ff74f99++6261</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0e886e58-e9c0-384a-9a24-50747ff74f99++6261</string>
+			<key>IDESourceControlWCCName</key>
+			<string>client</string>
+		</dict>
+	</array>
+</dict>
+</plist>

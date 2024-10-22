@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="DB">
+      <UniqueIdentifier>{37f7fe82-eb70-4ee2-b2a8-5e388fbb9005}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler">
+      <UniqueIdentifier>{709507dc-679f-4246-9e7a-f64b2246788e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerSession">
+      <UniqueIdentifier>{db5c3fa6-dd43-4eba-80fa-cb7c0d886274}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{c59351e5-bc44-4c89-8690-9bce109d8809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lua">
+      <UniqueIdentifier>{eb252ae5-6f3a-4ac5-80a2-fa6f09791c84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Email">
+      <UniqueIdentifier>{08528d09-0cf1-4713-b50f-e35a0771fbd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{c4cbffcb-bc38-4f65-9fc7-d9a652665016}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemTime">
+      <UniqueIdentifier>{d13a0ecf-695a-44fb-9ae4-168e0f5f727a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GM">
+      <UniqueIdentifier>{f039dcc1-3a54-4df9-9f98-13310af39d2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Chat">
+      <UniqueIdentifier>{e739c9ec-93bf-431a-8e12-1db26c7bfb59}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StopMsg">
+      <UniqueIdentifier>{16d2660a-1599-4af7-ae56-d8703a4ab991}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KeyWordFilter">
+      <UniqueIdentifier>{189f8ca5-97f3-4c98-9444-a4cd5afb5de2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="File">
+      <UniqueIdentifier>{6a0010d0-f746-4864-b9ef-62acfaa92b77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Equipment">
+      <UniqueIdentifier>{3b02c254-68a1-4613-88be-84df2ae5df43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Hero">
+      <UniqueIdentifier>{d7c49723-f2c8-40ba-a87a-e29b22370559}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Item">
+      <UniqueIdentifier>{63bf905d-5db2-4c2e-bf87-cc02c2065a7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Treasure">
+      <UniqueIdentifier>{a3190189-6811-42ef-92a9-4cc601be4776}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fuben">
+      <UniqueIdentifier>{99741d7a-5e0e-4b74-95db-27551a12fe84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shop">
+      <UniqueIdentifier>{7a76b5f7-32e8-485b-b9f3-ad6f0767507f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rank">
+      <UniqueIdentifier>{48e2e817-c983-46c5-863f-0f2c6dde16b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recycling">
+      <UniqueIdentifier>{f72bff27-c20b-47d4-aed4-299f64fbde9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Battle">
+      <UniqueIdentifier>{6dae2b00-86d3-4a15-89b2-2e91f07df3a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Spirit">
+      <UniqueIdentifier>{016e55fc-bc20-4166-a43e-81e3fc1d92b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Guild">
+      <UniqueIdentifier>{96cbef29-414e-4e08-a366-47c55a6277d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Friend">
+      <UniqueIdentifier>{ac3f6726-101c-4826-b366-60ffc5c42715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Rebel">
+      <UniqueIdentifier>{2d6dca7c-a9e4-4b11-9726-d92608ec2e4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Duobao">
+      <UniqueIdentifier>{93e259dd-2da3-4040-b832-d5b171a9d91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Land">
+      <UniqueIdentifier>{593c3a30-eead-43be-bb37-b961a9aabc52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arena">
+      <UniqueIdentifier>{b16165f5-ca2f-4d7c-a475-576c47dba2b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Achievement">
+      <UniqueIdentifier>{4e1d4456-14c0-467c-9479-33d481bcff27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DailyMission">
+      <UniqueIdentifier>{217245f5-ac12-48fe-9b89-478822fb7b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vip">
+      <UniqueIdentifier>{aa3ae059-0d7a-420f-b8ac-43d517d45ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldBoss">
+      <UniqueIdentifier>{42b006a5-9e58-410a-b052-ee430bb52d8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RewardCenter">
+      <UniqueIdentifier>{37664738-b858-4322-8924-107d04b4e9c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{46523c98-eaf8-4a4e-b4f8-e3d7c0fd1acb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property">
+      <UniqueIdentifier>{da446009-515c-451d-8b4c-cacb96a27d48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SevenDayActivity">
+      <UniqueIdentifier>{05b3f930-2255-4a04-b7b5-53c122d07900}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Redis">
+      <UniqueIdentifier>{4455ac28-cac1-46a1-b724-df5b878c8775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ScoreMatch">
+      <UniqueIdentifier>{c8851084-06b4-454d-b8d4-eb8ec68b784c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Title">
+      <UniqueIdentifier>{7fd3746c-3335-458e-ad52-c88b135e1d4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Activity">
+      <UniqueIdentifier>{3feec15b-9b25-4d8b-977e-8fdab6afb708}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RedPoint">
+      <UniqueIdentifier>{3230cc2e-872f-469d-9e66-201cb8820ca5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Recharge">
+      <UniqueIdentifier>{5acb1fe7-0fbc-40b4-b55e-f86cb7999e69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SystemNotice">
+      <UniqueIdentifier>{c2579bea-6d4d-48ee-9f01-1e445a686222}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Warcraft">
+      <UniqueIdentifier>{e9a077c6-a2de-4761-80c5-074663fc88c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PVP">
+      <UniqueIdentifier>{eb52cfad-5024-4bb5-ad0e-7bfba7690199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AttackCity">
+      <UniqueIdentifier>{463553ba-20e3-431e-aca5-492e01a59585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EndlessLand">
+      <UniqueIdentifier>{ebbfaf40-87b3-4ed3-a3c7-e4fdd8033454}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Config">
+      <UniqueIdentifier>{2193b3ff-d664-4910-938f-8c2209846508}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Gem">
+      <UniqueIdentifier>{d97174aa-ab48-47bd-b795-0c87ecdfc8ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TeamDungeon">
+      <UniqueIdentifier>{4bf4cd71-b2d3-4be5-91b7-5284d6a902d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="KingMatch">
+      <UniqueIdentifier>{2aaa1c09-ed99-49f4-a5ce-3393cc374a00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ZhanBu">
+      <UniqueIdentifier>{fd6ac826-3f45-4052-b26a-fba1291996f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Turntable">
+      <UniqueIdentifier>{a5870131-8401-4db7-a28f-b9374d3035f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WorldLevelTask">
+      <UniqueIdentifier>{1e05bd0b-6627-4a70-9065-96555f096690}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceWar">
+      <UniqueIdentifier>{b86621ca-3383-498b-a335-c2fdb28bb19e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HangUpDrop">
+      <UniqueIdentifier>{9616a6df-bb80-451f-9a28-f706090e272b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MapServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DBResultHandler.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBThread.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="DBThreadHandler.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="MapSvrQuery.cpp">
+      <Filter>DB</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlerFromGate.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlerFromOpen.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandler.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="GateServerSession.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenServerSession.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSession.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="DBCFileLoader.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountInfo.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="AccountInfoManager.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Character.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectFactory.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerManager.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaExport.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaFunRegister.cpp">
+      <Filter>Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="EmailSystem.cpp">
+      <Filter>Email</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeoutManager.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="SysTimesManager.cpp">
+      <Filter>SystemTime</Filter>
+    </ClCompile>
+    <ClCompile Include="GMManager.cpp">
+      <Filter>GM</Filter>
+    </ClCompile>
+    <ClCompile Include="ChatManager.cpp">
+      <Filter>Chat</Filter>
+    </ClCompile>
+    <ClCompile Include="StopMessage.cpp">
+      <Filter>StopMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="FileEx\TsFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="FileEx\TsIniFile.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="FileEx\TsMemory.cpp">
+      <Filter>File</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyWodFilter\KeyWodFilter.cpp">
+      <Filter>KeyWordFilter</Filter>
+    </ClCompile>
+    <ClCompile Include="Equipment\EquipmentManager.cpp">
+      <Filter>Equipment</Filter>
+    </ClCompile>
+    <ClCompile Include="Hero\HeroManager.cpp">
+      <Filter>Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="Item\ItemManager.cpp">
+      <Filter>Item</Filter>
+    </ClCompile>
+    <ClCompile Include="Treasure\TreasureManager.cpp">
+      <Filter>Treasure</Filter>
+    </ClCompile>
+    <ClCompile Include="Fuben\FubenManager.cpp">
+      <Filter>Fuben</Filter>
+    </ClCompile>
+    <ClCompile Include="Shop\ShopManager.cpp">
+      <Filter>Shop</Filter>
+    </ClCompile>
+    <ClCompile Include="Rank\RankManager.cpp">
+      <Filter>Rank</Filter>
+    </ClCompile>
+    <ClCompile Include="Recycling\RecyclingManager.cpp">
+      <Filter>Recycling</Filter>
+    </ClCompile>
+    <ClCompile Include="Battle\BattleManager.cpp">
+      <Filter>Battle</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild\GuildManager.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild\Guild.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigLoad.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Friend\FriendManager.cpp">
+      <Filter>Friend</Filter>
+    </ClCompile>
+    <ClCompile Include="Rebel\RebelManager.cpp">
+      <Filter>Rebel</Filter>
+    </ClCompile>
+    <ClCompile Include="Duobao\DuobaoManager.cpp">
+      <Filter>Duobao</Filter>
+    </ClCompile>
+    <ClCompile Include="Land\LandManager.cpp">
+      <Filter>Land</Filter>
+    </ClCompile>
+    <ClCompile Include="Email\EmailManager.cpp">
+      <Filter>Email</Filter>
+    </ClCompile>
+    <ClCompile Include="Arena\ArenaManager.cpp">
+      <Filter>Arena</Filter>
+    </ClCompile>
+    <ClCompile Include="Achievement\AchievementManager.cpp">
+      <Filter>Achievement</Filter>
+    </ClCompile>
+    <ClCompile Include="DailyMission\DailyMissionManager.cpp">
+      <Filter>DailyMission</Filter>
+    </ClCompile>
+    <ClCompile Include="Vip\VipManager.cpp">
+      <Filter>Vip</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerBaseDataManager.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldBoss\WorldBossManager.cpp">
+      <Filter>WorldBoss</Filter>
+    </ClCompile>
+    <ClCompile Include="RewardCenter\RewardCenterManager.cpp">
+      <Filter>RewardCenter</Filter>
+    </ClCompile>
+    <ClCompile Include="Logic\LogicManager.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Property\PropertyManager.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="SevenDayActivity\SevenDayManager.cpp">
+      <Filter>SevenDayActivity</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\TimeManager.cpp">
+      <Filter>Time</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\RedisManager.cpp">
+      <Filter>Redis</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreMatch\ScoreMatchManager.cpp">
+      <Filter>ScoreMatch</Filter>
+    </ClCompile>
+    <ClCompile Include="Spirit\SpiritManager.cpp">
+      <Filter>Spirit</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigLoadEx.cpp">
+      <Filter>Config</Filter>
+    </ClCompile>
+    <ClCompile Include="Title\TitleManager.cpp">
+      <Filter>Title</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\ActivityManager.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="RedPoint\RedPointManager.cpp">
+      <Filter>RedPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="Recharge\RechargeManager.cpp">
+      <Filter>Recharge</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemNotice\SystemNotice.cpp">
+      <Filter>SystemNotice</Filter>
+    </ClCompile>
+    <ClCompile Include="Warcraft\WarcraftManager.cpp">
+      <Filter>Warcraft</Filter>
+    </ClCompile>
+    <ClCompile Include="PVP\PVPManager.cpp">
+      <Filter>PVP</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\LimitActivity.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackCity\AttackCityManager.cpp">
+      <Filter>AttackCity</Filter>
+    </ClCompile>
+    <ClCompile Include="EndlessLand\EndlessLandManager.cpp">
+      <Filter>EndlessLand</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\SuperDiscount.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\FestivalActivity.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\AccurateRecommend.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Gem\GemManager.cpp">
+      <Filter>Gem</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamDungeon\TeamDungeonManager.cpp">
+      <Filter>TeamDungeon</Filter>
+    </ClCompile>
+    <ClCompile Include="KingMatch\KingMatchManager.cpp">
+      <Filter>KingMatch</Filter>
+    </ClCompile>
+    <ClCompile Include="ZhanBu\ZhanBuManager.cpp">
+      <Filter>ZhanBu</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\Christmas.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\FacebookActivity.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\SevenDayLogin.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\RechargeReward.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\TotalRechargeReward.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\HotSaleGoods.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Turntable\TurntableManager.cpp">
+      <Filter>Turntable</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\CampRecruit.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\UnlockActivity.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldLevelTask\WorldLevelTaskManager.cpp">
+      <Filter>WorldLevelTask</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceWar\ResourceWarManager.cpp">
+      <Filter>ResourceWar</Filter>
+    </ClCompile>
+    <ClCompile Include="Guild\GuildWarMgr.cpp">
+      <Filter>Guild</Filter>
+    </ClCompile>
+    <ClCompile Include="Activity\RechargeAndCostRankActivity.cpp">
+      <Filter>Activity</Filter>
+    </ClCompile>
+    <ClCompile Include="HangUpDrop\HangUpDropMgr.cpp">
+      <Filter>HangUpDrop</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MapServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBResultHandler.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBThread.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="DBThreadHandler.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSvrQuery.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryForUser.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="QueryPoolDefine.h">
+      <Filter>DB</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerFromGate.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerFromOpen.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketHandler.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="GateServerSession.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenServerSession.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSession.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManager.h">
+      <Filter>Config</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountInfo.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="AccountInfoManager.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Character.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectFactory.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerManager.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaFunRegister.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="MapSvrLuaErrorProc.h">
+      <Filter>Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="EmailSystem.h">
+      <Filter>Email</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeoutManager.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="SysTimesManager.h">
+      <Filter>SystemTime</Filter>
+    </ClInclude>
+    <ClInclude Include="GMManager.h">
+      <Filter>GM</Filter>
+    </ClInclude>
+    <ClInclude Include="ChatManager.h">
+      <Filter>Chat</Filter>
+    </ClInclude>
+    <ClInclude Include="StopMessage.h">
+      <Filter>StopMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="FileEx\TsFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="FileEx\TsIniFile.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="FileEx\TsMemory.h">
+      <Filter>File</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWodFilter\deelx.h">
+      <Filter>KeyWordFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyWodFilter\KeyWodFilter.h">
+      <Filter>KeyWordFilter</Filter>
+    </ClInclude>
+    <ClInclude Include="Equipment\EquipmentManager.h">
+      <Filter>Equipment</Filter>
+    </ClInclude>
+    <ClInclude Include="Hero\HeroManager.h">
+      <Filter>Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="Item\ItemManager.h">
+      <Filter>Item</Filter>
+    </ClInclude>
+    <ClInclude Include="Treasure\TreasureManager.h">
+      <Filter>Treasure</Filter>
+    </ClInclude>
+    <ClInclude Include="Fuben\FubenManager.h">
+      <Filter>Fuben</Filter>
+    </ClInclude>
+    <ClInclude Include="Shop\ShopManager.h">
+      <Filter>Shop</Filter>
+    </ClInclude>
+    <ClInclude Include="Rank\RankManager.h">
+      <Filter>Rank</Filter>
+    </ClInclude>
+    <ClInclude Include="Recycling\RecyclingManager.h">
+      <Filter>Recycling</Filter>
+    </ClInclude>
+    <ClInclude Include="Battle\BattleManager.h">
+      <Filter>Battle</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild\GuildManager.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild\Guild.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="Friend\FriendManager.h">
+      <Filter>Friend</Filter>
+    </ClInclude>
+    <ClInclude Include="Rebel\RebelManager.h">
+      <Filter>Rebel</Filter>
+    </ClInclude>
+    <ClInclude Include="Duobao\DuobaoManager.h">
+      <Filter>Duobao</Filter>
+    </ClInclude>
+    <ClInclude Include="Land\LandManager.h">
+      <Filter>Land</Filter>
+    </ClInclude>
+    <ClInclude Include="Email\EmailManager.h">
+      <Filter>Email</Filter>
+    </ClInclude>
+    <ClInclude Include="Arena\ArenaManager.h">
+      <Filter>Arena</Filter>
+    </ClInclude>
+    <ClInclude Include="Achievement\AchievementManager.h">
+      <Filter>Achievement</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyMission\DailyMissionManager.h">
+      <Filter>DailyMission</Filter>
+    </ClInclude>
+    <ClInclude Include="Vip\VipManager.h">
+      <Filter>Vip</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerBaseDataManager.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldBoss\WorldBossManager.h">
+      <Filter>WorldBoss</Filter>
+    </ClInclude>
+    <ClInclude Include="RewardCenter\RewardCenterManager.h">
+      <Filter>RewardCenter</Filter>
+    </ClInclude>
+    <ClInclude Include="Logic\LogicManager.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Property\PropertyManager.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="SevenDayActivity\SevenDayManager.h">
+      <Filter>SevenDayActivity</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\TimeManager.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\RedisManager.h">
+      <Filter>Redis</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreMatch\ScoreMatchManager.h">
+      <Filter>ScoreMatch</Filter>
+    </ClInclude>
+    <ClInclude Include="Spirit\SpiritManager.h">
+      <Filter>Spirit</Filter>
+    </ClInclude>
+    <ClInclude Include="Title\TitleManager.h">
+      <Filter>Title</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\ActivityManager.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="RedPoint\RedPointManager.h">
+      <Filter>RedPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="Recharge\RechargeManager.h">
+      <Filter>Recharge</Filter>
+    </ClInclude>
+    <ClInclude Include="SystemNotice\SystemNotice.h">
+      <Filter>SystemNotice</Filter>
+    </ClInclude>
+    <ClInclude Include="Warcraft\WarcraftManager.h">
+      <Filter>Warcraft</Filter>
+    </ClInclude>
+    <ClInclude Include="PVP\PVPManager.h">
+      <Filter>PVP</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\LimitActivity.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackCity\AttackCityManager.h">
+      <Filter>AttackCity</Filter>
+    </ClInclude>
+    <ClInclude Include="EndlessLand\EndlessLandManager.h">
+      <Filter>EndlessLand</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\SuperDiscount.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\FestivalActivity.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\AccurateRecommend.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Gem\GemManager.h">
+      <Filter>Gem</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamDungeon\TeamDungeonManager.h">
+      <Filter>TeamDungeon</Filter>
+    </ClInclude>
+    <ClInclude Include="KingMatch\KingMatchManager.h">
+      <Filter>KingMatch</Filter>
+    </ClInclude>
+    <ClInclude Include="ZhanBu\ZhanBuManager.h">
+      <Filter>ZhanBu</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\Christmas.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\FacebookActivity.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\SevenDayLogin.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\RechargeReward.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\TotalRechargeReward.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\HotSaleGoods.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Turntable\TurntableManager.h">
+      <Filter>Turntable</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\CampRecruit.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\UnlockActivity.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldLevelTask\WorldLevelTaskManager.h">
+      <Filter>WorldLevelTask</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceWar\ResourceWarManager.h">
+      <Filter>ResourceWar</Filter>
+    </ClInclude>
+    <ClInclude Include="Guild\GuildWarMgr.h">
+      <Filter>Guild</Filter>
+    </ClInclude>
+    <ClInclude Include="Activity\RechargeAndCostRankActivity.h">
+      <Filter>Activity</Filter>
+    </ClInclude>
+    <ClInclude Include="HangUpDrop\HangUpDropMgr.h">
+      <Filter>HangUpDrop</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

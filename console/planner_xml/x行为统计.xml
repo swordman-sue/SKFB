@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>Administrator</LastAuthor>
+  <Created>2014-06-11T14:54:37Z</Created>
+  <LastSaved>2018-03-06T12:49:06Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-10.1.0.5603</KSOProductBuildVer>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>10710</WindowHeight>
+  <WindowWidth>20460</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>225</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="好 2">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s70" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="9" ss:Color="#333333"/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="配置">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="3" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Width="110.25"/>
+   <Column ss:Width="115.5"/>
+   <Column ss:Width="236.25"/>
+   <Column ss:Width="115.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="57.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="145.5"/>
+   <Column ss:Width="49.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="138.75"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s63">
+    <Cell><Data ss:Type="String">服务端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">服务端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">客户端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">客户端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">erl头部</Data></Cell>
+    <Cell><Data ss:Type="String">erl内容格式</Data></Cell>
+    <Cell><Data ss:Type="String">erl尾部</Data></Cell>
+    <Cell><Data ss:Type="String">客户端特殊处理</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27" ss:StyleID="s63">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">action_count.txt</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">config_action_count.cnf|ActionCount</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">get(type) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2=&gt;type</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="27">
+    <Cell ss:Index="3" ss:StyleID="s64"><Data ss:Type="String">config_monitor_count.cnf|MonitorCount</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">get(type) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2=&gt;id</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <LeftColumnVisible>3</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>21</ActiveRow>
+     <ActiveCol>11</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="行为统计">
+  <Table ss:ExpandedColumnCount="4" ss:ExpandedRowCount="15" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s67" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="13.5">
+   <Column ss:StyleID="s67" ss:Width="52.5"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="199.5"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="141"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="1169.25"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">type|type</Data></Cell>
+    <Cell ss:StyleID="s68"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">path|path</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">context|context</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">字符串</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">字符串</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">字符串</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5"/>
+   <Row ss:Index="6" ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">行为类型</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">行为描述</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">路径</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">内容</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家第一次打开应用方法(客户端)</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/install</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家打开应用方法(客户端)</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/startup</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家账号注册方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/register</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;,&quot;serverid&quot;:&quot;%d&quot;,&quot;Channelid&quot;:&quot;%d&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家登陆方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/loggedin</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;,&quot;serverid&quot;:&quot;%d&quot;,&quot;level&quot;:&quot;%d&quot;,&quot;Channelid&quot;:&quot;%d&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家的任务/关卡/副本方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/quest</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;,&quot;questid&quot;:&quot;%s&quot;,&quot;queststatus&quot;:&quot;%s&quot;,&quot;questtype&quot;:&quot;%s&quot;,&quot;serverid&quot;:&quot;%d&quot;,&quot;level&quot;:&quot;%d&quot;,&quot;Channelid&quot;:&quot;%d&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家自定义事件方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/event</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">{ &quot;appid&quot; : &quot;%s&quot;,&quot;context&quot; : { &quot;deviceid&quot; : &quot;%s&quot;,&quot;level&quot; : &quot;%d&quot;,&quot;moneydrop&quot; : &quot;%d&quot;,&quot;boosname&quot; : &quot;%s&quot;},&quot;what&quot; : &quot;%s&quot;,&quot;who&quot; : &quot;%s&quot;}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家在线的方法(客户端)</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/heartbeat</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家充值方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/payment</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;currencyAmount&quot;:&quot;%d&quot;,&quot;currencytype&quot;:&quot;%s&quot;,&quot;deviceid&quot;:&quot;%s&quot;,&quot;iapamount&quot;:&quot;%d&quot;,&quot;iapname&quot;:&quot;%s&quot;,&quot;paymenttype&quot;:&quot;%d&quot;,&quot;transactionid&quot;:&quot;%s&quot;,&quot;virtualcoinamount&quot;:&quot;%d&quot;,&quot;level&quot;:&quot;%d&quot;,&quot;Channelid&quot;:&quot;%d&quot;,&quot;serverid&quot;:&quot;%d&quot;}}</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">统计玩家在游戏内虚拟交易的方法</Data></Cell>
+    <Cell><Data ss:Type="String">/receive/rest/economy</Data></Cell>
+    <Cell><Data ss:Type="String">{&quot;appid&quot;:&quot;%s&quot;,&quot;who&quot;:&quot;%s&quot;,&quot;context&quot;:{&quot;deviceid&quot;:&quot;%s&quot;,&quot;itemamount&quot;:&quot;%d&quot;,&quot;itemname&quot;:&quot;%s&quot;,&quot;itemtotalprice&quot;:&quot;%s&quot;,&quot;serverid&quot;:&quot;%d&quot;,&quot;level&quot;:&quot;%d&quot;,&quot;Channelid&quot;:&quot;%d&quot;}}</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Selected/>
+   <LeftColumnVisible>3</LeftColumnVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>27</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="时间监听">
+  <Table ss:ExpandedColumnCount="2" ss:ExpandedRowCount="24" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:Index="2" ss:AutoFitWidth="0" ss:Width="189.75"/>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">id|</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">describe|</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">字符串</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s67"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">id</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">描述</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="16.5">
+    <Cell ss:StyleID="s67"><Data ss:Type="Number">78</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">精彩活动点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">每日福利点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">商店点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">排行榜点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">任务点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">76</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">首充点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">七天活动点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">充值点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">英雄对决点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">47</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">世界BOSS点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">84</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">怪物攻城点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">召唤点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">推荐阵容点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">我要变强点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">世界之心点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">精灵点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">回收点击次数</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s75"><Data ss:Type="String">英雄降临推送（主界面）点击次数</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.51180555555555596"/>
+    <Footer x:Margin="0.51180555555555596"/>
+   </PageSetup>
+   <Unsynced/>
+   <PageBreakZoom>100</PageBreakZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>26</ActiveRow>
+     <ActiveCol>4</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

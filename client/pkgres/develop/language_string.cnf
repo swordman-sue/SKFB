@@ -1,0 +1,10 @@
+
+LanguageStringMap = {
+	thai = "ภาษาไทย",
+	en = "English",
+	chs = "简体中文",
+	thai_next = "next",
+	en_next = "next",
+	chs_next = "下一步",
+}
+	

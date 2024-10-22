@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Definition">
+      <UniqueIdentifier>{66e418ec-847c-4b68-83a4-e04ad3ac5ece}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Logic">
+      <UniqueIdentifier>{c513b7b7-b13f-4cda-9d17-d2946048e775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProtobufMsg">
+      <UniqueIdentifier>{c13f091b-979c-4a7a-abf9-19ca6feca715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Msg">
+      <UniqueIdentifier>{30c1adb1-7574-4807-955d-89b3781771a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Redis">
+      <UniqueIdentifier>{02a46e60-257a-4026-852f-dcceb36034f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK">
+      <UniqueIdentifier>{478171ab-1e77-478e-993f-6f460be2f65a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SDK\QuickSDK">
+      <UniqueIdentifier>{40ee4021-af8c-4580-bab8-c3e1cc276d50}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonLogic.cpp">
+      <Filter>Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Protobuf\header.pb.cc">
+      <Filter>ProtobufMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Protobuf\server.pb.cc">
+      <Filter>ProtobufMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgRegister.cpp">
+      <Filter>Msg</Filter>
+    </ClCompile>
+    <ClCompile Include="MsgDefine.cpp">
+      <Filter>Msg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Protobuf\data_define.pb.cc">
+      <Filter>ProtobufMsg</Filter>
+    </ClCompile>
+    <ClCompile Include="sdk\QuickSDK\QuickEncrypt.cpp">
+      <Filter>SDK\QuickSDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketStruct_Code.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="CompileWarning.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="Const.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="DataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="DBCDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorCode.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonLogic.h">
+      <Filter>Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protobuf\header.pb.h">
+      <Filter>ProtobufMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protobuf\server.pb.h">
+      <Filter>ProtobufMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgRegister.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="MsgDefine.h">
+      <Filter>Msg</Filter>
+    </ClInclude>
+    <ClInclude Include="FBDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="FriendDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="HeroDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="RebelDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="LandDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldBossDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="DailyMissionDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="ArenaDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="AchievementDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="RankDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="SevenDayDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Protobuf\data_define.pb.h">
+      <Filter>ProtobufMsg</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreMatchDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="sdk\QuickSDK\QuickEncrypt.h">
+      <Filter>SDK\QuickSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamDungeonDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="ZhanBuDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+    <ClInclude Include="GuildWarDataDefine.h">
+      <Filter>Definition</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

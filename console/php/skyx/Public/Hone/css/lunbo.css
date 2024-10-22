@@ -1,0 +1,128 @@
+/* css 重置 */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #333;
+}
+
+
+/* 本例子css */
+
+.slideBox {
+	width: 100%;
+	min-width: 1200px;
+	height: 500px;
+	/*margin-bottom: 20px;*/
+	overflow: hidden;
+	position: relative;
+}
+
+#slideBox {
+	border: 0 !important;
+}
+
+.slideBox .hd {
+	height: 20px;
+	overflow: hidden;
+	position: absolute;
+	right: 5px;
+	bottom: 20px;
+	z-index: 1;
+}
+
+.slideBox .hd ul {
+	overflow: hidden;
+	zoom: 1;
+	float: left;
+}
+
+.slideBox .hd ul li {
+	float: left;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	background: #d5bc00;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 50%;
+}
+
+.slideBox .hd ul li.on {
+	background: #e60012;
+	color: #fff;
+}
+
+.slideBox .bd {
+	position: relative;
+	height: 100%;
+	z-index: 0;
+}
+
+.slideBox .bd li {
+	zoom: 1;
+	vertical-align: middle;
+}
+
+.slideBox .bd img {
+	width: 100%;
+	/*min-width: 1200px;*/
+	height: 500px;
+	display: block;
+}
+
+.slideBox .prev,
+.slideBox .next {
+	position: absolute;
+	left: 10%;
+	top: 50%;
+	margin-top: -25px;
+	display: block;
+	width: 32px;
+	height: 40px;
+	background: url(../images/slider-arrow.png) -110px 5px no-repeat;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	background-color: #000;
+	transition: all ease-in-out .3s; 
+	-o-transition: all ease-in-out .3s; 
+	-moz-transition: all ease-in-out .3s; 
+	-webkit-transition: all ease-in-out .3s; 
+}
+
+.slideBox1:hover .prev,
+.slideBox1:hover .next{
+	filter:alpha(opacity=40);
+	opacity: .4;
+}
+
+.slideBox .prev:hover {
+	filter:alpha(opacity=80);
+	opacity: .8;
+}
+
+.slideBox .next:hover {
+	filter:alpha(opacity=80);
+	opacity: .8;
+}
+
+.slideBox .next {
+	left: auto;
+	right: 10%;
+	background-position: 8px 5px;
+}
+

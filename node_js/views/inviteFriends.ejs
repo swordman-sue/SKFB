@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>这是一封关于改变的邀请函</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            margin: 0;
+            font-size: 14px;
+            background: #FBDDDB url(http://<%= domain %>:<%= port %>/img/beijing3.jpg) no-repeat center bottom ;
+            background-size: cover;
+        }
+
+        p {
+            line-height: 25px;
+            margin: 0;
+        }
+
+        @media screen and (max-height: 667px) {
+            .main {
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-height: 736px) {
+            .main {
+                height: 100%;
+            }
+        }
+
+        .main {
+            z-index: 4;
+            width: 100%;
+            color: #FFF;
+            font-size: 16PX;
+        }
+
+        .tishi {
+            width: 80%;
+            margin:0 auto 0;
+            background-size: 290px;
+            color: #000;
+            position: relative;
+            font-size: 13px;
+            line-height: 20px;
+            padding: 10px 5px 0;
+        }
+
+        .tishi p {
+            line-height:25px;
+            font-size: 16px;
+            text-align: center;
+            font-weight:bold;
+            margin-bottom:10px;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .yq-box {
+            background: url(http://<%= domain %>:<%= port %>/img/han_07.png) no-repeat center center;
+            width: 150px;
+            height: 40px;
+            margin:0 auto 0;
+            background-size: 150px;
+            color: #000;
+            position: relative;
+        }
+
+        .input-yaoq {
+            position: absolute;
+            top: 111px;
+            line-height: 25px;
+            width: 128px;
+            border: none;
+            left: 75px;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .btn-login {
+            background: url(http://<%=domain%>:<%=port%>/img/queren_01.png) no-repeat center center;
+            background-size: 60px;
+            width: 60px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -30px;
+        }
+
+        .btn-login:hover {
+            background: url(http://<%=domain%>:<%=port%>/img/queren_02.png) no-repeat center center;
+            background-size: 60px;
+        }
+        #share{ background: rgba(0,0,0,0.9); position:absolute; top:0px; width:100%; height:100%; z-index:99998}
+        .shareImg {
+            background: url(http://<%= domain %>:<%= port %>/img/share.png) right top no-repeat;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 100%;
+            height: 100%;
+            background-size: 100%;
+            z-index: 99999;}
+
+    </style>
+
+    <script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    <script>
+
+        wx.config({
+            debug: false,
+            appId: '<%=appId%>',
+            timestamp: '<%=timestamp%>',
+            nonceStr: '<%=nonceStr%>',
+            signature: '<%=signature%>',
+            jsApiList: [
+                'onMenuShareTimeline',
+                'onMenuShareAppMessage',
+                'onMenuShareQQ',
+                'onMenuShareWeibo',
+                'hideOptionMenu',
+                'showOptionMenu',
+                'openLocation'
+            ]
+        });
+        wx.ready(function () {
+            var shareData = {
+                title: '好习惯-最佳拍档征集令',
+                desc: '你愿意和我一起坚持7天“<%=content%>”吗？',
+                link: '<%=url%>',
+                imgUrl: '<%=imgUrl%>'
+            };
+            wx.showOptionMenu();
+            wx.onMenuShareAppMessage(shareData);
+            wx.onMenuShareTimeline(shareData);
+            wx.onMenuShareQQ(shareData);
+
+        });
+        wx.error(function (res) {
+            //alert(res.errMsg);
+        });
+    </script>
+</head>
+<body>
+<div class="main">
+    <div style="padding-top:20px">
+        <div class="tishi">
+            <p>这是邀请你成为我“好习惯”<br/>搭档的邀请函
+            </p>
+            <div style="text-indent:26px">
+                我在南方电网公司“好习惯”养成活动中，建立了养成“<%= content %>”的目标，想邀请你成为我的搭档，和我一起互相监督，共同坚持7天。
+            </div>
+            <div style="color:#000;margin-top:10px">
+                <div style="text-indent:26px">完成后，我们都将获得积分奖励哦。</div>
+                <div style="text-indent:26px">如果你<span style="color:red">没有好习惯任务</span>，就可以通过以下步骤成为我的搭档：</div>
+            </div>
+        </div>
+    </div>
+    <img src="http://<%= domain %>:<%= port %>/img/han_03.png" width="180px" style="margin-left:20px;margin-top:10px;"/>
+    <div class="yq-box">
+        <div style="color:#fff; font-weight:bold; font-size:18px; text-align:center; padding:8px 35px 0 8px "><%= taskCode %></div>
+    </div>
+    <img src="http://<%= domain %>:<%= port %>/img/han_10.png" width="250px" style="margin-left:20px;"/>
+
+</div>
+<div id="share"  onClick="closeDialog()">
+    <div class="shareImg"></div>
+</div>
+
+
+<script src="http://<%= domain %>:<%= port %>/javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    function shareDialog(){
+        $("#share").show();
+    }
+    function closeDialog(){
+        $("#share").hide();
+    }
+</script>
+</body>
+</html>

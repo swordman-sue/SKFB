@@ -1,0 +1,16 @@
+//
+// Prefix header for all source files of the 'zx' target in the 'zx' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+	#import <UIKit/UIKit.h>
+#endif
+
+#if defined(DMHX_GOD)
+#import "../prjcommon/dmhxGOD.h"
+
+#elif defined(DMHX_GOD_LIBS)
+#import "dmhxGOD.h"
+#endif
+

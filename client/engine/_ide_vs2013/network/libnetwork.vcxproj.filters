@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1013e508-67bc-407b-b35e-ace2519e89f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{d1f62581-e41d-4245-bc70-84773a296db5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\basicnetwork">
+      <UniqueIdentifier>{5b32bfe2-6438-412e-bdf3-1f3ac0903712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\basicnetwork">
+      <UniqueIdentifier>{98745f78-e2fe-4c70-9c37-e8d052e70653}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\include\network\networkmanager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\basicnetwork.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\basicnetworkhandler.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\def.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\job.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\jobaccept.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\jobdisconnect.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\jobqueue.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\jobrecv.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\listenhandler.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\network.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\network\basicnetwork\tcphandler.h">
+      <Filter>Header Files\basicnetwork</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\basicnetwork.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\jobaccept.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\jobdisconnect.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\jobrecv.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\listenhandler.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\network.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\basicnetwork\tcphandler.cpp">
+      <Filter>Source Files\basicnetwork</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\network\networkmanager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

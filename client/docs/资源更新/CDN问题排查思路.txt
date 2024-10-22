@@ -1,0 +1,18 @@
+
+CDN访问慢或者访问异常一般有以下几种情况：
+
+1. 调度的CDN节点不是合理的CDN节点，比如广州的客户访问到哈尔滨的CDN节点。
+   这个需要获取到具体的CDN节点以及Local DNS来判断是CDN的问题还是Local DNS的问题，
+   因为请求CDN域名的时候，CDN是根据Local DNS（本地DNS）的地址来分配一个最优的CDN节点的。
+   针对这种情况，需要反馈访问CDN的节点IP以及客户端访问https://cdn.dns-detect.alicdn.com/https/doc.html的结果（为了获取Local DNS），我们来排查CDN的调度是否正常。
+
+2.调度的CDN节点是合理范围，但是客户端到CDN节点的链路存在异常，
+  因为这个走的也是运营商的公网链路，需要具体排查链路问题,
+  针对这种情况，需要获取客户端到CDN节点的traceroute信息或者MTR信息。
+  因为客户端到CDN节点走的是公网的运营商链路，阿里云并没有全网的网络监控数据，链路问题也需要找运营商处理。如果是移动4G等无法访问可以开热点然后再PC 上操作查看。
+  MTR的介绍：
+  https://help.aliyun.com/knowledge_detail/40573.html?spm=5176.11065259.1996646101.searchclickresult.27ab76eaLjhIU4
+
+3.客户端到CDN正常，但是CDN没有命中缓存，需要向源站获取数据（针对动态请求，CDN是直接透传回源的，静态文件如果是Miss那也会回源），源站吐数据慢，或者CDN回源到源站的链路存在异常。
+  针对这种情况，可以直接本地绑定host到源站测试，看源站的响应速度如何，源站的带宽负载是否正常。
+  如何查看一个URL是否命中CDN缓存请参考https://help.aliyun.com/knowledge_detail/40122.html?spm=5176.11065259.1996646101.searchclickresult.5878a278M3pcXe  

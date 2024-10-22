@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "56bf1adc-873c-e949-8d27-904eb796d2e6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "56bf1adc-873c-e949-8d27-904eb796d2e6" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "56bf1adc-873c-e949-8d27-904eb796d2e6" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "27AC8C16-F6FF-4CD3-99B7-9579E85B96A8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "56bf1adc-873c-e949-8d27-904eb796d2e6" : "QuikSDK\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "QuickSDKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "06_发布版本\/iOS\/QuickSDK\/QuickSDK_iOS_V2.0.1\/Demo\/QuickSDKDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/10.10.20.250\/svn\/QuickSDK",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "56bf1adc-873c-e949-8d27-904eb796d2e6"
+    }
+  ]
+}

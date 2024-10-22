@@ -1,0 +1,1754 @@
+package PB;
+
+// optional [?ɑ:p??nl] 
+// required [r?'kwa??d]
+
+////////////// 宏定义区域
+
+
+
+
+/////////////// 结构定义区域
+
+// 物品
+message Item
+{
+	required uint32 item_id = 1;		// 物品ID	
+	required uint32 item_num = 2;		// 物品物品
+}
+
+// 装备信息
+message Equipment
+{
+	required uint32 uid = 1;				// 装备uid
+	required uint32 info_id = 2;			// 装备信息ID
+	required uint32 enhance_level = 3;		// 强化等级 
+	required uint32 refine_level = 4;		// 精炼等级 
+	required uint32 refine_exp = 5;			// 精炼经验
+
+	required uint32 enhance_cost_gold = 6;			// 强化消耗的金币
+	repeated Item refine_cost_item_list = 7;		// 精练消耗的物品列表
+	
+	optional uint32 star = 8;			// 星数
+	optional uint32 star_level = 9;		// 星级
+}
+
+// 宝物信息
+message Treasure
+{
+	required uint32 uid = 1;				// 宝物uid
+	required uint32 info_id = 2;			// 宝物信息ID
+	required uint32 enhance_level = 3;		// 强化等级 
+	required uint32 enhance_exp = 4;		// 强化经验
+	required uint32 refine_level = 5;		// 精炼等级 
+}
+
+// 仙灵信息
+message fairy
+{
+	required uint32 uid = 1;				// 仙灵uid
+	required uint32 info_id = 2;			// 仙灵信息ID
+	required uint32 level = 3;				// 等级 
+	required uint32 exp = 4;				// 经验
+	required uint32 break_level = 5;		// 突破等级 
+}
+
+
+// 卡牌信息
+message Card
+{
+	required uint32 uid = 1;				// 仙灵uid
+	required uint32 info_id = 2;			// 仙灵信息ID
+	required uint32 level = 3;				// 等级 
+	required uint32 exp = 4;				// 经验
+	required uint32 break_level = 5;		// 突破等级 
+}
+
+// 英雄培养数据
+message HeroTrainData
+{
+	required uint32 pro_type = 1;			// 属性类型
+	required uint32 pro_value = 2;			// 属性值
+	required uint32 pro_level = 3;			// 属性等级
+	required uint32 tmp_pro_value = 4;		// 临时属性值
+	required uint32 reward_flag = 5;		// 培养奖励标志(1=表示可领取,0=已领取或冒得领取)
+}
+
+// 记录数据
+message RecordData
+{
+	optional uint32 id = 1;			// 记录ID
+	optional uint32 num = 2;		// 记录数量	
+}
+
+// 英雄信息
+message Hero
+{	
+	required uint32 uid = 1;				// 英雄uid
+	required uint32 info_id = 2;			// 英雄信息ID
+	required uint32 level = 3;				// 等级 
+	required uint32 exp = 4;				// 经验
+	required uint32 quality = 5;			// 品质
+	required uint32 break_level = 6;		// 突破等级 	
+	required uint32 destiny_level = 7;		// 天命(潜能)等级	
+	required uint32 destiny_exp = 8;		// 天命(潜能)经验
+	required uint32 awaken_star = 9;		// 觉醒星级	
+	required uint32 awaken_level = 10;		// 觉醒等级
+	
+	repeated uint32 awaken_item_list = 11;			// 觉醒装备的道具列表
+	repeated HeroTrainData train_data_list = 12;	// 培养数据列表
+	
+	// 回收相关数据
+	required uint32 train_cost_item_num = 13;	// 培养消耗的物品数量
+	required uint32 destiny_cost_item_num = 14;	// 天命消耗的物品数量
+	required uint32 train_cost_diamond = 15;	// 培养消耗钻石
+	required uint32 train_cost_gold = 16;		// 培养消耗金币
+	
+	optional uint32 quality_stage = 17;			// 品阶
+}
+
+// 怪物信息
+message MonsterData
+{
+	required uint32 idx = 1;		// 站位索引
+	required uint32 damage = 2;		// 当前的累积伤害
+	required uint32 total_hp = 3;	// 总的HP
+}
+
+// 竞技排名数据
+message ArenaRankData
+{
+	required uint32 role_id = 1;		// 角色ID
+	required uint32 cur_rank = 2;		// 当前排名
+	required uint32 history_rank = 3;	// 历史排名(最佳)
+}
+
+// 竞技场排名数据列表
+message ArenaRankDataList
+{
+	repeated ArenaRankData rank_list = 1;	// 排名数据列表
+}
+
+// 角色排行数据
+message role_rank_data
+{
+	required uint32 role_id = 1;		// 角色ID
+	required uint32 level = 2;			// 等级
+	required uint32 rank = 3;			// 排名
+	required uint32 value = 4;			// 排名的值
+	required uint32 param1 = 5;			// 参数1value_ex
+	required uint32 update_time = 6;	// 更新时间
+	optional uint32 server_id = 7;		// 服务器Id
+	optional uint32 param2 = 8;			// 参数2
+}
+
+// 单个服务器的角色排行榜列表
+message role_rank_list
+{
+	required uint32 server_id = 1;			// 服务器Id
+	repeated role_rank_data rank_list = 2;	// 排名数据列表
+}
+
+// 所有服务器的角色排行榜列表
+message all_server_role_rank_list 
+{
+	required uint32 rank_type = 1;				// 排行类型
+	repeated role_rank_list all_rank_list = 2;	// 排名数据列表
+}
+
+// 工会排行数据
+message GuildRankData
+{
+	required uint32 guild_id = 1;		// 工会ID
+	required uint32 rank = 2;			// 排名
+	required uint32 value = 3;			// 排名的值
+	required uint32 update_time = 4;	// 更新时间
+}
+
+
+// 属性数据
+message Property
+{
+	required uint32 type = 1;			// 类型
+	required uint32 value = 2;			// 值
+}
+
+// 阵型属性
+message FormationProperty
+{
+	required uint32 slot = 1;			// 阵型槽位
+	repeated Property pro_list = 2;		// 属性列表
+}
+
+// 引导数据
+message GuideData
+{
+	optional uint32 key = 1;
+	optional uint32 value = 2;
+}
+
+// 玩家PVP数据
+message PlayerPVPData
+{
+	optional uint32 today_battle_times = 1;     // 今日挑战次数
+	optional uint32 week_battle_times = 2;		// 本周挑战次数
+	repeated uint32 daily_reward_take_record = 3;	// 每日奖励领取记录
+	repeated uint32 week_reward_take_record = 4;	// 每周奖励领取记录
+}
+
+// 角色基本信息
+message RoleBaseInfo
+{
+	optional uint32 role_id = 1;			// 角色ID(todo::目前已经不使用)
+	required string role_name = 2;			// 角色名称
+	required string account = 3;			// 帐号
+	optional uint32 stamina = 4;			// 体力
+	optional uint32 energy = 5;				// 精力
+	optional uint32 sex = 6;				// 性别
+	optional uint32 level = 7;				// 角色等级
+	optional uint32 daily_init_level = 8;	// 角色每日初始等级
+	optional uint32 exp = 9;				// 等级经验
+	optional uint32 gold = 10;				// 金币
+	optional uint32 diamond = 11;			// 钻石
+	optional uint32 head_image_id = 12;		// 头像ID
+	optional uint32 vip_level = 13;			// VIP等级
+	optional uint32 vip_exp = 14;			// VIP经验
+	optional uint32 riot_suppress_times = 15;		// 领地暴动镇压次数
+	optional uint32 hero_soul = 16;					// 雄魂(魂晶)
+	optional uint32 god_soul = 17;					// 神魂
+	optional uint32 fairy_soul = 18;				// 仙魂
+	optional uint32 arena_prestige = 19;			// 竞技场声望(声望)
+	optional uint32 tower_prestige = 20;			// 爬塔声望(威名)
+	optional uint32 fighting_power = 21;			// 战力
+	optional uint32 wanted = 22;					// 通缉令(征讨令)
+	optional uint32 rebel_value = 23;				// 叛军值(战功)
+	optional uint32 honor = 24;						// 荣誉
+	optional uint32 cur_contribution = 25;			// 当前工会贡献值	
+	optional uint32 world_boss_battle_times = 26;	// 世界BOSS挑战次数
+	optional uint32 guild_fb_reward_chapter = 27;	// 已经领取的军团副本章节奖励
+	
+	optional string last_login_time = 28;			// 上一次登录时间
+	optional string last_logout_time = 29;			// 上一次退出时间
+	optional uint32 total_online_time = 30;			// 总的在线时间
+	optional uint32 login_times = 31;				// 登录次数
+	
+	optional uint32 last_stamina_recover_time = 32;		// 上次体力恢复时间
+	optional uint32 last_energy_recover_time = 33;		// 上次精力恢复时间
+	optional uint32 last_wanted_recover_time = 34;		// 上次通缉令(征讨令)恢复时间
+	
+	repeated FormationProperty formation_pro_list = 35;		// 阵型属性列表
+	
+	optional uint32 once_flag_list = 36;		// 一次性标志列表
+	
+	optional uint32 guide_x = 37;		// 引导x(已无效)
+	optional uint32 guide_y = 38;		// 引导y(已无效)
+	
+	repeated GuideData guide_list = 39;	// 引导数据列表
+	
+	optional uint32 duobao_peace_over_time = 40;	// 夺宝免战结束时间(0=表示木有免战)
+	
+	optional uint32 leave_guild_time = 41;	// 离开公会时间
+	optional uint32 last_activity_notice_id = 42; // 上次活动公告的ID
+	
+	repeated uint32 activation_code_take_record = 43;		// 激活码领取记录
+	
+	optional uint32 friendship_point = 44; 			// 友情点
+	optional uint32 today_friendship_point = 45; 	// 今日友情点
+	optional uint32 endless_stone = 46; 	// 无尽石
+	optional uint32 nobility_level = 47;	// 爵位等级
+	optional uint32 update_times = 48;	// 更新次数
+	optional uint32 total_recharge_amount = 49;	// 总的充值
+	optional uint32 gem_coin = 50;	// 宝石币
+	
+	optional uint32 destiny_coin = 51;	// 命运硬币
+	optional uint32 star_soul = 52;	// 星魂	
+	
+	optional uint32 turntable_score = 53;				// 转盘积分
+	optional uint32 turntable_activity_data_id = 54;	// 转盘活动数据ID
+	
+	optional uint32 today_used_help_battle_times = 55;	// 今日已使用的助战次数
+	
+	optional uint32 role_login_days = 56;	// 角色已登录的天数
+	
+	optional uint32 crystal = 57;	// 水晶
+	
+	optional uint32 last_login_time_ex = 58;		// 上一次登录时间
+	optional uint32 last_logout_time_ex = 59;		// 上一次退出时间
+	
+	optional uint32 create_role_time = 60;		// 创建角色时间
+	
+	optional uint32 is_already_take_closed_test_rebate = 61; // 是否已领取封测返利
+	
+	optional uint32 score_match_honor = 62; // 积分寨荣誉
+	
+	optional uint32 resource_war_score = 63; // 资源战积分
+	
+	optional uint32 ycoin = 64; // 越南币
+	
+	optional uint32 today_chat_times = 65; // 当前聊天次数
+}
+
+
+// 角色PVP数据
+message RolePVPData
+{
+	optional uint32 today_battle_times = 1;		// 今日挑战次数
+	optional uint32 week_battle_times = 2;		// 本周挑战次数
+	optional uint32 score = 3;					// 积分
+	optional uint32 win_times = 4;				// 胜利次数	
+	optional uint32 total_battle_times = 5;		// 总的挑战次数
+	repeated uint32 daily_reward_take_record = 6; // 每日奖励领取记录
+	repeated uint32 weekly_reward_take_record = 7; // 每周奖励领取记录
+	optional uint32 last_week_rank = 8;				// 上周排名	
+}
+
+// 称号数据
+message TitleData
+{
+	optional uint32 id = 1;	// 称号ID
+	optional uint32 over_time = 2;	// 结束时间(0=表示木有时间限制)
+}
+
+// 玩家称号信息
+message RoleTitleInfo
+{
+	optional uint32 cur_use_title_id = 1;	// 当前使用的称号ID 
+	repeated TitleData title_list = 2;		// 称号列表
+	optional uint32 cur_use_nickname_id = 3;	// 当前使用的昵称ID 
+}
+
+// 玩家无尽之地数据
+message RoleEndlessLandInfo
+{
+	optional uint32 is_today_first_battle = 1; 		// 是否今日首次挑战
+	optional uint32 cur_wave = 2; 				// 当前挑战的波数(正在打的)
+	optional uint32 today_wave_record = 3;		// 今日波数记录(已通关的)
+	optional uint32 cur_wave_kill_num = 4; 		// 当前波击杀怪的数量
+	optional uint32 history_wave_record = 5; 	// 历史波数记录(已通关的)
+	optional uint32 cur_keep_kill_num = 6;	 	// 当前连杀数量
+	optional uint32 keep_kill_num_record = 7; 	// 连杀数量记录
+	optional uint32 today_collision_reward_times = 8; // 碰撞奖励次数(今日已经获得的次数)
+	repeated uint32 keep_kill_reward_record = 9;  	// 连杀奖励记录
+	optional uint32 last_take_continue_kill_reward = 10; // 最近领取的连杀奖励(连杀的数量,0表示还没领取)
+	optional uint32 is_first_battle = 11;				// 是否首次挑战(1=是,0=否)
+	optional uint32 today_battle_times = 12; 		// 今日挑战次数
+}
+
+// 角色工会数据
+message RoleGuildData
+{
+	repeated uint32 take_chapter_reward_record = 1;  	// 章节奖励领取记录
+}
+
+// 豪华签到数据
+message LuxurySignInData
+{
+	optional uint32 sign_in_id = 1; 	// 签到Id
+	optional uint32 status = 2; 		// 奖励状态(0=未达到领取条件,1=可以领取,2=已领取)
+	optional uint32 rewar_id = 3;		// 奖励Id	
+}
+
+// 玩家豪华签到数据
+message PlayerLuxurySignInData
+{
+	repeated LuxurySignInData sign_in_data_list = 1;			// 豪华签到数据列表
+}
+
+// 宝石
+message Gem
+{
+	optional uint32 id = 1; 	// Id
+	optional uint32 num = 2; 	// 数量
+}
+
+// 玩家宝石数据
+message PlayerGemInfo
+{
+	repeated Gem gem_list = 1;			// 宝石列表
+	repeated uint32 hole_open_list = 2;	// 孔位开启列表
+	optional uint32 hole_init_time = 3; // 孔位初始化时间
+}
+
+// 角色装备信息
+message RoleEquipmentInfo
+{
+	repeated Equipment equipment_list = 1;		// 装备列表
+}
+
+// 阵型数据
+message Formation
+{
+	required uint32 hero_id = 1;			// 阵型上的英雄ID
+	repeated uint32 equipment_list = 2;		// 装备列表
+	repeated uint32 treasure_list = 3;		// 宝物列表
+	repeated uint32 gem_list = 4;			// 宝物列表
+	repeated uint32 card_list = 5;			// 卡牌列表
+	optional uint32 bless_sprite_id = 6;	// 祝福精灵(0表示木有)
+}
+
+// 角色英雄信息
+message RoleHeroInfo
+{
+	required uint32 normal_free_summon_times = 1;	// 普通免费召唤次数
+	required uint32 normal_free_summon_time = 2;	// 普通免费召唤时间
+	required uint32 high_free_summon_time = 3;		// 高级免费召唤时间
+	required uint32 high_summon_times = 4;			// 高级召唤次数
+
+	repeated Hero hero_list = 5;			// 英雄列表
+	repeated uint32 collection_list = 6;	// 收集列表	
+	repeated uint32 reinforcement_list = 7;	// 援军列表	
+	repeated Formation formation_list = 8;	// 阵型列表
+	
+	optional uint32 train_times = 9;		// 培养次数
+	
+	// 版号服特殊处理(限制高级召唤次数)
+	//optional uint32 today_onekey_high_summon_times = 10;	// 今日一键高级召唤次数
+	//optional uint32 today_normal_high_summon_times = 11;	// 今日普通高级召唤次数	
+}
+
+// 角色宝物信息
+message RoleTreasureInfo
+{
+	repeated Treasure treasure_list = 1;		// 宝物列表
+}
+
+// 角色物品信息
+message RoleItemInfo
+{
+	repeated Item item_list = 1;		// 物品列表	
+}
+
+
+// 邮件上下文数据
+message EmailContext
+{
+	required uint32 type = 1;			// 数据类型(1=数字,2=字符串)
+	required string text = 2;			// 文本
+}
+
+// 邮件信息
+message EmailInfo
+{
+	required uint32 uid = 1;				// 邮件uid
+	required uint32 info_id = 2;			// 信息ID
+	required uint32 receive_time = 3;		// 接收时间
+	repeated EmailContext context_list = 4;	// 上下文列表
+	optional string title = 5;				// 邮件名称
+	optional string text = 6;				// 邮件内容
+}
+
+// 角色邮件信息
+message RoleEmailInfo
+{
+	repeated EmailInfo email_list = 1;		// 邮件列表	
+	optional uint32 is_have_new_email = 2;	// 是否有新邮件
+}
+
+// 关卡数据
+message MapData
+{
+	required uint32 star = 1;				// 获得的星数
+	required uint32 battle_times = 2;		// 当前挑战次数
+	required uint32 reset_times = 3;		// 今日重置次数次数
+	required uint32 is_get_reward = 4;		// 是否已经领取奖励
+}
+
+// 章节数据
+message ChapterData
+{
+	repeated MapData map_list = 1;			// 关卡列表
+	repeated uint32 star_reward_list = 2;	// 星数奖励列表(是否已经领取标志)	
+}
+
+// 主线副本数据
+message MainFBData
+{
+	repeated ChapterData chapter_list = 1;	// 章节列表
+	optional uint32 take_chapter_reward_record = 2;	// 领取章节奖励记录
+}
+
+// 英雄关卡数据
+message HeroMapData
+{
+	required uint32 battle_times = 1;		// 挑战次数
+	required uint32 is_get_reward = 2;		// 是否已领取奖励	
+}
+
+// 英雄章节数据
+message HeroFBChapter
+{
+	repeated HeroMapData map_list = 1; // 关卡列表
+	required uint32 is_pass_extra_map = 2;	// 是否已通关额外关卡
+}
+
+
+// 英雄副本数据
+message HeroFBData
+{
+	repeated HeroFBChapter chapter_list = 1; // 章节列表
+	required uint32 battle_times = 2;	// 今日已挑战次数
+}
+
+// 日常副本章节数据
+message DailyChapterData
+{	
+	optional uint32 chapter = 1; // 章节(关卡类型)
+	optional int32 max_idx_record = 2; // 章节(关卡类型)(-1表示还木有通关)
+	optional uint32 battle_times = 3; // 今日已挑战次数
+}
+
+// 日常副本数据
+message DailyFBData
+{
+	repeated DailyChapterData chapter_list = 1; // 章节列表
+}
+
+// 精英关卡外敌数据
+message EliteMapEnemyData
+{
+	required uint32 map_id = 1; // 关卡ID
+	repeated MonsterData monster_list = 2;	// 怪物列表(todo::已不使用)
+	optional uint32 is_dead = 3; // 是否已死亡
+}
+
+// 精英章节数据
+message EliteFBChapter
+{
+	repeated MapData map_list = 1;				// 关卡列表
+	repeated uint32 star_reward_list = 2;		// 星数奖励列表(是否已经领取标志)
+	required EliteMapEnemyData enemy_data = 3; 	// 外敌数据
+}
+
+// 精英关卡数据
+message EliteFBData
+{
+	repeated EliteFBChapter chapter_list = 1; // 章节列表
+	optional uint32 last_refresh_enemy_time = 2; // 上次刷新外敌时间
+}
+
+// 爬塔关卡数据
+message TowerFBData
+{
+	repeated uint32 map_star_list = 1; 					// 关卡星数列表
+	required uint32 map_level_record = 2; 				// 关卡等级记录
+	required uint32 keep_best_star_passed_record = 3; 	// 连续三星通关记录(章节)
+	repeated Property select_pro_list = 4;				// 选择的属性列表
+	required uint32 is_buy_star_goods = 5; 				// 是否已经购买星数商品
+	required uint32 star_goods_idx = 6; 				// 星数商品索引
+	required uint32 is_need_reset = 7; 					// 是否需要重置
+	required uint32 today_reset_times = 8; 				// 今日已重置次数
+	required uint32 cur_star = 9; 						// 当前星数(选择属性扣掉剩下的)
+	required uint32 star_max_record = 10; 				// 历史最佳星数记录
+	required uint32 elite_map_level = 11; 				// 精英关卡等级(已经打过的)
+	required uint32 elite_map_battle_times = 12; 		// 精英关卡已经挑战的次数
+	required uint32 buy_elite_map_battle_times = 13; 	// 已经购买的精英关卡挑战次数
+	repeated uint32 rand_pro_idx_list = 14;				// 随机属性索引列表
+}
+
+
+// 角色副本信息
+message RoleFBInfo
+{
+	required MainFBData main_fb_data = 1; 					// 主线副本数据
+	required HeroFBData hero_fb_data = 2; 					// 英雄副本数据
+	required DailyFBData daily_fb_data = 3; 				// 日常副本数据
+	required TowerFBData tower_fb_data = 4; 				// 爬塔副本数据
+	required EliteFBData elite_fb_data = 5; 				// 精英副本数据
+}
+
+// 商店商品
+message ShopGoods
+{
+	required uint32 goods_id = 1; 			// 商品Id
+	required uint32 goods_num = 2; 			// 商品数量
+}
+
+
+// 英雄商店数据
+message HeroShopData
+{
+	repeated ShopGoods goods_list = 1; 			// 商品列表
+	required uint32 last_recover_time = 2; 		// 上一次恢复时间(免费刷新次数恢复时间)
+	required uint32 free_refresh_times = 3; 	// 已使用的免费刷新次数
+	required uint32 cost_refresh_times = 4; 	// 已使用的消耗刷新次数
+}
+
+// 工会商品数据
+message GuildShopData
+{
+	repeated ShopGoods reward_goods_buy_record = 1; 		// 奖励商品购买记录
+	repeated ShopGoods item_goods_buy_record = 2; 			// 道具商品购买记录
+	repeated ShopGoods limit_goods_buy_record = 3; 			// 限时商品购买记录
+}
+
+// 商城商品
+message MallShopData
+{
+	repeated ShopGoods item_buy_record = 1; // 道具购买列表
+	repeated ShopGoods gift_buy_record = 2; // 礼包购买列表
+}
+
+// 爬塔商店数据
+message TowerShopData
+{
+	repeated ShopGoods buy_record = 1; // 商品购买记录
+}
+
+// 竞技场商店数据
+message ArenaShopData
+{
+	repeated ShopGoods buy_record = 1; // 商品购买记录
+}
+
+// 觉醒商店数据
+message AwakenShopData
+{
+	repeated ShopGoods goods_list = 1; 			// 商品列表
+	required uint32 last_recover_time = 2; 		// 上一次恢复时间(免费刷新次数恢复时间)
+	required uint32 free_refresh_times = 3; 	// 已使用的免费刷新次数
+	required uint32 cost_refresh_times = 4; 	// 已使用的消耗刷新次数	
+}
+
+// 仙灵商店数据
+message FairyShopData
+{
+	repeated ShopGoods goods_list = 1; 			// 商品列表
+	required uint32 used_refresh_times = 2;		// 已经使用的刷次数
+	required uint32 last_auto_refresh_time = 3;	// 上次自动刷新时间
+} 
+
+
+// 积分赛商品
+message ScoreMatchShopData
+{
+	repeated ShopGoods buy_record = 1; // 商品购买记录
+}
+
+// 7天商品
+message SevenDayShopData
+{
+	repeated ShopGoods buy_record = 1; // 商品购买记录
+}
+
+// 等级礼包商品
+message LevelGiftShopData
+{
+	repeated ShopGoods buy_record = 1; // 商品购买记录
+}
+
+// 无尽之地商店
+message EndlessLandShopData
+{
+	repeated ShopGoods item_goods_buy_record = 1; 	// 道具商店购买记录
+	repeated ShopGoods reward_goods_buy_record = 2; // 奖励商店购买记录	
+}
+
+// 直购商店
+message DirectBuyShopData
+{
+	repeated ShopGoods goods_list = 1; // 商品列表
+	optional uint32 last_refresh_time = 2;	// 最后一次刷新的时间[小时分钟] 如: 2330 23点30分
+	repeated uint32 can_take_goods_list = 3;	// 可领取的商店列表
+	optional uint32 last_refresh_year_day = 4;	// 最后一次刷新的年日
+}
+
+// 兑换商店
+message ExchangeShopData
+{
+	repeated ShopGoods goods_buy_record = 1; // 商品购买记录
+}
+
+// 推荐商店
+message RecommendShopData
+{
+	repeated ShopGoods goods_buy_record = 1; // 商品购买记录
+}
+
+// 组队商店
+message TeamDungeonShop
+{
+	repeated ShopGoods normal_goods_buy_record = 1; 	// 道具商店购买记录
+	repeated ShopGoods reward_goods_buy_record = 2; // 奖励商店购买记录	
+}
+
+// 圣诞节商店
+message ChristmasShop
+{
+	repeated ShopGoods score_exchange_goods_buy_record = 1; // 积分兑换商品购买记录
+	repeated ShopGoods item_exchange_goods_buy_record = 2; // 物品兑换商品购买记录		
+}
+
+// 水晶商店
+message CrystalShop
+{		
+	optional uint32 today_refresh_times = 1; 		// 今日刷新次数
+	repeated ShopGoods goods_buy_record = 2; 		// 商品购买记录
+}
+
+// 资源战商店数据
+message ResourceWarShop
+{
+	repeated ShopGoods goods_buy_record = 1; 		// 商品购买记录
+}
+
+
+// GM商店
+message GMShopData
+{
+	repeated ShopGoods goods_buy_record = 1; 		// 商品购买记录
+}
+
+
+
+// 角色商店数据
+message RoleShopInfo
+{
+	required HeroShopData hero_shop = 1; 				// 英雄商店
+	required GuildShopData guild_shop = 2; 				// 工会商店
+	required MallShopData mall_shop = 3; 				// 商城商店
+	required TowerShopData tower_shop = 4; 				// 爬塔商店
+	required ArenaShopData arena_shop = 5; 				// 竞技场商店
+	required AwakenShopData awaken_shop = 6; 			// 觉醒商店
+	required FairyShopData fairy_shop = 7; 				// 仙灵商店
+	required ScoreMatchShopData score_match_shop = 8; 	// 积分赛商品
+	optional SevenDayShopData seven_day_shop = 9;		// 7天商店
+	optional LevelGiftShopData level_gift_shop = 10;	// 等级礼包商店
+	optional EndlessLandShopData endless_land_shop = 11;// 无尽之地商店
+	optional DirectBuyShopData direct_buy_shop = 12;	// 直购商店
+	optional ExchangeShopData exchange_shop = 13; 		// 兑换商店
+	optional RecommendShopData recommend_shop = 14; 	// 推荐商店
+	optional TeamDungeonShop teamdungeon_shop = 15; 	// 组队商店
+	optional ChristmasShop christmas_shop = 16; 		// 圣诞节商店	
+	optional CrystalShop crystal_shop = 17; 			// 水晶商店	
+	optional ResourceWarShop resource_war_shop = 18; 	// 资源战商店
+	optional GMShopData gm_shop = 19; 					// 资源战商店	
+}
+
+
+
+// 精灵数据
+message SpiritData
+{
+	optional uint32 id = 1;	// 精灵ID
+	optional uint32 enhance_level = 2;	// 强化等级
+	optional uint32 train_stage = 3;	// 培养阶(默认是1级)
+	optional uint32 train_times = 4;	// 培养次数
+	optional uint32 star = 5;			// 星数
+}
+
+// 精灵图鉴
+message SpiritPokedex
+{
+	optional uint32 id = 1;			// 图鉴ID
+	optional uint32 level = 2;		// 等级
+}
+
+// 角色精灵数据
+message RoleSpiritInfo
+{
+	required uint32 stage = 1;	// 阶段 
+	required uint32 level = 2;	// 等级 
+	optional uint32 cur_use_spirit_id = 3;	// 当前使用的精灵
+	repeated SpiritData spirit_list = 4;	// 精灵列表
+	repeated SpiritPokedex pokedex_list = 5;	// 精灵图鉴列表
+}
+
+
+
+// 好友数据
+message FriendData
+{
+	required uint32 role_id = 1;			// 角色ID
+	required uint32 is_give_energy = 2;		// 是否已赠送精力
+	required uint32 get_energy_state = 3;	// 领取精力状态(0=不能领取,1=可领取,2=已领取)
+	optional uint32 help_battle_times = 4;	// 帮我助战次数
+}
+
+// 角色好友数据
+message RoleFriendData
+{
+	repeated FriendData friend_list = 1;	// 好友列表
+	repeated uint32 black_list = 2;			// 黑名单列表
+	repeated uint32 apply_list = 3;			// 申请列表
+	required uint32 get_energy_times = 4;	// 领取精力次数
+}
+
+// 角色叛军数据
+message RoleRebelInfo
+{
+	required uint32 rebel_level = 1;			// 叛军等级
+	required uint32 today_exploit = 2;			// 今日累积功勋
+	required uint32 today_damage = 3;			// 今日累积伤害
+	repeated uint32 reward_get_record_list = 4;	// 奖励领取记录列表
+	required uint32 is_already_share = 5;		// 是否已经分享过
+}
+
+// 角色夺宝数据
+message RoleDuobaoInfo
+{
+	optional uint32 peace_over_time = 1;		// 叛军等级
+	repeated uint32 doubao_times_list = 2;		// 夺宝次数列表
+	optional uint32 daily_duobao_times = 3;		// 每日夺宝次数
+	repeated uint32 pregross_reward_record = 4;	// 进度奖励记录
+}
+
+// 成就数据
+message AchievementData
+{
+	required uint32 id = 1;					// 成就ID
+	required uint32 level = 2;				// 成就等级
+	required uint32 value = 3;				// 成就值
+	required uint32 cur_reward_level = 4;	// 当前奖励等级(已经领取的)
+}
+
+// 角色成就信息
+message RoleAchievemntInfo
+{
+	repeated AchievementData achievement_list = 1; // 成就列表
+}
+
+// 日常任务数据
+message DailyMission
+{
+	required uint32 id = 1;					// 任务ID
+	required uint32 is_get_reward = 2;		// 是否已领取奖励
+	required uint32 value = 3;				// 任务值
+}
+
+// 角色日常任务信息
+message RoleDailyMissionInfo
+{
+	required uint32 point = 1;					// 当前积分
+	repeated uint32 point_reward_record = 2; 	// 积分奖励记录列表
+	repeated DailyMission mission_list = 3;		// 任务列表	
+}
+
+// 技能数据
+message SkillData
+{
+	required uint32 skill_id = 1;		// 技能ID
+	required uint32 level = 2;			// 技能等级
+}
+
+// 角色工会技能信息
+message RoleGuildSkillInfo
+{
+	repeated SkillData skill_list = 1; // 技能列表
+} 
+
+// 角色签到数据
+message RoleSignInData
+{
+	required uint32 cur_sign_in_day = 1;		// 当前签到天数
+	required uint32 last_sign_in_time = 2;		// 最近签到时间	
+}
+
+// 登录奖励数据
+message LoginRewardData
+{
+	repeated uint32 reward_record_list = 1;		// 奖励记录列表	
+	optional uint32 login_days = 2;		// 登录天数
+}
+
+// 角色王者赛数据
+message RoleKingMatchData
+{
+	optional uint32 last_season = 1;				// 最近一个赛季(参加的)
+	optional uint32 total_battle_times = 2;			// 总的挑战次数
+	optional uint32 total_win_times = 3;			// 总的获胜次数
+	optional uint32 today_win_times = 4;			// 今日获胜次数
+	optional uint32 stage_level = 5;				// 段位等级
+	optional uint32 context = 6;					// 上下文(星数,积分)
+	optional uint32 history_stage_level = 7;		// 历史段位等级
+	repeated uint32 season_task_reward_record = 8; 	// 赛季任务奖励记录
+}
+
+// 玩家组队副本数据
+message PlayerTeamDungeonData
+{
+	optional uint32 today_battle_times = 1; 	// 今日挑战次数
+	repeated uint32 pass_dungeon_list = 2;		// 通关副本列表	
+	optional uint32 today_kill_reward_times = 3;// 今日击杀奖励的次数
+	optional uint32 today_mvp_reward_times = 4;// 今日MVP奖励的次数	
+}
+
+// 卡组数据
+message CardGroupData
+{
+	optional uint32 card_id = 1; 	// 卡牌ID
+	optional uint32 is_already_open = 2; 	// 是否已翻开
+}
+
+// 收藏组
+message CollectionGroup
+{
+	optional uint32 id = 1; 	// 收藏组ID
+	optional uint32 star = 2;  	// 收藏组星数
+}
+
+// 收藏书数据
+message CollectionBook
+{
+	optional uint32 book_id = 1; // 书本ID
+	repeated CollectionGroup collection_group_list = 2; // 收藏组列表
+}
+
+// 玩家占卜数据
+message RoleZhanBuData
+{
+	repeated Card card_list = 1; // 卡牌列表
+	
+	optional uint32 history_collection_value = 2; // 历史收藏值
+	optional uint32 low_card_group_map_idx = 3;	// 低级卡组关卡索引
+	optional uint32 cur_low_card_group_id = 4;	// 当前低级卡组ID
+	optional uint32 low_card_group_last_recover_time = 5;	// 低级卡组最近恢复时间
+	optional uint32 cur_low_card_group_refresh_times = 6;		// 当前低级卡组拥有的刷新次数
+	optional uint32 today_low_card_group_open_card_times = 7;	// 今日低级卡组翻卡次数
+	optional uint32 high_card_group_last_refresh_time = 8;	// 高级卡组最近刷新时间
+	repeated CardGroupData low_card_group = 9; // 低级卡组
+	repeated CardGroupData high_card_group = 10; // 高级卡组
+	repeated CollectionBook collection_book_list = 11; // 收藏书列表
+	optional uint32 achievement_level = 12; // 成就等级
+	optional uint32 today_low_card_group_cost_refresh_times = 13; // 今日低级卡组已经花费刷新的次数(需要消耗的刷新次数)
+	optional uint32 today_high_card_group_cost_refresh_times = 14; // 今日高级卡组已经花费刷新的次数(需要消耗的刷新次数)
+}
+
+// 世界等级任务数据
+message WorldLevelTaskData
+{
+	optional uint32 task_id = 1;			// 任务ID
+	optional uint32 context = 2;			// 任务上下文
+	optional uint32  is_already_take = 3;	// 是否已领取
+	
+	// 属于配置字段
+	optional uint32  task_type = 4; // 任务类型(为了方便操作)
+	optional uint32  task_level = 5; // 任务类型(为了方便操作)
+}
+
+// 世界等级任务数据
+message RoleWorldLevelTaskInfo
+{
+	optional uint32 is_already_take_final_reward = 1;	// 是否已领取最终奖励
+	repeated WorldLevelTaskData task_event_list = 2; 	// 任务事件列表
+}
+
+// 挂机掉落数据
+message RoleHangUpDropData
+{
+	optional uint32 last_obtain_reward_time = 1;		// 最近一次领取奖励时间
+}
+
+// 角色二级信息
+message RoleSecondInfo
+{
+	optional RolePVPData pvp_data = 1;						// PVP数据
+	optional RoleTitleInfo title_info = 2;  				// 角色称号信息
+	optional RoleEndlessLandInfo endless_land_info = 3; 	// 无尽之地信息
+	optional RoleGuildData guild_data = 4; 					// 角色工会数据
+	optional PlayerLuxurySignInData luxury_sign_in_data = 5;// 豪华签到数据
+	optional PlayerGemInfo gem_info = 6; 					// 宝石信息
+	
+	optional RoleItemInfo role_item_info = 7;			// 物品数据
+	optional RoleEquipmentInfo role_equipment_info = 8;	// 装备数据
+	optional RoleTreasureInfo role_treasure_info = 9;	// 宝物数据
+	optional RoleShopInfo role_shop_info = 10;			// 商店数据
+	optional RoleSpiritInfo role_sprite_info = 11; 		// 精灵数据
+	optional RoleRebelInfo role_rebel_info = 12;		// 叛军数据
+	optional RoleDuobaoInfo role_duobao_info = 13;		// 夺宝数据
+	optional RoleFBInfo role_fb_info = 14;				// 副本数据
+	optional RoleAchievemntInfo role_achievement_info = 15;		// 成就数据
+	optional RoleDailyMissionInfo role_daily_mission_info = 16;	// 日常任务数据
+	optional RoleGuildSkillInfo	role_guild_skill_info = 17;		// 工会技能数据
+	optional RoleSignInData role_sign_in_data = 18;				// 签到数据
+	optional LoginRewardData login_reward_data = 19;			// 登录奖励数据
+	optional RoleKingMatchData king_match_data = 20;				// 王者赛数据
+	optional PlayerTeamDungeonData team_dungeon_data = 21;			// 玩家组队副本数据
+	optional RoleZhanBuData role_zhanbu_data = 22;
+	optional RoleWorldLevelTaskInfo role_world_level_task_info = 23;	// 角色世界等级任务数据
+	optional RoleHangUpDropData role_hang_up_drop_data = 24;			// 挂机掉落数据			
+	
+}
+
+// 奖励数据
+message RewardData
+{
+	optional uint32 uid = 1;			// 奖励uid
+	optional uint32 info_id = 2;		// 奖励配置Id
+	optional uint32 value1 = 3;			// 奖励值1
+	optional uint32 value2 = 4;			// 奖励值2
+	optional uint32 time = 5;			// 发放时间
+	required string text = 6;			// 文本
+}
+
+// 角色奖励数据
+message RoleRewardData
+{
+	repeated RewardData reward_list = 1; // 奖励列表
+}
+
+// 迎财神数据
+message YCSData
+{
+	optional uint32 today_get_times = 1;	// 今日领取次数
+	optional uint32 total_get_times = 2;	// 总的领取次数
+	optional uint32 total_reward_value = 3;	// 总的奖励累积值
+	optional uint32 last_get_time = 4;		// 最近一次领取的时间
+}
+
+// 铜雀台数据
+message TQTData
+{
+	optional uint32 last_get_time = 1;		// 最近一次领取的时间
+	repeated uint32 take_record_list = 2; 	// 领取记录列表 	
+}
+
+// 7天目标数据
+message SevenDayTargetData
+{
+	optional uint32 target_id = 1;		// 目标ID
+	optional uint32 value = 2;			// 目标值
+	optional uint32 is_get_reward = 3;	// 是否已领取奖励	
+}
+
+// 等级商店活动数据
+message LevelShopActivityData
+{
+	optional uint32 level = 1;			// 等级
+	optional uint32 activate_time = 2;	// 激活时间	
+}
+
+// 礼包数据
+message Gift
+{
+	optional uint32 id = 1;		// 礼包Id
+	optional uint32 num = 2;	// 礼包数量	
+}
+
+// VIP礼包
+message VipGiftData
+{
+	optional uint32 init_vip_level = 1;			// 每日VIP初始等级
+	optional int32 vip_level_reward_record = 2;	// VIP等级奖励记录(已经领取的,-1=表示还没有领取)
+	repeated Gift week_gift_list = 3;			// 周礼包列表
+	optional uint32 today_recommend_recharge_reward_id = 4;	// 今日推荐充值奖励Id
+	optional uint32 today_recommend_recharge_reward_status = 5;	// 今日推荐充值奖励状态(0=不能领取,1=可领取,2=已领取)	
+}
+
+// 普通充值
+message CommonRecharge
+{
+	optional uint32 id = 1;	// 充值ID
+	optional uint32 times = 2;	// 充值次数
+}
+
+// 月卡数据
+message MonthCardData
+{
+	optional uint32 card_id = 1;	// 月卡ID
+	optional uint32 buy_time = 2;	// 购买时间
+	optional uint32 last_take_reward_time = 3;	// 最近领取奖励时间
+}
+
+// 角色充值数据
+message RoleRechargeData
+{
+	repeated CommonRecharge recharge_list = 1;	// 充值列表
+	repeated MonthCardData month_card_list = 2;	// 月卡列表
+	repeated uint32 order_record_list = 3;		// 订单记录列表
+	optional uint32 today_recharge_times = 4;	// 今日充值次数
+}
+
+// 开服基金数据
+message OpenServerFundData
+{
+	optional uint32 is_already_buy_fund = 1; // 是否已购买基金
+	repeated uint32 fund_reward_take_record = 2; // 基金奖励领取记录 
+}
+
+// 全民福利数据
+message AllPeopleWelfareData
+{
+	repeated uint32 welfare_take_record = 1; // 福利领取记录 
+}
+
+// 限时活动数据
+message LimitActivityData
+{
+	optional uint32 recruit_times = 1;				// 高级招募次数
+	optional uint32 accumulate_recharge = 2;		// 累积充值
+	repeated uint32 recruit_reward_record= 3; 		// 招募奖励记录 
+	repeated uint32 accumulate_recharge_reward_record= 4;	// 累积充值奖励记录 
+	repeated RecordData single_recharge_reward_record= 5; 		// 单次充奖励记录 
+	repeated uint32 first_recharge_reward_record= 6; 		// 首充奖励记录 
+	optional uint32 total_recharge = 7;		// 总的充值值
+	optional uint32 last_single_recharge_data_id = 8;		// 上次活动单充数据Id
+	optional uint32 last_accumulate_recharge_data_id = 9;		// 上次累充活动数据Id
+	repeated CommonRecharge recharge_list = 10;	// 充值列表(作为限制活动逻辑处理,会重置)
+	
+}
+
+// 超值折扣数据
+message SuperDiscountData
+{
+	optional uint32 status = 1;							// 购买状态(0=还没购买, 1=已购买(可领取), 2=已领取)
+	optional uint32 take_accumulate_reward_times = 2;	// 已领取累积奖励的次数
+	optional uint32 cur_buy_times = 3;					// 当前购买次数(领取奖励时会重置)
+	optional uint32 last_activity_data_id = 4;			// 最近一次活动数据Id
+	repeated uint32 took_accumulate_reward_list = 5;	// 已领取累积奖励记录(旧超值折扣使用)
+}
+
+// 活动目标数据
+message ActivityTarget
+{
+	optional uint32 target_id = 1;			// 目标ID
+	optional uint32 context = 2;			// 上下文(阶段值,完成次数)
+	optional uint32 take_reward_times = 3;	// 已领取的奖励次数
+}
+
+// 节日活动数据
+message FestivalActivity
+{
+	optional uint32 data_reset_time = 1; // 数据重置时间
+	repeated ActivityTarget target_list = 2; // 目标列表
+}
+
+
+
+// 角色节日信息
+message RoleFestivalActivityInfo
+{
+	optional FestivalActivity loop_once_recharge = 1; 			// 循环单充
+	optional FestivalActivity loop_accumulate_recharge = 2; 	// 循环累充
+	optional FestivalActivity limit_recruit = 3; 				// 开服限时召唤
+	optional FestivalActivity activity_once_recharge = 4; 		// 活动单充
+	optional FestivalActivity activity_accumulate_recharge = 5; // 活动累充
+	optional FestivalActivity diamond_exchange = 6; 			// 打折兑换（物品打折卖钻石,钻石换物品）
+	optional FestivalActivity active_target = 7; 				// 活跃目标	
+	optional FestivalActivity item_exchange = 8; 				// 材料兑换（物品换物品）	
+	optional FestivalActivity festival_login = 9; 				// 节日登陆		
+	optional FestivalActivity open_server_login = 10; 			// 开服登陆	
+	optional FestivalActivity open_svr_accumulate_recharge = 11;// 开服累充	
+	optional FestivalActivity festival_item_exchange = 12; 		// 节日材料兑换
+	optional FestivalActivity festival_discount_sell = 13; 		// 节日打折贩售
+	optional FestivalActivity festival_active_target = 14; 		// 节日活跃目标	
+	optional FestivalActivity open_server_active_target = 15; 	// 开服活跃2(同7)
+	optional FestivalActivity festival_active_target_2 = 16; 	// 节日活跃2(同14)
+	optional FestivalActivity activity_once_recharge_2 = 17; 	// 活动单充(同4)
+}
+
+// 精准推荐商品
+message AccurateRecommendGoods
+{
+	optional uint32 goods_id = 1; 			// 商品ID
+	optional uint32 buy_times = 2; 			// 购买次数
+	optional uint32 can_take_times = 3; 	// 可领取次数
+};
+
+// 角色精准推荐数据
+message RoleAccurateRecommendData
+{
+	repeated AccurateRecommendGoods goods_list = 1; // 商品列表
+}
+
+// 角色圣诞节数据
+message RoleChristmasData
+{
+	 // 总积分
+	 optional uint32 total_score = 1;
+
+	 // 当前积分
+	 optional uint32 cur_score = 2;
+
+	 // 已领取的低级BOSS奖励等级
+	 optional uint32 already_take_lower_boss_reward_level = 3;
+
+	 // 已领取的高级BOSS奖励等级
+	 optional uint32 already_take_high_boss_reward_level = 4;
+	 
+	 // 最近重置数据时间
+	 optional uint32 last_reset_data_time = 5;
+}
+
+// 在线奖励记录数据
+message OnlineRewardRecord
+{
+	optional uint32 days = 1;	// 天数
+	repeated uint32 flag_list = 2;	// 领取标志列表(1=表示可领取, 0=表示还没领取)
+}
+
+// 在线奖励数据
+message OnlineRewardData
+{
+	optional uint32 online_time = 1; // 在线时间(秒)
+	repeated OnlineRewardRecord reward_record_list = 2; // 奖励记录列表
+}
+
+// 7天登录每日数据
+//message SevenDayLoginDailyData
+//{
+//	optional uint32 days = 1;	// 天数
+//	optional uint32 flag = 2;	// 标志数据(1=表示已登录,2=表示已领取)
+//}
+
+// 7天登录数据
+message SevenDayLoginData
+{
+	repeated uint32 daily_data_list = 1; // 每日数据列表
+}
+
+// 召回好友数据
+message RecallFriendData
+{
+	optional uint32 friend_id = 1;	// 好友ID
+	optional uint32 send_time = 2;	// 发出时间
+}
+
+
+// facebook活动数据
+message FacebookActivityData
+{
+	optional uint32 is_already_take_account_bingding_reward = 1;  // 是否已领取帐号绑定奖励
+	optional uint32 ready_to_share_time = 2;		// 准备分享时间(0=表示木有,1=表示已分享过)
+	optional uint32 recall_success_friend_num = 3;	// 召回成功的好友数量
+	optional uint32 invite_success_friend_num = 4;	// 邀请成功的好友数量
+	repeated uint32 recall_reward_record_list = 5; 	// 召回奖励记录(已领取的)
+	repeated uint32 invite_reward_record_list = 6; 	// 邀请奖励记录(已领取的)
+	repeated RecallFriendData send_recall_friend_record = 7; 	// 已发出召回的好友记录(游戏内好友)
+	repeated string send_invite_friend_record = 8; 				// 已发出邀请的好友记录(facebook好友)
+	optional uint32 ready_to_commend_time = 9;		// 准备评论时间(0=表示木有,1=表示已分享过)
+}
+
+// 充值回馈数据
+message RechargeRewardData
+{
+	optional uint32 is_took_extra_reward = 1;	 // 是否已领取额外奖励
+	repeated uint32 daily_data_list = 2; 		// 每日数据列表(0=还没充值,1=已充值,2=已领取) 
+	optional uint32 last_activity_data_id = 3;	 // 活动数据ID
+}
+
+// 累充奖励数据
+message TotalRechargeRewardData
+{
+	optional uint32 total_amount = 1;  			// 总的充值额度
+	repeated uint32 reward_record_list = 2;  	// 奖励记录列表
+	optional uint32 last_activity_data_id = 3;	// 最近一次活动数据Id
+}
+
+// 热卖商品数据
+message HotSaleGoods
+{
+	optional uint32 goods_id = 1;		// 商品ID
+	optional uint32 cur_data_idx = 2;	// 当前数据索引
+	optional uint32 buy_times = 3;		// 购买次数
+	optional uint32 take_times = 4;		// 领取次数
+}
+
+// 角色热卖商品数据
+message RoleHotSaleGoodsData
+{
+	optional uint32 last_activity_data_id = 1;	// 最近一次活动数据Id
+	repeated HotSaleGoods goods_list = 2;  		// 商品列表
+}
+ 
+// 角色阵营招募数据
+message RoleCampRecruitData
+{
+	optional uint32 cur_data_id = 1;					// 当前活动数据ID
+	optional uint32 today_already_recruit_times = 2;	// 今日已招募次数	
+	repeated uint32 camp_score_list = 3;				// 阵营积分列表	
+	repeated uint32 score_task_reward_record_list = 4;	// 积分任务奖励记录列表(已领取的记录)
+} 
+
+// unlock活动
+message UnlockActivityData
+{
+	optional uint32 is_score_for_shop = 1;		// 是否已对商城评分
+	optional uint32 watching_video_times = 2;	// 观看视频次数	
+}
+
+// 充值与消费排行榜活动
+message RechargeAndCostRankData
+{
+	optional uint32 last_activity_data_id = 1;	// 最近一次活动数据ID
+	optional uint32 cost_diamond = 2;			// 消耗的钻石	
+	optional uint32 recharge_amount = 3;		// 充值额度	
+}
+ 
+ 
+// 角色活动数据
+message RoleActivityData
+{
+	optional TQTData tqt_data = 1;	// 铜雀台数据
+	optional YCSData ycs_data = 2;	// 迎财神数据
+	repeated SevenDayTargetData seven_day_target_list = 3; 	// 7天目标列表 	
+	repeated uint32 completion_reward_record_list = 4; 		// 完成度奖励记录列表 	
+	repeated LevelShopActivityData level_shop_activity_data_list = 5; 	// 等级商店活动数据列表 	
+	repeated uint32 level_gift_take_record_list = 6; // 等级礼包领取记录 
+	optional VipGiftData vip_gift_data = 7; // VIP礼包数据
+	optional RoleRechargeData recharge_data = 8; // 充值数据
+	optional OpenServerFundData open_server_fund_data = 9; // 开服基金数据
+	optional AllPeopleWelfareData all_people_welfare_data = 10; // 全民福利
+	optional LimitActivityData limit_activity_data = 11; // 限时活动数据
+	optional uint32 is_take_next_day_reward = 12;				// 是否已领取次日奖励
+	optional SuperDiscountData super_discount_data = 13;				// 超值折扣数据
+	optional RoleFestivalActivityInfo role_festival_activity_info = 14;	// 角色节日活动数据
+	optional RoleAccurateRecommendData role_accurate_recommend_data = 15; // 角色精准推荐数据
+	optional RoleChristmasData role_christmas_data = 16;// 角色圣诞节数据
+	optional OnlineRewardData online_reward_data = 17;// 在线奖励数据	
+	optional SevenDayLoginData seven_day_login_data = 18;// 7天登录数据	
+	optional FacebookActivityData facebook_activity_data = 19;// facebook活动数据	
+	optional RechargeRewardData recharge_reward_data = 20;// 充值回馈数据
+	optional TotalRechargeRewardData total_recharge_reward_data = 21;// 累充奖励数据
+	optional SuperDiscountData new_super_discount_data = 22; // 新超值折扣数据
+	optional RoleHotSaleGoodsData role_hot_sale_goods = 23; // 角色热卖商品数据	
+	optional RoleCampRecruitData role_camp_recruit_data = 24; // 角色阵营招募数据	
+	optional UnlockActivityData role_unlock_activity_data = 25; // unlock活动数据
+	optional RechargeAndCostRankData role_recharge_and_cost_rank_data = 26; // 	角色充值与消费排行榜数据
+}
+
+// 领地巡逻事件
+message LandPatrolEvent
+{
+	optional uint32 event_id = 1;			// 事件ID
+	optional uint32 happen_time = 2;		// 发生时间
+	optional uint32 is_double_reward = 3;	// 是否双倍奖励
+}
+
+// 领地城池数据
+message LandCityData
+{	
+	required uint32 city_id = 1;				// 城池ID
+	optional uint32 skill_level = 2;			// 技能等级
+	optional uint32 patrol_hero_info_id = 3;	// 巡逻英雄ID
+	optional uint32 start_patrol_time = 4;		// 开始巡逻时间
+	optional uint32 patrol_type = 5;			// 巡逻方式
+	optional uint32 time_type = 6;				// 时间类型
+	optional uint32 is_riot = 7;				// 是否暴动
+	optional uint32 is_take_reward = 8;			// 是否已经领取奖励
+	optional uint32 reward_item_num = 9;		// 奖励的碎片数量
+	optional uint32 last_happen_event_time = 10;// 上次发生事件时间
+	optional uint32 interval_time = 11;			// 收益时间间隔(秒)
+	optional LandPatrolEvent patrol_event_list = 12;	// 巡逻事件列表
+	optional LandPatrolEvent riot_event_list = 13;		// 暴动事件列表
+}
+
+// 工会基本信息
+message GuildBaseData
+{
+	required uint32 guild_id = 1;		// 工会ID
+	optional uint32 server_id = 2;		// 工会所属
+	optional string guild_name = 3;		// 工会名称
+	optional uint32 icon_id = 4;		// 工会图标
+	optional uint32 create_time = 5;	// 创建时间
+	optional uint32 level = 6; 			// 公会等级
+	optional uint32 exp = 7; 			// 公会经验
+	optional uint32 qs = 8; 			// 泉水
+	optional uint32 qy_times = 9; 		// 泉涌次数
+	optional string notice = 10;		// 公告
+	optional string declaration = 11;		// 宣言
+	optional uint32 cur_pass_chapter = 12; 	// 当前通关的章节
+	optional uint32 today_start_chapter = 13; 		// 今日开始章节
+	optional uint32 history_chapter_record = 14; 	// 历史章节记录
+	optional uint32 is_from_history_chapter = 15; 	// 是否从历史章节开始
+	optional uint32 active = 16; 	// 活跃度
+}
+
+// 工会成员
+message GuildMember
+{
+	required uint32 role_id = 1;				// 成员ID
+	optional uint32 position = 2;				// 工会所属
+	optional uint32 total_contribution = 3;		// 累积贡献值
+	optional uint32 cur_contribution = 4;		// 当前贡献值(todo::已经失效)
+	optional uint32 today_contribution = 5;		// 今日贡献值
+	optional uint32 last_logout_time = 6;		// 最近的离线时间
+	optional uint32 qy_type = 7;				// 泉涌类型(0表示还木有泉涌)
+	optional uint32 battle_fb_times = 8;		// 挑战副本次数
+	optional uint32 buy_battle_fb_times = 9;	// 已经购买的副本挑战次数
+	repeated uint32 qs_reward_record_list = 10;	// 领取泉水奖励记录
+	optional uint32 battle_times_last_recover_time = 11;	// 挑战次数最近恢复时间
+	repeated uint32 take_chapter_reward_record = 12;	// 领取副本章节奖励记录
+}   								
+
+// 工会事件
+message GuildEvent
+{
+	required uint32 event_id = 1; // 事件ID
+	optional string target_name = 2; // 事件目标名称
+	optional uint32 value = 3; // 上下文值
+	optional uint32 time = 4; // 发生时间
+}
+
+
+// 工会留言数据
+message GuildLeaveMessage
+{
+	optional uint32 time = 1;				// 留言时间
+	optional string name = 2;				// 留言角色名称
+	optional uint32 position = 3;			// 留言角色职位
+	optional string text = 4;				// 留言内容
+}
+
+// 聊天记录
+message ChatRecord
+{
+	optional uint32 role_id = 1;			// 角色ID
+	optional uint32 head_img_id = 2;		// 角色头像
+	optional uint32 role_vip_level = 3;		// VIP等级
+	optional string role_name = 4;			// 角色名称
+	optional string chat_text = 5;			// 聊天文本
+	optional uint32 time = 6;				// 时间戳
+	optional uint32 role_use_title_id = 7;	// 角色使用的称号ID
+	
+	//optional uint32 chat_type = 7;			// 聊天类型
+	//optional uint32 role_level = 8;			// 角色等级
+}
+
+// 工会阵营怪物数据
+message GuildCampMonster
+{
+	optional uint32 camp = 1; // 阵营
+	optional string killer_name = 2; 	// 击杀者名称
+	repeated MonsterData monster_list = 3; // 怪物列表
+}
+
+// 军团副本宝箱
+message GuildFBBox
+{
+	optional uint32 box_idx = 1;			// 宝箱索引
+	optional uint32 box_reward_idx = 2;		// 宝箱奖励索引
+	optional string role_name = 3;			// 领取者的名称
+}
+
+// 工会阵营宝箱记录
+message GuildCampBox
+{
+	optional uint32 camp = 1; // 阵营
+	repeated GuildFBBox take_box_record_list = 2; // 已领取的宝箱记录列表
+	repeated uint32 take_reward_player_list = 3; // 已经领取奖励的玩家列表
+}
+
+// 工会关卡奖励记录
+message GuildMapRewardRecord
+{
+	optional uint32 chapter = 1; // 章节
+	repeated GuildCampBox camp_box_list = 2;	// 阵营宝箱列表
+}
+
+// 工会怪物伤害记录
+message GuildMonsterDamageRecord
+{
+	optional uint32 role_id = 1;	// 角色ID
+	optional uint32 damage = 2;	// 伤害
+}
+
+// 工会信息
+message GuildInfo
+{
+	optional GuildBaseData base_data = 1; 					// 基本信息
+	repeated GuildMember member_list = 2; 					// 成员列表
+	repeated GuildLeaveMessage leave_message_list = 3; 		// 留言列表
+	repeated GuildEvent event_list = 4; 					// 事件列表
+	repeated SkillData skill_list = 5;						// 工会技能列表
+	repeated uint32 apply_list = 6;							// 申请列表
+	repeated ShopGoods goods_list = 7; 						// 限时商品列表
+	repeated ChatRecord chat_record_list = 8; 				// 聊天记录列表
+	repeated GuildMonsterDamageRecord damage_record_list = 9;// 伤害记录列表
+	repeated GuildCampMonster camp_monster_list = 10; 			// 阵营怪物列表[camp,list]
+	repeated GuildMapRewardRecord map_reward_record_list = 11;	// 关卡奖励领取记录[chapter,list]
+	optional uint32 create_monster_time = 12;					// 创建怪物时间
+}
+
+
+
+// 关卡评论数据
+message MapComment
+{
+	optional uint32 role_id = 1;	// 评论者ID
+	optional uint32 comment_id = 2;	// 评论ID
+	optional string text = 3;		// 评论内容
+	optional uint32 time = 4;		// 评论时间戳
+	optional uint32 like_times = 5; // 点赞次数
+	repeated uint32 like_player_list = 6; // 点赞玩家列表
+}
+
+// 关卡评论数据
+message MapComments
+{
+	optional uint32 map_id = 1;	// 关卡ID
+	repeated MapComment comment_list = 2; // 评论列表
+}
+
+// 临时数据
+message RoleTempData
+{
+	optional uint32 type = 1;	// 数据类型
+	optional string text = 2;	// 文本
+	repeated uint32 param_list = 3; // 参数列表
+}
+
+// 角色临时数据
+message RoleTempDatas
+{
+	repeated RoleTempData temp_data_list = 1; // 临时数据列表	
+}
+
+// 王者赛挑战目标数据
+message KingMatchBattleTarget
+{
+	optional uint32 role_id = 1;		// 角色ID
+	optional uint32 server_id = 2;		// 服务器ID
+	optional uint32 star = 3;			// 星数
+	optional uint32 battle_times = 4;	// 挑战次数	
+	optional uint32 stage_level = 5;	// 段位等级
+}
+
+// 王者赛段位数据
+message KingMatchStage
+{
+	optional uint32 stage = 1;	// 段位
+	repeated KingMatchBattleTarget battle_target_list = 2;		// 挑战目标数据
+}
+
+// 角色赛季排行数据(赛季排行记录使用)
+message RoleSeasonRank
+{
+	optional uint32 role_id = 1;		// 角色ID
+	optional uint32 server_id = 2;		// 服务器ID	
+} 
+
+// 赛季排行数据
+message SeasonRankData
+{
+	optional uint32 season = 1;	// 赛季
+	repeated RoleSeasonRank rank_list = 2; // 排行列表	
+}
+
+// 王者赛数据
+message KingMatchData
+{
+	repeated KingMatchStage stage_list = 1; // 段位数据列表
+	repeated SeasonRankData last_season_rank_list = 2; // 最近赛季排行列表
+}
+
+// 组队副本成员数据
+message TeamDungeonMember
+{
+	optional uint32 server_id = 1;	// 服务器ID
+	optional string role_name = 2; 	// 角色名称
+	optional uint32 role_id = 3;	// 角色ID
+}
+
+// 组队副本角色排行数据
+message TeamDungeonRoleRank
+{
+	optional uint32 rank = 1;					// 排行
+	optional uint32 use_time = 2;				// 使用时间(秒)
+	optional uint32 finish_time = 3; 			// 完成时间
+	optional uint32 captain_head_img_id = 4;	// 队长头像ID
+	repeated TeamDungeonMember member_list = 5; // 成员列表
+}
+
+// 组队副本排行数据
+message TeamDungeonRank
+{
+	optional uint32 dungeon_id = 1;	// 副本ID
+	repeated TeamDungeonRoleRank role_rank_list = 2; // 角色排行列表
+}
+
+// 组队副本抽奖记录
+message TeamDungeonLotteryRecord
+{
+	optional uint32 server_id = 1;	// 服务器ID	
+	optional string role_name = 2; 	// 角色名称
+	optional uint32 item_id = 3;	// 抽中的物品ID
+	optional uint32 item_num = 4;	// 抽中的物品数量
+	optional uint32 record_time = 5;	// 记录时间
+}
+
+// 全局组队副本数据
+message TeamDungeonData
+{
+	repeated TeamDungeonRank dungeon_rank_list = 1; // 副本排行列表
+	repeated TeamDungeonLotteryRecord lottery_record = 2; // 抽奖记录(todo::搭个车,放在这里)
+}
+
+// 转盘数据抽奖记录
+message TurntableLotteryRecord
+{
+	optional uint32 role_id = 1;	// 抽奖的角色ID	
+	optional uint32 time = 2;		// 抽奖时间戳	
+	optional uint32 index = 3;		// 抽中的数据索引		
+	optional uint32 context = 4;	// 上下文(物品数量,钻石)		
+}
+
+// 某个服的转盘数据
+message TurntableData
+{
+	optional uint32 server_id = 1;							// 服务器ID	
+	optional uint32 cur_activity_data_id = 2;				// 当前活动数据ID		
+	optional uint32 diamond = 3;							// 奖池钻石数量			
+	repeated TurntableLotteryRecord lottery_record_list = 4;// 抽奖记录列表
+}
+
+// 所有服务器的转盘数据
+message AllServerTurntableData
+{
+	repeated TurntableData turntable_data_list = 1; // 转盘数据列表
+}
+
+// 积分赛目标
+message ScoreMatchTarget
+{
+	optional uint32 target_id = 1;		// 目标ID
+	optional uint32  status = 2;		// 状态(0=还没挑战,1=战胜,2=战败)
+};
+
+
+// 角色积分赛数据
+message RoleScoreMatchData
+{
+	optional uint32 role_id = 1;			// 角色ID
+	optional uint32 battle_times = 2;		// 已经使用的挑战次数
+	optional uint32 refresh_times = 3;		// 已经使用的刷新次数
+	optional uint32 buy_battle_times = 4;	// 已经购买的挑战次数
+	optional uint32 camp = 5;				// 阵营
+	optional uint32 win_times = 6;			// 获胜次数	
+	repeated uint32 task_reward_record = 7; // 任务奖励记录列表(已领取的)
+	repeated ScoreMatchTarget battle_target_list = 8; // 挑战目标列表
+	
+}
+
+// 积分赛数据
+message ScoreMatchData
+{
+	optional uint32 cur_activity_index = 1;		// 当前活动索引
+	optional uint32 activity_status = 2;		// 活动状态(0.空闲,1.活动中,2.等待奖励) 
+	optional uint32 activity_over_time = 3;		// 活动结束时间戳
+	repeated RoleScoreMatchData role_score_match_data_list = 4; // 角色积分赛数据列表
+}
+
+
+
+// 角色资源战数据
+message RoleResourceWarData
+{
+	optional uint32 role_id = 1;					// 角色ID
+	optional uint32 technology_level = 2;			// 科技等级
+	optional uint32 total_accupy_time = 3;			// 总占领时间
+	optional uint32 reward_resource_war_score = 4;	// 奖励资源战积分
+}
+
+// 资源战敌人信息
+message ResourceWarEnemy
+{
+	optional uint32 role_id = 1;
+	optional uint32 be_attack_times = 2; 	// 被攻击次数
+	optional uint32 enemy_id = 3; 			// 敌人ID
+}
+
+// 资源战挑战记录
+message ResourceWarBattleRecord
+{
+	optional uint32 attacker_id = 1;	// 攻击者ID
+	optional uint32 defender_id = 2;	// 守防者ID
+	optional uint32 battle_time = 3;	// 挑战时间
+	optional uint32 chapter = 4;		// 章节
+	optional uint32 resource_id = 5;	// 资源ID
+}
+
+
+// 资源战资源数据 
+message ResourceWarResourceData
+{
+	optional uint32 chapter = 1;				// 章节
+	optional uint32 resource_id = 2;			// 资源ID
+	optional uint32 resource_type = 3; 			// 资源类型
+	optional uint32 occupy_start_time = 4; 		// 占领开始时间戳
+	optional uint32 occupy_over_time = 5; 		// 占领结束时间戳
+	optional uint32 owner_id = 6; 				// 拥有者ID(0=表示木有人占领)
+	optional uint32 keep_occupy_times = 7; 		// 延长占领次数(默认就相当于延长了一次,但是次数从0开始)
+	optional uint32 last_base_reward_time = 8; 	// 最近获得基础奖励的时间戳
+	optional uint32 last_extra_reward_time = 9; // 最近获得额外奖励的时间戳
+	
+	optional uint32 base_reward_interval_time = 10; // 获得基础奖励间隔时间(分钟)
+	optional uint32 cur_extra_reward_need_time = 11; // 当前获得额外奖励需要的时间(分钟)
+	
+	optional uint32 already_send_base_reward_times = 12; // 已经发放的基础奖励次数
+	optional uint32 already_send_extra_reward_times = 13; // 已经发放的额外奖励次数
+}
+
+
+// 资源战数据
+message ResourceWarData
+{
+	repeated ResourceWarResourceData resource_data_list = 1;		// 资源数据列表
+	repeated RoleResourceWarData role_resource_war_data_list = 2;	// 角色资源战数据列表
+	repeated ResourceWarEnemy enemy_list = 3;						// 敌军列表
+	repeated ResourceWarBattleRecord battle_record_list = 4;		// 资源战挑战记录列表
+}
+
+// 工会战防守者信息
+message StarDefenderInfo
+{
+	optional uint32 role_id = 1;				// 角色ID
+	optional uint32 be_attack_times = 2;		// 被攻击次数	
+}
+
+// 工会战塔信息
+message StarTowerInfo
+{
+	optional uint32 tower_id = 1;					// 塔信息ID
+	optional uint32 durability = 2;					// 耐久度
+	optional uint32 monster_be_attack_times = 3;	// 怪物被攻击次数	
+	repeated StarDefenderInfo defender_list = 4; 	// 防守者列表(人守是才有效)
+}
+
+// 工会战积分数据
+message GuildWarScore
+{
+	optional uint32 guild_id = 1;	// 工会ID
+	optional uint32 score = 2;		// 积分		
+}
+
+// 工会战星球信息
+message StarInfo
+{
+	optional uint32 region_id = 1;					// 所在的大区ID
+
+	optional uint32 info_id = 2;					// 信息ID
+	optional uint32 belong_guild_id = 3;			// 所属工会ID
+	optional uint32 attack_guild_id = 4;			// 进攻工会的ID
+	repeated uint32 took_reward_record_list = 5;	// 奖励领取记录列表[role_id]		
+	repeated uint32 declare_war_list = 6;			// 宣战列表[GuildId]
+	repeated GuildWarScore score_list = 7;			// 积分列表(积分模式使用)[GuildId,Score]
+	repeated StarTowerInfo tower_list = 8; 			// 塔列表
+	optional uint32 last_belong_guild_id = 9;		// 上次所属工会ID
+}
+
+// 角色工会战数据
+message RoleGuildWarData
+{
+	optional uint32 role_id = 1;						// 1.角色ID
+	optional uint32 buy_high_star_battle_times = 2;		// 2.购买高级星球挑战次数
+	optional uint32 used_low_star_battle_times = 3;		// 3.低级星球已挑战次数 
+	optional uint32 used_high_star_battle_times = 4;	// 4.高级星球已挑战次数
+}
+
+// 工会战数据
+message GuildWarData
+{
+	repeated StarInfo star_list = 1; 						// 星球列表
+	repeated RoleGuildWarData role_guild_war_data_list = 2;	// 角色工会战数据列表 	
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+
+
+<!-- Mirrored from www.zi-han.net/theme/hplus/form_basic.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 20 Jan 2016 14:19:15 GMT -->
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>H+ 后台主题UI框架 - 基本表单</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="__PUBLIC__/Admin/css/bootstrap.min14ed.css?v=3.3.6" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/font-awesome.min93e3.css?v=4.4.0" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/animate.min.css" rel="stylesheet">
+    <link href="__PUBLIC__/Admin/css/style.min862f.css?v=4.1.0" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/js/kindeditor/themes/default/default.css" />
+    
+</head>
+
+<body class="gray-bg">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5 style="margin-left: 580px;font-size: 20px;">个人详情信息</h5>
+                        <div class="ibox-tools"><button type="button" id="loading-example-btn" class="btn btn-white btn-sm"><i class="fa fa-refresh"></i> 刷新</button>
+
+                            <a class="collapse-link">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a class="close-link">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <style>
+                        .bor{
+                            margin-bottom: 0px;
+                        }
+                        .bor tr td{
+                            width: 140px;
+                            text-align: center;
+                            height: 50px;
+                        }
+                    </style>
+                    <div class="ibox-content">
+                            <table border="1" class="bor">
+                                <tr>
+                                    <td>角色ID</td>
+                                    <td>角色名称</td>
+                                    <td>帐号</td>
+                                    <td>角色等级</td>
+                                    <td>钻石</td>
+                                    <td>金币</td>
+                                    <td>总的充值额度</td>
+                                    <td>VIP等级</td>
+                                    <td>当前主线副本章节</td>
+                                    <td>当前主线副本关卡</td>
+                                </tr>
+                                <tr>
+                                    <td>{$result.role_id}</td>
+                                    <td>{$result.role_name}</td>
+                                    <td>{$result.account}</td>
+                                    <td>{$result.level}</td>
+                                    <td>{$result.diamond}</td>
+                                    <td>{$result.gold}</td>
+                                    <td>{$result.total_recharge_amount}</td>
+                                    <td>{$result.vip_level}</td>
+                                    <td>{$result.fb_chapter}</td>
+                                    <td>{$result.fb_map}</td>
+                                </tr>
+                            </table>
+                            <style>
+                                .der{
+                                    margin-bottom: 20px;
+                                }
+                                .der tr td{
+                                    width: 140px;
+                                    text-align: center;
+                                    height: 50px;
+                                }
+                            </style>
+                            <table border="1" class="der">
+                                <tr>
+                                    <td>总的在线时间秒(转换时间格式)</td>
+                                    <td>物品数量</td>
+                                    <td>装备数量</td>
+                                    <td>宝物数量</td>
+                                    <td>英雄数量</td>
+                                    <td>战力</td>
+                                    <td>角色创建时间</td>
+                                    <td>最后更新数据时间</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>{$result.total_online_time}</td>
+                                    <td>{$result.item_num}</td>
+                                    <td>{$result.equipment_num}</td>
+                                    <td>{$result.treasure_num}</td>
+                                    <td>{$result.hero_num}</td>
+                                    <td>{$result.fighting_power}</td>
+                                    <td>{$result.create_time}</td>
+                                    <td>{$result.last_update_time}</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <h5 style="margin-left: 580px;font-size: 20px;font-weight:bold;">个人发放奖励</h5>
+                            <style>
+                                .ff{
+                                    margin-bottom: 20px;
+                                }
+                                .ff tr td{
+                                    width: 190px;
+                                    text-align: center;
+                                    height: 50px;
+                                }
+                            </style>
+                        <form method="post" action="{:U('Admin/Role/Peraward')}" class="form-horizontal" enctype="multipart/form-data">
+                        <table border="1" class="ff">
+                                <tr>
+                                    <td>角色Id</td>
+                                    <td>选择下啦奖励ID</td>
+                                    <td>啦奖励物品ID</td>
+                                    <td>奖励物品数量</td>
+                                    <td>发放奖励时间</td>
+                                    <td>奖励描述(暂时不起作用)</td>
+                                    <td>操作</td>
+                                </tr>
+                                <tr>
+                                    <input type="hidden" name="cmd_id" value="7" />
+                                    <td>
+                                        <input type="text" style="border-color: #8a1f11" class="form-control" name="param1" value="{$result.role_id}">
+                                    </td>
+                                    <td>
+                                        <select name="param5" class="form-control">
+                                            <option value="">..请选择</option>
+                                            <volist name="jianl" id="vo">
+                                                <option  value="{$vo['typeid']}" <if condition="$vo['typeid'] eq $resut['param5']">selected</if> >
+                                                {$vo['typeid']} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {$vo['name']}
+                                                </option>
+                                            </volist>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="param3" class="form-control">
+                                            <option value="">..请选择</option>
+                                            <volist name="wuping" id="vo">
+                                                <option  value="{$vo['typeid']}" <if condition="$vo['typeid'] eq $resut['param3']">selected</if> >
+                                                {$vo['typeid']} &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {$vo['name']}
+                                                </option>
+                                            </volist>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="text" style="border-color: #8a1f11" class="form-control" name="param4">
+                                    </td>
+                                    <td>
+                                        <input type="text" style="width:150px;height:35px" class="sang_Calender" name="add_time" >
+                                    </td>
+                                    <td>
+                                        <textarea name="text" rows="3" cols="35"></textarea>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary" type="submit" style="background-color: #2a62bc;">提交</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <style>
+                            .feng{
+                                margin-bottom: 20px;
+                            }
+                            .feng tr td{
+                                width: 200px;
+                                text-align: center;
+                                height: 50px;
+                            }
+                        </style>
+                        <h5 style="margin-left: 580px;font-size: 20px;font-weight:bold;">个人封号操作</h5>
+                    <form method="post" action="{:U('Admin/Role/Perban')}" class="form-horizontal" enctype="multipart/form-data">
+                        <table border="1" class="feng">
+                            <input type="hidden" name="account" value="{$result.account}" />
+                            <tr>
+                                <td>角色Id</td>
+                                <td>角色名称</td>
+                                <td>帐号</td>
+                                <td>角色等级</td>
+                                <td>角色创建时间</td>
+                                <td>是否封号(1封,0不封)</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td>{$result.role_id}</td>
+                                <td>{$result.role_name}</td>
+                                <td>{$result.account}</td>
+                                <td>{$result.level}</td>
+                                <td>{$result.create_time}</td>
+                                <td>
+                                    封号
+                                    <input  type="radio" id="is_lock" <if condition="$dan['is_lock'] eq 1">checked</if> name="is_lock" value="1" />
+                                    解封
+                                    <input  type="radio" id="is_lock"  <if condition="$dan['is_lock'] eq 0">checked</if> name="is_lock" value="0" />
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" type="submit" style="background-color: #2a62bc;">提交</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                        <style>
+                            .jy{
+                                margin-bottom: 20px;
+                            }
+                            .jy tr td{
+                                width: 170px;
+                                text-align: center;
+                                height: 50px;
+                            }
+                        </style>
+                        <h5 style="margin-left: 580px;font-size: 20px;font-weight:bold;">个人禁言操作</h5>
+                      <form method="post" action="{:U('Admin/Role/Perbanned')}" class="form-horizontal" enctype="multipart/form-data">
+                        <table border="1" class="jy">
+                            <tr>
+                                <td>角色名称</td>
+                                <td>帐号</td>
+                                <td>角色等级</td>
+                                <td>角色创建时间</td>
+                                <td>cmd_id(*10禁言*)</td>
+                                <td>参数1(目标的角色ID)</td>
+                                <td>参数2(禁言时间[分])</td>
+                                <td>参数3(是否禁言[1是0否])</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td>{$result.role_name}</td>
+                                <td>{$result.account}</td>
+                                <td>{$result.level}</td>
+                                <td>{$result.create_time}</td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="cmd_id" value="10" >
+                                </td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="param1" value="{$result.role_id}" >
+                                </td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="param2" >
+                                </td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="param3" >
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" type="submit" style="background-color: #2a62bc;">提交</button>
+                                </td>
+                            </tr>
+                        </table>
+                      </form>
+                        <style>
+                            .youj{
+                                margin-bottom: 20px;
+                            }
+                            .youj tr td{
+                                width: 175px;
+                                text-align: center;
+                                height: 50px;
+                            }
+                        </style>
+                        <h5 style="margin-left: 580px;font-size: 20px;font-weight:bold;">个人邮件操作</h5>
+                     <form method="post" action="{:U('Admin/Role/Permail')}" class="form-horizontal" enctype="multipart/form-data">
+                        <table border="1" class="youj">
+                            <tr>
+                                <td>角色名称</td>
+                                <td>帐号</td>
+                                <td>角色等级</td>
+                                <td>角色创建时间</td>
+                                <td>cmd_id(*1邮件*)</td>
+                                <td>参数1(目标的角色ID)</td>
+                                <td>参数2(邮件id)</td>
+                                <td>操作</td>
+                            </tr>
+                            <tr>
+                                <td>{$result.role_name}</td>
+                                <td>{$result.account}</td>
+                                <td>{$result.level}</td>
+                                <td>{$result.create_time}</td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="cmd_id" value="1" >
+                                </td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="param1" value="{$result.role_id}" >
+                                </td>
+                                <td>
+                                    <input type="text" style="width:150px;height:35px"  name="param2" >
+                                </td>
+                                <td>
+                                    <button class="btn btn-primary" type="submit" style="background-color: #2a62bc;">提交</button>
+                                </td>
+                            </tr>
+                        </table>
+                     </form>
+                            <div class="hr-line-dashed"></div>
+							<div class="form-group">
+								<div class="col-sm-4 col-sm-offset-2" style="margin-left: 550px;">
+									<!--<button class="btn btn-primary" type="submit">编辑</button>-->
+									<a class="btn btn-white" href="{:U('Admin/Role/index')}" style="background-color: #2a62bc;color: #FFF;" >返回角色列表</a>
+								</div>
+							</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="__PUBLIC__/Admin/js/jquery.min.js?v=2.1.4"></script>
+    <script src="__PUBLIC__/Admin/js/bootstrap.min.js?v=3.3.6"></script>
+    <script src="__PUBLIC__/Admin/js/content.min.js?v=1.0.0"></script>
+    <script src="__PUBLIC__/Admin/js/plugins/layer/laydate/laydate.js"></script>
+    <script src="__PUBLIC__/Admin/js/plugins/iCheck/icheck.min.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/js/kindeditor/kindeditor-min.js"></script>
+	<script charset="utf-8" src="__PUBLIC__/Admin/js/kindeditor/lang/zh_CN.js"></script>
+ <script>
+        var editor;
+             KindEditor.ready(function(K) {
+                 editor = K.create('textarea[name="jieshao"]', {
+                     allowFileManager : true
+                 });
+             });
+        $(document).ready(function(){$(".i-checks").iCheck({checkboxClass:"icheckbox_square-green",radioClass:"iradio_square-green",})});
+      $('#loading-example-btn').click(function(){
+        location.reload();
+       })
+      laydate({elem:"#date",event:"focus"});
+    </script>
+	
+</body>
+</script><script type="text/javascript" src="__PUBLIC__/Admin/js/datetime.js"></script>
+</html>

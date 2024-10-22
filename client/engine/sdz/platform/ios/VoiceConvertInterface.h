@@ -1,0 +1,1 @@
+#ifndef VOICE_CONVERT_INTERFACE_H#define VOICE_CONVERT_INTERFACE_Hclass VoiceConvertInterface{public:    static int WavToAmr(const char* source_file_name,const char* distince_file_name);    static int AmrToWav(const char* source_file_name,const char* distince_file_name);    };#endif

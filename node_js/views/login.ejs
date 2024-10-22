@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>登录</title>
+    <script type="text/javascript" src="/img/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="/img/jquery.SuperSlide.2.1.1.js"></script>
+    <style type="text/css">
+        /* css 重置 */
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background: #fff;
+            font: normal 12px / 22px 宋 体;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #1974A1;
+        }
+
+        .clear:after {
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clear {
+            zoom: 1;
+        }
+
+        .login {
+            background: url(/img/denglu.png) no-repeat center center;
+            margin: 0 auto;
+            width: 450px;
+            height: 380px;
+            background-size: 450px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .btn-login {
+            background: url(/img/denglu_01.png) no-repeat center center;
+            background-size: 80px;
+            width: 80px;
+            height: 60px;
+            display: block;
+            position: absolute;
+            bottom: 55px;
+            left: 50%;
+            margin-left: -40px;
+        }
+
+        .btn-login:hover {
+            background: url(/img/denglu_02.png) no-repeat center center;
+            background-size: 80px;
+        }
+
+        .name {
+            position: absolute;
+            top: 105px;
+            line-height: 25px;
+            width: 230px;
+            border: none;
+            left: 140px;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .pwd {
+            position: absolute;
+            top: 182px;
+            line-height: 25px;
+            width: 230px;
+            border: none;
+            left: 140px;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+    </style>
+
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script>
+        function btn_login_onclick(url){
+            var username=$('#username').val();
+            var password=$('#password').val();
+            $.ajax({
+                url: url,
+                type: 'post',
+                data : {username:username,password:password},
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+//                        confirm(data.message);
+                        window.location.href='/game/ranklist';
+                        return;
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body style="background-color:#000;">
+<div class="login">
+    <input name="" id="username" type="text" class="name"/>
+    <input name="" id="password" type="password" class="pwd"/>
+    <a id="btn_login" onclick="btn_login_onclick('/game/dologin')" class="btn-login"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,1214 @@
+#pragma once
+
+/*
+C = Client;
+G = GateServer;
+M = MapServer;
+O = OpenServer;
+*/
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+// 1)客户端和GateSvr之间通信ID区间(暂未使用)
+/*--------------------------------------------------------------------------------------------------------------------------*/
+const unsigned short C2G_MIN = 10000;
+const unsigned short C2G_MAX = 19999;
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+// 2)客户端和MapSvr之间通信ID区间
+/*--------------------------------------------------------------------------------------------------------------------------*/
+const unsigned short C2M_MIN = 20000;
+const unsigned short C2M_MAX = 29999;
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+// 3) GateSvr和MapSvr之间通信ID区间
+/*--------------------------------------------------------------------------------------------------------------------------*/
+const unsigned short M2G_MIN = 30000;
+const unsigned short M2G_MAX = 39999;
+
+/*--------------------------------------------------------------------------------------------------------------------------*/
+// 4) MapSvr和OpenSvr之间通信ID区间
+/*--------------------------------------------------------------------------------------------------------------------------*/
+const unsigned short M2O_MIN = 40000;
+const unsigned short M2O_MAX = 49999;
+/*------------------------------------------------------------------------------------------------*/
+
+
+enum EMsgId
+{
+	// 登录
+	LOGIN_START = 20000,
+	C2S_LOGIN_ACCOUNT_REQ,				// 帐号登录请求		x
+	S2C_LOGIN_ACCOUNT_RESP,				// 帐号登录响应     
+	C2S_LOGIN_SELECT_SERVER_REQ,		// 选择服务器请求	x
+	S2C_LOGIN_SELECT_SERVER_RESP,		// 选择服务器响应	
+	C2S_LOGIN_CREATE_ROLE_REQ,			// 创建角色请求		x
+	S2C_LOGIN_CREATE_ROLE_RESP,			// 创建角色响应		
+	S2C_LOGIN_ENTER_GAME_NOTIFY,		// 进入游戏	
+	C2S_START_GAME_REQ,					// 开始游戏请求		x
+	S2C_START_GAME_RESP,				// 开始游戏响应
+	C2S_ACCOUNT_REGISTER_REQ,			// 帐号注册请求		x
+	S2C_ACCOUNT_REGISTER_RESP,			// 帐号注册响应
+	C2S_ACCOUNT_PASSWORD_CHANGE_REQ,	// 帐号密码修改请求	x
+	S2C_ACCOUNT_PASSWORD_CHANGE_RESP,	// 帐号密码修改响应
+	C2S_TAKE_ACTIVITY_GIFT_REQ,			// 领取活动礼包	
+	S2C_TAKE_ACTIVITY_GIFT_RESP,		// 领取活动礼包响应
+	C2S_ACTIVITY_NOTICE_REQ,			// 请求活动公告		x
+	S2C_ACTIVITY_NOTICE_RESP,			// 请求活动公告响应
+	C2S_AUTHENTICATION_CODE_REQ,		// 认证码请求		x
+	S2C_AUTHENTICATION_CODE_RESP,		// 认证码响应
+	C2S_MOBILE_BIND_REQ,				// 手机号绑定请求	x
+	S2C_MOBILE_BIND_RESP,				// 手机号绑定响应
+	S2C_NEW_DAY_NOTIFY,					// 新的一天通知
+	C2S_SDK_LOGIN_REQ,					// SDK登录请求		x
+	S2C_SDK_LOGIN_RESP,					// SDK登录响应
+	C2S_SDK_ORDER_ID_REQ,				// SDK订单号请求	x
+	S2C_SDK_ORDER_ID_RESP,				// SDK订单号响应
+	C2S_RECHARGE_SUCCESS_REPORT_REQ,	// 充值成功上报请求	x
+	S2C_RECHARGE_SUCCESS_REPORT_RESP,	// 充值成功上报响应
+	S2C_CLIENT_UPDATE_NOTIFY,			// 客户端更新通知
+
+	C2S_LOGIN_REQ,						// 登录请求
+	S2C_LOGIN_RESP,						// 登录响应
+
+	// 角色系统
+	ROLE_START = 20100,
+	S2C_GAME_ERROR_NOTIFY,				// 游戏错误提示     
+	S2C_ROLE_INFO_NOTIFY,				// 角色基本信息		
+ 	S2C_ROLE_PROPERTY_NOTIFY,			// 角色属性信息同步 
+	S2C_ROLE_LEVEL_UP_NOTIFY,			// 角色升级			
+	C2S_GUIDE_UPDATE_REQ,				// 引导更新请求	
+	S2C_GUIDE_UPDATE_RESP,				// 引导更新响应	
+	C2S_HEART_BEAT_REQ,					// 客户端心跳包	x
+	S2C_HEART_BEAT_RESP,				// 服务端心跳包
+	C2S_SERVER_TIME_REQ,				// 获取服务器时间 x
+	S2C_SERVER_TIME_RESP,				// 返回服务器时间
+	C2S_ROLE_DETAILS_REQ,				// 角色详细请求 x
+	S2C_ROLE_DETAILS_RESP,				// 角色详细响应
+	C2S_ROLE_PRO_RECOVER_REQ,			// 角色属性恢复请求
+	S2C_ROLE_PRO_RECOVER_RESP,			// 角色属性恢复响应
+	C2S_HEAD_IMAGE_REPLACE_REQ,			// 头像替换请求
+	S2C_HEAD_IMAGE_REPLACE_RESP,		// 头像替换响应
+	C2S_ROLE_NAME_MODIFY_REQ,			// 角色名称修改请求
+	S2C_ROLE_NAME_MODIFY_RESP,			// 角色名称修改响应
+	S2C_SYSTEM_NOTICE,					// 系统公告
+	C2S_HERO_GOTO_REQ,					// 英雄行走请求 x
+	S2C_HERO_GOTO_RESP,					// 英雄行走响应
+	S2C_HERO_GOTO_NOTIFY,				// 英雄行走通知
+	C2S_ENTER_SCENE_REQ,				// 进入场景请求 x
+	S2C_ENTER_SCENE_RESP,				// 进入场景响应
+	S2C_ENTER_SCENE_NOTICE,				// 进入场景通知
+	C2S_LEAVE_SCENE_REQ,				// 离开场景请求 x
+	S2C_LEAVE_SCENE_RESP,				// 离开场景响应
+	S2C_LEAVE_SCENE_NOTICE,				// 离开场景通知
+	S2C_SCENE_MONSTER_LIST_NOTICE,		// 怪物列表
+	S2C_SCENE_MONSTER_DATA_NOTICE,		// 怪物数据通知
+	S2C_SCENE_ITEM_LIST_NOTICE,			// 场景物品列表(1.宝箱 2.采集物)
+	S2C_SCENE_ITEM_DISAPPEAR_NOTICE,	// 场景物品消失通知
+	C2S_SCENE_ITEM_LOCK_REQ,			// 场景物品锁住请求 x
+	S2C_SCENE_ITEM_LOCK_RESP,			// 场景物品锁住响应
+	C2S_SCENE_ITEM_PICK_UP_REQ,			// 场景物品拾取请求 x
+	S2C_SCENE_ITEM_PICK_UP_RESP,		// 场景物品拾取响应
+	S2C_SCENE_ITEM_LOCK_NOTIFY,			// 场景物品锁住通知
+	S2C_SCENE_ITEM_PICK_UP_NOTIFY,		// 场景物品拾取通知
+	C2S_NEW_ROLE_GUIDE_UPDATE_REQ,		// 新手引导更新
+
+	// GM
+	GM_START = 20200,
+	C2M_GM_REQ	= GM_START,		// 请求GM设置
+
+	//邮件
+	EMAIL_START = 20300,
+	C2S_EMAIL_LIST_REQ,				//邮件列表请求 x
+	S2C_EMAIL_LIST_RESP,			//邮件列表响应
+	S2C_EMAIL_NEW_NOTIFY,			//新邮件通知
+
+	//聊天系统
+	CHAT_START = 20400,
+	C2S_CHAT_REQ,					//聊天请求 x
+	S2C_CHAT_RESP,					//聊天应答
+	S2C_CHAT_NOTIFY,				//聊天通知
+	C2S_CHAT_VOICE_REQ,				//聊天语音请求
+	S2C_CHAT_VOICE_RESP,			//聊天语音响应
+	S2C_SYS_BROADCAST_NOTIFY,		//系统公告广播
+	C2S_CHAT_RECORD_LIST_REQ,		//聊天记录列表请求 x
+	S2C_CHAT_RECORD_LIST_RESP,		//聊天记录列表响应
+
+	//机器人系统
+	ROBOT_START = 20500,
+	C2M_ROBOT_LOGIN_SYN,			// 机器人登录请求
+	M2C_ROBOT_LOGIN_ACK,			// 机器人登录应答
+
+	// 战斗系统
+	BATTLE_START = 20600,
+	C2S_BATTLE_START_REQ,			// 请求战斗
+	S2C_BATTLE_START_RESP,			// 请求战斗响应
+	C2S_BATTLE_END_REQ,				// 战斗结算
+	S2C_BATTLE_END_RESP,			// 战斗结算响应
+	C2S_BATTLE_DAMAGE_REQ,			// 伤害同步
+//	S2C_BATTLE_DAMAGE_RESP,			// 伤害同步响应
+	S2C_BATTLE_DAMAGE_NOTIFY,		// 伤害通知
+	C2S_HELP_BATTLE_TARGET_REQ,		// 请求助战目标 x
+	S2C_HELP_BATTLE_TARGET_RESP,	// 请求助战目标响应
+
+	// 装备
+	EQUIPMENT_START = 20700,
+	C2S_EQUIPMENT_LIST_REQ,				// 装备列表请求 x
+	S2C_EQUIPMENT_LIST_RESP,			// 装备列表响应
+	C2S_EQUIPMENT_INFO_REQ,				// 装备详情请求 x
+	S2C_EQUIPMENT_INFO_RESP,			// 装备详情响应
+	C2S_EQUIPMENT_STRENG_REQ,			// 强化
+	S2C_EQUIPMENT_STRENG_RESP,			// 强化响应
+	C2S_EQUIPMENT_REFINE_REQ,			// 精炼
+	S2C_EQUIPMENT_REFINE_RESP,			// 精炼响应
+	C2S_EQUIPMENT_COMPOSE_REQ,			// 合成
+	S2C_EQUIPMENT_COMPOSE_RESP,			// 合成响应
+	C2S_EQUIPMENT_FRAGMENT_LIST_REQ,	// 请求装备碎片列表 x
+	S2C_EQUIPMENT_FRAGMENT_LIST_RESP,	// 请求装备碎片列表响应
+	S2C_EQUIPMENT_INFO_NOTIFY,			// 装备信息通知 
+	C2S_EQUIPMENT_PUT_ON_REQ,			// 穿戴装备请求 
+	S2C_EQUIPMENT_PUT_ON_RESP,			// 穿戴装备响应
+	C2S_EQUIPMENT_ONE_KEY_ENHANCE_REQ,	// 一键强化请求
+	S2C_EQUIPMENT_ONE_KEY_ENHANCE_RESP,	// 一键强化响应
+	C2S_EQUIPMENT_STAR_UP_REQ,			// 装备升星请求 
+	S2C_EQUIPMENT_STAR_UP_RESP,			// 穿戴升星响应
+	C2S_EQUIPMENT_QUALITY_UP_REQ,		// 装备升品请求 
+	S2C_EQUIPMENT_QUALITY_UP_RESP,		// 穿戴升品响应
+
+
+	// 排行榜
+	RANK_START = 20800,
+	C2S_RANK_LIST_REQ,					// 排行榜请求 x
+	S2C_RANK_LIST_RESP,					// 排行榜请求响应
+	C2S_RANK_LIKE_REQ,					// 点赞
+	S2C_RANK_LIKE_RESP,					// 点赞响应
+	C2S_RANK_LEAVE_MESSAGE_REQ,			// 留言 
+	S2C_RANK_LEAVE_MESSAGE_RESP,		// 留言响应
+	C2S_RANK_LEAVE_MESSAGE_LIST_REQ,	// 请求留言列表 x
+	S2C_RANK_LEAVE_MESSAGE_LIST_RESP,	// 请求留言列表响应
+	C2S_GUILD_RANK_LIST_REQ,			// 工会排行榜请求 x
+	S2C_GUILD_RANK_LIST_RESP,			// 工会排行榜请求响应
+	C2S_MY_RANK_REQ,					// 请求我的排名 x
+	S2C_MY_RANK_RESP,					// 请求我的排名响应
+
+	// 商店
+	SHOP_START = 20900,
+	C2S_SHOP_GOODS_BUY_REQ,			// 商品购买请求
+	S2C_SHOP_GOODS_BUY_RESP,		// 商品购买响应
+	C2S_SHOP_GOODS_BUY_RECORD_REQ,	// 商品购买记录请求 x
+	S2C_SHOP_GOODS_BUY_RECORD_RESP,	// 商品购买记录响应
+	C2S_SHOP_GOODS_SELL_REQ,		// 商品出售请求
+	S2C_SHOP_GOODS_SELL_RESP,		// 商品出售响应
+	C2S_SHOP_LIMIT_GOODS_LIST_REQ,	// 限时商品列表请求 x
+	S2C_SHOP_LIMIT_GOODS_LIST_RESP,	// 限时商品列表响应
+	C2S_SHOP_REFRESH_REQ,			// 刷新商店
+	S2C_SHOP_REFRESH_RESP,			// 刷新商店响应
+	C2S_HERO_SHOP_DATA_REQ,			// 英雄商店数据请求
+	S2C_HERO_SHOP_DATA_RESP,		// 英雄商店数据响应
+	C2S_AWAKEN_SHOP_DATA_REQ,		// 觉醒商店数据请求
+	S2C_AWAKEN_SHOP_DATA_RESP,		// 觉醒商店数据响应
+	C2S_STAR_SOUL_SHOP_DATA_REQ,	// 星魂商店数据请求
+	S2C_STAR_SOUL_SHOP_DATA_RESP,	// 星魂商店数据响应
+	C2S_DIRECT_SHOP_DATA_REQ,		// 直购商店数据请求
+	S2C_DIRECT_SHOP_DATA_RESP,		// 直购商店数据响应
+	C2S_TAKE_DIRECT_BUY_GOODS_REQ,	// 领取直购商品奖励请求
+	S2C_TAKE_DIRECT_BUY_GOODS_RESP,	// 领取直购商品奖励响应
+	C2S_CRYSTAL_SHOP_DATA_REQ,		// 水晶商店数据请求
+	S2C_CRYSTAL_SHOP_DATA_RESP,		// 水晶商店数据响应
+
+	// 副本
+	FUBEN_START = 21000,
+	C2S_FB_MAIN_DATA_REQ,			// 主线副本数据请求 x
+	S2C_FB_MAIN_DATA_RESP,			// 主线副本数据响应
+	C2S_FB_AWARD_GET_REQ,			// 副本奖励领取请求 x
+	S2C_FB_AWARD_GET_RESP,			// 副本奖励领取响应
+	C2S_FB_DAILY_DATA_REQ,			// 日常副本数据请求 x
+	S2C_FB_DAILY_DATA_RESP,			// 日常副本数据响应
+	C2S_FB_HERO_DATA_REQ,			// 英雄副本数据请求 x
+	S2C_FB_HERO_DATA_RESP,			// 英雄副本数据响应
+	C2S_FB_CLEAN_REQ,				// 副本扫荡请求
+	S2C_FB_CLEAN_RESP,				// 副本扫荡响应
+	C2S_FB_ELITE_DATA_REQ,			// 精英副本数据请求 x
+	S2C_FB_ELITE_DATA_RESP,			// 精英副本数据响应
+	C2S_FB_RESET_REQ,				// 副本重置
+	S2C_FB_RESET_RESP,				// 副本重置
+	C2S_FB_ONE_KEY_TAKE_REWARD_REQ,	// 一键领取奖励请求(关卡+星数)
+	S2C_FB_ONE_KEY_TAKE_REWARD_RESP,// 一键领取奖励响应(关卡+星数)
+	C2S_TAKE_MAIN_FB_CHAPTER_REWARD_REQ, // 领取主线副本章节奖励请求 x
+	S2S_TAKE_MAIN_FB_CHAPTER_REWARD_RESP, // 领取主线副本章节奖励响应
+
+	// 物品
+	ITEM_START = 21100,
+	C2S_ITEM_LIST_REQ,				// 物品列表请求 x
+	S2C_ITEM_LIST_RESP,				// 物品列表响应
+	C2S_ITEM_USE_REQ,				// 使用物品请求
+	S2C_ITEM_USE_RESP,				// 使用物品响应
+	S2C_ITEM_DATA_NOTIFY,			// 物品数据同步
+	C2S_ITEM_FP_REQ,				// 物品翻牌请求
+	S2C_ITEM_FP_RESP,				// 物品翻牌响应
+	C2S_ITEM_COMPOSE_REQ,			// 物品合成请求
+	S2C_ITEM_COMPOSE_RESP,			// 物品合成响应
+	C2S_ITEM_DECOMPOSE_REQ,			// 物品分解请求 
+	S2C_ITEM_DECOMPOSE_RESP,		// 物品分解响应
+
+	// 英雄
+	HERO_START = 21200,
+	C2S_HERO_BASE_LIST_REQ,			// 请求英雄基础信息列表 x
+	S2C_HERO_BASE_LIST_RESP,		// 请求英雄基础信息列表响应	
+	C2S_HERO_INFO_REQ,				// 请求英雄详细信息 x
+	S2C_HERO_INFO_RESP,				// 请求英雄详细信息响应
+	C2S_FRAGMENT_LIST_REQ,			// 请求碎片列表 x
+	S2C_FRAGMENT_LIST_RESP,			// 请求碎片列表响应
+	C2S_HERO_TO_BATTLE_REQ,			// 请求英雄上阵 
+	S2C_HERO_TO_BATTLE_RESP,		// 英雄上阵响应
+	C2S_HERO_COLLECTION_LIST_REQ,	// 请求英雄收集列表 x
+	S2C_HERO_COLLECTION_LIST_RESP,	// 请求英雄收集列表响应
+	C2S_HERO_COMPOSE_REQ,			// 合成请求
+	S2C_HERO_COMPOSE_RESP,			// 合成响应
+	C2S_HERO_LEVEL_UP_REQ,			// 升级请求
+	S2C_HERO_LEVEL_UP_RESP,			// 升级响应
+	C2S_HERO_BREAK_REQ,				// 突破请求
+	S2C_HERO_BREAK_RESP,			// 突破响应
+	C2S_HERO_TRAIN_REQ,				// 培养请求
+	S2C_HERO_TRAIN_RESP,			// 培养响应
+	C2S_HERO_SUMMON_REQ,			// 召唤请求
+	S2C_HERO_SUMMON_RESP,			// 召唤响应
+	S2C_HERO_BASE_INFO_NOTIFY,		// 英雄基本信息通知
+	S2C_FORMATION_LIST_NOTIFY,		// 阵型列表通知 x
+	C2S_HERO_DESTINY_REQ,			// 天命(潜能)请求
+	S2C_HERO_DESTINY_RESP,			// 天命(潜能)响应
+	C2S_HERO_SELL_REQ,				// 出售请求
+	S2C_HERO_SELL_RESP,				// 出售响应
+	C2S_REINFORCEMENT_TO_BATTLE_REQ,// 援军上阵
+	S2C_REINFORCEMENT_TO_BATTLE_RESP,// 援军上阵响应
+	C2S_HERO_SUMMON_DATA_REQ,		// 召唤数据请求 x
+	S2C_HERO_SUMMON_DATA_RESP,		// 召唤数据响应
+	C2S_HERO_AWAKEN_REQ,			// 觉醒请求
+	S2C_HERO_AWAKEN_RESP,			// 觉醒响应
+	C2S_HERO_EQUIP_AWAKEN_ITEM_REQ,	// 装备觉醒道具请求
+	S2C_HERO_EQUIP_AWAKEN_ITEM_RESP,// 装备觉醒道具请求
+	C2S_HERO_TRAIN_REPLACE_REQ,		// 英雄培养替换请求
+	S2C_HERO_TRAIN_REPLACE_RESP,	// 英雄培养替换响应
+	C2S_HERO_TRAIN_REWARD_GET_REQ,	// 英雄培养奖励领取请求
+	S2C_HERO_TRAIN_REWARD_GET_RESP,	// 英雄培养奖励领取响应
+	C2S_HERO_EVOLUTION_REQ,			// 进化请求
+	S2C_HERO_EVOLUTION_RESP,		// 进化响应
+	C2S_HERO_VIP_SUMMON_REQ,		// VIP召唤请求
+	S2C_HERO_VIP_SUMMON_RESP,		// VIP召唤响应
+
+	// 好友
+	FRIEND_START = 21300,
+	C2S_FRIEND_LIST_REQ,			// 请求好友列表 x
+	S2C_FRIEND_LIST_RESP,			// 请求好友列表响应						
+	C2S_BLACK_LIST_REQ,				// 请求黑名单列表 x
+	S2C_BLACK_LIST_RESP,			// 请求黑名单列表响应							
+	C2S_FRIEND_APPLY_LIST_REQ,		// 请求申请列表 x
+	S2C_FRIEND_APPLY_LIST_RESP,		// 请求申请列表响应							
+	C2S_FRIEND_RECOMMEND_LIST_REQ,	// 请求推荐列表 x
+	S2C_FRIEND_RECOMMEND_LIST_RESP,	// 推荐列表响应
+	C2S_FRIEND_ADD_REQ,				// 添加好友
+	S2C_FRIEND_ADD_RESP,			// 添加好友响应						
+	C2S_FRIEND_DEL_REQ,				// 删除好友
+	S2C_FRIEND_DEL_RESP,			// 删除好友响应							
+	C2S_FRIEND_APPLY_REPLY_REQ,		// 申请好友回复
+	S2C_FRIEND_APPLY_REPLY_RESP,	// 申请好友回复响应
+	C2S_BLACK_ADD_REQ,				// 添加黑名单
+	S2C_BLACK_ADD_RESP,				// 添加黑名单响应
+	C2S_BLACK_DEL_REQ,				// 删除黑名单
+	S2C_BLACK_DEL_RESP,				// 删除黑名单响应
+	C2S_FRIEND_ENERGY_GIVE_REQ,		// 赠送精力
+	S2C_FRIEND_ENERGY_GIVE_RESP,	// 赠送精力响应
+	C2S_FRIEND_ENERGY_GET_REQ,		// 领取精力
+	S2C_FRIEND_ENERGY_GET_RESP,		// 领取精力响应
+	S2C_FRIEND_DATA_UPDATE_NOTIFY,	// 好友数据更新通知
+	C2S_FRIEND_TARGET_FIND_REQ,		// 目标查找 x
+	S2C_FRIEND_TARGET_FIND_RESP,	// 目标查找响应
+
+	// 宝物
+	TREASURE_START = 21400,
+	C2S_TREASURE_LIST_REQ,				// 宝物列表请求 x
+	S2C_TREASURE_LIST_RESP,				// 宝物列表响应
+	C2S_TREASURE_STRENGTHEN_REQ,		// 宝物强化 
+	S2C_TREASURE_STRENGTHEN_RESP,		// 宝物强化响应
+	C2S_TREASURE_REFINE_REQ,			// 宝物精炼
+	S2C_TREASURE_REFINE_RESP,			// 宝物精炼响应
+	C2S_TREASURE_COMPOSE_REQ,			// 宝物合成
+	S2C_TREASURE_COMPOSE_RESP,			// 宝物合成响应
+	S2C_TREASURE_INFO_NOTIFY,			// 宝物信息通知
+	C2S_TREASURE_PUT_ON_REQ,			// 穿戴宝物请求 
+	S2C_TREASURE_PUT_ON_RESP,			// 穿戴宝物响应
+	C2S_TREASURE_SMELT_REQ,				// 宝物熔炼请求
+	S2C_TREASURE_SMELT_RESP,			// 宝物熔炼响应
+	C2S_TREASURE_QUALITY_UP_REQ,		// 宝物升品请求
+	S2C_TREASURE_QUALITY_UP_RESP,		// 宝物升品响应
+
+	// 叛军
+	REBEL_START = 21500,
+	C2S_REBEL_DATA_REQ,					// 叛军数据请求 x
+	S2C_REBEL_DATA_RESP,				// 叛军数据请求响应
+	C2S_REBEL_EXPLOIT_AWARD_REQ,		// 领取叛军功勋奖励请求
+	S2C_REBEL_EXPLOIT_AWARD_RESP,		// 领取叛军功勋奖励响应
+	C2S_REBEL_EXPLOIT_AWARD_RECORD_REQ,	// 叛军功勋奖励记录请求 x
+	S2C_REBEL_EXPLOIT_AWARD_RECORD_RESP,// 叛军功勋奖励记录响应
+	C2S_REBEL_SHARE_REQ,				// 叛军分享
+	S2C_REBEL_SHARE_RESP,				// 叛军分享响应
+	S2C_REBEL_DISCOVER_NOTIFY,			// 发现叛军通知
+
+	// 回收
+	RECYCLING_START = 21600,
+	C2S_RECYCLE_DECOMPOSE_REQ,			// 分解回收请求
+	S2C_RECYCLE_DECOMPOSE_RESP,			// 分解回收响应
+	C2S_RECYCLE_RESET_REQ,				// 重生回收请求
+	S2C_RECYCLE_RESET_RESP,				// 重生回收响应
+	C2S_RECYCLE_DECOMPOSE_RETURN_REQ,	// 分解返还请求 x
+	S2C_RECYCLE_DECOMPOSE_RETURN_RESP,	// 分解返还响应
+	C2S_RECYCLE_RESET_RETURN_REQ,		// 重生返还请求 x
+	S2C_RECYCLE_RESET_RETURN_RESP,		// 重生返还响应
+
+	// 夺宝
+	DUOBAO_START = 21700, 
+	C2S_DUOBAO_DATA_REQ,				// 夺宝数据请求 x
+	S2C_DUOBAO_DATA_RESP,				// 夺宝数据响应
+	C2S_DUOBAO_TARGET_LIST_REQ,			// 请求夺宝目标列表 x
+	S2C_DUOBAO_TARGET_LIST_RESP,		// 请求夺宝目标列表响应
+	C2S_DUOBAO_FIVE_TIMES_REQ,			// 夺宝5次请求
+	S2C_DUOBAO_FIVE_TIMES_RESP,			// 夺宝5次响应
+	C2S_TAKE_DUOBAO_PROGRESS_REWARD_REQ,// 领取夺宝进度奖励请求
+	S2C_TAKE_DUOBAO_PROGRESS_REWARD_RESP,// 领取夺宝进度奖励响应
+
+	// 爬塔
+	TOWER_START = 21800,			
+	C2S_TOWER_DATA_REQ,				// 爬塔数据请求 x
+	S2C_TOWER_DATA_RESP,			// 爬塔数据响应
+	C2S_TOWER_BUY_TIMES_REQ,		// 购买挑战次数请求
+	S2C_TOWER_BUY_TIMES_RESP,		// 购买挑战次数响应
+	C2S_TOWER_RESET_REQ,			// 重置关卡
+	S2C_TOWER_RESET_RESP,			// 重置关卡响应
+	C2S_TOWER_SELECT_PRO_REQ,		// 选择属性
+	S2C_TOWER_SELECT_PRO_RESP,		// 选择属性响应
+	C2S_TOWER_BUY_STAR_GOODS_REQ,	// 购买星数商品
+	S2C_TOWER_BUY_STAR_GOODS_RESP,	// 购买星数商品响应
+	C2S_TOWER_ONE_KEY_CLEAN_REQ,	// 爬塔一键扫荡请求
+	S2C_TOWER_ONE_KEY_CLEAN_RESP,	// 爬塔一键扫荡响应
+
+	// 领地
+	LAND_START = 21900,
+	C2S_PLAYER_LAND_DATA_REQ,			// 玩家领地数据请求 x
+	S2C_PLAYER_LAND_DATA_RESP,			// 玩家领地数据请求响应
+	C2S_LAND_PATROL_REQ,				// 开始巡逻
+	S2C_LAND_PATROL_RESP,				// 巡逻响应
+	C2S_LAND_VIEW_PATROL_AWARD_REQ,		// 查看巡逻奖励(已无效)
+	S2C_LAND_VIEW_PATROL_AWARD_RESP,	// 查看巡逻奖励响应(已无效)
+	C2S_LAND_GET_PATROL_AWARD_REQ,		// 领取巡逻奖励
+	S2C_LAND_GET_PATROL_AWARD_RESP,		// 领取巡逻奖励响应
+	C2S_LAND_SKILL_LEVELUP_REQ,			// 领地技能升级(开启,提升)
+	S2C_LAND_SKILL_LEVELUP_RESP,		// 领地技能升级(开启,提升)响应
+	C2S_LAND_SUPPRESS_RIOT_REQ,			// 领地镇压暴动
+	S2C_LAND_SUPPRESS_RIOT_RESP,		// 领地镇压暴动响应
+	C2S_FRIEND_LAND_LIST_REQ,			// 请求好友领地列表 x
+	S2C_FRIEND_LAND_LIST_RESP,			// 请求好友领地列表响应
+	C2S_LAND_CITY_DETAILS_REQ,			// 领地城池详情请求 x
+	S2C_LAND_CITY_DETAILS_RESP,			// 领地城池详情请求响应
+
+	// 精灵
+	SPIRIT_START = 22000,
+	C2S_HEART_OF_WORLD_DATA_REQ,		// 世界之心数据请求 x
+	S2C_HEART_OF_WORLD_DATA_RESP,		// 世界之心数据响应
+	C2S_HEART_OF_WORLD_LEVEL_UP_REQ,	// 世界之心升级请求
+	S2C_HEART_OF_WORLD_LEVEL_UP_RESP,	// 世界之心升级响应
+	C2S_SPIRIT_ENHANCE_REQ,				// 精灵强化请求
+	S2C_SPIRIT_ENHANCE_RESP,			// 精灵强化响应
+	C2S_SPIRIT_USE_REQ,					// 精灵使用请求
+	S2C_SPIRIT_USE_RESP,				// 精灵使用响应
+	C2S_SPIRIT_DATA_REQ,				// 精灵数据请求 x
+	S2C_SPIRIT_DATA_RESP,				// 精灵数据响应
+	C2S_SPIRIT_TRAIN_REQ,				// 精灵培养请求
+	S2C_SPIRIT_TRAIN_RESP,				// 精灵培养响应
+	C2S_SPRITE_STAR_UP_REQ,				// 精灵升星请求
+	S2C_SPRITE_STAR_UP_RESP,			// 精灵升星响应
+	C2S_SPRITE_BLESS_REQ,				// 精灵祝福请求
+	S2C_SPRITE_BLESS_RESP,				// 精灵祝福响应
+	C2S_SPRITE_COMPOSE_REQ,				// 精灵合成请求
+	S2C_SPRITE_COMPOSE_RESP,			// 精灵合成响应
+
+
+	// 工会
+	GUILD_START = 22100,
+	C2S_GUILD_DATE_REQ,					// 工会数据请求 x
+	S2C_GUILD_DATE_RESP,				// 工会数据响应
+	C2S_GUILD_CREATE_REQ,				// 创建工会
+	S2C_GUILD_CREATE_RESP,				// 创建工会响应
+	C2S_GUILD_DISMISS_REQ,				// 解散工会
+	S2C_GUILD_DISMISS_RESP,				// 解散工会响应
+	C2S_GUILD_APPLY_REQ,				// 申请加入工会 x
+	S2C_GUILD_APPLY_RESP,				// 申请加入工会响应
+	C2S_GUILD_APPLY_CHECK_REQ,			// 审核申请
+	S2C_GUILD_APPLY_CHECK_RESP,			// 审核申请响应
+	C2S_GUILD_APPLY_CANCEL_REQ,			// 取消申请		
+	S2C_GUILD_APPLY_CANCEL_RESP,		// 取消申请响应
+	C2S_GUILD_KICKOUT_REQ,				// 踢出工会 x
+	S2C_GUILD_KICKOUT_RESP,				// 踢出工会响应
+	C2S_GUILD_LEAVE_REQ,				// 退出工会 x
+	S2C_GUILD_LEAVE_RESP,				// 退出工会响应
+	C2S_GUILD_APPOINT_REQ,				// 任命
+	S2C_GUILD_APPOINT_RESP,				// 任命响应
+	C2S_GUILD_LEAVE_MESSAGE_REQ,		// 留言	x
+	S2C_GUILD_LEAVE_MESSAGE_RESP,		// 留言响应
+	C2S_GUILD_SEARCH_REQ,				// 搜索工会 x
+	S2C_GUILD_SEARCH_RESP,				// 搜索工会响应
+	C2S_GUILD_QY_REQ,					// 泉涌
+	S2C_GUILD_QY_RESP,					// 泉涌响应
+	C2S_GUILD_QS_AWARD_REQ,				// 泉水奖励领取	
+	S2C_GUILD_QS_AWARD_RESP,			// 泉水奖励领取	
+	C2S_GUILD_APPLY_LIST_REQ,			// 申请列表请求	x			
+	S2C_GUILD_APPLY_LIST_RESP,			// 申请列表响应
+	C2S_GUILD_LEAVEMSG_LIST_REQ,		// 留言列表请求 x
+	S2C_GUILD_LEAVEMSG_LIST_RESP,		// 留言列表响应
+	C2S_GUILD_MEMBER_LIST_REQ,			// 成员列表请求 x
+	S2C_GUILD_MEMBER_LIST_RESP,			// 成员列表响应 
+	C2S_GUILD_LIST_REQ,					// 工会列表请求 x
+	S2C_GUILD_LIST_RESP,				// 工会列表响应
+	C2S_GUILD_INFO_MODIFY_REQ,			// 修改工会信息请求
+	S2C_GUILD_INFO_MODIFY_RESP,			// 修改工会信息响应
+	C2S_GUILD_EVENT_LIST_REQ,			// 工会事件列表请求 x
+	S2C_GUILD_EVENT_LIST_RESP,			// 工会事件列表响应
+	C2S_GUILD_SKILL_LIST_REQ,			// 工会技能列表请求 x
+	S2C_GUILD_SKILL_LIST_RESP,			// 工会技能列表响应
+	C2S_GUILD_SKILL_LEVEL_UP_REQ,		// 技能升级请求
+	S2C_GUILD_SKILL_LEVEL_UP_RESP,		// 技能升级响应
+
+	C2S_GUILD_FB_DATA_REQ,				// 军团副本数据请求 x
+	S2C_GUILD_FB_DATA_RESP,				// 军团副本数据响应
+	C2S_GUILD_FB_CHAPTER_REWARD_REQ,	// 军团副本章节奖励请求
+	S2C_GUILD_FB_CHAPTER_REWARD_RESP,	// 军团副本章节奖励响应
+	C2S_GUILD_FB_MAP_REWARD_REQ,		// 军团副本关卡奖励请求
+	S2C_GUILD_FB_MAP_REWARD_RESP,		// 军团副本关卡奖励响应
+	C2S_GUILD_FB_MAP_REWARD_RECORD_REQ,	// 军团副本关卡奖励记录请求 x
+	S2C_GUILD_FB_MAP_REWARD_RECORD_RESP,// 军团副本关卡奖励记录响应
+	C2S_GUILD_FB_DAMAGE_RECORD_REQ,		// 军团副本伤害记录请求 x
+	S2C_GUILD_FB_DAMAGE_RECORD_RESP,	// 军团副本伤害记录响应
+	C2S_GUILD_FB_BATTLE_TIMES_BUY_REQ,	// 军团副本挑战次数购买
+	S2C_GUILD_FB_BATTLE_TIMES_BUY_RESP,	// 军团副本挑战次数购买响应
+	C2S_GUILD_IMPEACH_REQ,				// 工会弹劾请求
+	S2C_GUILD_IMPEACH_RESP,				// 工会弹劾响应
+	C2S_GUILD_MONSTER_DATA_REQ,			// 工会关卡怪物数据请求 x
+	S2C_GUILD_MONSTER_DATA_RESP,		// 工会关卡怪物数据响应
+	C2S_GUILD_FB_CHAPTER_RESET_REQ,		// 工会副本章节重置
+	S2C_GUILD_FB_CHAPTER_RESET_RESP,	// 工会副本章节重置响应
+	S2C_GUILD_MONSNTER_DAMAGE_NOTIFY,	// 工会怪物伤害通知
+
+	C2S_GUILD_MY_MAP_REWARD_RECORD_REQ,	// 我的关卡奖励记录请求 x
+	S2C_GUILD_MY_MAP_REWARD_RECORD_RESP,// 我的关卡奖励记录响应	
+
+	S2C_GUILD_IMPEACH_NOTICE,			// 工会弹劾通知
+
+	// 竞技场
+	ARENA_START = 22200,
+	C2S_ARENA_TARGET_LIST_REQ,			// 竞技场挑战目标列表请求 x
+	S2C_ARENA_TARGET_LIST_RESP,			// 竞技场挑战目标列表响应
+	C2S_ARENA_BATTLE_RECORD_REQ,		// 竞技场战报请求	 x
+	S2C_ARENA_BATTLE_RECORD_RESP,		// 竞技场战报请求	
+
+	// 成就
+	ACHIEVEMENT_START = 22300,
+	C2S_ACHIEVEMENT_LIST_REQ,			// 成就列表请求 x
+	S2C_ACHIEVEMENT_LIST_RESP,			// 成就列表响应	
+	S2C_ACHIEVEMENT_DATA_NOTIFY,		// 成就数据通知
+	C2S_ACHIEVEMENT_AWARD_REQ,			// 成就奖励领取请求 
+	S2C_ACHIEVEMENT_AWARD_RESP,			// 成就奖励领取响应
+
+	// 日常任务
+	DAILY_MISSION_START = 22400,
+	C2S_DAILY_MISSION_LIST_REQ,			// 日常任务列表请求 x
+	S2C_DAILY_MISSION_LIST_RESP,		// 日常任务列表请求响应
+	S2C_DAILY_MISSION_DATA_NOTIFY,		// 日常任务数据通知
+	C2S_DAILY_MISSION_AWARD_REQ,		// 日常任务奖励领取请求
+	S2C_DAILY_MISSION_AWARD_RESP,		// 日常任务奖励领取响应
+	C2S_DAILY_MISSION_POINT_AWARD_REQ,	// 日常任务积分奖励领取请求
+	S2C_DAILY_MISSION_POINT_AWARD_RESP,	// 日常任务积分奖励领取响应
+
+	// 世界BOSS
+	WORLD_BOSS_START = 22500,
+	C2S_WORLD_BOSS_DATA_REQ,				// 世界BOSS数据请求 x
+	S2C_WORLD_BOSS_DATA_RESP,				// 世界BOSS数据响应
+	C2S_WORLD_BOSS_SELECT_CAMP_REQ,			// 选择阵营请求
+	S2C_WORLD_BOSS_SELECT_CAMP_RESP,		// 选择阵营响应
+	C2S_WORLD_BOSS_REWARD_REQ,				// 领取奖励请求
+	S2C_WORLD_BOSS_REWARD_RESP,				// 领取奖励响应
+	C2S_WORLD_BOSS_REWARD_RECORD_REQ,		// 领取奖励记录请求 x
+	S2C_WORLD_BOSS_REWARD_RECORD_RESP,		// 领取奖励记录响应
+	C2S_WORLD_BOSS_BATTLE_RECORD_REQ,		// 世界BOSS战报请求 x
+	S2C_WORLD_BOSS_BATTLE_RECORD_RESP,		// 世界BOSS战报响应
+	C2S_WORLD_BOSS_BATTLE_TIMES_BUY_REQ,	// 世界BOSS挑战次数购买
+	S2C_WORLD_BOSS_BATTLE_TIMES_BUY_RESP,	// 世界BOSS挑战次数购买响应
+	S2C_WORLD_BOSS_DAMAGE_NOTIFY,			// 世界BOSS伤害公告
+	S2C_WORLD_BOSS_ACTIVITY_START_NOTIFY,	// 世界BOSS活动开始
+	S2C_WORLD_BOSS_ACTIVITY_OVER_NOTIFY,	// 世界BOSS活动结束
+
+	// 奖励中心
+	REWARD_CENTER_START = 22600,
+	C2S_REWARD_CENTER_LIST_REQ,			// 奖励列表请求 x
+	S2C_REWARD_CENTER_LIST_RESP,		// 奖励列表响应
+	C2S_REWARD_CENTER_GET_REQ,			// 奖励领取请求
+	S2C_REWARD_CENTER_GET_RESP,			// 奖励领取响应 
+	S2C_REWARD_NOTICE,					// 领奖中心奖励通知			
+
+	// 签到
+	SIGN_IN_START = 22700,
+	C2S_SIGN_IN_DATA_REQ,				// 签到数据请求 x
+	S2C_SIGN_IN_DATA_RESP,				// 签到数据响应
+	C2S_SIGN_IN_REQ,					// 签到请求
+	S2C_SIGN_IN_RESP,					// 签到响应
+	C2S_LUXURY_SIGN_IN_DATA_REQ,		// 豪华签到数据请求 x
+	S2C_LUXURY_SIGN_IN_DATA_RESP,		// 豪华签到数据请求
+	C2S_TAKE_LUXURY_SIGN_IN_REWARD_REQ,	// 领取豪华签到奖励 
+	S2C_TAKE_LUXURY_SIGN_IN_REWARD_RESP,// 领取豪华签到奖励响应
+
+	// 迎财神
+	YCS_START = 22800,
+	C2S_YCS_DATA_REQ,					// 迎财神数据请求 x
+	S2C_YCS_DATA_RESP,					// 迎财神数据响应
+	C2S_YCS_REWARD_REQ,					// 迎财神奖励请求
+	S2C_YCS_REWARD_RESP,				// 迎财神奖励响应
+
+	// 铜雀台
+	TQT_START = 22900,
+	C2S_TQT_DATA_REQ,					// 铜雀台数据请求 x
+	S2C_TQT_DATA_RESP,					// 铜雀台数据响应
+	C2S_TQT_REWARD_REQ,					// 铜雀台奖励请求
+	S2C_TQT_REWARD_RESP,				// 铜雀台奖励响应
+
+	// 7天活动
+	SEVEN_DAY_START = 23000,
+	C2S_SEVEN_DAY_TARGET_LIST_REQ,		// 请求目标列表 x
+	S2C_SEVEN_DAY_TARGET_LIST_RESP,		// 请求目标列表响应
+	C2S_SEVEN_DAY_GET_REWARD_REQ,		// 领取奖励请求
+	S2C_SEVEN_DAY_GET_REWARD_RESP,		// 领取奖励响应
+	S2C_SEVEN_DAY_TARGET_DATA_NOTICE,	// 7天目标数据通知
+	C2S_SEVEN_DAY_COMPLETION_REWARD_REQ,// 领取完成度奖励请求
+	S2C_SEVEN_DAY_COMPLETION_REWARD_RESP,// 领取完成度奖励响应
+
+	// 占卜
+	FAIRY_START = 23100,	
+	C2S_PLAYER_ZHANBU_DATA_REQ,				// 玩家占卜数据请求
+	S2C_PLAYER_ZHANBU_DATA_RESP,			// 玩家占卜数据响应
+	C2S_CARD_LIST_REQ,						// 卡牌列表请求
+	S2C_CARD_LIST_RESP,						// 卡牌列表响应
+	C2S_FAIRY_POKEDEX_LIST_REQ,				// 仙灵图鉴列表请求(todo::目前不使用)
+	S2C_FAIRY_POKEDEX_LIST_RESP,			// 仙灵图鉴列表响应(todo::目前不使用)
+	C2S_CARD_LEVEL_UP_REQ,					// 卡牌升级请求
+	S2C_CARD_LEVEL_UP_RESP,					// 卡牌升级响应
+	C2S_CARD_BREAK_REQ,						// 卡牌突破请求
+	S2C_CARD_BREAK_RESP,					// 卡牌突破响应
+	C2S_CARD_REFRESH_REQ,							// 卡牌刷新请求
+	S2C_CARD_REFRESH_RESP,							// 卡牌刷新响应
+	C2S_OPEN_CARD_REQ,								// 翻卡请求
+	S2C_OPEN_CARD_RESP,								// 翻卡响应
+	C2S_LOW_CARD_GROUP_REFRESH_TIMES_UPDATE_REQ,	// 低级卡组刷新次数更新请求
+	S2C_LOW_CARD_GROUP_REFRESH_TIMES_UPDATE_RESP,	// 低级卡组刷新次数更新响应
+	C2S_CELLECTION_GROUP_ACTIVATE_REQ,				// 收藏组激活请求
+	S2C_CELLECTION_GROUP_ACTIVATE_RESP,				// 收藏组激活响应
+	C2S_CELLECTION_GROUP_STAR_UP_REQ,				// 收藏组升星请求
+	S2C_CELLECTION_GROUP_STAR_UP_RESP,				// 收藏组升星响应
+	S2C_FAIRY_DATA_NOTICE,							// 仙灵数据通知
+	C2S_CELLECTION_GROUP_RESET_REQ,					// 收藏组重置(取卡)请求
+	S2C_CELLECTION_GROUP_RESET_RESP,				// 收藏组重置(取卡)响应
+	C2S_COLLECTION_BOOK_LIST_REQ,					// 收藏书列表请求
+	S2C_COLLECTION_BOOK_LIST_RESP,					// 收藏书列表响应
+	C2S_COLLECTION_EQUIP_CARD_REQ,					// 装备卡牌请求
+	S2C_COLLECTION_EQUIP_CARD_RESP,					// 装备卡牌响应
+	C2S_COLLECTION_UNLOAD_CARD_REQ,					// 卸下卡牌请求
+	S2C_COLLECTION_UNLOAD_CARD_RESP,				// 卸下卡牌响应
+	C2S_ZHAN_BU_ACHIEVEMENT_ACIVATE_REQ,			// 占卜成就激活请求
+	S2C_ZHAN_BU_ACHIEVEMENT_ACIVATE_RESP,			// 占卜成就激活响应
+
+	C2S_FAIRY_RECRUIT_REQ,					// 仙灵招募请求
+	S2C_FAIRY_RECRUIT_RESP,					// 仙灵招募响应
+	C2S_FAIRY_POKEDEX_STAR_UP_REQ,			// 仙灵图鉴升星请求
+	S2C_FAIRY_POKEDEX_STAR_UP_RESP,			// 仙灵图鉴升星响应
+	C2S_FAIRY_POKEDEX_REVIVE_REQ,			// 仙灵图鉴重生请求
+	S2C_FAIRY_POKEDEX_REVIVE_RESP,			// 仙灵图鉴重生响应
+	C2S_FAIRY_MAP_REFRESH_REQ,				// 仙灵关卡刷新请求
+	S2C_FAIRY_MAP_REFRESH_RESP,				// 仙灵关卡刷新响应
+	C2S_FAIRY_ACHIEVEMENT_ACTIVATION_REQ,	// 仙灵图鉴激活请求
+	S2C_FAIRY_ACHIEVEMENT_ACTIVATION_RESP,	// 仙灵图鉴激活响应
+	S2C_FAIRY_POKEDEX_DATA_NOTICE,			// 仙灵图鉴数据通知
+
+
+	// 积分赛
+	SCORE_MATCH_START = 23200,
+	C2S_SCORE_MATCH_DATA_REQ,				// 积分赛数据请求 x
+	S2C_SCORE_MATCH_DATA_RESP,				// 积分赛数据响应
+	C2S_SCORE_MATCH_SELECT_CAMP_REQ,		// 选择阵营
+	S2C_SCORE_MATCH_SELECT_CAMP_RESP,		// 选择阵营响应
+	C2S_SCORE_MATCH_REFRESH_TARGET_REQ,		// 刷新目标 x
+	S2C_SCORE_MATCH_REFRESH_TARGET_RESP,	// 刷新目标响应
+	C2S_SCORE_MATCH_BUY_BATTLE_TIMES_REQ,	// 购买挑战次数
+	S2C_SCORE_MATCH_BUY_BATTLE_TIMES_RESP,	// 购买挑战次数响应
+	C2S_SCORE_MATCH_TAKE_TASK_REWARD_REQ,	// 领取胜利次数奖励	
+	S2C_SCORE_MATCH_TAKE_TASK_REWARD_RESP,	// 领取胜利次数奖励响应
+
+	// 争霸赛
+	WARCRAFT_START = 23300,
+	C2S_WARCRAFT_DATA_REQ,					// 争霸赛数据请求
+	S2C_WARCRAFT_DATA_RESP,					// 争霸赛数据响应
+	C2S_WARCRAFT_BUY_BATTLE_TIMES_REQ,		// 购买挑战次数请求
+	S2C_WARCRAFT_BUY_BATTLE_TIMES_RESP,		// 购买挑战次数响应
+	C2S_WARCRAFT_TARGET_LIST_REQ,			// 挑战目标请求
+	S2C_WARCRAFT_TARGET_LIST_RESP,			// 挑战目标响应
+	C2S_WARCRAFT_RANK_LIST_REQ,				// 争霸赛排行榜请求
+	S2C_WARCRAFT_RANK_LIST_RESP,			// 争霸赛排行榜响应
+	C2S_WARCRAFT_CHEER_REQ,					// 争霸赛助威请求
+	S2C_WARCRAFT_CHEER_RESP,				// 争霸赛助威响应
+
+	// 称号
+	TITLE_START = 23400,
+	C2S_ROLE_TITLE_INFO_REQ,				// 请求角色称号信息 x
+	S2C_ROLE_TITLE_INFO_RESP,				// 请求角色称号信息响应
+	C2S_USE_TITLE_REQ,						// 使用称号请求
+	S2C_USE_TITLE_RESP,						// 使用称号响应
+
+	// 红点
+	RED_POINT_START = 23500,
+	C2S_RED_POINT_LIST_REQ,					// 请求红点列表 x
+	S2C_RED_POINT_LIST_RESP,				// 请求红点列表响应
+	S2C_RED_POINT_NOTIFY,					// 红点通知
+
+	// VIP礼包
+	VIP_GIFT_START = 23600,
+	C2S_VIP_GIFT_DATA_REQ,				// VIP礼包数据请求 x
+	S2C_VIP_GIFT_DATA_RESP,				// VIP礼包数据响应
+	C2S_VIP_DAILY_GIFT_GET_REQ,			// VIP每日礼包领取
+	S2C_VIP_DAILY_GIFT_GET_RESP,		// VIP每日礼包领取响应
+	C2S_VIP_WEEK_GIFT_BUY_REQ,			// VIP周礼包购买
+	S2C_VIP_WEEK_GIFT_BUY_RESP,			// VIP周礼包购买响应
+	C2S_TAKE_TODAY_RECOMMEND_REWARD_REQ,// 领取今日推荐奖励
+	S2C_TAKE_TODAY_RECOMMEND_REWARD_RESP,// 领取今日推荐奖励响应
+
+	// 等级商店活动数据
+	LEVEL_SHOP_ACTIVITY_START = 23700,
+	C2S_LEVEL_SHOP_ACTIVITY_DATA_REQ,	// 等级商店活动数据请求 x
+	S2C_LEVEL_SHOP_ACTIVITY_DATA_RESP,	// 等级商店活动数据响应
+
+	// 开服基金
+	OPEN_SERVER_FUND_START = 23800,
+	C2S_OPEN_SERVER_FUND_DATA_REQ,		// 开服基金数据请求 x
+	S2C_OPEN_SERVER_FUND_DATA_RESP,		// 开服基金数据响应
+	C2S_OPEN_SERVER_FUND_BUY_REQ,		// 开服基金购买请求
+	S2C_OPEN_SERVER_FUND_BUY_RESP,		// 开服基金购买响应
+	C2S_OPEN_SERVER_FUND_REWARD_TAKE_REQ,	// 开服基金奖励领取请求
+	S2C_OPEN_SERVER_FUND_REWARD_TAKE_RESP,	// 开服基金奖励领取响应
+	C2S_ALL_PEOPLE_WELFARE_TAKE_REQ,		// 全民福利领取请求
+	S2C_ALL_PEOPLE_WELFARE_TAKE_RESP,		// 全民福利领取响应
+
+	// 限时优惠
+	LIMIT_PREFERENTIAL_START = 23900,
+	C2S_LIMIT_PREFERENTIAL_DATA_REQ,			// 限时优惠数据请求
+	S2C_LIMIT_PREFERENTIAL_DATA_RESP,			// 限时优惠数据响应
+	C2S_LIMIT_PREFERENTIAL_WELFARE_TAKE_REQ,	// 限时优惠福利领取请求
+	S2C_LIMIT_PREFERENTIAL_WELFARE_TAKE_RESP,	// 限时优惠福利领取响应
+
+	// 等级礼包
+	LEVEL_GIFT_START = 24000,
+	C2S_LEVEL_GIFT_DATA_REQ,					// 等级礼包数据请求 x
+	S2C_LEVEL_GIFT_DATA_RESP,					// 等级礼包数据响应
+	C2S_TAKE_LEVEL_GIFT_REWARD_REQ,				// 领取等级礼包请求
+	S2C_TAKE_LEVEL_GIFT_REWARD_RESP,			// 领取等级礼包响应
+
+	// 玩家留言
+	PLAYER_LEAVE_MESSAGE = 24100,
+	C2S_PLAYER_LEVEL_MESSAGE_REQ,			// 玩家留言请求 x
+	S2C_PLAYER_LEVEL_MESSAGE_RESP,			// 玩家留言响应
+
+	// 关卡评论
+	MAP_COMMENT_START = 24200,
+	C2S_MAP_COMMENT_LIST_REQ,				// 关卡评论列表请求 x
+	S2C_MAP_COMMENT_LIST_RESP,				// 关卡评论列表响应
+	C2S_MAP_COMMENT_REQ,					// 关卡评论请求		 
+	S2C_MAP_COMMENT_RESP,					// 关卡评论响应
+	C2S_MAP_COMMENT_LIKE_REQ,				// 关卡评论点赞
+	S2C_MAP_COMMENT_LIKE_RESP,				// 关卡评论点赞响应
+
+	// 充值/月卡
+	MAP_RECHARGE_START = 24300,
+	C2S_RECHARGE_DATA_REQ,					// 充值数据请求 x
+	S2C_RECHARGE_DATA_RESP,					// 充值数据响应
+	C2S_RECHARGE_REQ,						// 充值请求
+	S2C_RECHARGE_RESP,						// 充值响应
+	C2S_MONTH_CARD_DATA_REQ,				// 月卡数据请求 x
+	S2C_MONTH_CARD_DATA_RESP,				// 月卡数据响应
+	C2S_MONTH_CARD_BUY_REQ,					// 月卡购买
+	S2C_MONTH_CARD_BUY_RESP,				// 月卡购买响应
+	C2S_TAKE_MONTH_CARD_REWARD_REQ,			// 领取月卡奖励
+	S2C_TAKE_MONTH_CARD_REWARD_RESP,		// 领取月卡奖励响应
+	S2C_RECHARGE_NOTIFY_RESP,				// 充值通知
+
+	// PVP
+	PVP_START = 24400,
+	C2S_PVP_SEARCH_TARGET_REQ,				// 查找目标 x
+	S2C_PVP_SEARCH_TARGET_RESP,				// 查找目标响应
+	S2C_PVP_READY_NOTIFY,					// 战斗准备通知 
+	C2S_PVP_READY_FINISH_REQ,				// 战斗准备完成请求 x
+	S2C_PVP_READY_FINISH_RESP,				// 战斗准备完成响应
+	S2C_PVP_BATTLE_START_NOTIFY,			// 战斗开始通知
+	S2C_PVP_BATTLE_OVER_NOTIFY,				// 战斗结束通知
+	C2S_PVP_USE_SKILL_REQ,					// 使用技能 x
+	S2C_PVP_USE_SKILL_RESP,					// 使用技能响应
+	S2C_PVP_USE_SKILL_NOTIFY,				// 使用技能通知
+	C2S_PVP_HP_CHANGE_REQ,					// HP改变请求 x
+	S2C_PVP_HP_CHANGE_RESP,					// HP改变响应
+	S2C_PVP_HP_CHANGE_NOTIFY,				// HP改变通知
+	C2S_PVP_CREATE_BUFF_REQ,				// 创建buff请求 x
+	S2C_PVP_CREATE_BUFF_RESP,				// 创建buff响应
+	S2C_PVP_CREATE_BUFF_NOTIFY,				// 创建buff通知
+	C2S_PVP_BATTLE_RESULT_REQ,				// 战斗结果请求
+	S2C_PVP_BATTLE_RESULT_RESP,				// 战斗结果响应
+	C2S_PVP_TAKE_BATTLE_REWARD_REQ,			// 领取战斗奖励	
+	S2C_PVP_TAKE_BATTLE_REWARD_RESP,		// 领取战斗奖励响应
+	C2S_PLAYER_PVP_DATA_REQ,				// 玩家PVP数据请求 x
+	S2C_PLAYER_PVP_DATA_RESP,				// 玩家PVP数据响应
+	C2S_PVP_SELECT_SPRIT_SKILL_REQ,			// 选择精灵技能请求
+	S2C_PVP_SELECT_SPRIT_SKILL_RESP,		// 选择精灵技能响应
+	//C2S_PVP_POSITION_SYN_REQ,				// 位置同步
+	C2S_PVP_CANCEL_SEARCH_TARGET_REQ,		// 取消查找目标请求 x
+	S2C_PVP_CANCEL_SEARCH_TARGET_RESP,		// 取消查找目标响应
+
+
+	// 限时活动
+	LIMIT_ACTIVITY_START = 24500,
+	C2S_LIMIT_FIRST_RECHARGE_DATA_REQ,			// 首充数据请求 x
+	S2C_LIMIT_FIRST_RECHARGE_DATA_RESP,			// 首充数据响应
+	C2S_LIMIT_SINGLE_RECHARGE_DATA_REQ,			// 单充数据请求 x
+	S2C_LIMIT_SINGLE_RECHARGE_DATA_RESP,		// 单充数据响应
+	C2S_LIMIT_ACCUMULATE_RECHARGE_DATA_REQ,		// 累充数据请求 x
+	S2C_LIMIT_ACCUMULATE_RECHARGE_DATA_RESP,	// 累充数据响应
+	C2S_LIMIT_RECRUIT_DATA_REQ,					// 限时招募数据请求 x
+	S2C_LIMIT_RECRUIT_DATA_RESP,				// 限时招募数据响应
+	C2S_TAKE_LIMIT_ACTIVITY_REWARD_REQ,			// 领取限时活动奖励请求
+	S2C_TAKE_LIMIT_ACTIVITY_REWARD_RESP,		// 领取限时活动奖励响应
+
+	// 怪物攻城
+	ATTACK_CITY_START = 24600,
+	C2S_ATTACK_CITY_DATA_REQ,					// 攻城数据请求 x
+	S2C_ATTACK_CITY_DATA_RESP,					// 攻城数据响应
+	C2S_ATTACK_CITY_ENTER_REQ,					// 攻城进入请求 x
+	S2C_ATTACK_CITY_ENTER_RESP,					// 攻城进入响应
+	S2C_ATTACK_CITY_ENTER_NOTICE,				// 攻城进入通知	
+	C2S_ATTACK_CITY_LEAVE_REQ,					// 攻城离开请求 x
+	S2C_ATTACK_CITY_LEAVE_RESP,					// 攻城离开响应
+	S2C_ATTACK_CITY_LEAVE_NOTICE,				// 攻城离开通知
+	C2S_ATTACK_CITY_GOTO_REQ,					// 攻城行走请求 x
+	S2C_ATTACK_CITY_GOTO_RESP,					// 攻城行走响应
+	S2C_ATTACK_CITY_GOTO_NOTICE,				// 攻城行走通知
+	S2C_ATTACK_CITY_MONSTER_LIST_NOTICE,		// 怪物列表通知
+	S2C_ATTACK_CITY_MONSTER_DATA_NOTICE,		// 怪物数据同步通知
+	S2C_TREASURE_BOX_LIST_NOTICE,				// 宝箱列表通知
+	S2C_TREASURE_BOX_DISAPPEAR_NOTICE,			// 宝箱消失通知
+	C2S_TREASURE_BOX_LOCK_REQ,					// 宝箱锁住请求 x
+	S2C_TREASURE_BOX_LOCK_RESP,					// 宝箱锁住响应
+	C2S_TREASURE_BOX_PICK_UP_REQ,				// 宝箱拾取请求 x
+	S2C_TREASURE_BOX_PICK_UP_RESP,				// 宝箱拾取响应
+	C2S_ATTACK_CITY_RELIVE_REQ,					// 复活请求 x
+	S2C_ATTACK_CITY_RELIVE_RESP,				// 复活响应
+	C2S_ATTACK_CITY_ENCOURAGE_REQ,				// 鼓舞请求
+	S2C_ATTACK_CITY_ENCOURAGE_RESP,				// 鼓舞响应
+	C2S_ATTACK_CITY_TAKE_BOSS_REWARD_REQ, 		// 奖励领取请求	
+	S2C_ATTACK_CITY_TAKE_BOSS_REWARD_RESP, 		// 奖励领取响应
+	S2C_ATTACK_CITY_TOP_RANK_LIST_NOTICE,		// 高排行列表通知
+	S2C_ATTACK_CITY_RANK_UPDATE_NOTICE,			// 攻城排名列新通知
+	S2C_ATTACK_CITY_ACTIVITY_START_NOTICE,		// 攻城活动开始通知
+	S2C_ATTACK_CITY_ACTIVITY_OVER_NOTICE,		// 攻城活动结束通知
+
+	// 无尽之地
+	ENDLESS_LAND_START = 24700,
+	C2S_ENDLESS_LAND_DATA_REQ,					// 无尽之地数据请求 x
+	S2C_ENDLESS_LAND_DATA_RESP,					// 无尽之地数据响应
+	C2S_ENDLESS_LAND_ENTER_REQ,					// 无尽之地进入请求
+	S2C_ENDLESS_LAND_ENTER_RESP,				// 无尽之地进入响应
+	C2S_ENDLESS_LAND_KILL_MONSTER_REQ,			// 杀怪请求 x
+	S2C_ENDLESS_LAND_KILL_MONSTER_RESP,			// 杀怪响应
+	C2S_ENDLESS_LAND_COLLISION_REQ,				// 碰撞请求 x
+	S2C_ENDLESS_LAND_COLLISION_RESP,			// 碰撞响应
+	C2S_ENDLESS_LAND_KEEP_KILL_REWARD_REQ,		// 领取连杀奖励请求
+	S2C_ENDLESS_LAND_KEEP_KILL_REWARD_RESP,		// 领取连杀奖励响应
+
+	C2S_ENDLESS_LAND_BATTLE_START_REQ,			// 开始战斗请求
+	S2C_ENDLESS_LAND_BATTLE_START_RESP,			// 开始战斗响应	
+	C2S_ENDLESS_LAND_BATTLE_OVER_REQ,			// 结束战斗请求
+	S2C_ENDLESS_LAND_BATTLE_OVER_RESP,			// 结束战斗响应	
+
+	// 次日奖励
+	NEXT_DAY_REWARD_START = 24800,
+	C2S_NEXT_DAY_REWARD_DATA_REQ,				// 次日奖励数据请求 x
+	S2C_NEXT_DAY_REWARD_DATA_RESP,				// 次日奖励数据响应
+	C2S_NEXT_DAY_REWARD_TAKE_REQ,				// 次日奖励领取请求
+	S2C_NEXT_DAY_REWARD_TAKE_RESP,				// 次日奖励领取响应
+
+	// 爵位
+	NOBILITY_START = 24900,
+	C2S_NOBILITY_ACTIVATE_REQ,					// 爵位激活请求
+	S2C_NOBILITY_ACTIVATE_RESP,					// 爵位激活响应
+
+	// 超值折扣
+	SUPER_DISCOUNT = 25000,
+	C2S_SUPER_DISCOUNT_DATA_REQ,				// 超值折扣数据请求 x
+	S2C_SUPER_DISCOUNT_DATA_RESP,				// 超值折扣数据响应
+	C2S_SUPER_DISCOUNT_BUY_REWARD_REQ,			// 领取超值折扣购买奖励请求
+	S2C_SUPER_DISCOUNT_BUY_REWARD_RESP,			// 领取超值折扣购买奖励响应
+	C2S_SUPER_DISCOUNT_ACCUMULATE_REWARD_REQ,	// 领取超值折扣累积奖励请求
+	S2C_SUPER_DISCOUNT_ACCUMULATE_REWARD_RESP,	// 领取超值折扣累积奖励响应
+
+	// 节日活动
+	FESTIVAL_ACTIVITY_START = 25100,
+	C2S_FESTIVAL_ACTIVITY_DATA_REQ,				// 节日活动数据请求 x
+	S2C_FESTIVAL_ACTIVITY_DATA_RESP,			// 节日活动数据响应
+	C2S_TAKE_FESTIVAL_ACTIVITY_REWARD_REQ,		// 节日活动奖励领取请求
+	S2C_TAKE_FESTIVAL_ACTIVITY_REWARD_RESP,		// 节日活动奖励领取响应
+	C2S_FESTIVAL_ACTIVITY_GOODS_EXCHANGE_REQ,	// 节日商品兑换请求
+	S2C_FESTIVAL_ACTIVITY_GOODS_EXCHANGE_RESP,	// 节日商品兑换响应
+	C2S_FESTIVAL_ACTIVITY_RED_POINT_REQ,		// 节日活动红点请求
+	S2C_FESTIVAL_ACTIVITY_RED_POINT_RESP,		// 节日活动红点响应
+
+	// 精准推荐
+	ACCURATE_RECOMMEND_START = 25200,
+	C2S_ACCURATE_RECOMMEND_DATA_REQ,			// 精准推荐数据请求 x
+	S2C_ACCURATE_RECOMMEND_DATA_RESP,			// 精准推荐数据响应
+	C2S_TAKE_ACCURATE_RECOMMEND_GIFT_REQ,		// 领取精准推荐礼包请求
+	S2C_TAKE_ACCURATE_RECOMMEND_GIFT_RESP,		// 领取精准推荐礼包响应
+
+	// 宝石
+	GEM_START = 25300,
+	C2S_GEM_LIST_REQ,		// 宝石列表请求 x
+	S2C_GEM_LIST_RESP,		// 宝石列表响应
+	C2S_GEM_COMPOSE_REQ,	// 宝石合成请求
+	S2C_GEM_COMPOSE_RESP,	// 宝石合成响应
+	C2S_GEM_INLAY_REQ,		// 宝石镶嵌请求
+	S2C_GEM_INLAY_RESP,		// 宝石镶嵌响应
+	C2S_GEM_UNLOAD_REQ,		// 宝石卸下请求
+	S2C_GEM_UNLOAD_RESP,	// 宝石卸下响应
+	C2S_GEM_HOLE_OPEN_REQ,	// 宝石孔位开启请求
+	S2C_GEM_HOLE_OPEN_RESP,	// 宝石孔位开启响应
+	S2C_GEM_DATA_NOTIFY,	// 宝石数据通知
+	C2S_GEM_DECOMPOSE_REQ,	// 宝石分解请求
+	S2C_GEM_DECOMPOSE_RESP,	// 宝石分解响应
+
+	// 组队副本
+	TEAM_DUNGEON_START = 25400,
+	C2S_TEAM_DUNGEON_ANSWER_QUESTION_REQ,	// 答题请求 x
+	S2C_TEAM_DUNGEON_ANSWER_QUESTION_RESP,	// 答题响应
+	S2C_TEAM_DUNGEON_ANSWER_QUESTION_NOTIFY,// 答题通知
+	C2S_TEAM_DUNGEON_DIALOG_OVER_REQ,		// 对话结束请求 x
+	S2C_TEAM_DUNGEON_DIALOG_OVER_RESP,		// 对话结束响应
+	C2S_TEAM_DUNGEON_NEXT_NPC_REQ,			// 下一个NPC请求 x
+	S2C_TEAM_DUNGEON_NEXT_NPC_RESP,			// 下一个NPC响应
+	S2C_TEAM_DUNGEON_NEXT_NPC_NOTIFY,		// 下一个NPC通知
+	C2S_TEAM_DUNGEON_BOSS_TASK_START_REQ,	// Boss任务开始请求 x
+	S2C_TEAM_DUNGEON_BOSS_TASK_START_RESP,	// Boss挑战响应
+	C2S_TEAM_DUNGEON_LOTTERY_REQ,			// 抽奖请求
+	S2C_TEAM_DUNGEON_LOTTERY_RESP,			// 抽奖响应
+	S2C_TEAM_DUNGEON_NEW_TASK_NOTIFY,		// 新任务通知
+	S2C_TEAM_DUNGEON_TASK_DATA_NOTIFY,		// 队伍任务数据
+	C2S_TEAM_DUNGEON_LEAVE_REQ,				// 离开队伍请求 x
+	S2C_TEAM_DUNGEON_LEAVE_RESP,			// 离开队伍响应
+	S2C_TEAM_DUNGEON_LEAVE_NOTIFY,			// 离开队伍通知
+	S2C_TEAM_DUNGEON_DISMISS_NOTIFY,		// 解散队伍通知	
+	C2S_TEAM_DUNGEON_CREATE_TEAM_REQ,		// 创建队伍请求 x
+	S2C_TEAM_DUNGEON_CREATE_TEAM_RESP,		// 创建队伍响应
+	C2S_TEAM_DUNGEON_INVITE_REQ,			// 组队邀请请求 x
+	S2C_TEAM_DUNGEON_INVITE_RESP,			// 组队邀请响应
+	S2C_TEAM_DUNGEON_INVITE_NOTIFY,			// 组队邀请通知
+	C2S_TEAM_DUNGEON_ACCEPT_INVITE_REQ,		// 接受组队邀请请求 x
+	S2C_TEAM_DUNGEON_ACCEPT_INVITE_RESP,	// 接受组队邀请响应
+	S2C_TEAM_DUNGEON_ACCEPT_INVITE_NOTIFY,	// 接受组队邀请通知
+	C2S_TEAM_DUNGEON_RECOMMEND_LIST_REQ,	// 请求玩家推荐列表请求 x
+	S2C_TEAM_DUNGEON_RECOMMEND_LIST_RESP,	// 请求玩家推荐列表响应
+	C2S_TEAM_DUNGEON_MATCH_REQ,				// 组队匹配请求 x
+	S2C_TEAM_DUNGEON_MATCH_RESP,			// 组队匹配响应
+	C2S_TEAM_DUNGEON_CANCEL_MATCH_REQ,		// 组队取消匹配请求 x
+	S2C_TEAM_DUNGEON_CANCEL_MATCH_RESP,		// 组队取消匹配响应
+	S2C_TEAM_DUNGEON_READY_TEAM_DATA_NOTIFY,// 准备队伍数据通知
+	S2C_TEAM_DUNGEON_DIALOG_OVER_NOITY,		// 对话结束通知
+	C2S_TEAM_DUNGEON_ACCEPT_TASK_REQ,		// 接任务请求
+	S2C_TEAM_DUNGEON_ACCEPT_TASK_RESP,		// 接任务响应
+	S2C_TEAM_DUNGEON_ACCEPT_TASK_NOTIFY,	// 接任务通知
+	S2C_TEAM_DUNDEON_TASK_LINK_FINISH_NOTIFY,// 任务链完成通知
+	S2S_TEAM_DUNDEON_TASK_REWARD_NOTIFY,	// 任务奖励通知
+	S2C_TEAM_DUNGEON_MATCH_NOTIFY,			// 组队匹配通知
+	S2C_TEAM_DUNGEON_CANNEL_MATCH_NOTIFY,	// 取消组队匹配通知
+	C2S_TEAM_DUNGEON_TASK_START_REQ,		// 任务开始请求
+	S2C_TEAM_DUNGEON_TASK_START_RESP,		// 任务开始响应
+	S2C_TEAM_DUNGEON_TASK_START_NOTIFY,		// 任务开始通知(暂时不使用)
+	C2S_TEAM_DUNGEON_RANK_REQ,				// 副本排行榜请求
+	S2C_TEAM_DUNGEON_RANK_RESP,				// 副本排行榜响应
+	S2C_TEAM_DUNGEON_BOSS_REWARD_NOTIFY,	// 组队副本BOSS奖励通知
+	C2S_TEAM_DUNGEON_DATA_REQ,				// 组队副本数据请求
+	S2C_TEAM_DUNGEON_DATA_RESP,				// 组队副本数据响应
+	S2C_TEAM_DUNGEON_BOSS_TASK_START_NOTIFY,// boss任务开始通知
+	C2S_TEAM_DUNGEON_SHORTCUT_CHAT_REQ,		// 组队快捷聊天请求
+	S2C_TEAM_DUNGEON_SHORTCUT_CHAT_RESP,	// 组队快捷聊天响应
+	C2S_TEAM_DUNGEON_LOTTERY_RECORD_REQ,	// 组队副本抽奖记录请求
+	S2C_TEAM_DUNGEON_LOTTERY_RECORD_RESP,	// 组队副本抽奖记录响应
+	S2C_TEAM_DUNGEON_MATCH_TARGET_NUM_NOTIFY,// 组队副本匹配目标数量通知	
+	C2S_TEAM_DUNGEON_JOIN_IN_REQ,			// 加入组队请求 x
+	S2C_TEAM_DUNGEON_JOIN_IN_RESP,			// 加入组队响应
+	S2C_TEAM_DUNGEON_JOIN_IN_NOTIFY,		// 加入组队通知
+
+	// 登录奖励
+	LOGIN_REWARD_START = 25500,
+	C2S_LOGIN_REWARD_DATA_REQ,					// 登录奖励数据请求 x
+	S2C_LOGIN_REWARD_DATA_RESP,					// 登录奖励数据响应
+	C2S_TAKE_LOGIN_REWARD_REQ,					// 领取登录奖励请求
+	S2C_TAKE_LOGIN_REWARD_RESP,					// 领取登录奖励响应
+
+	// 王者赛
+	KING_MATCH_START = 25600,
+	C2S_KING_MATCH_DATA_REQ,					// 请求玩家王者赛数据
+	S2C_KING_MATCH_DATA_RESP,					// 玩家王者赛数据响应
+	C2S_KING_MATCH_SEARCH_TARGET_REQ,			// 查找目标请求
+	S2C_KING_MATCH_SEARCH_TARGET_RESP,			// 查找目标响应
+	C2S_TAKE_KING_MATCH_TASK_REWARD_REQ,		// 领取赛季任务奖励请求
+	S2C_TAKE_KING_MATCH_TASK_REWARD_RESP,		// 领取赛季任务奖励响应
+	C2S_KING_MATCH_SEASON_RANK_REQ,				// 赛季排行榜请求 
+	S2C_KING_MATCH_SEASON_RANK_RESP,			// 赛季排行榜响应
+
+	// 圣诞节
+	CHRISTMAS_START = 25700,
+	C2S_CHRISTMAS_DATA_REQ,						// 请求圣诞节数据
+	S2C_CHRISTMAS_DATA_RESP,					// 请求圣诞节数据响应
+	C2S_CHRISTMAS_BATTLE_ENTER_REQ,				// 进入战斗请求
+	S2C_CHRISTMAS_BATTLE_ENTER_RESP,			// 进入战斗响应
+	C2S_CHRISTMAS_BATTLE_LEAVE_REQ,				// 离开战斗请求
+	S2C_CHRISTMAS_BATTLE_LEAVE_RESP,			// 离开战斗响应
+	C2S_CHRISTMAS_ATTACK_BOSS_REQ,				// 攻击Boss请求
+	S2C_CHRISTMAS_ATTACK_BOSS_RESP,				// 攻击Boss响应
+	S2C_CHRISTMAS_ATTACK_BOSS_NOTIFY,			// 攻击Boss通知
+	C2S_CHRISTMAS_TAKE_BOSS_REWARD_REQ,			// 领取奖励请求
+	S2C_CHRISTMAS_TAKE_BOSS_REWARD_RESP,		// 领取奖励响应
+	S2C_CHRISTMAS_BOSS_DEAD_NOTIFY,				// Boss死亡通知
+
+	// facebook活动
+	FACEBOOK_ACTIVITY_START = 25800,
+	C2S_FACEBOOK_ACTIVITY_DATA_REQ,					// 活动数据请求
+	S2C_FACEBOOK_ACTIVITY_DATA_RESP,				// 活动数据响应
+	C2S_TAKE_FACEBOOK_ACCOUNT_BINDING_REWARD_REQ,	// 领取帐号绑定奖励请求
+	S2C_TAKE_FACEBOOK_ACCOUNT_BINDING_REWARD_RESP,	// 领取帐号绑定奖励响应
+	C2S_TAKE_FACEBOOK_SHARE_REWARD_REQ,				// 领取分享奖励请求
+	S2C_TAKE_FACEBOOK_SHARE_REWARD_RESP,			// 领取分享奖励响应
+	C2S_FACEBOOK_FRIEND_INVITE_REQ,					// 好友邀请请求
+	S2C_FACEBOOK_FRIEND_INVITE_RESP,				// 好友邀请响应
+	C2S_FACEBOOK_FRIEND_SUMMON_REQ,					// 好友召唤请求
+	S2C_FACEBOOK_FRIEND_SUMMON_RESP,				// 好友召唤响应
+	C2S_TAKE_FACEBOOK_FRIEND_INVITE_REWARD_REQ,		// 领取好友邀请奖励请求
+	S2C_TAKE_FACEBOOK_FRIEND_INVITE_REWARD_RESP,	// 领取好友邀请奖励响应
+	C2S_TAKE_FACEBOOK_FRIEND_SUMMON_REWARD_REQ,		// 领取好友召唤奖励请求
+	S2C_TAKE_FACEBOOK_FRIEND_SUMMON_REWARD_RESP,	// 领取好友召唤奖励响应
+	C2S_FACEBOOK_FRIEND_INVITE_RECORD_REQ,			// 已经邀请的好友记录请求
+	S2C_FACEBOOK_FRIEND_INVITE_RECORD_RESP,			// 已经邀请的好友记录响应
+	C2S_TAKE_FACEBOOK_COMMEND_REWARD_REQ,			// 领取评论奖励请求
+	S2C_TAKE_FACEBOOK_COMMEND_REWARD_RESP,			// 领取评论奖励响应
+
+	// 在线奖励
+	ONLINE_REWARD_START = 25900,
+	C2S_ONLINE_REWARD_DATA_REQ,						// 在线奖励数据请求
+	S2C_ONLINE_REWARD_DATA_RESP,					// 在线奖励数据响应
+	C2S_TAKE_ONLINE_REWARD_REQ,						// 领取在线奖励请求
+	S2C_TAKE_ONLINE_REWARD_RESP,					// 领取在线奖励响应
+
+	// 7天登录
+	SEVEN_DAY_LOGIN_START = 26000,
+	C2S_SEVEN_DAY_LOGIN_DATA_REQ,					// 7天登录数据请求
+	S2C_SEVEN_DAY_LOGIN_DATA_RESP,					// 7天登录数据响应
+	C2S_TAKE_SEVEN_DAY_LOGIN_REWARD_REQ,			// 7天登录奖励领取请求
+	S2C_TAKE_SEVEN_DAY_LOGIN_REWARD_RESP,			// 7天登录奖励领取响应
+
+	// 充值回馈
+	RECHARGE_REWARD_START = 26100,
+	C2S_RECHARGE_REWARD_DATA_REQ,			// 请求充值回馈数据
+	S2C_RECHARGE_REWARD_DATA_RESP,			// 请求充值回馈数据响应
+	C2S_TAKE_RECHARGE_REWARD_REQ, 			// 领取充值奖励请求
+	S2C_TAKE_RECHARGE_REWARD_RESP,			// 领取充值奖励响应
+	C2S_TAKE_RECHARGE_EXTRA_REWARD_REQ,		// 领取额外奖励
+	S2C_TAKE_RECHARGE_EXTRA_REWARD_RESP,	// 领取额外奖励响应
+
+	// 累充奖励
+	TOTAL_RECHARGE_REWARD_START = 26200,
+	C2S_TOTAL_RECHARGE_REWARD_DATA_REQ,			// 请求累充奖励数据
+	S2C_TOTAL_RECHARGE_REWARD_DATA_RESP,		// 请求累充奖励数据响应
+	C2S_TAKE_TOTAL_RECHARGE_REWARD_REQ, 		// 领取累充奖励请求
+	S2C_TAKE_TOTAL_RECHARGE_REWARD_RESP,		// 领取累充奖励响应
+
+	// 新超值折扣
+	NEW_SUPER_DISCOUNT_START = 26300,
+	C2S_NEW_SUPER_DISCOUNT_DATA_REQ,				// 超值折扣数据请求 x
+	S2C_NEW_SUPER_DISCOUNT_DATA_RESP,				// 超值折扣数据响应
+	C2S_NEW_SUPER_DISCOUNT_BUY_REWARD_REQ,			// 领取超值折扣购买奖励请求
+	S2C_NEW_SUPER_DISCOUNT_BUY_REWARD_RESP,			// 领取超值折扣购买奖励响应
+	C2S_NEW_SUPER_DISCOUNT_ACCUMULATE_REWARD_REQ,	// 领取超值折扣累积奖励请求
+	S2C_NEW_SUPER_DISCOUNT_ACCUMULATE_REWARD_RESP,	// 领取超值折扣累积奖励响应
+
+	// 扭蛋抽奖
+	ND_LOTTERY_START = 26400,
+	C2S_ND_LOTTERY_REQ,							// 扭蛋抽奖请求
+	S2C_ND_LOTTERY_RESP,						// 扭蛋抽奖响应
+	C2S_ND_LOTTERY_RECORD_REQ,					// 扭蛋抽奖记录请求
+	S2C_ND_LOTTERY_RECORD_RESP,					// 扭蛋抽奖记录响应
+
+	// 热卖商品
+	HOT_SALE_GOODS_START = 26500,
+	C2S_HOT_SALE_GOODS_DATA_REQ,					// 热卖商品数据请求
+	S2C_HOT_SALE_GOODS_DATA_RESP,					// 热卖商品数据响应
+	C2S_TAKE_HOT_SALE_GOODS_RECHARGE_REWARD_REQ,	// 领取热卖商品充值奖励请求
+	S2C_TAKE_HOT_SALE_GOODS_RECHARGE_REWARD_RESP,	// 领取热卖商品充值奖励响应
+
+	// 转盘抽奖
+	TURNTABLE_LOTTERY_START = 26600,
+	C2S_TURNTABLE_DATA_REQ,					// 转盘数据请求
+	S2C_TURNTABLE_DATA_RESP,				// 转盘数据响应
+	C2S_TURNTABLE_LOTTERY_REQ,				// 转盘抽奖请求
+	S2C_TURNTABLE_LOTTERY_RESP,				// 转盘抽奖响应
+
+	// 阵营招募
+	CAMP_RECRUIT_START = 26700,
+	C2S_CAMP_RECRUIT_DATA_REQ,					// 阵营招募数据请求
+	S2C_CAMP_RECRUIT_DATA_RESP,					// 阵营招募数据响应
+	C2S_CAMP_RECRUIT_REQ,						// 阵营招募请求
+	S2C_CAMP_RECRUIT_RESP,						// 阵营招募响应
+	C2S_CAMP_RECRUIT_SCORE_TASK_REWARD_REQ,		// 阵营招募积分任务奖励请求
+	S2C_CAMP_RECRUIT_SCORE_TASK_REWARD_RESP,	// 阵营招募积分任务奖励响应
+	C2S_CAMP_RECRUIT_RECORD_REQ,				// 阵营招募记录请求
+	S2C_CAMP_RECRUIT_RECORD_RESP,				// 阵营招募记录响应
+
+	// unlock
+	UNLOCK_ACTIVITY_START = 26800,
+	C2S_UNLOCK_ACTIVITY_DATA_REQ,				// unlock活动数据请求
+	S2C_UNLOCK_ACTIVITY_DATA_RESP,				// unlock活动数据响应
+	C2S_SHOP_SCORE_FINISH_REQ,					// 商城评分完成请求
+	S2C_SHOP_SCORE_FINISH_RESP,					// 商城评分完成响应
+	C2S_WATCHING_VIDEO_NOTIFY_REQ,				// 观看视频通知请求
+	S2C_WATCHING_VIDEO_NOTIFY_RESP,				// 观看视频通知响应
+
+	// 世界等级任务
+	WORLD_LEVEL_TASK_START = 26900,
+	C2S_WORLD_LEVEL_TASK_DATA_REQ,				// 世界等级任务数据请求
+	S2C_WORLD_LEVEL_TASK_DATA_RESP,				// 世界等级任务数据响应
+	C2S_TAKE_WORLD_LEVEL_TASK_REWARD_REQ,		// 领取世界等级任务奖励请求
+	S2C_TAKE_WORLD_LEVEL_TASK_REWARD_RESP,		// 领取世界等级任务奖励响应
+	C2S_TAKE_WORLD_LEVEL_TASK_FINAL_REWARD_REQ,	// 领取世界等级任务最终奖励请求
+	S2C_TAKE_WORLD_LEVEL_TASK_FINAL_REWARD_RESP,// 领取世界等级任务最终奖励响应
+
+	// 资源战
+	RESOURCE_WAR_START = 27000,
+	C2S_PLAYER_RESOURCE_WAR_DATA_REQ,			// 请求玩家资源战数据
+	S2C_PLAYER_RESOURCE_WAR_DATA_RESP,			// 玩家资源战数据响应
+	C2S_RESOURCE_WAR_ENEMY_LIST_REQ,			// 请求敌人列表
+	S2C_RESOURCE_WAR_ENEMY_LIST_RESP,			// 请求敌人列表响应
+	C2S_RESOURCE_WAR_BATTLE_RECORD_REQ,			// 请求战报
+	S2C_RESOURCE_WAR_BATTLE_RECORD_RESP,		// 请求战报响应
+	C2S_RESOURCE_WAR_GIVE_UP_OCCUPY_REQ,		// 放弃占领的资源
+	S2C_RESOURCE_WAR_GIVE_UP_OCCUPY_RESP,		// 放弃占领的资源响应
+	C2S_RESOURCE_WAR_KEEP_OCCUPY_REQ,			// 延长占领的资源
+	S2C_RESOURCE_WAR_KEEP_OCCUPY_RESP,			// 延长占领的资源响应
+	C2S_RESOURCE_WAR_CHAPTER_DATA_REQ,			// 请求资源战章节数据
+	S2C_RESOURCE_WAR_CHAPTER_DATA_RESP,			// 请求资源战章节数据响应
+	C2S_RESOURCE_WAR_SAME_RESOURCE_REQ,			// 请求资源战同类资源 similar
+	S2C_RESOURCE_WAR_SAME_RESOURCE_RESP,		// 请求资源战同类资源响应
+	C2S_RESOURCE_WAR_GUILD_RESOURCE_REQ,		// 请求资源战工会资源
+	S2C_RESOURCE_WAR_GUILD_RESOURCE_RESP,		// 请求资源战工会资源响应
+	C2S_RESOURCE_WAR_TECHNOLOGY_UPGRADE_REQ,	// 资源战科技升级请求
+	S2C_RESOURCE_WAR_TECHNOLOGY_UPGRADE_RESP,	// 资源战科技升级响应
+
+	// 工会战
+	GUILD_WAR_START = 27100,
+	C2S_GUILD_WAR_ROLE_DATA_REQ,					// 请求工会战角色数据
+	S2C_GUILD_WAR_ROLE_DATA_RESP,					// 请求工会战角色数据响应
+	C2S_GUILD_WAR_OCCUPY_STAR_LIST_REQ,				// 请求本军团已占领的星球
+	S2C_GUILD_WAR_OCCUPY_STAR_LIST_RESP,			// 请求本军团已占领的星球响应
+	C2S_GUILD_WAR_DECLARE_WAR_STAR_LIST_REQ,		// 请求本军团已宣战的星球列表
+	S2C_GUILD_WAR_DECLARE_WAR_STAR_LIST_RESP,		// 请求本军团已宣战的星球列表响应
+	C2S_GUILD_WAR_STAR_LIST_REQ,					// 请求星球列表
+	S2C_GUILD_WAR_STAR_LIST_RESP,					// 请求星球列表响应
+	C2S_GUILD_WAR_DECLARE_WAR_REQ,					// 请求宣战
+	S2C_GUILD_WAR_DECLARE_WAR_RESP,					// 宣战响应
+	C2S_GUILD_WAR_ORGANIZE_DEFENSE_REQ,				// 请求布防
+	S2C_GUILD_WAR_ORGANIZE_DEFENSE_RESP,			// 布防响应
+	C2S_GUILD_WAR_EVACUATE_REQ,						// 请求撤离
+	S2C_GUILD_WAR_EVACUATE_RESP,					// 撤离响应
+	C2S_GUILD_WAR_BUY_HIGH_STAR_BATTLE_TIMES_REQ,	// 请求购买对高级星球挑战次数
+	S2C_GUILD_WAR_BUY_HIGH_STAR_BATTLE_TIMES_RESP,	// 购买对高级星球挑战次数响应
+	C2S_GUILD_WAR_TAKE_STAR_REWARD_REQ,				// 请求领取星球奖励
+	S2C_GUILD_WAR_TAKE_STAR_REWARD_RESP,			// 领取星球奖励响应
+	C2S_GUILD_WAR_STAR_DETAIL_REQ,					// 请求星球详细
+	S2C_GUILD_WAR_STAR_DETAIL_RESP,					// 星球详细响应
+	C2S_GUILD_WAR_TOWER_LIST_REQ,					// 请求工会战塔列表
+	S2C_GUILD_WAR_TOWER_LIST_RESP,					// 工会战塔列表响应
+	S2C_GUILD_WAR_STAR_UPDATE_NOTIFY,				// 星球数据更新通知
+
+	// 挂机
+	C2S_HANG_UP_DROP_DATA_REQ,							// 挂机掉落数据请求
+	S2C_HANG_UP_DROP_DATA_RESP,							// 挂机掉落数据响应
+	C2S_HANG_UP_DROP_REWARD_OBTAIN_REQ,					// 领取挂机掉落奖励请求
+	S2C_HANG_UP_DROP_REWARD_OBTAIN_RESP,				// 领取挂机掉落奖励响应
+
+
+
+
+	/*--------------------------------------------------------------------------------------------------------------------------*/
+	// 3) GateSvr和MapSvr之间通信ID区间
+	/*--------------------------------------------------------------------------------------------------------------------------*/
+	//角色系统
+	G2M_CLIENT_DISCONNECT_CMD = M2G_MIN,	// 角色断开连接通知
+	M2G_CLIENT_KICKOUT_CMD,					// 踢出角色通知
+	M2G_HEART_BEAT,							// 心跳
+	G2M_HEART_BEAT,							// 心跳
+	M2G_CLIENT_INFO,						// 客户端信息
+	
+
+	/*--------------------------------------------------------------------------------------------------------------------------*/
+	// 4) MapSvr和OpenSvr之间通信ID区间
+	/*--------------------------------------------------------------------------------------------------------------------------*/
+	M2O_AUTH_SYN = M2O_MIN,
+	O2M_AUTH_ACK,
+	M2O_SERVERID_CMD,
+	M2O_HEART_BEAT,			//心跳
+	O2M_HEART_BEAT,			//心跳
+
+	M2O_LOGIC_COMMON_REQ,		// 逻辑通用消息请求
+	O2M_LOGIC_COMMON_RESP,		// 逻辑通用消息响应
+
+	M2O_AUTHENTICATION_CODE_REQ,	// 认证码请求
+	O2M_AUTHENTICATION_CODE_RESP,	// 认证码响应
+
+	M2O_REYUN_STATISTIC_NOTIFY,		// 行为统计通知
+
+	M2O_CHECK_USER_INFO_REQ,		// 检测用户信息请求
+	O2M_CHECK_USER_INFO_RESP,		// 检测用户信息响应
+
+	O2M_RECHARGE_SEND_GOODS_REQ,	// 充值发货请求
+	M2O_RECHARGE_SEND_GOODS_RESP,	// 充值发货响应
+
+	O2M_RECHARGE_CALLBACK_NOTICE_REQ,	// 充值回调通知请求	
+	M2O_RECHARGE_CALLBACK_NOTICE_RESP,	// 充值回调通知响应
+
+	M2O_SDK_ORDER_ID_REQ,				// SDK订单号请求
+	O2M_SDK_ORDER_ID_RESP,				// SDK订单号响应
+
+	O2M_CP_ORDER_ID_REQ,				// CP订单号请求
+	M2O_CP_ORDER_ID_RESP,				// CP订单号响应
+
+	O2M_ONLINE_PLAYER_NUM_REQ,			// 在线玩家数量请求
+	M2O_ONLINE_PLAYER_NUM_RESP,			// 在线玩家数量响应
+
+	M2O_RECHARGE_SUCCESS_REPORT_NOTIFY,	// 充值成功上报(单向)
+
+	M2O_MYCARD_RECHARGE_SUCCESS_REPORT_NOTIFY,	// MyCard充值成功上报(单向)
+
+	M2O_STATISTICS_NOTIFY,				// 数据统计通知
+
+	O2M_YGAME_RECHARGE_SEND_GOODS_REQ,	// YGame充值发货请求
+	M2O_YGAME_RECHARGE_SEND_GOODS_RESP,	// YGame充值发货响应
+
+	O2M_YGAME_CASHBACK_NOTIFY_REQ,		// YGame提现通知请求
+	M2O_YGAME_CASHBACK_NOTIFY_RESP,		// YGame提现通知响应
+
+	O2M_YGAME_BONUS_NOTIFY_REQ,			// YGame奖励通知请求
+	M2O_YGAME_BONUS_NOTIFY_RESP,		// YGame奖励通知响应
+};																								

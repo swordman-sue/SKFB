@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>Administrator</LastAuthor>
+  <Created>2014-06-11T14:54:37Z</Created>
+  <LastSaved>2016-12-31T03:10:25Z</LastSaved>
+  <Version>14.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-10.1.0.6135</KSOProductBuildVer>
+ </CustomDocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12210</WindowHeight>
+  <WindowWidth>24480</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>165</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <RefModeR1C1/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62" ss:Name="好 2">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s71" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s72" ss:Parent="s62">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="配置">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="2" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="249.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="81"/>
+   <Column ss:AutoFitWidth="0" ss:Width="425.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="79.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="28.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="128.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="30"/>
+   <Column ss:AutoFitWidth="0" ss:Width="150"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s63">
+    <Cell><Data ss:Type="String">服务端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">服务端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">客户端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">客户端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">erl头部</Data></Cell>
+    <Cell><Data ss:Type="String">erl内容格式</Data></Cell>
+    <Cell><Data ss:Type="String">erl尾部</Data></Cell>
+    <Cell><Data ss:Type="String">客户端特殊处理</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39.75" ss:StyleID="s63">
+    <Cell ss:StyleID="s64"><Data ss:Type="String">config_warcraft_rank_reward.txt</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">config_warcraft_rank_reward.cnf|WarcraftRankReward</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">get(rank_min) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s66"/>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">2=&gt;rank_min</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>17</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="排名奖励">
+  <Table ss:ExpandedColumnCount="6" ss:ExpandedRowCount="14" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s67" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:StyleID="s67" ss:Width="99.75"/>
+   <Column ss:StyleID="s67" ss:Width="105"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="277.5"/>
+   <Column ss:StyleID="s67" ss:Width="198"/>
+   <Column ss:StyleID="s67" ss:Width="226.5"/>
+   <Column ss:StyleID="s67" ss:AutoFitWidth="0" ss:Width="210"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">rank_min|rank_min</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">rank_max|rank_max</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">target_rank_interval|target_rank_interval</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">reward_item_id_list|reward_item_id_list</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">reward_item_num_list|reward_item_num_list</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">reward_title_id|reward_title_id</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不可空</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">数字</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不定长</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">不定长</Data></Cell>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+    <Cell ss:StyleID="s69"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">排名下限</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">排名上限</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">挑战目标排名间隔</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">奖励物品ID列表</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">奖励物品数量列表</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">奖励称号ID</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">10000|10001</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">2|5</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>3</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

@@ -1,0 +1,21 @@
+
+读取目录
+http://svn.zquan.me/phonegame/trunk/planner/export
+
+导出php目录
+http://svn.zquan.me/phonegame/trunk/src/php_server/application/config
+
+导出lua游戏配置目录
+暂时不需要
+
+导出lua资源配置目录
+http://svn.zquan.me/phonegame/trunk/cdnfiles/resource/uiconfig
+
+
+导出文件
+……/export/res_ui_config/regloginword.xml	->	……/uiconfig/regloginword.cnf
+
+……/export/level_common.xml			->	……/config/lvl_common.php
+……/export/level_professional.xml		->	……/config/lvl_jian.php
+……/export/level_professional.xml		->	……/config/lvl_dao.php
+……/export/level_professional.xml		->	……/config/lvl_gong.php

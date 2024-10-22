@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A80E792A1F0130F2001F86DC /* md5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79141F0130F2001F86DC /* md5.cpp */; };
+		A80E792B1F0130F2001F86DC /* clmempool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79161F0130F2001F86DC /* clmempool.cpp */; };
+		A80E792C1F0130F2001F86DC /* memmonitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79171F0130F2001F86DC /* memmonitor.cpp */; };
+		A80E792D1F0130F2001F86DC /* mempool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79181F0130F2001F86DC /* mempool.cpp */; };
+		A80E792E1F0130F2001F86DC /* mempoolex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79191F0130F2001F86DC /* mempoolex.cpp */; };
+		A80E792F1F0130F2001F86DC /* msgmem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E791A1F0130F2001F86DC /* msgmem.cpp */; };
+		A80E79301F0130F2001F86DC /* pisocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E791D1F0130F2001F86DC /* pisocket.cpp */; };
+		A80E79311F0130F2001F86DC /* pisocketex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E791E1F0130F2001F86DC /* pisocketex.cpp */; };
+		A80E79321F0130F2001F86DC /* system.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E791F1F0130F2001F86DC /* system.cpp */; };
+		A80E79331F0130F2001F86DC /* systemex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79201F0130F2001F86DC /* systemex.cpp */; };
+		A80E79341F0130F2001F86DC /* event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79221F0130F2001F86DC /* event.cpp */; };
+		A80E79351F0130F2001F86DC /* mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79231F0130F2001F86DC /* mutex.cpp */; };
+		A80E79361F0130F2001F86DC /* semaphorex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79241F0130F2001F86DC /* semaphorex.cpp */; };
+		A80E79371F0130F2001F86DC /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79251F0130F2001F86DC /* thread.cpp */; };
+		A80E79381F0130F2001F86DC /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79271F0130F2001F86DC /* tinyxml.cpp */; };
+		A80E79391F0130F2001F86DC /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79281F0130F2001F86DC /* tinyxmlerror.cpp */; };
+		A80E793A1F0130F2001F86DC /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80E79291F0130F2001F86DC /* tinyxmlparser.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0DA1635C17A7C18B00FF4531 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DA1635E17A7C18B00FF4531 /* libcommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80E78F81F0130E6001F86DC /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5.h; path = ../../../libs/include/common/md5/md5.h; sourceTree = "<group>"; };
+		A80E78F91F0130E6001F86DC /* md5cpp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = md5cpp.h; path = ../../../libs/include/common/md5/md5cpp.h; sourceTree = "<group>"; };
+		A80E78FB1F0130E6001F86DC /* clmempool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = clmempool.h; path = ../../../libs/include/common/memory/clmempool.h; sourceTree = "<group>"; };
+		A80E78FC1F0130E6001F86DC /* memdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memdef.h; path = ../../../libs/include/common/memory/memdef.h; sourceTree = "<group>"; };
+		A80E78FD1F0130E6001F86DC /* memmonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = memmonitor.h; path = ../../../libs/include/common/memory/memmonitor.h; sourceTree = "<group>"; };
+		A80E78FE1F0130E6001F86DC /* mempool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mempool.h; path = ../../../libs/include/common/memory/mempool.h; sourceTree = "<group>"; };
+		A80E78FF1F0130E6001F86DC /* mempoolex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mempoolex.h; path = ../../../libs/include/common/memory/mempoolex.h; sourceTree = "<group>"; };
+		A80E79001F0130E6001F86DC /* msgmem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = msgmem.h; path = ../../../libs/include/common/memory/msgmem.h; sourceTree = "<group>"; };
+		A80E79041F0130E6001F86DC /* pisocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pisocket.h; sourceTree = "<group>"; };
+		A80E79051F0130E6001F86DC /* pisocketex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pisocketex.h; sourceTree = "<group>"; };
+		A80E79061F0130E6001F86DC /* system.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; name = system.h; path = ../../../libs/include/common/platform/system.h; sourceTree = "<group>"; };
+		A80E79081F0130E6001F86DC /* event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		A80E79091F0130E6001F86DC /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		A80E790B1F0130E6001F86DC /* semaphorex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = semaphorex.h; sourceTree = "<group>"; };
+		A80E790C1F0130E6001F86DC /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		A80E790D1F0130E6001F86DC /* threadqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threadqueue.h; sourceTree = "<group>"; };
+		A80E790E1F0130E6001F86DC /* threadqueueex.h */ = {isa = PBXFileReference; fileEncoding = 2147486000; lastKnownFileType = sourcecode.c.h; path = threadqueueex.h; sourceTree = "<group>"; };
+		A80E790F1F0130E6001F86DC /* tlskey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tlskey.h; sourceTree = "<group>"; };
+		A80E79101F0130E6001F86DC /* raobjlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = raobjlist.h; path = ../../libs/include/common/raobjlist.h; sourceTree = "<group>"; };
+		A80E79121F0130E6001F86DC /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml.h; path = ../../../libs/include/common/tinyxml/tinyxml.h; sourceTree = "<group>"; };
+		A80E79141F0130F2001F86DC /* md5.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = md5.cpp; sourceTree = "<group>"; };
+		A80E79161F0130F2001F86DC /* clmempool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = clmempool.cpp; sourceTree = "<group>"; };
+		A80E79171F0130F2001F86DC /* memmonitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = memmonitor.cpp; sourceTree = "<group>"; };
+		A80E79181F0130F2001F86DC /* mempool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mempool.cpp; sourceTree = "<group>"; };
+		A80E79191F0130F2001F86DC /* mempoolex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mempoolex.cpp; sourceTree = "<group>"; };
+		A80E791A1F0130F2001F86DC /* msgmem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = msgmem.cpp; sourceTree = "<group>"; };
+		A80E791D1F0130F2001F86DC /* pisocket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pisocket.cpp; path = ../../../../../libs_src/common/platform/socket/pisocket.cpp; sourceTree = "<group>"; };
+		A80E791E1F0130F2001F86DC /* pisocketex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pisocketex.cpp; path = ../../../../../libs_src/common/platform/socket/pisocketex.cpp; sourceTree = "<group>"; };
+		A80E791F1F0130F2001F86DC /* system.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = system.cpp; sourceTree = "<group>"; };
+		A80E79201F0130F2001F86DC /* systemex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = systemex.cpp; sourceTree = "<group>"; };
+		A80E79221F0130F2001F86DC /* event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = event.cpp; path = ../../../../../libs_src/common/platform/thread/event.cpp; sourceTree = "<group>"; };
+		A80E79231F0130F2001F86DC /* mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mutex.cpp; path = ../../../../../libs_src/common/platform/thread/mutex.cpp; sourceTree = "<group>"; };
+		A80E79241F0130F2001F86DC /* semaphorex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = semaphorex.cpp; path = ../../../../../libs_src/common/platform/thread/semaphorex.cpp; sourceTree = "<group>"; };
+		A80E79251F0130F2001F86DC /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = thread.cpp; path = ../../../../../libs_src/common/platform/thread/thread.cpp; sourceTree = "<group>"; };
+		A80E79271F0130F2001F86DC /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		A80E79281F0130F2001F86DC /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		A80E79291F0130F2001F86DC /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DA1635B17A7C18B00FF4531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D99E9CD1A2DF0E8006BDBA8 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				A80E79101F0130E6001F86DC /* raobjlist.h */,
+				A80E79131F0130F2001F86DC /* md5 */,
+				A80E79151F0130F2001F86DC /* memory */,
+				A80E791B1F0130F2001F86DC /* platform */,
+				A80E79261F0130F2001F86DC /* tinyxml */,
+			);
+			name = common;
+			path = ../../../cocos2dxlib/cocos;
+			sourceTree = "<group>";
+		};
+		0DA1635517A7C18B00FF4531 = {
+			isa = PBXGroup;
+			children = (
+				0D99E9CD1A2DF0E8006BDBA8 /* common */,
+				0DA1635F17A7C18B00FF4531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DA1635F17A7C18B00FF4531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DA1635E17A7C18B00FF4531 /* libcommon.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80E79031F0130E6001F86DC /* socket */ = {
+			isa = PBXGroup;
+			children = (
+				A80E79041F0130E6001F86DC /* pisocket.h */,
+				A80E79051F0130E6001F86DC /* pisocketex.h */,
+				A80E791D1F0130F2001F86DC /* pisocket.cpp */,
+				A80E791E1F0130F2001F86DC /* pisocketex.cpp */,
+			);
+			name = socket;
+			path = ../../../libs/include/common/platform/socket;
+			sourceTree = "<group>";
+		};
+		A80E79071F0130E6001F86DC /* thread */ = {
+			isa = PBXGroup;
+			children = (
+				A80E79081F0130E6001F86DC /* event.h */,
+				A80E79091F0130E6001F86DC /* mutex.h */,
+				A80E790B1F0130E6001F86DC /* semaphorex.h */,
+				A80E790C1F0130E6001F86DC /* thread.h */,
+				A80E790D1F0130E6001F86DC /* threadqueue.h */,
+				A80E790E1F0130E6001F86DC /* threadqueueex.h */,
+				A80E790F1F0130E6001F86DC /* tlskey.h */,
+				A80E79221F0130F2001F86DC /* event.cpp */,
+				A80E79231F0130F2001F86DC /* mutex.cpp */,
+				A80E79241F0130F2001F86DC /* semaphorex.cpp */,
+				A80E79251F0130F2001F86DC /* thread.cpp */,
+			);
+			name = thread;
+			path = ../../../libs/include/common/platform/thread;
+			sourceTree = "<group>";
+		};
+		A80E79131F0130F2001F86DC /* md5 */ = {
+			isa = PBXGroup;
+			children = (
+				A80E78F81F0130E6001F86DC /* md5.h */,
+				A80E78F91F0130E6001F86DC /* md5cpp.h */,
+				A80E79141F0130F2001F86DC /* md5.cpp */,
+			);
+			name = md5;
+			path = ../../libs_src/common/md5;
+			sourceTree = "<group>";
+		};
+		A80E79151F0130F2001F86DC /* memory */ = {
+			isa = PBXGroup;
+			children = (
+				A80E78FB1F0130E6001F86DC /* clmempool.h */,
+				A80E78FC1F0130E6001F86DC /* memdef.h */,
+				A80E78FD1F0130E6001F86DC /* memmonitor.h */,
+				A80E78FE1F0130E6001F86DC /* mempool.h */,
+				A80E78FF1F0130E6001F86DC /* mempoolex.h */,
+				A80E79001F0130E6001F86DC /* msgmem.h */,
+				A80E79161F0130F2001F86DC /* clmempool.cpp */,
+				A80E79171F0130F2001F86DC /* memmonitor.cpp */,
+				A80E79181F0130F2001F86DC /* mempool.cpp */,
+				A80E79191F0130F2001F86DC /* mempoolex.cpp */,
+				A80E791A1F0130F2001F86DC /* msgmem.cpp */,
+			);
+			name = memory;
+			path = ../../libs_src/common/memory;
+			sourceTree = "<group>";
+		};
+		A80E791B1F0130F2001F86DC /* platform */ = {
+			isa = PBXGroup;
+			children = (
+				A80E79061F0130E6001F86DC /* system.h */,
+				A80E791F1F0130F2001F86DC /* system.cpp */,
+				A80E79201F0130F2001F86DC /* systemex.cpp */,
+				A80E79031F0130E6001F86DC /* socket */,
+				A80E79071F0130E6001F86DC /* thread */,
+			);
+			name = platform;
+			path = ../../libs_src/common/platform;
+			sourceTree = "<group>";
+		};
+		A80E79261F0130F2001F86DC /* tinyxml */ = {
+			isa = PBXGroup;
+			children = (
+				A80E79121F0130E6001F86DC /* tinyxml.h */,
+				A80E79271F0130F2001F86DC /* tinyxml.cpp */,
+				A80E79281F0130F2001F86DC /* tinyxmlerror.cpp */,
+				A80E79291F0130F2001F86DC /* tinyxmlparser.cpp */,
+			);
+			name = tinyxml;
+			path = ../../libs_src/common/tinyxml;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DA1635D17A7C18B00FF4531 /* common */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DA1636C17A7C18B00FF4531 /* Build configuration list for PBXNativeTarget "common" */;
+			buildPhases = (
+				0DA1635A17A7C18B00FF4531 /* Sources */,
+				0DA1635B17A7C18B00FF4531 /* Frameworks */,
+				0DA1635C17A7C18B00FF4531 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = common;
+			productName = cocos2dx;
+			productReference = 0DA1635E17A7C18B00FF4531 /* libcommon.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DA1635617A7C18B00FF4531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 0DA1635917A7C18B00FF4531 /* Build configuration list for PBXProject "common" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DA1635517A7C18B00FF4531;
+			productRefGroup = 0DA1635F17A7C18B00FF4531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DA1635D17A7C18B00FF4531 /* common */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DA1635A17A7C18B00FF4531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A80E793A1F0130F2001F86DC /* tinyxmlparser.cpp in Sources */,
+				A80E79391F0130F2001F86DC /* tinyxmlerror.cpp in Sources */,
+				A80E792B1F0130F2001F86DC /* clmempool.cpp in Sources */,
+				A80E79381F0130F2001F86DC /* tinyxml.cpp in Sources */,
+				A80E792F1F0130F2001F86DC /* msgmem.cpp in Sources */,
+				A80E79361F0130F2001F86DC /* semaphorex.cpp in Sources */,
+				A80E792D1F0130F2001F86DC /* mempool.cpp in Sources */,
+				A80E79341F0130F2001F86DC /* event.cpp in Sources */,
+				A80E79371F0130F2001F86DC /* thread.cpp in Sources */,
+				A80E79301F0130F2001F86DC /* pisocket.cpp in Sources */,
+				A80E79351F0130F2001F86DC /* mutex.cpp in Sources */,
+				A80E792A1F0130F2001F86DC /* md5.cpp in Sources */,
+				A80E79321F0130F2001F86DC /* system.cpp in Sources */,
+				A80E792E1F0130F2001F86DC /* mempoolex.cpp in Sources */,
+				A80E79331F0130F2001F86DC /* systemex.cpp in Sources */,
+				A80E79311F0130F2001F86DC /* pisocketex.cpp in Sources */,
+				A80E792C1F0130F2001F86DC /* memmonitor.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DA1636A17A7C18B00FF4531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					"CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../cocos2dxlib/cocos2dx,
+					../../../cocos2dxlib/cocos2dx/include,
+					../../../cocos2dxlib/cocos2dx/platform/ios,
+					../../../cocos2dxlib/cocos2dx/kazmath/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		0DA1636B17A7C18B00FF4531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					"CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1",
+				);
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../cocos2dxlib/cocos2dx,
+					../../../cocos2dxlib/cocos2dx/include,
+					../../../cocos2dxlib/cocos2dx/platform/ios,
+					../../../cocos2dxlib/cocos2dx/kazmath/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		0DA1636D17A7C18B00FF4531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					DEBUG,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = ../../../libs/include/common;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = common;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0DA1636E17A7C18B00FF4531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_IDENTITY = "";
+				DSTROOT = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = ../../../libs/include/common;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = common;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DA1635917A7C18B00FF4531 /* Build configuration list for PBXProject "common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA1636A17A7C18B00FF4531 /* Debug */,
+				0DA1636B17A7C18B00FF4531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DA1636C17A7C18B00FF4531 /* Build configuration list for PBXNativeTarget "common" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA1636D17A7C18B00FF4531 /* Debug */,
+				0DA1636E17A7C18B00FF4531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DA1635617A7C18B00FF4531 /* Project object */;
+}

@@ -1,0 +1,56 @@
+
+StartConfig = 
+{
+    --打包类型：tiny 0, mini 1, middle 2, all 3,
+    PackageType = 3,    
+
+    --大陆简体dl_chs, 港澳台繁体gt_cht, 新马简体xm_chs
+	DistrictLanguage = "dl_chs",
+
+	--测试模式
+	IsTest = true,
+
+	--本地资源
+	IsLocalRes = "false",
+
+	--显示FPS，DrawCall
+	IsDisplayStats = "true",
+
+    --是否手动创建logo(资源更新界面)
+    IsManualLogo = true,
+
+	--是否跳过app版本更新
+	SkipAppVerUpdate = "false",
+
+	--显示LUA报错弹窗
+	LuaErrorViewToggle = "true",
+
+	--调用CallPlatApi的开关
+	CallPlatAPIToggle = true,
+
+	--客户端事件跟踪URL
+	EventTrackForLossRateURL = "http://39.108.124.78:16888/client_event_statistics",
+
+	--客户端事件跟踪过程中的错误信息上报
+	ErrorInfoForEventTrackURL = "http://39.108.124.78:16888/client_event_statistics/error_log",    
+
+	-----------------------------------------------------------------
+	--版本信息配置
+	-----------------------------------------------------------------
+	VersionURL = "http://39.108.124.78/skfbex/develop/version/callback",
+
+	-----------------------------------------------------------------
+	--安装包信息配置
+	-----------------------------------------------------------------
+	PackageInfo = "http://39.108.124.78:8888/skfbex/develop/packageinfo",
+
+	-----------------------------------------------------------------
+	--服务器配置
+	-----------------------------------------------------------------
+	ServerConfig = "http://39.108.124.78:8888/skfbex/develop/server_config",		
+
+	-----------------------------------------------------------------
+	--服务器列表:
+	-----------------------------------------------------------------	
+	ServerListURL = "http://39.108.124.78:8888/skfbex/develop/server_list",
+}

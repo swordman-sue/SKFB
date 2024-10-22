@@ -1,0 +1,2330 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Administrator</Author>
+  <LastAuthor>神出鬼没蝎</LastAuthor>
+  <Created>2014-06-11T14:54:37Z</Created>
+  <LastSaved>2018-05-15T12:53:02Z</LastSaved>
+  <Version>12.00</Version>
+ </DocumentProperties>
+ <CustomDocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <KSOProductBuildVer dt:dt="string">2052-10.1.0.7346</KSOProductBuildVer>
+  <KSOReadingLayout dt:dt="boolean">1</KSOReadingLayout>
+ </CustomDocumentProperties>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>12240</WindowHeight>
+  <WindowWidth>24480</WindowWidth>
+  <WindowTopX>120</WindowTopX>
+  <WindowTopY>135</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64" ss:Name="好 2">
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#008000"/>
+   <Interior ss:Color="#CCFFCC" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center" ss:WrapText="1"/>
+   <Font ss:FontName="宋体" x:CharSet="134" ss:Size="11" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+  </Style>
+  <Style ss:ID="s76" ss:Parent="s64">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss"/>
+   <Interior ss:Color="#FFCC99" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s80">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s81">
+   <Alignment ss:Vertical="Center"/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#000000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s82">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="微软雅黑" x:CharSet="134" x:Family="Swiss" ss:Color="#FF0000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="配置">
+  <Table ss:ExpandedColumnCount="8" ss:ExpandedRowCount="3" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="54" ss:DefaultRowHeight="13.5">
+   <Column ss:AutoFitWidth="0" ss:Width="246.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="44.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="393.75"/>
+   <Column ss:AutoFitWidth="0" ss:Width="51"/>
+   <Column ss:AutoFitWidth="0" ss:Width="26.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="145.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="18"/>
+   <Column ss:AutoFitWidth="0" ss:Width="138.75"/>
+   <Row ss:AutoFitHeight="0" ss:StyleID="s67">
+    <Cell><Data ss:Type="String">服务端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">服务端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">客户端文件名</Data></Cell>
+    <Cell><Data ss:Type="String">客户端对应工作表号</Data></Cell>
+    <Cell><Data ss:Type="String">erl头部</Data></Cell>
+    <Cell><Data ss:Type="String">erl内容格式</Data></Cell>
+    <Cell><Data ss:Type="String">erl尾部</Data></Cell>
+    <Cell><Data ss:Type="String">客户端特殊处理</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39.75" ss:StyleID="s67">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">config_daily_mission.txt</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">config_daily_mission.cnf|DailyMission</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">get(id) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2=&gt;id</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="39.75" ss:StyleID="s67">
+    <Cell ss:StyleID="s68"><Data ss:Type="String">config_team_level_daily_mission.txt</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">config_team_level_daily_mission.cnf|TeamLevelDailyMission</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">&#10;</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">get(level_min) -&gt; #$</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">2=&gt;level_min</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>9</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="日常任务">
+  <Names>
+   <NamedRange ss:Name="_FilterDatabase" ss:RefersTo="=日常任务!R6C4:R6C5"
+    ss:Hidden="1"/>
+  </Names>
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="106" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s71" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="38.25"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="75.75"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="51.75"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="159"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="78.75"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="59.25"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="150.75"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="179.25"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="106.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="66.75"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="99"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">id|id</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">icon_id|</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">type|type</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">need_role_level|need_role_level</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">value|value</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">point|point</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">award_item_id|award_item_id</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">award_item_num|award_item_num</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">desc|</Data></Cell>
+    <Cell><Data ss:Type="String">systemid|</Data></Cell>
+    <Cell><Data ss:Type="String">base_exp|base_exp</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">字符串</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">字符串</Data></Cell>
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+    <Cell><Data ss:Type="String">数字</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7" ss:StyleID="s74"><Data ss:Type="String">不定长</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">不定长</Data></Cell>
+   </Row>
+   <Row ss:Index="6" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">任务ID</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">任务图标ID</Data><Comment
+      ss:Author="Administrator"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">&#10;</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">任务类型</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">需要的角色等级</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">需要的上下文值</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">获得的积分</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">奖励的物品ID</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">奖励的物品数量</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">任务描述</Data></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">前往的系统Id</Data><Comment
+      ss:Author="Administrator"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><Font
+        html:Size="9">Administrator:&#10;系统ID&#10;&#10;1 征战&#10;2 日常副本&#10;3 日常任务&#10;4 物品背包&#10;5 装备背包&#10;6 圣器背包&#10;7 英雄背包&#10;8 英雄阵容&#10;9 英雄召唤&#10;10 英雄图鉴&#10;11 英雄商店&#10;12 商城&#10;13 邮件&#10;14 排行榜&#10;15 好友&#10;16 异族入侵&#10;17 勇者试炼&#10;18 精灵&#10;19 圣器争夺&#10;20 寻访遗迹&#10;21 竞技场&#10;22 军团&#10;23 回收&#10;24 领奖中心&#10;25 挑战&#10;26 主线副本&#10;27 英雄副本&#10;28 精英副本&#10;29 扫荡功能&#10;30 声望商店&#10;31 圣器争夺5次&#10;32 圣器一键争夺&#10;33 装备商店&#10;34 战功商店&#10;35 英雄升级&#10;36 英雄进阶&#10;37 英雄装备穿戴&#10;38 装备强化&#10;39 装备精炼&#10;40 英雄培养&#10;41 英雄圣器穿戴&#10;42 圣器强化&#10;43 圣器精炼&#10;44 英雄潜能&#10;45 英雄觉醒&#10;46 觉醒商店&#10;47 世界BOSS&#10;48 成就任务&#10;49 主界面</Font></ss:Data></Comment></Cell>
+    <Cell ss:StyleID="s77"><Data ss:Type="String">基础经验</Data><Comment ss:Author="L"><ss:Data
+       xmlns="http://www.w3.org/TR/REC-html40"><Font html:Size="9">玩家获得基础经验*战队等级的经验</Font></ss:Data></Comment></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">主线副本挑战10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">42301</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器强化3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_hero</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄培养3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_friend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">赠送好友精力10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_store</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10021</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄商店购买1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买体力药剂3个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买精力药剂5个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10018</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行召唤3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19006</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行高级召唤1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">竞技场战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13049</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器争夺5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19012</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进入勇者试练战斗3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">日常副本战斗1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19006</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">100</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄副本战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19017</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">精英副本战斗10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀遗迹破坏者5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10015</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">异度入侵分享3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10015</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s79"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">讨伐异度入侵者10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">遗迹探索8小时</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10008</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀精英外敌3个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_equip</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">装备强化1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13049</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器合成1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19028</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">无尽深渊战斗1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">88</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_pvp</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">跨服对决战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">72</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_divine</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10096</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">占卜翻牌20次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">主线副本挑战10次</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">42301</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器强化3次</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="String">btn_hero</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄培养3次</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="String">btn_friend</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">赠送好友精力10次</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="String">btn_store</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10021</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄商店购买1次</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买体力药剂3个</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买精力药剂5个</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10018</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行召唤3次</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19006</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行高级召唤1次</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">竞技场战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">36</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">13049</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器争夺5次</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19012</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进入勇者试练战斗3次</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">38</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">日常副本战斗1次</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">39</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19006</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄副本战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">40</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19017</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">精英副本战斗10次</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀遗迹破坏者5次</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">42</Data></Cell>
+    <Cell><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10015</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">异度入侵分享3次</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">43</Data></Cell>
+    <Cell><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10015</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">讨伐异度入侵者10次</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">44</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">遗迹探索8小时</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10008</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀精英外敌3个</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">46</Data></Cell>
+    <Cell><Data ss:Type="String">btn_equip</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">装备强化1次</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">47</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">13049</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器合成1次</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">48</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19028</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">无尽深渊战斗1次</Data></Cell>
+    <Cell><Data ss:Type="Number">88</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">49</Data></Cell>
+    <Cell><Data ss:Type="String">btn_pvp</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">跨服对决战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">72</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="String">btn_divine</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10096</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">占卜翻牌10次</Data></Cell>
+    <Cell><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">51</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10000</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">主线副本挑战10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">52</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">42301</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器强化3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">53</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_hero</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄培养3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">54</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_friend</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">赠送好友精力10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">55</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_store</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10021</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄商店购买1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">56</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买体力药剂3个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">57</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买精力药剂5个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">58</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10018</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行召唤3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">59</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19006</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行高级召唤1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">60</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10001</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">竞技场战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">61</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">11</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13049</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器争夺5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">62</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">12</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19012</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进入勇者试练战斗3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">63</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15000</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">日常副本战斗1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">64</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">14</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">27</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19006</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">150</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄副本战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">65</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19017</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">精英副本战斗10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">66</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">30</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀遗迹破坏者5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">67</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">17</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10015</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">异度入侵分享3次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">68</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">18</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10015</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">讨伐异度入侵者10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">69</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">33</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15000</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">遗迹探索8小时</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">70</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">45</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10008</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀精英外敌3个</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">71</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_equip</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19003</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">15000</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">装备强化1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">72</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">22</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">13049</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器合成1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">73</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">23</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">37</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19028</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">无尽深渊战斗1次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">88</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">74</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_pvp</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">35</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">19005</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">20</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">跨服对决战斗5次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">72</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">75</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="String">btn_divine</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">50</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">10096</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s78"
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">占卜翻牌10次</Data></Cell>
+    <Cell ss:StyleID="s78"><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">76</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10000</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">主线副本挑战10次</Data></Cell>
+    <Cell><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">77</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">42301</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器强化3次</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">78</Data></Cell>
+    <Cell><Data ss:Type="String">btn_hero</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10003</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄培养3次</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">79</Data></Cell>
+    <Cell><Data ss:Type="String">btn_friend</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">赠送好友精力10次</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">80</Data></Cell>
+    <Cell><Data ss:Type="String">btn_store</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10021</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄商店购买1次</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">81</Data></Cell>
+    <Cell><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买体力药剂3个</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">82</Data></Cell>
+    <Cell><Data ss:Type="String">btn_shop</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">购买精力药剂5个</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">83</Data></Cell>
+    <Cell><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10018</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行召唤3次</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">84</Data></Cell>
+    <Cell><Data ss:Type="String">btn_recruit</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19006</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进行高级召唤1次</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">85</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10001</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">竞技场战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">86</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">13049</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器争夺5次</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">87</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19012</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">进入勇者试练战斗3次</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">88</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">日常副本战斗1次</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">89</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19006</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">英雄副本战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">90</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19017</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">精英副本战斗10次</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">91</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀遗迹破坏者5次</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">92</Data></Cell>
+    <Cell><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10015</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">异度入侵分享3次</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">93</Data></Cell>
+    <Cell><Data ss:Type="String">btn_guild</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10015</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">讨伐异度入侵者10次</Data></Cell>
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">94</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">遗迹探索8小时</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">95</Data></Cell>
+    <Cell><Data ss:Type="String">btn_dungeon</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="Number">10008</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">击杀精英外敌3个</Data></Cell>
+    <Cell><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">96</Data></Cell>
+    <Cell><Data ss:Type="String">btn_equip</Data></Cell>
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19003</Data></Cell>
+    <Cell><Data ss:Type="Number">20000</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">装备强化1次</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">97</Data></Cell>
+    <Cell><Data ss:Type="String">btn_treasure</Data></Cell>
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">13049</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">圣器合成1次</Data></Cell>
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">98</Data></Cell>
+    <Cell><Data ss:Type="String">btn_battle</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19028</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">无尽深渊战斗1次</Data></Cell>
+    <Cell><Data ss:Type="Number">88</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">99</Data></Cell>
+    <Cell><Data ss:Type="String">btn_pvp</Data></Cell>
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">19005</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">跨服对决战斗5次</Data></Cell>
+    <Cell><Data ss:Type="Number">72</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">100</Data></Cell>
+    <Cell><Data ss:Type="String">btn_divine</Data></Cell>
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="Number">10096</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell
+     ss:Formula="=VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,2,FALSE)&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,3,FALSE)&amp;RC[-4]&amp;VLOOKUP(RC[-6],Sheet1!R2C1:R50C4,4,FALSE)"><Data
+      ss:Type="String">占卜翻牌10次</Data></Cell>
+    <Cell><Data ss:Type="Number">113</Data></Cell>
+    <Cell><Data ss:Type="Number">200</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>300</HorizontalResolution>
+    <VerticalResolution>300</VerticalResolution>
+   </Print>
+   <Selected/>
+   <FreezePanes/>
+   <FrozenNoSplit/>
+   <SplitHorizontal>6</SplitHorizontal>
+   <TopRowBottomPane>76</TopRowBottomPane>
+   <ActivePane>2</ActivePane>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+    </Pane>
+    <Pane>
+     <Number>2</Number>
+     <ActiveRow>81</ActiveRow>
+     <ActiveCol>10</ActiveCol>
+     <RangeSelection>R82C11:R106C11</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="战队等级日常任务">
+  <Table ss:ExpandedColumnCount="5" ss:ExpandedRowCount="10" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s71" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="99"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="104.25"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="399"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="97.5"/>
+   <Column ss:StyleID="s71" ss:AutoFitWidth="0" ss:Width="169.5"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">level_min|level_min</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">level_max|level_max</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">mission_list|mission_list</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">point_list|point_list</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">point_award_list|point_award_list</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">不可空</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">可空#不需字段</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s72"><Data ss:Type="String">数字</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">一维数组</Data></Cell>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">一维数组</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s74"><Data ss:Type="String">不定长</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">不定长</Data></Cell>
+    <Cell ss:StyleID="s74"><Data ss:Type="String">不定长</Data></Cell>
+   </Row>
+   <Row ss:Index="6" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s76"><Data ss:Type="String">角色等级区间(小)</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">角色等级区间(大)</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">任务列表</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">积分列表</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">积分奖励列表</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19|20|21|22|23</Data></Cell>
+    <Cell><Data ss:Type="String">50|100|150|200</Data></Cell>
+    <Cell><Data ss:Type="String">13602|13603|13604|13605</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="String">26|27|28|29|30|31|32|33|34|35|36|37|38|39|40|41|42|43|44|45|46|47|48</Data></Cell>
+    <Cell><Data ss:Type="String">50|100|150|200</Data></Cell>
+    <Cell><Data ss:Type="String">13602|13603|13604|13605</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="String">51|52|53|54|55|56|57|58|59|60|61|62|63|64|65|66|67|68|69|70|71|72|73</Data></Cell>
+    <Cell><Data ss:Type="String">50|100|150|200</Data></Cell>
+    <Cell><Data ss:Type="String">13602|13603|13604|13605</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">51</Data></Cell>
+    <Cell><Data ss:Type="Number">999</Data></Cell>
+    <Cell><Data ss:Type="String">76|77|78|79|80|81|82|83|84|85|86|87|88|89|90|91|92|93|94|95|96|97|98</Data></Cell>
+    <Cell><Data ss:Type="String">50|100|150|200</Data></Cell>
+    <Cell><Data ss:Type="String">13602|13603|13604|13605</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="11" ss:ExpandedRowCount="51" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s80" ss:DefaultColumnWidth="54"
+   ss:DefaultRowHeight="16.5">
+   <Column ss:Index="2" ss:StyleID="s80" ss:AutoFitWidth="0" ss:Width="67.5"/>
+   <Column ss:Index="8" ss:StyleID="s80" ss:AutoFitWidth="0" ss:Width="81"/>
+   <Row ss:AutoFitHeight="0"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">主线副本</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">挑战</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">49</Data></Cell>
+    <Cell><Data ss:Type="String">主界面</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">圣器强化</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">商城</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">英雄培养</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">13</Data></Cell>
+    <Cell><Data ss:Type="String">邮件</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">赠送好友精力</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">好友</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">英雄商店购买</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">24</Data></Cell>
+    <Cell><Data ss:Type="String">领奖中心</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">购买体力药剂</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">个</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">4</Data></Cell>
+    <Cell><Data ss:Type="String">物品背包</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">购买精力药剂</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">个</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">1</Data></Cell>
+    <Cell><Data ss:Type="String">征战</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">进行召唤</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">26</Data></Cell>
+    <Cell><Data ss:Type="String">主线副本</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">进行高级召唤</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">29</Data></Cell>
+    <Cell><Data ss:Type="String">扫荡功能</Data></Cell>
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">竞技场战斗</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">27</Data></Cell>
+    <Cell><Data ss:Type="String">英雄副本</Data></Cell>
+    <Cell><Data ss:Type="Number">27</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">圣器争夺</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">25</Data></Cell>
+    <Cell><Data ss:Type="String">挑战</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+    <Cell><Data ss:Type="String">进入勇者试练</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">战斗</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">21</Data></Cell>
+    <Cell><Data ss:Type="String">竞技场</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell><Data ss:Type="Number">13</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">日常副本</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">战斗</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">30</Data></Cell>
+    <Cell><Data ss:Type="String">声望商店</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">英雄副本</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">战斗</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">14</Data></Cell>
+    <Cell><Data ss:Type="String">排行榜</Data></Cell>
+    <Cell><Data ss:Type="Number">10</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">15</Data></Cell>
+    <Cell><Data ss:Type="String">精英副本</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">战斗</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">圣器争夺</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">击杀遗迹破坏者</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">31</Data></Cell>
+    <Cell><Data ss:Type="String">圣器争夺5次</Data></Cell>
+    <Cell><Data ss:Type="Number">36</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">异度入侵分享</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">32</Data></Cell>
+    <Cell><Data ss:Type="String">圣器一键争夺</Data></Cell>
+    <Cell><Data ss:Type="Number">60</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">讨伐异度入侵者</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">17</Data></Cell>
+    <Cell><Data ss:Type="String">勇者试炼</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">19</Data></Cell>
+    <Cell><Data ss:Type="String">遗迹探索</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">小时</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">已处理</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">33</Data></Cell>
+    <Cell><Data ss:Type="String">装备商店</Data></Cell>
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">击杀精英外敌</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">个</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">2</Data></Cell>
+    <Cell><Data ss:Type="String">日常副本</Data></Cell>
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">21</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">装备强化</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">20</Data></Cell>
+    <Cell><Data ss:Type="String">寻访遗迹</Data></Cell>
+    <Cell><Data ss:Type="Number">32</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">圣器合成</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">16</Data></Cell>
+    <Cell><Data ss:Type="String">异族入侵</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">无尽深渊</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">战斗</Data></Cell>
+    <Cell ss:StyleID="s81"><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"/>
+    <Cell ss:StyleID="s81"><Data ss:Type="Number">34</Data></Cell>
+    <Cell><Data ss:Type="String">战功商店</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">24</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">跨服对决</Data></Cell>
+    <Cell><Data ss:Type="String">战斗</Data></Cell>
+    <Cell><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">7</Data></Cell>
+    <Cell><Data ss:Type="String">英雄背包</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="Number">25</Data></Cell>
+    <Cell ss:StyleID="s82"><Data ss:Type="String">占卜</Data></Cell>
+    <Cell><Data ss:Type="String">翻牌</Data></Cell>
+    <Cell><Data ss:Type="String">次</Data></Cell>
+    <Cell ss:Index="7"><Data ss:Type="Number">8</Data></Cell>
+    <Cell><Data ss:Type="String">英雄阵容</Data></Cell>
+    <Cell><Data ss:Type="Number">2</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">9</Data></Cell>
+    <Cell><Data ss:Type="String">英雄召唤</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">10</Data></Cell>
+    <Cell><Data ss:Type="String">英雄图鉴</Data></Cell>
+    <Cell><Data ss:Type="Number">4</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">35</Data></Cell>
+    <Cell><Data ss:Type="String">英雄升级</Data></Cell>
+    <Cell><Data ss:Type="Number">3</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">36</Data></Cell>
+    <Cell><Data ss:Type="String">英雄进阶</Data></Cell>
+    <Cell><Data ss:Type="Number">5</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">37</Data></Cell>
+    <Cell><Data ss:Type="String">英雄装备穿戴</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">5</Data></Cell>
+    <Cell><Data ss:Type="String">装备背包</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">38</Data></Cell>
+    <Cell><Data ss:Type="String">装备强化</Data></Cell>
+    <Cell><Data ss:Type="Number">7</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">39</Data></Cell>
+    <Cell><Data ss:Type="String">装备精炼</Data></Cell>
+    <Cell><Data ss:Type="Number">29</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">40</Data></Cell>
+    <Cell><Data ss:Type="String">英雄培养</Data></Cell>
+    <Cell><Data ss:Type="Number">9</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">41</Data></Cell>
+    <Cell><Data ss:Type="String">英雄圣器穿戴</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">6</Data></Cell>
+    <Cell><Data ss:Type="String">圣器背包</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">42</Data></Cell>
+    <Cell><Data ss:Type="String">圣器强化</Data></Cell>
+    <Cell><Data ss:Type="Number">14</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">43</Data></Cell>
+    <Cell><Data ss:Type="String">圣器精炼</Data></Cell>
+    <Cell><Data ss:Type="Number">39</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">44</Data></Cell>
+    <Cell><Data ss:Type="String">英雄潜能</Data></Cell>
+    <Cell><Data ss:Type="Number">35</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">45</Data></Cell>
+    <Cell><Data ss:Type="String">英雄觉醒</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">28</Data></Cell>
+    <Cell><Data ss:Type="String">精英副本</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">46</Data></Cell>
+    <Cell><Data ss:Type="String">觉醒商店</Data></Cell>
+    <Cell><Data ss:Type="Number">50</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">23</Data></Cell>
+    <Cell><Data ss:Type="String">回收</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">11</Data></Cell>
+    <Cell><Data ss:Type="String">魂晶商店</Data></Cell>
+    <Cell><Data ss:Type="Number">11</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">3</Data></Cell>
+    <Cell><Data ss:Type="String">日常任务</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">48</Data></Cell>
+    <Cell><Data ss:Type="String">成就任务</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">18</Data></Cell>
+    <Cell><Data ss:Type="String">精灵</Data></Cell>
+    <Cell><Data ss:Type="Number">12</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">22</Data></Cell>
+    <Cell><Data ss:Type="String">军团</Data></Cell>
+    <Cell><Data ss:Type="Number">33</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">47</Data></Cell>
+    <Cell><Data ss:Type="String">世界BOSS</Data></Cell>
+    <Cell><Data ss:Type="Number">45</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="7"><Data ss:Type="Number">50</Data></Cell>
+    <Cell><Data ss:Type="String">VIP</Data></Cell>
+    <Cell><Data ss:Type="Number">1</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.51180555555555596"/>
+    <Footer x:Margin="0.51180555555555596"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <PageBreakZoom>100</PageBreakZoom>
+   <TopRowVisible>18</TopRowVisible>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>24</ActiveRow>
+     <ActiveCol>1</ActiveCol>
+     <RangeSelection>R25C2:R26C2</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

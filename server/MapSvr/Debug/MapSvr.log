@@ -1,0 +1,811 @@
+﻿  stdafx.cpp
+f:\svn\server\common\datadefine.h(68): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\mapsvr\keywodfilter\deelx.h(27): warning C4273: “isblank”: dll 链接不一致
+          d:\program files (x86)\microsoft visual studio 12.0\vc\include\ctype.h(135) : 参见“isblank”的前一个定义
+  ZhanBuManager.cpp
+f:\svn\server\mapsvr\zhanbu\zhanbumanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  WorldLevelTaskManager.cpp
+f:\svn\server\mapsvr\worldleveltask\worldleveltaskmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  WorldBossManager.cpp
+f:\svn\server\mapsvr\worldboss\worldbossmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  WarcraftManager.cpp
+f:\svn\server\mapsvr\warcraft\warcraftmanager.h(10): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  VipManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  TurntableManager.cpp
+f:\svn\server\mapsvr\turntable\turntablemanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  TreasureManager.cpp
+f:\svn\server\mapsvr\treasure\treasuremanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  TitleManager.cpp
+f:\svn\server\mapsvr\title\titlemanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  KeyWodFilter.cpp
+f:\svn\server\mapsvr\keywodfilter\keywodfilter.cpp(219): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\svn\server\mapsvr\keywodfilter\keywodfilter.cpp(253): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+f:\svn\server\mapsvr\keywodfilter\keywodfilter.cpp(270): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+  TsMemory.cpp
+  TsIniFile.cpp
+  TsFile.cpp
+  StopMessage.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+  ChatManager.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  GMManager.cpp
+f:\svn\server\mapsvr\gmmanager.h(5): fatal error C1083: 无法打开包括文件: “Const.h”: No such file or directory
+  SysTimesManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+  TimeoutManager.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+  TeamDungeonManager.cpp
+f:\svn\server\mapsvr\teamdungeon\teamdungeonmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  SystemNotice.cpp
+f:\svn\server\mapsvr\systemnotice\systemnotice.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  EmailSystem.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  正在生成代码...
+  正在编译...
+  EmailManager.cpp
+f:\svn\server\mapsvr\email\emailmanager.h(10): fatal error C1083: 无法打开包括文件: “../Common/DataDefine.h”: No such file or directory
+  LuaFunRegister.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  LuaExport.cpp
+  PlayerManager.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  Player.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  ObjectFactory.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  Object.cpp
+  Monster.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+  GameObject.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+  Character.cpp
+  AccountInfoManager.cpp
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  AccountInfo.cpp
+  DBCFileLoader.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+  ConfigManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\configmanager.cpp(6): fatal error C1083: 无法打开包括文件: “CommonLogic.h”: No such file or directory
+  ServerSession.cpp
+f:\svn\server\mapsvr\serversession.h(2): fatal error C1083: 无法打开包括文件: “NetworkObject.h”: No such file or directory
+  OpenServerSession.cpp
+f:\svn\server\mapsvr\serversession.h(2): fatal error C1083: 无法打开包括文件: “NetworkObject.h”: No such file or directory
+  GateServerSession.cpp
+f:\svn\server\mapsvr\serversession.h(2): fatal error C1083: 无法打开包括文件: “NetworkObject.h”: No such file or directory
+  PacketHandler.cpp
+f:\svn\server\mapsvr\packethandler.h(6): fatal error C1083: 无法打开包括文件: “header.pb.h”: No such file or directory
+  HandlerFromOpen.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\serversession.h(2): fatal error C1083: 无法打开包括文件: “NetworkObject.h”: No such file or directory
+  HandlerFromGate.cpp
+f:\svn\server\mapsvr\handlerfromgate.h(2): fatal error C1083: 无法打开包括文件: “header.pb.h”: No such file or directory
+  正在生成代码...
+  正在编译...
+  MapSvrQuery.cpp
+f:\svn\server\mapsvr\queryforuser.h(3): fatal error C1083: 无法打开包括文件: “QueryResult.h”: No such file or directory
+  DBThreadHandler.cpp
+f:\svn\server\mapsvr\dbthreadhandler.cpp(3): fatal error C1083: 无法打开包括文件: “SqlDatabase.h”: No such file or directory
+  DBThread.cpp
+f:\svn\server\mapsvr\dbthread.cpp(3): fatal error C1083: 无法打开包括文件: “SqlDatabase.h”: No such file or directory
+  DBResultHandler.cpp
+f:\svn\server\mapsvr\serversession.h(2): fatal error C1083: 无法打开包括文件: “NetworkObject.h”: No such file or directory
+  SpiritManager.cpp
+f:\svn\server\mapsvr\spirit\spiritmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ShopManager.cpp
+f:\svn\server\mapsvr\shop\shopmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  SevenDayManager.cpp
+f:\svn\server\mapsvr\sevendayactivity\sevendaymanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ScoreMatchManager.cpp
+f:\svn\server\mapsvr\scorematch\scorematchmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RewardCenterManager.cpp
+f:\svn\server\mapsvr\rewardcenter\rewardcentermanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ResourceWarManager.cpp
+f:\svn\server\mapsvr\resourcewar\resourcewarmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RedPointManager.cpp
+f:\svn\server\mapsvr\redpoint\redpointmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RecyclingManager.cpp
+f:\svn\server\mapsvr\recycling\recyclingmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RechargeManager.cpp
+f:\svn\server\mapsvr\recharge\rechargemanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RebelManager.cpp
+f:\svn\server\mapsvr\rebel\rebelmanager.h(10): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RankManager.cpp
+f:\svn\server\mapsvr\rank\rankmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  PVPManager.cpp
+f:\svn\server\mapsvr\pvp\pvpmanager.cpp(2): fatal error C1083: 无法打开包括文件: “MsgDefine.h”: No such file or directory
+  PropertyManager.cpp
+f:\svn\server\mapsvr\property\propertymanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  PlayerBaseDataManager.cpp
+f:\svn\server\mapsvr\playerbasedatamanager.h(10): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  MapServer.cpp
+f:\svn\server\mapsvr\packethandler.h(6): fatal error C1083: 无法打开包括文件: “header.pb.h”: No such file or directory
+  Main.cpp
+  正在生成代码...
+  正在编译...
+  LogicManager.cpp
+f:\svn\server\mapsvr\logic\logicmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  LandManager.cpp
+f:\svn\server\mapsvr\land\landmanager.h(10): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  KingMatchManager.cpp
+f:\svn\server\mapsvr\kingmatch\kingmatchmanager.h(11): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ItemManager.cpp
+f:\svn\server\mapsvr\item\itemmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  HeroManager.cpp
+f:\svn\server\mapsvr\hero\heromanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  GuildWarMgr.cpp
+f:\svn\server\mapsvr\guild\guildwarmgr.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  GuildManager.cpp
+f:\svn\server\mapsvr\guild\guildmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  Guild.cpp
+f:\svn\server\mapsvr\guild\guild.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  GemManager.cpp
+f:\svn\server\mapsvr\gem\gemmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  GameLogic.cpp
+f:\svn\server\mapsvr\gamelogic.h(11): fatal error C1083: 无法打开包括文件: “ToolKit/IniFile.h”: No such file or directory
+  FubenManager.cpp
+f:\svn\server\mapsvr\fuben\fubenmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  FriendManager.cpp
+f:\svn\server\mapsvr\friend\friendmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  TimeManager.cpp
+f:\svn\server\mapsvr\framework\timemanager.h(2): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RedisManager.cpp
+f:\svn\server\mapsvr\framework\redismanager.h(2): fatal error C1083: 无法打开包括文件: “../ToolKit/Singleton.h”: No such file or directory
+  EquipmentManager.cpp
+f:\svn\server\mapsvr\equipment\equipmentmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  EndlessLandManager.cpp
+f:\svn\server\mapsvr\endlessland\endlesslandmanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  DuobaoManager.cpp
+f:\svn\server\mapsvr\duobao\duobaomanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  DailyMissionManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  ConfigLoadEx.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\configloadex.cpp(6): fatal error C1083: 无法打开包括文件: “CommonLogic.h”: No such file or directory
+  ConfigLoad.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\configload.cpp(6): fatal error C1083: 无法打开包括文件: “CommonLogic.h”: No such file or directory
+  正在生成代码...
+  正在编译...
+  BattleManager.cpp
+f:\svn\server\mapsvr\battle\battlemanager.h(9): fatal error C1083: 无法打开包括文件: “../ToolKit/Singleton.h”: No such file or directory
+  AttackCityManager.cpp
+f:\svn\server\mapsvr\attackcity\attackcitymanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ArenaManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  UnlockActivity.cpp
+f:\svn\server\mapsvr\activity\unlockactivity.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  TotalRechargeReward.cpp
+f:\svn\server\mapsvr\activity\totalrechargereward.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  SuperDiscount.cpp
+f:\svn\server\mapsvr\activity\superdiscount.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  SevenDayLogin.cpp
+f:\svn\server\mapsvr\activity\sevendaylogin.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  RechargeReward.cpp
+f:\svn\server\mapsvr\activity\rechargereward.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  LimitActivity.cpp
+f:\svn\server\mapsvr\activity\limitactivity.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  HotSaleGoods.cpp
+f:\svn\server\mapsvr\activity\hotsalegoods.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  FestivalActivity.cpp
+f:\svn\server\mapsvr\activity\festivalactivity.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  FacebookActivity.cpp
+f:\svn\server\mapsvr\activity\facebookactivity.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  Christmas.cpp
+f:\svn\server\mapsvr\activity\christmas.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  CampRecruit.cpp
+f:\svn\server\mapsvr\activity\camprecruit.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  ActivityManager.cpp
+f:\svn\server\mapsvr\activity\activitymanager.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  AccurateRecommend.cpp
+f:\svn\server\mapsvr\activity\accuraterecommend.h(9): fatal error C1083: 无法打开包括文件: “DataDefine.h”: No such file or directory
+  AchievementManager.cpp
+f:\svn\server\common\dbcdefine.h(267): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(395): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(405): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(418): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(924): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1128): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1335): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1368): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1427): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1459): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1463): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1465): warning C4244: “return”: 从“const unsigned long”转换到“WORD”，可能丢失数据
+f:\svn\server\common\dbcdefine.h(1746): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(1756): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2096): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2662): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2679): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(2686): warning C4018: “>=”: 有符号/无符号不匹配
+f:\svn\server\common\dbcdefine.h(3073): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\toolkit\timer.h(93): warning C4244: “=”: 从“time_t”转换到“DWORD”，可能丢失数据
+f:\svn\server\common\msgdefine.h(12632): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12670): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12703): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12710): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12715): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12753): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(12816): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13011): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13043): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13109): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13146): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13170): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13237): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13261): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13289): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\common\msgdefine.h(13474): warning C4018: “<”: 有符号/无符号不匹配
+f:\svn\server\mapsvr\player.h(7): fatal error C1083: 无法打开包括文件: “common_msg.pb.h”: No such file or directory
+  正在生成代码...

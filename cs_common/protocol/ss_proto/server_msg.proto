@@ -1,0 +1,73 @@
+//import "ss_data_define.proto";
+
+package SS;
+
+message Msg_Client_Disconnet_G2M  // 角色断开连接通知
+{}
+
+message Msg_Client_Kickout_M2G  // 踢出玩家通知
+{
+	required int32 error_code = 1; 		//错误码  
+}
+
+
+message Msg_Heart_Beat_M2G  // 心跳包 Map->Gate
+{}
+
+message Msg_Heart_Beat_G2M  // 心跳包 Gate->Map
+{}
+
+message Msg_ServerRegister_G2O
+{
+	required int32 server_id = 1;		//  服务器注册	
+}
+
+message Msg_Heart_Beat_G2O  // 心跳包 Map->Open
+{}
+
+message Msg_Heart_Beat_O2G  // 心跳包 Open->Map
+{}
+
+// 手机号认证
+message Msg_Mobile_Validate_G2O
+{
+	required string moblie = 1;				// 手机号码
+	required string password = 2;			// 帐号密码
+	required int32 code = 3;				// 认证码
+	required int32 type = 4;				// 登录类型(1=注册,2=登录,3=修改密码)	
+}
+
+// 手机号认证
+message Msg_Mobile_Validate_O2G
+{
+	required string moblie = 1;			// 手机号
+	required string password = 2;		//帐号密码
+	required int32 type = 3;			// 登录类型(1=注册,2=登录,3=修改密码)
+	required int32 error_code = 4;		// 错误码	
+}
+
+// mapserver与openserver逻辑通用交互消息
+message Msg_LogicCommon_M2O
+{
+	required int32 msg_id = 1;				// 消息ID
+	optional string msg_body = 2;			// 消息体
+	optional string url = 3;				// 请求第三方的接口url
+	optional string userId = 4;				// 用户ID
+	optional uint32 seq = 5;				// 请求序列号
+}
+
+// mapserver与openserver逻辑通用交互消息
+message Msg_LogicCommon_O2M
+{
+	required int32 msg_id = 1;			// 消息ID
+	optional string msg_body = 2;		// 消息体
+	required int32 msg_code = 3;		// 响应结果码
+	optional string msg_desc = 4;		// 响应结果描述
+	optional uint32 seq = 5;			// 请求序列号
+}
+
+
+////////////////////////////////////////////////////////////////////////////
+
+
+

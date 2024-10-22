@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>好习惯</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style>
+        body {
+            margin: 0;
+            font-size: 14px;
+            background: #E6A665 url(/img/beijing.jpg) no-repeat fixed top;
+            background-size: cover;
+        }
+
+        p {
+            line-height: 25px;
+            margin: 0;
+        }
+
+        @media screen and (max-height: 667px) {
+            .main {
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-height: 736px) {
+            .main {
+                height: 100%;
+            }
+        }
+
+        .main {
+            z-index: 4;
+            width: 100%;
+            color: #FFF;
+            font-size: 16PX;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        .yq-box {
+            background: url(/img/shuruyaoqingma.png) no-repeat center center;
+            width: 280px;
+            height: 250px;
+            margin: 35% auto 0;
+            background-size: 280px;
+            color: #000;
+            position: relative;
+        }
+
+        .input-yaoq {
+            position: absolute;
+            top: 111px;
+            line-height: 25px;
+            width: 128px;
+            border: none;
+            left: 75px;
+            background-color: transparent;
+            color: #fff;
+            outline: none;
+            font-size: 16px;
+        }
+
+        .btn-login {
+            background: url(/img/queren_01.png) no-repeat center center;
+            background-size: 60px;
+            width: 60px;
+            height: 40px;
+            display: block;
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            margin-left: -30px;
+        }
+
+        .btn-login:hover {
+            background: url(/img/queren_02.png) no-repeat center center;
+            background-size: 60px;
+        }
+    </style>
+
+    <script type="text/javascript" src="/javascripts/jquery-1.11.1.min.js"></script>
+    <script>
+        function btn_enter_onclick(url){
+            var userId=$('#userId').val();
+            var accountId=$('#accountId').val();
+            var taskCode=$('#taskCode').val();
+            if(taskCode == ""){
+                alert("请输入您的邀请码");
+                return;
+            }
+            $.ajax({
+                url: url,
+                type: 'post',
+                data : {userId:userId,taskCode:taskCode},
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+                        //confirm(data.message);
+                        window.location.href='http://sevendays.linklearn.cn:90/game/goSignin?userId='+userId+'&accountId='+accountId;
+                    }else{
+                        alert(data.message);
+                    }
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<img src="/img/nwlogo.png" width="100px" class="logo">
+<!--<div class="tians"><div class="tt">5</div></div>-->
+
+<div class="main">
+
+    <div class="yq-box">
+        <input name="" id="userId" type="hidden"  value="<%=userId%>"/>
+        <input name="" id="accountId" type="hidden"  value="<%=accountId%>"/>
+        <input name="" id="taskCode" type="text" class="input-yaoq"/>
+        <a onclick="btn_enter_onclick('/game/befrends')" id="btn_enter" class="btn-login"></a>
+    </div>
+</div>
+</body>
+</html>

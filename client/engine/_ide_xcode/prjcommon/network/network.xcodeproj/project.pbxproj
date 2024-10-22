@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A8C8F4F51F013FB100F65564 /* basicnetwork.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4ED1F013FB100F65564 /* basicnetwork.cpp */; };
+		A8C8F4F61F013FB100F65564 /* jobaccept.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4EE1F013FB100F65564 /* jobaccept.cpp */; };
+		A8C8F4F71F013FB100F65564 /* jobdisconnect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4EF1F013FB100F65564 /* jobdisconnect.cpp */; };
+		A8C8F4F81F013FB100F65564 /* jobrecv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4F01F013FB100F65564 /* jobrecv.cpp */; };
+		A8C8F4F91F013FB100F65564 /* listenhandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4F11F013FB100F65564 /* listenhandler.cpp */; };
+		A8C8F4FA1F013FB100F65564 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4F21F013FB100F65564 /* network.cpp */; };
+		A8C8F4FB1F013FB100F65564 /* tcphandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4F31F013FB100F65564 /* tcphandler.cpp */; };
+		A8C8F4FC1F013FB100F65564 /* networkmanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8C8F4F41F013FB100F65564 /* networkmanager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0DA1635C17A7C18B00FF4531 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DA1635E17A7C18B00FF4531 /* libnetwork.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libnetwork.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C8F4ED1F013FB100F65564 /* basicnetwork.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = basicnetwork.cpp; sourceTree = "<group>"; };
+		A8C8F4EE1F013FB100F65564 /* jobaccept.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jobaccept.cpp; sourceTree = "<group>"; };
+		A8C8F4EF1F013FB100F65564 /* jobdisconnect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jobdisconnect.cpp; sourceTree = "<group>"; };
+		A8C8F4F01F013FB100F65564 /* jobrecv.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jobrecv.cpp; sourceTree = "<group>"; };
+		A8C8F4F11F013FB100F65564 /* listenhandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = listenhandler.cpp; sourceTree = "<group>"; };
+		A8C8F4F21F013FB100F65564 /* network.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network.cpp; sourceTree = "<group>"; };
+		A8C8F4F31F013FB100F65564 /* tcphandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tcphandler.cpp; sourceTree = "<group>"; };
+		A8C8F4F41F013FB100F65564 /* networkmanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = networkmanager.cpp; path = ../../libs_src/network/networkmanager.cpp; sourceTree = "<group>"; };
+		A8C8F4FE1F013FD200F65564 /* basicnetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basicnetwork.h; path = ../../../libs/include/network/basicnetwork/basicnetwork.h; sourceTree = "<group>"; };
+		A8C8F4FF1F013FD200F65564 /* basicnetworkhandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = basicnetworkhandler.h; path = ../../../libs/include/network/basicnetwork/basicnetworkhandler.h; sourceTree = "<group>"; };
+		A8C8F5001F013FD200F65564 /* def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = def.h; path = ../../../libs/include/network/basicnetwork/def.h; sourceTree = "<group>"; };
+		A8C8F5011F013FD200F65564 /* job.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = job.h; path = ../../../libs/include/network/basicnetwork/job.h; sourceTree = "<group>"; };
+		A8C8F5021F013FD200F65564 /* jobaccept.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jobaccept.h; path = ../../../libs/include/network/basicnetwork/jobaccept.h; sourceTree = "<group>"; };
+		A8C8F5031F013FD200F65564 /* jobdisconnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jobdisconnect.h; path = ../../../libs/include/network/basicnetwork/jobdisconnect.h; sourceTree = "<group>"; };
+		A8C8F5041F013FD200F65564 /* jobqueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jobqueue.h; path = ../../../libs/include/network/basicnetwork/jobqueue.h; sourceTree = "<group>"; };
+		A8C8F5051F013FD200F65564 /* jobrecv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jobrecv.h; path = ../../../libs/include/network/basicnetwork/jobrecv.h; sourceTree = "<group>"; };
+		A8C8F5061F013FD200F65564 /* listenhandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = listenhandler.h; path = ../../../libs/include/network/basicnetwork/listenhandler.h; sourceTree = "<group>"; };
+		A8C8F5071F013FD200F65564 /* network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = network.h; path = ../../../libs/include/network/basicnetwork/network.h; sourceTree = "<group>"; };
+		A8C8F5081F013FD200F65564 /* tcphandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tcphandler.h; path = ../../../libs/include/network/basicnetwork/tcphandler.h; sourceTree = "<group>"; };
+		A8C8F5091F013FD200F65564 /* networkmanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = networkmanager.h; path = ../../libs/include/network/networkmanager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0DA1635B17A7C18B00FF4531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D99E9CD1A2DF0E8006BDBA8 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8F5091F013FD200F65564 /* networkmanager.h */,
+				A8C8F4F41F013FB100F65564 /* networkmanager.cpp */,
+				A8C8F4EC1F013FB100F65564 /* basicnetwork */,
+			);
+			name = network;
+			path = ../../../cocos2dxlib/cocos;
+			sourceTree = "<group>";
+		};
+		0DA1635517A7C18B00FF4531 = {
+			isa = PBXGroup;
+			children = (
+				0D99E9CD1A2DF0E8006BDBA8 /* network */,
+				0DA1635F17A7C18B00FF4531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0DA1635F17A7C18B00FF4531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0DA1635E17A7C18B00FF4531 /* libnetwork.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8C8F4EC1F013FB100F65564 /* basicnetwork */ = {
+			isa = PBXGroup;
+			children = (
+				A8C8F4FE1F013FD200F65564 /* basicnetwork.h */,
+				A8C8F4FF1F013FD200F65564 /* basicnetworkhandler.h */,
+				A8C8F5001F013FD200F65564 /* def.h */,
+				A8C8F5011F013FD200F65564 /* job.h */,
+				A8C8F5021F013FD200F65564 /* jobaccept.h */,
+				A8C8F5031F013FD200F65564 /* jobdisconnect.h */,
+				A8C8F5041F013FD200F65564 /* jobqueue.h */,
+				A8C8F5051F013FD200F65564 /* jobrecv.h */,
+				A8C8F5061F013FD200F65564 /* listenhandler.h */,
+				A8C8F5071F013FD200F65564 /* network.h */,
+				A8C8F5081F013FD200F65564 /* tcphandler.h */,
+				A8C8F4ED1F013FB100F65564 /* basicnetwork.cpp */,
+				A8C8F4EE1F013FB100F65564 /* jobaccept.cpp */,
+				A8C8F4EF1F013FB100F65564 /* jobdisconnect.cpp */,
+				A8C8F4F01F013FB100F65564 /* jobrecv.cpp */,
+				A8C8F4F11F013FB100F65564 /* listenhandler.cpp */,
+				A8C8F4F21F013FB100F65564 /* network.cpp */,
+				A8C8F4F31F013FB100F65564 /* tcphandler.cpp */,
+			);
+			name = basicnetwork;
+			path = ../../libs_src/network/basicnetwork;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0DA1635D17A7C18B00FF4531 /* network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0DA1636C17A7C18B00FF4531 /* Build configuration list for PBXNativeTarget "network" */;
+			buildPhases = (
+				0DA1635A17A7C18B00FF4531 /* Sources */,
+				0DA1635B17A7C18B00FF4531 /* Frameworks */,
+				0DA1635C17A7C18B00FF4531 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = network;
+			productName = cocos2dx;
+			productReference = 0DA1635E17A7C18B00FF4531 /* libnetwork.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0DA1635617A7C18B00FF4531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 0DA1635917A7C18B00FF4531 /* Build configuration list for PBXProject "network" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0DA1635517A7C18B00FF4531;
+			productRefGroup = 0DA1635F17A7C18B00FF4531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0DA1635D17A7C18B00FF4531 /* network */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0DA1635A17A7C18B00FF4531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C8F4FC1F013FB100F65564 /* networkmanager.cpp in Sources */,
+				A8C8F4F51F013FB100F65564 /* basicnetwork.cpp in Sources */,
+				A8C8F4F71F013FB100F65564 /* jobdisconnect.cpp in Sources */,
+				A8C8F4FB1F013FB100F65564 /* tcphandler.cpp in Sources */,
+				A8C8F4FA1F013FB100F65564 /* network.cpp in Sources */,
+				A8C8F4F61F013FB100F65564 /* jobaccept.cpp in Sources */,
+				A8C8F4F81F013FB100F65564 /* jobrecv.cpp in Sources */,
+				A8C8F4F91F013FB100F65564 /* listenhandler.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0DA1636A17A7C18B00FF4531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					DEBUG,
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					"CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../cocos2dxlib/cocos2dx,
+					../../../cocos2dxlib/cocos2dx/include,
+					../../../cocos2dxlib/cocos2dx/platform/ios,
+					../../../cocos2dxlib/cocos2dx/kazmath/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DDEBUG=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		0DA1636B17A7C18B00FF4531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					USE_FILE32API,
+					TARGET_OS_IPHONE,
+					"CC_FIX_ARTIFACTS_BY_STRECHING_TEXEL=1",
+				);
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					../../../cocos2dxlib/cocos2dx,
+					../../../cocos2dxlib/cocos2dx/include,
+					../../../cocos2dxlib/cocos2dx/platform/ios,
+					../../../cocos2dxlib/cocos2dx/kazmath/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Release;
+		};
+		0DA1636D17A7C18B00FF4531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					DEBUG,
+				);
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../libs/include/network,
+					../../../libs/include/network/basicnetwork,
+					../../../libs/include/pbc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = network;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Debug;
+		};
+		0DA1636E17A7C18B00FF4531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				DSTROOT = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ../Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					CC_TARGET_OS_IPHONE,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_VERSION = "";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				HEADER_SEARCH_PATHS = (
+					../../../libs/include/network,
+					../../../libs/include/network/basicnetwork,
+					../../../libs/include/pbc,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = "";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = network;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "";
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0DA1635917A7C18B00FF4531 /* Build configuration list for PBXProject "network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA1636A17A7C18B00FF4531 /* Debug */,
+				0DA1636B17A7C18B00FF4531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0DA1636C17A7C18B00FF4531 /* Build configuration list for PBXNativeTarget "network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0DA1636D17A7C18B00FF4531 /* Debug */,
+				0DA1636E17A7C18B00FF4531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0DA1635617A7C18B00FF4531 /* Project object */;
+}

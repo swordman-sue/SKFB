@@ -1,0 +1,30 @@
+被2.1大礼包打回的主要原因是，AppStore审核团队认为开发者提交的应用有较大概率触犯它们的条例，所以先让开发者逐条确认是否触犯，如果都没有触犯的话，AppStore审核团队会继续审核流程。
+因此，开发者只需要回复并明确自身的App并没有触犯相关条例，请求AppStore审核团队继续审核即可。
+
+
+尊敬的蘋果審核團隊：
+感謝您的耐心審核，對於您提到的7條審核條款，我們開發團隊經過嚴格的複查和研究，並且對所有可能涉及到違反條款的內容進行了修改，我們現在對此回復如下：
+1.1.6：經過我們的重查，沒有發現包內包含虛假資訊和誤導使用者的功能。
+2.3.0：我們沒有在通過審核後修改任何概念和功能。
+2.3.1：我們沒有切換到任何關於賭博和彩票的網站，我們屬於原生APP。
+3.1.1：我們遊戲內綁定的是蘋果支付，沒有使用到協力廠商支付，也不包含任何協力廠商支付的框架。
+4.3.0：我們遊戲內容都是我們自己開發的，並不存在抄襲的情況。
+5.2.1：這款APP並沒有法人實體和版權的風險。
+5.3.4：我們的APP沒有使用到任何定位相關的功能，所以並沒有申請位置存取權限。
+這是我們團隊經過嚴格的複查和一些修改之後，得出的結果。
+麻煩蘋果審核團隊能繼續審核，謝謝。
+最後，祝您生活愉快！
+
+
+The respected Apple audit team:
+Thank you for your patience. For the 7 audit items you mentioned, our development team has gone through a rigorous review and research, and has revised all the contents that may be involved in the violation.
+1.1.6: after our review, we did not find the functions of the package containing false information and misleading the user.
+2.3.0: we do not modify any concepts and functions after the audit.
+2.3.1: we don't switch to any web site about gambling and lotteries. We belong to native APP.
+3.1.1: our game is bound to an apple payment, not used to third party payments, and does not contain any third party payment framework.
+4.3.0: our game content is our own development, there is no plagiarism.
+5.2.1: this APP does not have the risk of corporate entities and copyright.
+5.3.4: our APP does not use any location related functions, so there is no application for location access.
+This is the result of our team after a strict review and some modification.
+The troublesome Apple audit team will be able to continue the review, thank you.
+In the end, I wish you a happy life.

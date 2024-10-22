@@ -1,0 +1,1 @@
+java -jar buglySymbolAndroid.jar -i ../debug/libskyx.so -o ./buglysymbol_youwanbt.zip -u -id 76d3c79025 -key d273672d-d5ce-49a1-8ea7-c6759eb3d0df

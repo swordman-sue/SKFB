@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>排行榜</title>
+    <script type="text/javascript" src="/img/jquery1.42.min.js"></script>
+    <script type="text/javascript" src="/img/jquery.SuperSlide.2.1.1.js"></script>
+    <style type="text/css">
+        /* css 重置 */
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background: #fff;
+            font: normal 12px / 22px 宋 体;
+        }
+
+        img {
+            border: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        a:hover {
+            color: #1974A1;
+        }
+
+        .clear:after {
+            content: ".";
+            display: block;
+            height: 0;
+            visibility: hidden;
+            clear: both;
+        }
+
+        .clear {
+            zoom: 1;
+        }
+
+        /* 本例子css */
+        .snBrand {
+            position: relative;
+            width: 700px;
+            height: 703px;
+            background: url(/img/paihangbangwangye.png) no-repeat top center;
+            overflow: hidden;
+            background-size: 700px;
+        }
+
+        .snBrand h2 {
+            position: relative;
+            height: 34px;
+            line-height: 32px;
+            border-bottom: 1px solid #737878;
+            text-indent: 16px;
+            font-size: 14px;
+            color: #000;
+            font-family: "Microsoft YaHei";
+        }
+
+        .snBrand h2 a {
+            position: absolute;
+            right: 10px;
+            top: 0;
+            font-size: 12px;
+            color: #666;
+            font-weight: normal;
+            font-family: "SimSun";
+        }
+
+        .snBrand h2 a:hover {
+            color: #f60;
+        }
+
+        .snBrand ol {
+            float: left;
+            width: 260px;
+            height: 500px;
+            margin-top: 50px;
+        }
+
+        .snBrand ol li {
+            height: 80px;
+            padding: 4px 0;
+            line-height: 80px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .snBrand ol li a {
+            display: block;
+        }
+
+        .snBrand ol li.on {
+        }
+
+        .snBrand > ul {
+            float: left;
+            width: 400px;
+
+            margin-top: 40px;
+            padding: 0 5px;
+            overflow: hidden;
+        }
+
+        .snBrand > ul > li {
+            width: 400px;
+
+            margin: 0 auto;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .snBrand > ul > li > p {
+            width: 165px;
+            height: 22px;
+            line-height: 20px;
+            white-space: pre;
+            overflow: hidden;
+        }
+
+        .snBrand > ul > li > a {
+            color: #fff;
+        }
+
+        .snBrand > ul > li > a:hover {
+            color: #f60;
+        }
+
+        .a1 {
+            background: url(/img/paihangbang_03.png) no-repeat center center;
+            height: 40px;
+            background-size: 220px;
+            padding: 20px 0;
+            display: block;
+        }
+
+        .title {
+            width: 100%;
+            font-size: 14px;
+            line-height: 35px;
+            color: #fff;
+        }
+
+        .title .cell1 {
+            width: 20%;
+            float: left
+        }
+
+        .title .cell2 {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: 60%;
+            float: left
+        }
+
+        .title .cell3 {
+            width: 20%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            float: left
+        }
+
+        .eback .title {
+            background: url(/img/paihangbang_02.png) no-repeat center center;
+            height: 45px;
+            line-height: 45px;
+            background-size: 390px;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function(){
+//            $("p").click(function(){
+//                $(this).hide();
+//            });
+            $.ajax({
+                url: '/users/api/unitintegral_ranklist',
+                type: 'post',
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+                        for(var i=0;i<data.allUnitInteral.length;i++){
+                            var s='<div class=\"title clear\"><div class=\"cell1 \">'+i+'</div><div class=\"cell2\">'+data.allUnitInteral[i].unit+'</div><div class=\"cell3\">'+data.allUnitInteral[i].unitfight+'</div></div>';
+                            if(i==0){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_01.png\" width=\"50\"/></div><div class=\"cell2\">'+data.allUnitInteral[i].unit+'</div><div class=\"cell3\">'+data.allUnitInteral[i].unitfight+'</div></div>';
+                            }else if(i==1){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_02.png\" width=\"50\"/></div><div class=\"cell2\">'+data.allUnitInteral[i].unit+'</div><div class=\"cell3\">'+data.allUnitInteral[i].unitfight+'</div></div>';
+                            }else if(i==2){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_03.png\" width=\"50\"/></div><div class=\"cell2\">'+data.allUnitInteral[i].unit+'</div><div class=\"cell3\">'+data.allUnitInteral[i].unitfight+'</div></div>';
+                            }
+                            $('#unitintegral_ranklist').append(s);
+                        }
+                    }
+                }
+            });
+
+
+            $.ajax({
+                url: '/users/api/unitjoin_ranklist',
+                type: 'post',
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+                        for(var i=0;i<data.usersNums.length;i++){
+                            var s='<div class=\"title clear\"><div class=\"cell1 \">'+i+'</div><div class=\"cell2\">'+data.usersNums[i].unit+'</div><div class=\"cell3\">'+data.usersNums[i].unitdegree+'</div></div>';
+                            if(i==0){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_01.png\" width=\"50\"/></div><div class=\"cell2\">'+data.usersNums[i].unit+'</div><div class=\"cell3\">'+data.usersNums[i].unitdegree+'</div></div>';
+                            }else if(i==1){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_02.png\" width=\"50\"/></div><div class=\"cell2\">'+data.usersNums[i].unit+'</div><div class=\"cell3\">'+data.usersNums[i].unitdegree+'</div></div>';
+                            }else if(i==2){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_03.png\" width=\"50\"/></div><div class=\"cell2\">'+data.usersNums[i].unit+'</div><div class=\"cell3\">'+data.usersNums[i].unitdegree+'</div></div>';
+                            }
+                            $('#unitjoin_ranklist').append(s);
+                        }
+                    }
+                }
+            });
+
+            $.ajax({
+                url: '/users/api/taskintegral_ranklist',
+                type: 'post',
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+
+                        for(var i=0;i<data.result.length;i++){
+                            var s='<div class=\"title clear\"><div class=\"cell1 \">'+i+'</div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].content+')'+'</div><div class=\"cell3\">'+data.result[i].integral+'</div></div>';
+                            if(i==0){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_01.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].content+')'+'</div><div class=\"cell3\">'+data.result[i].integral+'</div></div>';
+                            }else if(i==1){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_02.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].content+')'+'</div><div class=\"cell3\">'+data.result[i].integral+'</div></div>';
+                            }else if(i==2){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_03.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].content+')'+'</div><div class=\"cell3\">'+data.result[i].integral+'</div></div>';
+                            }
+                            $('#taskintegral_ranklist').append(s);
+                        }
+
+                    }
+                }
+            });
+
+            $.ajax({
+                url: '/users/api/persontasks_ranklist',
+                type: 'post',
+                dataType: 'json',
+                success: function(data){
+                    if(data.statusCode==200){
+
+                        for(var i=0;i<data.result.length;i++){
+
+                            var s='<div class=\"title clear\"><div class=\"cell1 \">'+i+'</div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].unit+')'+'</div><div class=\"cell3\">'+data.result[i].card_count+'</div></div>';
+                            if(i==0){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_01.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].unit+')'+'</div><div class=\"cell3\">'+data.result[i].card_count+'</div></div>';
+                            }else if(i==1){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_02.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].unit+')'+'</div><div class=\"cell3\">'+data.result[i].card_count+'</div></div>';
+                            }else if(i==2){
+                                s='<div class=\"title clear\"><div class=\"cell1 \"><img src=\"/img/huangguan_03.png\" width=\"50\"/></div><div class=\"cell2\">'+data.result[i].userName+'('+data.result[i].unit+')'+'</div><div class=\"cell3\">'+data.result[i].card_count+'</div></div>';
+                            }
+                            $('#persontasks_ranklist').append(s);
+                        }
+                    }
+                }
+            });
+
+        });
+    </script>
+</head>
+
+<body style="background-color:#000;">
+<div class="snBrand" style="margin:0 auto">
+<ol>
+    <li><a target="_blank" class="a1"><img src="/img/paihangbang_04.png" width="150"/></a></li>
+    <li><a target="_blank" class="a1"><img src="/img/paihangbang_05.png" width="150"/></a></li>
+    <li><a target="_blank" class="a1"><img src="/img/paihangbang_06.png" width="150"/></a></li>
+    <li><a target="_blank" class="a1"><img src="/img/paihangbang_07.png" width="150"/></a></li>
+</ol>
+<ul>
+
+<li><a target="_blank" class="a1"><img src="/img/paihangbang_04.png" width="150"/></a>
+
+    <div class="title clear">
+        <div class="cell1 ">排名</div>
+        <div class="cell2">单位名称</div>
+        <div class="cell3">具体数值</div>
+    </div>
+
+    <div class="eback" id="unitintegral_ranklist">
+       <!-- <div class="title clear">
+            <div class="cell1 "><img src="/img/huangguan_01.png" width="50"/></div>
+            <div class="cell2">单位或员单位或员工名单位或员工名单位或员工名工名</div>
+            <div class="cell3">2500</div>
+        </div>
+       -->
+    </div>
+    <div style="color:#fff; text-align:center;">备注：某单位参与游戏所有员工的总积分/某单位参与人数</div>
+</li>
+
+
+<li><a target="_blank" class="a1"><img src="/img/paihangbang_05.png" width="150"/></a>
+
+    <div class="title clear">
+        <div class="cell1 ">排名</div>
+        <div class="cell2">单位名称</div>
+        <div class="cell3">具体数值</div>
+    </div>
+    <div class="eback" id="unitjoin_ranklist">
+        <!--<div class="title clear">
+            <div class="cell1 "><img src="/img/huangguan_01.png" width="50"/></div>
+            <div class="cell2">单位或员单位或员</div>
+            <div class="cell3">2500</div>
+        </div>
+        -->
+    </div>
+    <div style="color:#fff; text-align:center;">备注：某单位完成游戏的人数/该单位总人数</div>
+</li>
+
+<li><a target="_blank" class="a1"><img src="/img/paihangbang_06.png" width="150"/></a>
+
+    <div class="title clear">
+        <div class="cell1 ">排名</div>
+        <div class="cell2">员工名(任务名称)</div>
+        <div class="cell3">具体数值</div>
+    </div>
+
+    <div class="eback" id="taskintegral_ranklist">
+        <!--<div class="title clear">
+            <div class="cell1 "><img src="/img/huangguan_01.png" width="50"/></div>
+            <div class="cell2">呵呵</div>
+            <div class="cell3">2500</div>
+        </div>
+       -->
+    </div>
+    <div style="color:#fff; text-align:center;">备注：在全网范围内内，以员工单个任务的积分进行排名</div>
+</li>
+
+<li>
+    <a target="_blank" class="a1"><img src="/img/paihangbang_07.png" width="150"/></a>
+    <div class="title clear">
+        <div class="cell1 ">排名</div>
+        <div class="cell2">员工名（单位名称）</div>
+        <div class="cell3">具体数值</div>
+    </div>
+
+    <div class="eback" id="persontasks_ranklist">
+        <!--<div class="title clear">
+            <div class="cell1 "><img src="/img/huangguan_01.png" width="50"/></div>
+            <div class="cell2">嘻嘻</div>
+            <div class="cell3">2500</div>
+        </div>
+       -->
+    </div>
+    <div style="color:#fff; text-align:center;">备注：根据员工拥有的宠物数量（即员工完成不同目标的数量）进行排名
+    </div>
+</li>
+</ul>
+</div>
+<script type="text/javascript">jQuery(".snBrand").slide({ titCell: "ol li", mainCell: "ul", delayTime: 0, triggerTime: 0, trigger: "click"});</script>
+</body>
+</html>

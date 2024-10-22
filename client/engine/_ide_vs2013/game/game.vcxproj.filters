@@ -1,0 +1,908 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{8c8092fb-a493-4228-916f-8cafe9cbf6c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{dcb8f139-992b-4e43-89d5-c67a6e0a9b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="netadapter">
+      <UniqueIdentifier>{69273d1d-515e-4905-8278-d3470adf71e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zqcommon">
+      <UniqueIdentifier>{4b0ed5d0-f891-433e-a5a4-f36585cc1133}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filesystem">
+      <UniqueIdentifier>{9c3b9697-cbfb-413b-957c-f110a0bf34aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform">
+      <UniqueIdentifier>{057a00ad-4704-4004-b597-b47dfa8f6360}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\win32">
+      <UniqueIdentifier>{08b2a288-19c7-4860-8ece-a44fa54a1b0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="httpclient">
+      <UniqueIdentifier>{4ef0319d-48e6-4f89-991a-89857423ca33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="httpmanager">
+      <UniqueIdentifier>{222f4088-a801-4b20-9d43-61eb6853f8a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{4ca21be4-e6c8-408e-9f32-b168df3f81d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="location">
+      <UniqueIdentifier>{afbcc568-4db9-476b-86af-c92307a7c49b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdz_app">
+      <UniqueIdentifier>{39751b38-6832-4bb5-9abf-1463db69bc68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="luaengine">
+      <UniqueIdentifier>{733c2f71-71fe-4c51-ba4a-0b970df57786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msgpush">
+      <UniqueIdentifier>{ddd2a69f-1702-444c-ae95-34f18c92273b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resmanager">
+      <UniqueIdentifier>{a45a6b6c-89d3-4dbd-b66a-7e9eb4e6cc35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sdkhandle">
+      <UniqueIdentifier>{222c0355-afdb-4e9f-81a5-8708ebced526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sound">
+      <UniqueIdentifier>{09f1e759-16b2-4465-bb1c-fd4a02c3dfbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view">
+      <UniqueIdentifier>{df89620c-d913-44af-a074-239d1fa50f98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="luaengine\luatinker">
+      <UniqueIdentifier>{4bf75455-68bd-4873-808e-2748cd8a2bde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="gameengine">
+      <UniqueIdentifier>{fcc17a66-19bc-4b39-aaba-bfef762820fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\startup">
+      <UniqueIdentifier>{bd80ac69-93ef-45fc-a2e8-e3d70f13e87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sqlite">
+      <UniqueIdentifier>{6b28aeb3-eda5-4a96-9175-fd8d78d60806}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\win32\view">
+      <UniqueIdentifier>{834f2c27-16d1-4c9e-908f-36eb248239a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\widget">
+      <UniqueIdentifier>{b089bbe9-76c7-4f4a-a0de-989942ee7bd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\font">
+      <UniqueIdentifier>{3aa7461a-1c2c-4ffb-9822-ae9b3a2c8794}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\render">
+      <UniqueIdentifier>{7a80398d-5b48-4f46-b87f-8da201cb48bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\uiwidget">
+      <UniqueIdentifier>{f4b7a927-cec5-4eac-b320-05c3d60d455c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cocos2dxext">
+      <UniqueIdentifier>{573764c2-2d24-425e-81f4-711dc290165a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="statemachine">
+      <UniqueIdentifier>{e1e6644e-f11e-425f-bcf8-206334d5c148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{29897c23-ab7f-45f2-bf31-725e76a41703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zip">
+      <UniqueIdentifier>{6ac44e67-1039-4a8e-9096-3c6f6e88aeda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="view\action">
+      <UniqueIdentifier>{8502ff6c-c6ac-435b-988a-d2ef99c04e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="fribidi">
+      <UniqueIdentifier>{9926aca7-1bdf-43a7-960a-a22bd4e32337}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="win32\main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\zqcommon\strutil.cpp">
+      <Filter>zqcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\zqcommon\logutil.cpp">
+      <Filter>zqcommon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\filesystemex.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\fileasync.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\fileasynchelper.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\filehelper.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\fileversion.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\filesystem\setting.cpp">
+      <Filter>filesystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\systemtools.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\httpclient\httpclient.cpp">
+      <Filter>httpclient</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\httpmanager\httpconnection.cpp">
+      <Filter>httpmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\httpmanager\httpmanager.cpp">
+      <Filter>httpmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\httpmanager\httpstruct.cpp">
+      <Filter>httpmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\json\src\json_value.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\json\src\json_reader.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\json\src\json_writer.cpp">
+      <Filter>json</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luatinker\lua_tinker.cpp">
+      <Filter>luaengine\luatinker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luaengine.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luamessageadapter.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luacall.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luaregister.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\gameengine\gameengine.cpp">
+      <Filter>gameengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\location\location.cpp">
+      <Filter>location</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\sdktools.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\locationtools.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\msgpush\msgpush.cpp">
+      <Filter>msgpush</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\pushtools.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sdkhandle\sdkhandle.cpp">
+      <Filter>sdkhandle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sound\soundmanager.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sound\voicehelper.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sound\voicemanager.cpp">
+      <Filter>sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\voice.cpp">
+      <Filter>platform\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\resmanager\resmanager.cpp">
+      <Filter>resmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\resmanager\installer.cpp">
+      <Filter>resmanager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\startup\startlogic.cpp">
+      <Filter>view\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sqlite\dbhelper.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sqlite\resultset.cpp">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\sqlite\sqlite3.c">
+      <Filter>sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\platform\win32\view\webview.cpp">
+      <Filter>platform\win32\view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\gamescene.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\scenemanager.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\nodeunity.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\render\batchrenderer.cpp">
+      <Filter>view\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\render\colortype.cpp">
+      <Filter>view\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\render\textureutil.cpp">
+      <Filter>view\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\font\font.cpp">
+      <Filter>view\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\font\fontmanager.cpp">
+      <Filter>view\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\font\richitem.cpp">
+      <Filter>view\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\font\richitemparser.cpp">
+      <Filter>view\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\font\stringconv.cpp">
+      <Filter>view\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\viewhelper.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\richtext.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\imagesprite.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\graphiclabel.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\edittext.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\graphicrender.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\progresstimer.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\progresscontrol.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\progress9control.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\skeletonanimation.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\skeletondatacache.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\startup\startup.cpp">
+      <Filter>view\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\particlesprite.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uilayoutex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitouchgroupex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uibuttonex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiimageviewex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiloadingbarex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextfieldex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uicheckboxex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uisliderex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widgetunity.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\edittextex.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\cocos2dxext\texturecahceex.cpp">
+      <Filter>cocos2dxext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\cocos2dxext\ziputilsex.cpp">
+      <Filter>cocos2dxext</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\skeletondatacache_ssdz.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uipageviewex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uilistviewex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\startup\selectlanguagelayer.cpp">
+      <Filter>view\startup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\statemachine\gamestate.cpp">
+      <Filter>statemachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\statemachine\gamestatemachine.cpp">
+      <Filter>statemachine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uitextatlasex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\labelex.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\spriteex.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\scale9spriteex.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\clippingnodeex.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\widget\imagebutton.cpp">
+      <Filter>view\widget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\timer\timerquest.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\netadapter\netadapter.cpp">
+      <Filter>netadapter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\zip\zip.cpp">
+      <Filter>zip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\uiwidget\uiscrollviewex.cpp">
+      <Filter>view\uiwidget</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\gamelayer.cpp">
+      <Filter>view</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\action\actionmanager.cpp">
+      <Filter>view\action</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\view\action\actiontimelineex.cpp">
+      <Filter>view\action</Filter>
+    </ClCompile>
+    <ClCompile Include="win32\exceptdump.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luaerrorreport.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-arabic.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-bidi.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-bidi-types.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-brackets.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cap-rtl.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cp1255.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-cp1256.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-6.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-8.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-char-sets-utf8.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-deprecated.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-joining.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-joining-types.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-mirroring.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-run.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\fribidi\fribidi-shape.c">
+      <Filter>fribidi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sdz\luaengine\luaprofile.cpp">
+      <Filter>luaengine</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="win32\main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\Classes\AppMacros.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zqcommon\gamedef.h">
+      <Filter>zqcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zqcommon\typedef.h">
+      <Filter>zqcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zqcommon\xmlhelper.h">
+      <Filter>zqcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zqcommon\strutil.h">
+      <Filter>zqcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zqcommon\logutil.h">
+      <Filter>zqcommon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\filesystem\filesystemex.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\filesystem\fileasync.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\filesystem\filehelper.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\filesystem\fileversion.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\filesystem\setting.h">
+      <Filter>filesystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\httpclient\httpclient.h">
+      <Filter>httpclient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\httpmanager\httpconnection.h">
+      <Filter>httpmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\httpmanager\httplistener.h">
+      <Filter>httpmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\httpmanager\httpmanager.h">
+      <Filter>httpmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\httpmanager\httpstruct.h">
+      <Filter>httpmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\autolink.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\config.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\features.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\forwards.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\json.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\reader.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\value.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\writer.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\json\src\json_batchallocator.h">
+      <Filter>json</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>sdz_app</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luatinker\lua_tinker.h">
+      <Filter>luaengine\luatinker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luaengine.h">
+      <Filter>luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luamessageadapter.h">
+      <Filter>luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luaregister.h">
+      <Filter>luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\gameengine\gameengine.h">
+      <Filter>gameengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\location\location.h">
+      <Filter>location</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\sdktools.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\locationtools.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\msgpush\msgpush.h">
+      <Filter>msgpush</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\pushtools.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sdkhandle\sdkhandle.h">
+      <Filter>sdkhandle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sound\soundmanager.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sound\voicehelper.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sound\voicemanager.h">
+      <Filter>sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\voice.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\webview.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\resmanager\resmanager.h">
+      <Filter>resmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\resmanager\installer.h">
+      <Filter>resmanager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\logutilex.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\struct.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\startup\startlogic.h">
+      <Filter>view\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sqlite\dbhelper.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sqlite\resultset.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\sqlite\sqlite3.h">
+      <Filter>sqlite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\gamescene.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\scenemanager.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\nodeunity.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\render\batchrenderer.h">
+      <Filter>view\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\render\colortype.h">
+      <Filter>view\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\render\textureutil.h">
+      <Filter>view\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\font\font.h">
+      <Filter>view\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\font\fontmanager.h">
+      <Filter>view\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\font\richitem.h">
+      <Filter>view\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\font\richitemparser.h">
+      <Filter>view\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\font\stringconv.h">
+      <Filter>view\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\viewhelper.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\richtext.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\imagesprite.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\graphiclabel.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\edittext.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\graphicrender.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\progresstimer.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\progresscontrol.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\progress9control.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\skeletonanimation.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\skeletondatacache.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\startup\startup.h">
+      <Filter>view\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\particlesprite.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uilayoutex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitouchgroupex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uibuttonex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiimageviewex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiloadingbarex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextfieldex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uicheckboxex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uisliderex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widgetunity.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\edittextex.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\cocos2dxext\texturecahceex.h">
+      <Filter>cocos2dxext</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\cocos2dxext\ziputilsex.h">
+      <Filter>cocos2dxext</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uipageviewex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uilistviewex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\startup\selectlanguagelayer.h">
+      <Filter>view\startup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\statemachine\gamestate.h">
+      <Filter>statemachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\statemachine\gamestatemachine.h">
+      <Filter>statemachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\statemachine\gamestatepredependency.h">
+      <Filter>statemachine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uitextatlasex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\labelex.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\spriteex.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\scale9spriteex.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\clippingnodeex.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\widget\imagebutton.h">
+      <Filter>view\widget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\timer\timerquest.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\netadapter\netadapter.h">
+      <Filter>netadapter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\zip\zip.h">
+      <Filter>zip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\uiwidget\uiscrollviewex.h">
+      <Filter>view\uiwidget</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\gamelayer.h">
+      <Filter>view</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\action\actionmanager.h">
+      <Filter>view\action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\view\action\actiontimelineex.h">
+      <Filter>view\action</Filter>
+    </ClInclude>
+    <ClInclude Include="win32\exceptdump.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luaerrorreport.h">
+      <Filter>luaengine</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\platform\systemtools.h">
+      <Filter>platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\bidi-types.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\common.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\debug.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-arabic.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-begindecls.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi-types.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-bidi-types-list.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-brackets.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cap-rtl.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cp1255.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-cp1256.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-6.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-iso8859-8.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-list.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-char-sets-utf8.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-common.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-config.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-deprecated.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-enddecls.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-flags.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining-types.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-joining-types-list.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-mirroring.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-shape.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-types.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-unicode.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\fribidi-unicode-version.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\joining-types.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\fribidi\run.h">
+      <Filter>fribidi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sdz\luaengine\luaprofile.h">
+      <Filter>luaengine</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\sdz\json\src\json_internalarray.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\..\sdz\json\src\json_internalmap.inl">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\..\sdz\json\src\json_valueiterator.inl">
+      <Filter>json</Filter>
+    </None>
+  </ItemGroup>
+</Project>

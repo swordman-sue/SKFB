@@ -1,0 +1,14 @@
+[2015-04-20 14:04:25.929] [INFO] normal - ----------------------
+[2015-04-20 14:04:25.933] [INFO] normal - GET /users/
+[2015-04-21 15:49:50.035] [INFO] normal - GET /
+[2015-04-21 15:49:50.097] [INFO] normal - GET /favicon.ico
+[2015-04-21 15:54:31.832] [INFO] normal - GET /i
+[2015-04-21 15:56:00.994] [INFO] normal - GET /
+[2015-04-21 16:19:56.328] [INFO] normal - ----------------------
+[2015-04-21 16:19:56.331] [INFO] normal - GET /users/
+[2015-04-21 16:39:30.495] [INFO] normal - GET /
+[2015-04-23 09:41:32.914] [INFO] normal - ----------------------
+[2015-04-24 10:16:43.990] [INFO] normal - respond with a resource
+[2015-04-24 10:17:38.548] [INFO] normal - respond with a resource
+[2015-04-24 10:18:01.459] [INFO] normal - respond with a resource
+[2015-04-24 10:19:46.228] [INFO] normal - respond with a resource

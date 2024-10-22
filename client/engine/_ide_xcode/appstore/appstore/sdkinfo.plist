@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>START_IMAGE_PATH</key>
+	<string></string>
+	<key>APP_ID</key>
+	<string></string>
+	<key>APP_KEY</key>
+	<string></string>
+	<key>CHANNEL_ID</key>
+	<string></string>
+	<key>SDK_VERSION</key>
+	<string>1.0</string>
+	<key>SDK_NAME</key>
+	<string></string>
+	<key>IS_THIRD_ACCOUNT_PLAT</key>
+	<true/>
+	<key>PHP_TD_ORDER_URL</key>
+	<string></string>
+	<key>PHP_TD_NOTIFY_URL</key>
+	<string></string>
+	<key>BAD_NETWORK</key>
+	<string>无法连接网络，请设置网络连接</string>
+	<key>SETTING</key>
+	<string>设置</string>
+	<key>CANCEL</key>
+	<string>取消</string>
+	<key>EXIT_INFO</key>
+	<string>信息</string>
+</dict>
+</plist>

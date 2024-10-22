@@ -1,0 +1,480 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNew|Win32">
+      <Configuration>ReleaseNew</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseNew|x64">
+      <Configuration>ReleaseNew</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7862961A-914C-433F-B996-184418E86936}</ProjectGuid>
+    <RootNamespace>MapSvr</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>GameSvr</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../bin/MapSvr\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\GameSvr\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)64_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../bin/MapSvr\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)\bin\GameSvr\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <TargetName>$(ProjectName)64</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|x64'">
+    <OutDir>../bin/MapSvr\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../STLport-5.2.1/stlport;../MySql/include;../Protobuf/include;../protocol/ss_protocol;../protocol/cs_protocol;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)_d.exe</OutputFile>
+      <AdditionalLibraryDirectories>../STLport-5.2.1/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../NetworkEngine/Include;../MySql/include;../Protobuf/include;../Protobuf;../MySqlDB/Include;./Equipment;../Common;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>"..\bin\Jsoncpp64_d.lib" %(AdditionalOptions)</AdditionalOptions>
+      <OutputFile>$(OutDir)$(ProjectName)64_d.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../STLport-5.2.1/stlport;../MySql/include;../Protobuf/include;../Protobuf;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>libprotobuf.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>../STLport-5.2.1/lib;H:\Server\Protobuf\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../NetworkEngine/Include;../MySql/include;../Protobuf/include;../Protobuf;../MySqlDB/Include;./Equipment;../Common;../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)64.exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../STLport-5.2.1/stlport;../MySql/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>../STLport-5.2.1/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>../STLport-5.2.1/stlport;../MySql/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(OutDir)$(ProjectName)64.exe</OutputFile>
+      <AdditionalLibraryDirectories>../STLport-5.2.1/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Achievement\AchievementManager.cpp" />
+    <ClCompile Include="Activity\AccurateRecommend.cpp" />
+    <ClCompile Include="Activity\ActivityManager.cpp" />
+    <ClCompile Include="Activity\CampRecruit.cpp" />
+    <ClCompile Include="Activity\Christmas.cpp" />
+    <ClCompile Include="Activity\FacebookActivity.cpp" />
+    <ClCompile Include="Activity\FestivalActivity.cpp" />
+    <ClCompile Include="Activity\HotSaleGoods.cpp" />
+    <ClCompile Include="Activity\LimitActivity.cpp" />
+    <ClCompile Include="Activity\RechargeAndCostRankActivity.cpp" />
+    <ClCompile Include="Activity\RechargeReward.cpp" />
+    <ClCompile Include="Activity\SevenDayLogin.cpp" />
+    <ClCompile Include="Activity\SuperDiscount.cpp" />
+    <ClCompile Include="Activity\TotalRechargeReward.cpp" />
+    <ClCompile Include="Activity\UnlockActivity.cpp" />
+    <ClCompile Include="Arena\ArenaManager.cpp" />
+    <ClCompile Include="AttackCity\AttackCityManager.cpp" />
+    <ClCompile Include="Battle\BattleManager.cpp" />
+    <ClCompile Include="ConfigLoad.cpp" />
+    <ClCompile Include="ConfigLoadEx.cpp" />
+    <ClCompile Include="DailyMission\DailyMissionManager.cpp" />
+    <ClCompile Include="Duobao\DuobaoManager.cpp" />
+    <ClCompile Include="EndlessLand\EndlessLandManager.cpp" />
+    <ClCompile Include="Equipment\EquipmentManager.cpp" />
+    <ClCompile Include="Framework\RedisManager.cpp" />
+    <ClCompile Include="Framework\TimeManager.cpp" />
+    <ClCompile Include="Friend\FriendManager.cpp" />
+    <ClCompile Include="Fuben\FubenManager.cpp" />
+    <ClCompile Include="GameLogic.cpp" />
+    <ClCompile Include="Gem\GemManager.cpp" />
+    <ClCompile Include="Guild\Guild.cpp" />
+    <ClCompile Include="Guild\GuildManager.cpp" />
+    <ClCompile Include="Guild\GuildWarMgr.cpp" />
+    <ClCompile Include="HangUpDrop\HangUpDropMgr.cpp" />
+    <ClCompile Include="Hero\HeroManager.cpp" />
+    <ClCompile Include="Item\ItemManager.cpp" />
+    <ClCompile Include="KingMatch\KingMatchManager.cpp" />
+    <ClCompile Include="Land\LandManager.cpp" />
+    <ClCompile Include="Logic\LogicManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MapServer.cpp" />
+    <ClCompile Include="PlayerBaseDataManager.cpp" />
+    <ClCompile Include="Property\PropertyManager.cpp" />
+    <ClCompile Include="PVP\PVPManager.cpp" />
+    <ClCompile Include="Rank\RankManager.cpp" />
+    <ClCompile Include="Rebel\RebelManager.cpp" />
+    <ClCompile Include="Recharge\RechargeManager.cpp" />
+    <ClCompile Include="Recycling\RecyclingManager.cpp" />
+    <ClCompile Include="RedPoint\RedPointManager.cpp" />
+    <ClCompile Include="ResourceWar\ResourceWarManager.cpp" />
+    <ClCompile Include="RewardCenter\RewardCenterManager.cpp" />
+    <ClCompile Include="ScoreMatch\ScoreMatchManager.cpp" />
+    <ClCompile Include="SevenDayActivity\SevenDayManager.cpp" />
+    <ClCompile Include="Shop\ShopManager.cpp" />
+    <ClCompile Include="Spirit\SpiritManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseNew|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DBResultHandler.cpp" />
+    <ClCompile Include="DBThread.cpp" />
+    <ClCompile Include="DBThreadHandler.cpp" />
+    <ClCompile Include="MapSvrQuery.cpp" />
+    <ClCompile Include="HandlerFromGate.cpp" />
+    <ClCompile Include="HandlerFromOpen.cpp" />
+    <ClCompile Include="PacketHandler.cpp" />
+    <ClCompile Include="GateServerSession.cpp" />
+    <ClCompile Include="OpenServerSession.cpp" />
+    <ClCompile Include="ServerSession.cpp" />
+    <ClCompile Include="ConfigManager.cpp" />
+    <ClCompile Include="DBCFileLoader.cpp" />
+    <ClCompile Include="AccountInfo.cpp" />
+    <ClCompile Include="AccountInfoManager.cpp" />
+    <ClCompile Include="Character.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="Object.cpp" />
+    <ClCompile Include="ObjectFactory.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="LuaExport.cpp" />
+    <ClCompile Include="LuaFunRegister.cpp" />
+    <ClCompile Include="Email\EmailManager.cpp" />
+    <ClCompile Include="EmailSystem.cpp" />
+    <ClCompile Include="SystemNotice\SystemNotice.cpp" />
+    <ClCompile Include="TeamDungeon\TeamDungeonManager.cpp" />
+    <ClCompile Include="TimeoutManager.cpp" />
+    <ClCompile Include="SysTimesManager.cpp" />
+    <ClCompile Include="GMManager.cpp" />
+    <ClCompile Include="ChatManager.cpp" />
+    <ClCompile Include="StopMessage.cpp" />
+    <ClCompile Include="FileEx\TsFile.cpp" />
+    <ClCompile Include="FileEx\TsIniFile.cpp" />
+    <ClCompile Include="FileEx\TsMemory.cpp" />
+    <ClCompile Include="KeyWodFilter\KeyWodFilter.cpp" />
+    <ClCompile Include="Title\TitleManager.cpp" />
+    <ClCompile Include="Treasure\TreasureManager.cpp" />
+    <ClCompile Include="Turntable\TurntableManager.cpp" />
+    <ClCompile Include="Vip\VipManager.cpp" />
+    <ClCompile Include="Warcraft\WarcraftManager.cpp" />
+    <ClCompile Include="WorldBoss\WorldBossManager.cpp" />
+    <ClCompile Include="WorldLevelTask\WorldLevelTaskManager.cpp" />
+    <ClCompile Include="ZhanBu\ZhanBuManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Achievement\AchievementManager.h" />
+    <ClInclude Include="Activity\AccurateRecommend.h" />
+    <ClInclude Include="Activity\ActivityManager.h" />
+    <ClInclude Include="Activity\CampRecruit.h" />
+    <ClInclude Include="Activity\Christmas.h" />
+    <ClInclude Include="Activity\FacebookActivity.h" />
+    <ClInclude Include="Activity\FestivalActivity.h" />
+    <ClInclude Include="Activity\HotSaleGoods.h" />
+    <ClInclude Include="Activity\LimitActivity.h" />
+    <ClInclude Include="Activity\RechargeAndCostRankActivity.h" />
+    <ClInclude Include="Activity\RechargeReward.h" />
+    <ClInclude Include="Activity\SevenDayLogin.h" />
+    <ClInclude Include="Activity\SuperDiscount.h" />
+    <ClInclude Include="Activity\TotalRechargeReward.h" />
+    <ClInclude Include="Activity\UnlockActivity.h" />
+    <ClInclude Include="Arena\ArenaManager.h" />
+    <ClInclude Include="AttackCity\AttackCityManager.h" />
+    <ClInclude Include="Battle\BattleManager.h" />
+    <ClInclude Include="DailyMission\DailyMissionManager.h" />
+    <ClInclude Include="Duobao\DuobaoManager.h" />
+    <ClInclude Include="EndlessLand\EndlessLandManager.h" />
+    <ClInclude Include="Equipment\EquipmentManager.h" />
+    <ClInclude Include="Framework\RedisManager.h" />
+    <ClInclude Include="Framework\TimeManager.h" />
+    <ClInclude Include="Friend\FriendManager.h" />
+    <ClInclude Include="Fuben\FubenManager.h" />
+    <ClInclude Include="GameLogic.h" />
+    <ClInclude Include="Gem\GemManager.h" />
+    <ClInclude Include="Guild\Guild.h" />
+    <ClInclude Include="Guild\GuildManager.h" />
+    <ClInclude Include="Guild\GuildWarMgr.h" />
+    <ClInclude Include="HangUpDrop\HangUpDropMgr.h" />
+    <ClInclude Include="Hero\HeroManager.h" />
+    <ClInclude Include="Item\ItemManager.h" />
+    <ClInclude Include="KingMatch\KingMatchManager.h" />
+    <ClInclude Include="Land\LandManager.h" />
+    <ClInclude Include="Logic\LogicManager.h" />
+    <ClInclude Include="MapServer.h" />
+    <ClInclude Include="PlayerBaseDataManager.h" />
+    <ClInclude Include="Property\PropertyManager.h" />
+    <ClInclude Include="PVP\PVPManager.h" />
+    <ClInclude Include="Rank\RankManager.h" />
+    <ClInclude Include="Rebel\RebelManager.h" />
+    <ClInclude Include="Recharge\RechargeManager.h" />
+    <ClInclude Include="Recycling\RecyclingManager.h" />
+    <ClInclude Include="RedPoint\RedPointManager.h" />
+    <ClInclude Include="ResourceWar\ResourceWarManager.h" />
+    <ClInclude Include="RewardCenter\RewardCenterManager.h" />
+    <ClInclude Include="ScoreMatch\ScoreMatchManager.h" />
+    <ClInclude Include="SevenDayActivity\SevenDayManager.h" />
+    <ClInclude Include="Shop\ShopManager.h" />
+    <ClInclude Include="Spirit\SpiritManager.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SystemNotice\SystemNotice.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="DBResultHandler.h" />
+    <ClInclude Include="DBThread.h" />
+    <ClInclude Include="DBThreadHandler.h" />
+    <ClInclude Include="MapSvrQuery.h" />
+    <ClInclude Include="QueryForUser.h" />
+    <ClInclude Include="QueryPoolDefine.h" />
+    <ClInclude Include="HandlerFromGate.h" />
+    <ClInclude Include="HandlerFromOpen.h" />
+    <ClInclude Include="PacketHandler.h" />
+    <ClInclude Include="GateServerSession.h" />
+    <ClInclude Include="OpenServerSession.h" />
+    <ClInclude Include="ServerSession.h" />
+    <ClInclude Include="ConfigManager.h" />
+    <ClInclude Include="AccountInfo.h" />
+    <ClInclude Include="AccountInfoManager.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="Monster.h" />
+    <ClInclude Include="Object.h" />
+    <ClInclude Include="ObjectFactory.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="PlayerManager.h" />
+    <ClInclude Include="LuaFunRegister.h" />
+    <ClInclude Include="MapSvrLuaErrorProc.h" />
+    <ClInclude Include="Email\EmailManager.h" />
+    <ClInclude Include="EmailSystem.h" />
+    <ClInclude Include="TeamDungeon\TeamDungeonManager.h" />
+    <ClInclude Include="TimeoutManager.h" />
+    <ClInclude Include="SysTimesManager.h" />
+    <ClInclude Include="GMManager.h" />
+    <ClInclude Include="ChatManager.h" />
+    <ClInclude Include="StopMessage.h" />
+    <ClInclude Include="FileEx\TsFile.h" />
+    <ClInclude Include="FileEx\TsIniFile.h" />
+    <ClInclude Include="FileEx\TsMemory.h" />
+    <ClInclude Include="KeyWodFilter\deelx.h" />
+    <ClInclude Include="KeyWodFilter\KeyWodFilter.h" />
+    <ClInclude Include="Title\TitleManager.h" />
+    <ClInclude Include="Treasure\TreasureManager.h" />
+    <ClInclude Include="Turntable\TurntableManager.h" />
+    <ClInclude Include="Vip\VipManager.h" />
+    <ClInclude Include="Warcraft\WarcraftManager.h" />
+    <ClInclude Include="WorldBoss\WorldBossManager.h" />
+    <ClInclude Include="WorldLevelTask\WorldLevelTaskManager.h" />
+    <ClInclude Include="ZhanBu\ZhanBuManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

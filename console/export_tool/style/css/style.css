@@ -1,0 +1,45 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/* 整体样式 */
+body{margin:0px; background-color:#fff; color: #747d67; backgroundF:#111; font: 12px Arial, Helvetica, sans-serif; line-height:18px; text-align:center}
+a:link, a:visited {color:grey; text-decoration: none;}
+a:hover {color: #000; text-decoration: none;}
+a:active {color: #528036; text-decoration: none;}
+img {border:0px; vertical-align:middle; padding:0px; margin:0px;}
+input, button {	border:0px;	vertical-align:middle; margin:8px; line-height:18px; font-size:12px;}
+.midred {width:400px; margin:0 auto; padding-top:10px; color:red; font-weight:bold;}
+.red{padding-left:10px; color:red; width:80px;}
+
+/* 主界面 */
+#main {width: 790px; height:580px; margin:0 auto; margin-top:50px;}
+#autoall:hover{ color:red; background-color:#fff}
+.comlink:hover{background-color:#fff; color:red}
+.div1{float:left; border:#E04568 1px solid; margin-right:5px; width:380px;}
+.div2{border:#CC0000 1px solid; float:left; width:380px;}
+.div2 form{ border-bottom:none}
+.div2 form:hover{ background:none; border-bottom:none}
+.s_item{ margin:8px; padding-left:8px; border-bottom:#eee 2px solid}
+.s_item:hover{ background-color:#e0e0e0; border-bottom:2px green solid}
+form{ border-bottom:#eee 2px solid; padding-left:5px; margin:0px; text-align:left;}
+form:hover{	background:#e0e0e0; border-bottom:2px green solid}
+
+/* 验证按钮 */
+.btn { padding:10px; color:red; float:left; font-size:30px; font-weight:800; border:1px red solid; width:350px; background-color:#E0E0E0;width:350px; margin-top:20px;}
+
+/* 输出信息 */
+.wrap,
+.middle{width:500px;margin:0 auto;}
+.output{color:red;text-align:left;border-bottom:1px green solid;margin-bottom:8px; font-size:12px; background-color:#EBEBEB; padding-left:5px; border:2px white solid}
+.output:hover{ background-color:#999999; border:2px green solid;}
+
+.back{font-size:13px; color:#CC0066;width:150px;margin:0 auto; text-align:left; margin-bottom:10px; margin-top:10px;padding:10px; border:1px #009933 solid; background-color:#EBEBEB}
+.back:hover { background-color:#FFFFFF}
+
+/* 缓冲区 */
+.msg { width:200px; height:auto; border:1px #0099FF solid; background-color:#e0e0e0;left:0px;  margin-top:10px; padding:3px; margin-left:10px; text-align:left; color:#008040;
+	position:fixed !important; top/**/:0px;  
+    position:absolute;top:expression(offsetParent.scrollTop+0);z-index:1;
+}
+
+#totop {position:fixed !important; bottom/**/:0px; position:absolute;top:expression(offsetParent.scrollTop+500);z-index:1;right:200px; width:100px; height:50px;}

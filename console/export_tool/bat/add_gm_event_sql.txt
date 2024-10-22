@@ -1,0 +1,1 @@
+insert into gm_event(cmd_id) value(3);

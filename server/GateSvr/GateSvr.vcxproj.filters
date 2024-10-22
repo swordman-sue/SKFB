@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="User">
+      <UniqueIdentifier>{37dbeb48-dfd9-42f0-b755-e00b531936bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PacketHandler">
+      <UniqueIdentifier>{21ca26ff-ec30-4ae3-bb40-72da0447ba2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ServerSession">
+      <UniqueIdentifier>{dbb5c85d-36b0-48cf-a1c9-4cbbfec9d1ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GateServer.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="User.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="UserFactory.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="UserSession.cpp">
+      <Filter>User</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlerFromClient.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="HandlerFromMap.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandler.cpp">
+      <Filter>PacketHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="MapServerSession.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSession.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerSessionFactory.cpp">
+      <Filter>ServerSession</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GateServer.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="User.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserFactory.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="UserSession.h">
+      <Filter>User</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerFromClient.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="HandlerFromMap.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketHandler.h">
+      <Filter>PacketHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="MapServerSession.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSession.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerSessionFactory.h">
+      <Filter>ServerSession</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

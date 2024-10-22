@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{baee183b-3819-44fd-80a1-790e7e98cee3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9f0c7711-6607-4bb4-9e89-2887c64aa0e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\md5">
+      <UniqueIdentifier>{42894a25-2e82-4233-8273-5878e16be95a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\memory">
+      <UniqueIdentifier>{14bb4fe2-e883-4524-bb15-8298187e12a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform">
+      <UniqueIdentifier>{8459d884-e188-49c4-9b8a-5fc15b410927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform\socket">
+      <UniqueIdentifier>{e1c7f37e-69d1-44be-9bd2-524125e7ebea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\platform\thread">
+      <UniqueIdentifier>{97813c94-3b62-4692-9498-ff1b62a6acf0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\md5">
+      <UniqueIdentifier>{ec7c08bd-7140-4017-a277-bffc777a6f24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{5a3a50d0-6905-422f-a35a-477c9d6212b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform">
+      <UniqueIdentifier>{76023c74-8747-44f2-9ec9-5b945e13287c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\thread">
+      <UniqueIdentifier>{b9b2058b-9de3-48d2-8751-6202179a9e99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\platform\socket">
+      <UniqueIdentifier>{5d7e6c24-dd5b-45df-9cc8-50f36ec420e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\tinyxml">
+      <UniqueIdentifier>{5f5e1b96-630e-4164-b146-7e8ebd6634cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\tinyxml">
+      <UniqueIdentifier>{9d8732a0-4e64-4f8c-a634-ed7feee1f6e7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\libs\include\common\raobjlist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\system.h">
+      <Filter>Header Files\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\clmempool.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\memdef.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\memmonitor.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\mempool.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\mempoolex.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\memory\msgmem.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\md5\md5.h">
+      <Filter>Header Files\md5</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\thread\event.h">
+      <Filter>Header Files\platform\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\thread\mutex.h">
+      <Filter>Header Files\platform\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\thread\semaphorex.h">
+      <Filter>Header Files\platform\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\thread\thread.h">
+      <Filter>Header Files\platform\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\thread\threadqueue.h">
+      <Filter>Header Files\platform\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\socket\pisocket.h">
+      <Filter>Header Files\platform\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\platform\socket\pisocketex.h">
+      <Filter>Header Files\platform\socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\libs\include\common\tinyxml\tinyxml.h">
+      <Filter>Header Files\tinyxml</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\libs_src\common\md5\md5.cpp">
+      <Filter>Source Files\md5</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\memory\clmempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\memory\memmonitor.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\memory\mempool.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\memory\mempoolex.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\memory\msgmem.cpp">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\socket\pisocket.cpp">
+      <Filter>Source Files\platform\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\socket\pisocketex.cpp">
+      <Filter>Source Files\platform\socket</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\thread\event.cpp">
+      <Filter>Source Files\platform\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\thread\mutex.cpp">
+      <Filter>Source Files\platform\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\thread\semaphorex.cpp">
+      <Filter>Source Files\platform\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\thread\thread.cpp">
+      <Filter>Source Files\platform\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\system.cpp">
+      <Filter>Source Files\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\platform\systemex.cpp">
+      <Filter>Source Files\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\tinyxml\tinyxml.cpp">
+      <Filter>Source Files\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\tinyxml\tinyxmlerror.cpp">
+      <Filter>Source Files\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\libs_src\common\tinyxml\tinyxmlparser.cpp">
+      <Filter>Source Files\tinyxml</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

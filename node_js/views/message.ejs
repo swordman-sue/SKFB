@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="no-js">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <title>好习惯</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <style>
+        body {
+            margin: 0;
+            font-size: 14px;
+            background: #E6A665 url(/img/beijing2.png) no-repeat fixed  top;
+            background-size:cover;
+        }
+        p {
+            line-height: 25px;
+            margin: 0;
+        }
+        @media screen and (max-height:667px) {
+            .main {
+                height: 100%;
+            }
+        }
+        @media screen and (max-height:736px) {
+            .main {
+                height: 100%;
+            }
+        }
+        ul, ul li {
+            padding: 0;
+            margin: 0
+        }
+        .logotop {
+            background: #8B5DB9 url(/img/nwlogo.png) no-repeat left top;
+            height: 45px;
+            background-size: 120px;
+            color: #fff;
+            text-align: center;
+            line-height: 45px;
+            font-size: 18px;
+            position:fixed;
+            top:0; width:100%;
+        }
+        .xx {
+            margin-top:50px;
+        }
+        .xx li {
+
+            width: 90%;
+            margin-bottom: 10px;
+            list-style-type: none;
+            line-height: 25px;
+            margin-left: 5%;
+
+            color: #666;
+        }
+        .xx li h1 {
+            color:#69F;
+            margin: 0;
+            font-size: 18px;
+            padding:10px 0;
+        }
+        .tishi{	background-color: rgba(255,255,255,.8);
+            border-radius: 10px;box-shadow: 0 2px 3px #666; padding:10px;}
+        .ddtime{ text-align:center}
+        .ddtime span{background-color: rgba(0,0,0,.3); color:#fff;padding:3px 5px; border-radius: 10px;}
+    </style>
+</head>
+<body>
+<div class="logotop">好习惯提示</div>
+<ul class="xx">
+
+
+    <% for(var i = 0;i < messages.length; i++){%>
+    <li>
+        <div class="ddtime"><span><%=messages[i].time1%></span></div>
+        <div class="tishi">
+            <h1>
+                <%if(messages[i].type==1){%>
+                    任务完成提示
+                <% }%>
+                <%if(messages[i].type==2){%>
+                    任务中断提示
+                <% }%>
+                <%if(messages[i].type==3){%>
+                    组合成功提示
+                <% }%>
+            </h1>
+            <div><%=messages[i].content%></div>
+        </div>
+    </li>
+    <% }%>
+    <!--
+    <li>
+        <div class="ddtime"><span>2015-04-01 12:03:25</span></div>
+        <div class="tishi">
+            <h1>组队成功提示</h1>
+            <div>您的好友***已经接受了您的邀请，现在你们可以互相鼓励监督，完成七天任务了，千万不要忘记签到哦。</div>
+        </div>
+    </li>
+    <li>
+        <div class="ddtime"><span>2015-04-01 12:03:25</span></div>
+        <div class="tishi">
+            <h1>组队成功提示</h1>
+            <div>您的好友***已经接受了您的邀请，现在你们可以互相鼓励监督，完成七天任务了，千万不要忘记签到哦。</div>
+        </div>
+    </li>
+    <li>
+        <div class="ddtime"><span>2015-04-01 12:03:25</span></div>
+        <div class="tishi">
+            <h1>组队成功提示</h1>
+            <div>您的好友***已经接受了您的邀请，现在你们可以互相鼓励监督，完成七天任务了，千万不要忘记签到哦。</div>
+        </div>
+    </li>
+    <li>
+        <div class="ddtime"><span>2015-04-01 12:03:25</span></div>
+        <div class="tishi">
+            <h1>组队成功提示</h1>
+            <div>您的好友***已经接受了您的邀请，现在你们可以互相鼓励监督，完成七天任务了，千万不要忘记签到哦。</div>
+        </div>
+    </li>
+    <li>
+        <div class="ddtime"><span>2015-04-01 12:03:25</span></div>
+        <div class="tishi">
+            <h1>组队成功提示</h1>
+            <div>您的好友***已经接受了您的邀请，现在你们可以互相鼓励监督，完成七天任务了，千万不要忘记签到哦。</div>
+        </div>
+    </li>-->
+</ul>
+</body>
+</html>
